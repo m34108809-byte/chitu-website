@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>赤兔文创 · 后台管理</title>
+<style>
+  :root{
+    --green:#1E3A2B; --green-2:#2E5A41; --gold:#B8901F; --bg:#FBFAF5;
+    --bg-2:#ECF1E9; --text:#1F2A22; --muted:#5C6B5F; --border:rgba(30,58,43,.14);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'Noto Sans SC','PingFang SC','Microsoft YaHei',sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+  /* login */
+  .login{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,#EEF3EC,#E1EBDD)}
+  .login-box{background:#fff;padding:40px;width:340px;border-radius:16px;box-shadow:0 20px 50px rgba(30,58,43,.12);text-align:center}
+  .login-box h1{font-size:20px;color:var(--green);margin-bottom:24px;font-family:'Noto Serif SC',serif}
+  .login-box input{width:100%;padding:12px 14px;border:1px solid var(--border);border-radius:10px;margin-bottom:16px;font-size:15px}
+  .login-box button{width:100%;padding:12px;background:linear-gradient(135deg,var(--green),var(--green-2));color:#fff;border:none;border-radius:10px;font-size:15px;font-weight:600;cursor:pointer}
+  .err{color:#c0392b;font-size:13px;margin-top:8px;min-height:16px}
+  /* layout */
+  .admin-top{position:sticky;top:0;z-index:10;display:flex;align-items:center;justify-content:space-between;padding:14px 24px;background:rgba(251,250,245,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+  .admin-top strong{color:var(--green);font-family:'Noto Serif SC',serif;font-size:17px}
+  .admin-top .acts{display:flex;gap:10px;align-items:center}
+  .admin-top button,.admin-top a{padding:9px 16px;border-radius:9px;font-size:14px;cursor:pointer;border:1px solid transparent;text-decoration:none}
+  .primary{background:linear-gradient(135deg,var(--green),var(--green-2));color:#fff;font-weight:600}
+  .ghost{background:#fff;border-color:var(--border)!important;color:var(--green)}
+  .admin-body{display:flex;min-height:calc(100vh - 60px)}
+  .admin-nav{width:180px;flex-shrink:0;padding:20px 12px;border-right:1px solid var(--border);position:sticky;top:60px;height:calc(100vh - 60px);overflow:auto}
+  .admin-nav a{display:block;padding:9px 14px;border-radius:8px;color:var(--muted);font-size:14px;cursor:pointer;margin-bottom:2px}
+  .admin-nav a:hover{background:var(--bg-2);color:var(--green)}
+  .admin-main{flex:1;padding:24px 32px;max-width:920px}
+  .card{background:#fff;border:1px solid var(--border);border-radius:14px;padding:24px;margin-bottom:22px;box-shadow:0 8px 24px rgba(30,58,43,.05)}
+  .card h2{font-size:19px;color:var(--green);font-family:'Noto Serif SC',serif;margin-bottom:4px}
+  .hint{color:var(--muted);font-size:13px;margin-bottom:16px}
+  .fld{display:block;margin-bottom:14px}
+  .fld>span{display:block;font-size:13px;color:var(--muted);margin-bottom:6px}
+  .fld input,.fld textarea{width:100%;padding:10px 12px;border:1px solid var(--border);border-radius:9px;font-size:14px;font-family:inherit;resize:vertical}
+  .fld input:focus,.fld textarea:focus{outline:none;border-color:var(--green)}
+  .item{border:1px dashed var(--border);border-radius:10px;padding:16px;margin-bottom:14px;background:var(--bg)}
+  .item-head{font-weight:600;color:var(--green);font-size:14px;margin-bottom:10px}
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:0 16px}
+  .sub{font-size:13px;color:var(--gold);font-weight:600;margin:10px 0 6px}
+  .row{display:flex;gap:8px;align-items:center;margin-bottom:8px}
+  .row input{flex:1;padding:9px 11px;border:1px solid var(--border);border-radius:9px;font-size:14px;font-family:inherit}
+  .add{margin-top:8px;padding:8px 14px;background:var(--bg-2);color:var(--green);border:1px solid var(--border);border-radius:8px;font-size:13px;cursor:pointer}
+  .del{padding:8px 12px;background:#fff;color:#c0392b;border:1px solid #e6b3ab;border-radius:8px;font-size:13px;cursor:pointer;flex-shrink:0}
+  .img-row{display:flex;gap:14px;align-items:center;padding:12px 0;border-bottom:1px solid var(--border)}
+  .img-row:last-child{border-bottom:none}
+  .img-prev{width:120px;height:80px;border-radius:8px;object-fit:cover;background:var(--bg-2);border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--muted);font-size:12px;overflow:hidden;flex-shrink:0}
+  .img-prev img{width:100%;height:100%;object-fit:cover}
+  .img-info{flex:1;min-width:0}
+  .img-info .k{font-weight:600;color:var(--green);font-size:14px}
+  .img-info .p{font-size:12px;color:var(--muted);word-break:break-all}
+  .img-dim{font-size:12px;color:var(--muted);margin-top:4px}
+  .img-dim b{color:var(--gold)}
+  .img-acts{display:flex;gap:8px;flex-shrink:0}
+  .img-acts label{position:relative;overflow:hidden}
+  .img-acts input[type=file]{position:absolute;inset:0;opacity:0;cursor:pointer}
+  .badge{padding:6px 12px;background:var(--green);color:#fff;border-radius:8px;font-size:13px;cursor:pointer}
+  .badge.clear{background:#fff;color:#c0392b;border:1px solid #e6b3ab}
+  .toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:var(--green);color:#fff;padding:12px 22px;border-radius:10px;font-size:14px;opacity:0;transition:opacity .25s;pointer-events:none;z-index:100}
+  .toast.show{opacity:1}
+  .hidden{display:none}
+  @media(max-width:768px){.admin-nav{display:none}.grid2{grid-template-columns:1fr}}
+  /* crop modal */
+  .crop-modal{position:fixed;inset:0;background:rgba(20,30,24,.6);backdrop-filter:blur(4px);display:flex;align-items:center;justify-content:center;z-index:300;padding:20px}
+  .crop-modal.hidden{display:none}
+  .crop-panel{background:#fff;border-radius:16px;width:min(700px,96vw);max-height:94vh;overflow:auto;box-shadow:0 30px 80px rgba(0,0,0,.3)}
+  .crop-head{padding:16px 20px;border-bottom:1px solid var(--border)}
+  .crop-head h3{color:var(--green);font-family:'Noto Serif SC',serif;font-size:17px}
+  .crop-dim{font-size:13px;color:var(--muted);font-weight:400;margin-left:8px}
+  .crop-stage{position:relative;margin:16px 20px;background:#1f2a22;display:flex;justify-content:center;align-items:center;user-select:none;touch-action:none;border-radius:8px;overflow:hidden}
+  .crop-stage img{display:block;max-width:100%;max-height:62vh}
+  .crop-box{position:absolute;border:2px solid #fff;box-shadow:0 0 0 9999px rgba(20,30,24,.5);cursor:move;box-sizing:border-box}
+  .crop-grid{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.35) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.35) 1px,transparent 1px);background-size:33.33% 33.33%}
+  .crop-handle{position:absolute;right:-7px;bottom:-7px;width:14px;height:14px;background:var(--gold);border:2px solid #fff;border-radius:50%;cursor:nwse-resize}
+  .crop-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 20px 20px;flex-wrap:wrap}
+  .crop-size{font-size:13px;color:var(--muted)}
+  .crop-btns{display:flex;gap:8px;flex-wrap:wrap}
+  .crop-btns button{padding:9px 16px;border-radius:9px;font-size:14px;cursor:pointer;border:1px solid var(--border);background:#fff;color:var(--green)}
+  .crop-btns .primary{background:linear-gradient(135deg,var(--green),var(--green-2));color:#fff;border:none}
+</style>
+</head>
+<body>
+
+<div id="login" class="login">
+  <div class="login-box">
+    <h1>赤兔文创 · 后台管理</h1>
+    <input id="pass" type="password" placeholder="请输入后台密码" autocomplete="off">
+    <button id="loginBtn">进入后台</button>
+    <p id="loginErr" class="err"></p>
+  </div>
+</div>
+
+<div id="app" class="admin hidden">
+  <header class="admin-top">
+    <strong>赤兔文创 · 内容管理</strong>
+    <div class="acts">
+      <a href="/" target="_blank" class="ghost">预览官网 ↗</a>
+      <button id="logoutBtn" class="ghost">退出</button>
+      <button id="saveBtn" class="primary">保存全部修改</button>
+    </div>
+  </header>
+  <div class="admin-body">
+    <nav class="admin-nav" id="adminNav"></nav>
+    <main class="admin-main" id="adminMain"></main>
+  </div>
+  <div id="toast" class="toast"></div>
+</div>
+
+<!-- Crop modal -->
+<div id="cropModal" class="crop-modal hidden">
+  <div class="crop-panel">
+    <div class="crop-head"><h3>裁剪图片 <span id="cropDim" class="crop-dim"></span></h3></div>
+    <div class="crop-stage" id="cropStage">
+      <img id="cropImg" alt="裁剪预览">
+      <div class="crop-box" id="cropBox"><div class="crop-grid"></div><div class="crop-handle" id="cropHandle"></div></div>
+    </div>
+    <div class="crop-bar">
+      <span id="cropSize" class="crop-size"></span>
+      <div class="crop-btns">
+        <button id="cropCancel" class="ghost">取消</button>
+        <button id="cropSkip" class="ghost">不裁剪，直接上传</button>
+        <button id="cropOk" class="primary">确认裁剪并上传</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+let PASS = '';
+let data = null;
+
+const esc = s => String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
+const getByPath = (o,p)=>p.split('.').reduce((a,c)=>a&&a[c],o);
+const setByPath = (o,p,v)=>{const ks=p.split('.');let t=o;for(let i=0;i<ks.length-1;i++)t=t[ks[i]];t[ks[ks.length-1]]=v;};
+
+function field(label,bind,val,textarea){
+  const ctrl = textarea
+    ? `<textarea data-bind="${bind}" rows="3">${esc(val)}</textarea>`
+    : `<input data-bind="${bind}" value="${esc(val)}">`;
+  return `<label class="fld"><span>${label}</span>${ctrl}</label>`;
+}
+function section(id,title,desc,inner){
+  return `<section class="card" id="${id}"><h2>${title}</h2>${desc?`<p class="hint">${desc}</p>`:''}${inner}</section>`;
+}
+
+const IMAGE_FIELDS = [
+  {key:'hero',label:'首屏主视觉（右侧大图）',dims:'800×600（4:3）'},
+  {key:'bg1',label:'首屏背景轮播图 1',dims:'1920×1080（16:9）'},
+  {key:'bg2',label:'首屏背景轮播图 2',dims:'1920×1080（16:9）'},
+  {key:'bg3',label:'首屏背景轮播图 3',dims:'1920×1080（16:9）'},
+  {key:'banner',label:'门店区下方整幅 banner',dims:'1920×800（宽幅）'},
+  {key:'loc1',label:'门店实景图 · 晓港',dims:'960×540（16:9）'},
+  {key:'loc2',label:'门店实景图 · 客村',dims:'960×540（16:9）'},
+  {key:'loc3',label:'门店实景图 · 鹭江',dims:'960×540（16:9）'},
+  {key:'loc4',label:'门店实景图 · 宝岗',dims:'960×540（16:9）'},
+  {key:'g1',label:'环境实景 · 开放工位区',dims:'1200×800（宽）'},
+  {key:'g2',label:'环境实景 · 独立办公室',dims:'800×600（4:3）'},
+  {key:'g3',label:'环境实景 · 会议室',dims:'800×600（4:3）'},
+  {key:'g4',label:'环境实景 · 茶室包间',dims:'800×600（4:3）'},
+  {key:'g5',label:'环境实景 · 公共休闲区',dims:'1200×800（宽）'},
+  {key:'g6',label:'环境实景 · 路演活动区',dims:'800×600（4:3）'},
+  {key:'sub1',label:'企业补贴 · 配图1（创业补贴）',dims:'960×540（16:9）'},
+  {key:'sub2',label:'企业补贴 · 配图2（租金补贴）',dims:'960×540（16:9）'}
+];
+
+function buildForm(){
+  const d = data;
+  const navItems = [];
+
+  // 基础 / 联系方式
+  let s = section('sec-base','基础信息与联系方式','品牌名称、统一微信号等',
+    field('品牌名称（显示在页脚/标题）','brand.name',d.brand.name) +
+    field('统一微信号 / 电话','brand.wechat',d.brand.wechat)
+  );
+  navItems.push(['sec-base','基础信息']);
+
+  // Hero
+  let heroInner = field('主标题','hero.title',d.hero.title) +
+    field('副标题','hero.subtitle',d.hero.subtitle) +
+    field('引导语','hero.lead',d.hero.lead,true) +
+    `<div class="grid2">${field('按钮1文案','hero.cta1.text',d.hero.cta1.text)}${field('按钮1链接','hero.cta1.href',d.hero.cta1.href)}</div>` +
+    `<div class="grid2">${field('按钮2文案','hero.cta2.text',d.hero.cta2.text)}${field('按钮2链接','hero.cta2.href',d.hero.cta2.href)}</div>` +
+    `<div class="sub">首屏底部亮点（3 条）</div>` +
+    d.hero.meta.map((m,i)=>`<div class="grid2">${field('前缀','hero.meta.'+i+'.pre',m.pre)}${field('加粗词','hero.meta.'+i+'.bold',m.bold)}</div>${field('后缀','hero.meta.'+i+'.post',m.post)}`).join('') +
+    `<button class="add" data-add-path="hero.meta">+ 添加亮点行</button>`;
+  s += section('sec-hero','首屏 Hero','首屏的核心文案与按钮',heroInner);
+  navItems.push(['sec-hero','首屏']);
+
+  // Features
+  let fHTML = d.features.map((f,i)=>`<div class="item"><div class="item-head">卖点 ${i+1}</div>${field('标题','features.'+i+'.title',f.title)}${field('描述','features.'+i+'.desc',f.desc,true)}</div>`).join('');
+  s += section('sec-features','核心卖点','六张卖点卡片',fHTML+`<button class="add" data-add="features">+ 添加卖点</button>`);
+  navItems.push(['sec-features','卖点']);
+
+  // Locations
+  let locHTML = d.locations.map((l,i)=>{
+    const hi = l.highlights.map((h,j)=>`<div class="row"><input data-bind="locations.${i}.highlights.${j}" value="${esc(h)}"><button class="del" data-del-path="locations.${i}.highlights" data-idx="${j}">×</button></div>`).join('');
+    return `<div class="item"><div class="item-head">门店 ${i+1} · ${esc(l.tag)}</div>`+
+      `<div class="grid2">${field('标签','locations.'+i+'.tag',l.tag)}${field('名称','locations.'+i+'.name',l.name)}</div>`+
+      field('地址','locations.'+i+'.addr',l.addr)+
+      field('定位/交通描述','locations.'+i+'.position',l.position || l.metro)+
+      field('地铁信息','locations.'+i+'.metro',l.metro)+
+      `<div class="grid2">${field('价格标签','locations.'+i+'.priceLabel',l.priceLabel)}${field('价格','locations.'+i+'.price',l.price)}</div>`+
+      field('价格单位','locations.'+i+'.priceUnit',l.priceUnit)+
+      `<div class="grid2">${field('联系人','locations.'+i+'.contact',l.contact)}${field('预约电话','locations.'+i+'.phone',l.phone)}</div>`+
+      `<div class="grid2">${field('门店详情页 slug','locations.'+i+'.slug',l.slug)}</div>`+
+      `<div class="sub">门店详情页正文（在 store-${esc(l.slug)}.html 顶部展示）</div>`+field('门店详情长描述','locations.'+i+'.detail',l.detail,true)+
+      `<div class="sub">亮点</div>`+hi+`<button class="add" data-add-path="locations.${i}.highlights">+ 添加亮点</button></div>`;
+  }).join('');
+  s += section('sec-locations','门店信息','四家门店的地址、价格与亮点；slug 决定门店详情页网址（如 ruyi → store-ruyi.html）',locHTML);
+  navItems.push(['sec-locations','门店']);
+
+  // Banner (text only handled in images) -> gallery header
+  let galHead = field('区块标题','galleryHeader.title',d.galleryHeader.title)+field('区块副标题','galleryHeader.sub',d.galleryHeader.sub,true);
+  let galItems = d.gallery.map((g,i)=>`<div class="grid2">${field('标签'+ (i+1),'gallery.'+i+'.label',g.label)}${field('是否宽图','gallery.'+i+'.span',String(g.span))}</div>`).join('');
+  s += section('sec-gallery','环境实景标题','图片区块的标题与每张图标签（图片在"图片管理"上传）',galHead+galItems);
+  navItems.push(['sec-gallery','实景']);
+
+  // Services
+  let svcHTML = d.services.map((x,i)=>`<div class="item"><div class="item-head">服务 ${i+1}</div>${field('标题','services.'+i+'.title',x.title)}${field('描述','services.'+i+'.desc',x.desc,true)}</div>`).join('');
+  s += section('sec-services','空间与服务','七项服务说明',svcHTML+`<button class="add" data-add="services">+ 添加服务</button>`);
+  navItems.push(['sec-services','服务']);
+
+  // FAQ
+  let faqHTML = d.faqs.map((x,i)=>`<div class="item"><div class="item-head">问题 ${i+1}</div>${field('问题','faqs.'+i+'.q',x.q)}${field('回答','faqs.'+i+'.a',x.a,true)}</div>`).join('');
+  s += section('sec-faq','常见问题','客户常问的问题',faqHTML+`<button class="add" data-add="faqs">+ 添加问题</button>`);
+  navItems.push(['sec-faq','FAQ']);
+
+  // Contact
+  let c = d.contact;
+  let cHTML = field('标题','contact.title',c.title)+field('副标题','contact.sub',c.sub,true)+
+    `<div class="grid2">${field('按钮文案','contact.btnText',c.btnText)}${field('按钮链接','contact.btnHref',c.btnHref)}</div>`+
+    field('备注','contact.note',c.note,true);
+  s += section('sec-contact','联系/行动召唤区块','页面底部引导加微信的区块',cHTML);
+  navItems.push(['sec-contact','联系']);
+
+  // 企业补贴
+  let subHead = field('区块标题','subsidyHeader.title',d.subsidyHeader.title)+field('区块副标题','subsidyHeader.sub',d.subsidyHeader.sub,true);
+  let subItems = d.subsidies.map((s2,i)=>{
+    const hl = s2.highlights.map((h,j)=>`<div class="row"><input data-bind="subsidies.${i}.highlights.${j}" value="${esc(h)}"><button class="del" data-del-path="subsidies.${i}.highlights" data-idx="${j}">×</button></div>`).join('');
+    const cond = (s2.conditions||[]).map((c2,j)=>`<div class="row"><input data-bind="subsidies.${i}.conditions.${j}" value="${esc(c2)}"><button class="del" data-del-path="subsidies.${i}.conditions" data-idx="${j}">×</button></div>`).join('');
+    const mat = (s2.materials||[]).map((m2,j)=>`<div class="row"><input data-bind="subsidies.${i}.materials.${j}" value="${esc(m2)}"><button class="del" data-del-path="subsidies.${i}.materials" data-idx="${j}">×</button></div>`).join('');
+    const pr = s2.process.map((p2,j)=>`<div class="row"><input data-bind="subsidies.${i}.process.${j}" value="${esc(p2)}"><button class="del" data-del-path="subsidies.${i}.process" data-idx="${j}">×</button></div>`).join('');
+    const comp = (s2.company||[]).map((c3,j)=>`<div class="row"><input data-bind="subsidies.${i}.company.${j}" value="${esc(c3)}"><button class="del" data-del-path="subsidies.${i}.company" data-idx="${j}">×</button></div>`).join('');
+    return `<div class="item"><div class="item-head">补贴 ${i+1} · ${esc(s2.tag)}</div>`+
+      `<div class="grid2">${field('标签','subsidies.'+i+'.tag',s2.tag)}${field('名称','subsidies.'+i+'.name',s2.name)}</div>`+
+      `<div class="grid2">${field('详情页 slug','subsidies.'+i+'.slug',s2.slug)}${field('配图键(imgKey)','subsidies.'+i+'.imgKey',s2.imgKey)}</div>`+
+      `<div class="sub">政策依据（详情页顶部展示）</div>`+field('政策依据','subsidies.'+i+'.policy',s2.policy,true)+
+      `<div class="grid2">${field('补贴对象(一句话)','subsidies.'+i+'.object',s2.object)}${field('补贴标准(一句话)','subsidies.'+i+'.standard',s2.standard)}</div>`+
+      field('补贴对象详细说明','subsidies.'+i+'.objectDetail',s2.objectDetail,true)+
+      field('补贴标准说明','subsidies.'+i+'.standardDetail',s2.standardDetail,true)+
+      field('首页简介','subsidies.'+i+'.summary',s2.summary,true)+
+      `<div class="sub">申请条件（详情页列表）</div>`+cond+`<button class="add" data-add-path="subsidies.${i}.conditions">+ 添加条件</button>`+
+      `<div class="sub">所需材料（详情页列表）</div>`+mat+`<button class="add" data-add-path="subsidies.${i}.materials">+ 添加材料</button>`+
+      `<div class="sub">办理流程</div>`+pr+`<button class="add" data-add-path="subsidies.${i}.process">+ 添加流程步骤</button>`+
+      `<div class="sub">受理与申办（详情页展示）</div>`+field('受理机构/线上申办','subsidies.'+i+'.agency',s2.agency,true)+
+      `<div class="sub">赤兔服务说明（结合我司业务）</div>`+comp+`<button class="add" data-add-path="subsidies.${i}.company">+ 添加一条</button>`+
+      `<div class="sub">首页卡片亮点</div>`+hl+`<button class="add" data-add-path="subsidies.${i}.highlights">+ 添加亮点</button></div>`;
+  }).join('');
+  s += section('sec-subsidy','企业补贴','以下均为补贴详情页（subsidy-&lt;slug&gt;.html）的可编辑内容；首页卡片取"首页简介/亮点"，配图在"图片管理"上传 sub1/sub2',subHead+subItems+`<button class="add" data-add="subsidies">+ 添加补贴栏目</button>`);
+  navItems.push(['sec-subsidy','企业补贴']);
+
+  // Footer
+  let f = d.footer;
+  let linksHTML = f.links.map((l,i)=>`<div class="row"><input data-bind="footer.links.${i}.text" value="${esc(l.text)}" placeholder="文字"><input data-bind="footer.links.${i}.href" value="${esc(l.href)}" placeholder="链接"><button class="del" data-del-path="footer.links" data-idx="${i}">×</button></div>`).join('');
+  let contactsHTML = f.contacts.map((c2,i)=>`<div class="row"><input data-bind="footer.contacts.${i}" value="${esc(c2)}"><button class="del" data-del-path="footer.contacts" data-idx="${i}">×</button></div>`).join('');
+  let footInner = field('品牌标语','footer.brand',f.brand)+
+    field('联系栏标题','footer.contactTitle',f.contactTitle)+
+    `<div class="sub">快速导航链接</div>`+linksHTML+`<button class="add" data-add-path="footer.links">+ 添加链接</button>`+
+    `<div class="sub">联系方式条目</div>`+contactsHTML+`<button class="add" data-add-path="footer.contacts">+ 添加条目</button>`+
+    field('版权信息','footer.copy',f.copy);
+  s += section('sec-footer','页脚','底部导航、联系方式与版权',footInner);
+  navItems.push(['sec-footer','页脚']);
+
+  // Images
+  let imgInner = IMAGE_FIELDS.map(im=>{
+    const path = d.images[im.key]||'';
+    const prev = path ? `<div class="img-prev"><img src="${esc(path)}"></div>` : `<div class="img-prev">未上传</div>`;
+    const dimId = 'dim-'+im.key;
+    const dimText = im.dims ? `建议尺寸：<b>${esc(im.dims)}</b>` : '原图尺寸即可';
+    return `<div class="img-row" data-key="${im.key}">${prev}<div class="img-info"><div class="k">${esc(im.label)}</div><div class="p">${path?esc(path):'（暂无图片，占位框显示在官网）'}</div><div class="img-dim" id="${dimId}" data-rec="${esc(im.dims||'')}">${dimText}</div></div><div class="img-acts"><label class="badge">上传图片<input type="file" accept="image/*" data-upload="${im.key}"></label>${path?`<button class="badge clear" data-clear="${im.key}">清除</button>`:''}</div></div>`;
+  }).join('');
+  s += section('sec-images','图片管理','上传/替换官网各位置图片；可裁剪到建议尺寸，保存后立即生效',imgInner);
+  navItems.push(['sec-images','图片']);
+
+  document.getElementById('adminMain').innerHTML = s;
+
+  // 显示已上传图片的实际尺寸
+  document.querySelectorAll('#adminMain .img-row').forEach(row=>{
+    const img = row.querySelector('.img-prev img');
+    const dim = row.querySelector('.img-dim');
+    if(img && dim){
+      const fill = ()=>{ const rec = dim.dataset.rec; dim.innerHTML = (rec?('建议尺寸：<b>'+rec+'</b> ｜ '):'') + '当前尺寸：'+img.naturalWidth+'×'+img.naturalHeight; };
+      if(img.complete) fill(); else img.onload = fill;
+    }
+  });
+
+  // nav
+  document.getElementById('adminNav').innerHTML = navItems.map(([id,label])=>`<a data-nav="${id}">${label}</a>`).join('');
+  document.getElementById('adminNav').querySelectorAll('a').forEach(a=>{
+    a.onclick=()=>document.getElementById(a.dataset.nav).scrollIntoView({behavior:'smooth'});
+  });
+
+  bindInputs();
+  bindStructural();
+  bindImages();
+}
+
+function bindInputs(){
+  document.querySelectorAll('#adminMain [data-bind]').forEach(inp=>{
+    inp.addEventListener('input',()=>setByPath(data,inp.dataset.bind,inp.value));
+  });
+}
+
+function bindStructural(){
+  document.querySelectorAll('#adminMain [data-add]').forEach(b=>{
+    b.onclick=()=>{
+      const t=b.dataset.add;
+      if(t==='features')data.features.push({icon:'box',title:'新卖点',desc:''});
+      if(t==='services')data.services.push({icon:'doc',title:'新服务',desc:''});
+      if(t==='faqs')data.faqs.push({q:'新问题',a:'回答内容'});
+      if(t==='subsidies')data.subsidies.push({tag:'新补贴',name:'新补贴栏目',slug:'new-subsidy',imgKey:'sub1',policy:'',object:'',objectDetail:'',standard:'',standardDetail:'',summary:'',conditions:[],materials:[],process:[],agency:'',company:[],highlights:[]});
+      buildForm();
+    };
+  });
+  document.querySelectorAll('#adminMain [data-add-path]').forEach(b=>{
+    b.onclick=()=>{getByPath(data,b.dataset.addPath).push('');buildForm();};
+  });
+  document.querySelectorAll('#adminMain [data-del-path]').forEach(b=>{
+    b.onclick=()=>{const arr=getByPath(data,b.dataset.delPath);arr.splice(+b.dataset.idx,1);buildForm();};
+  });
+}
+
+function bindImages(){
+  document.querySelectorAll('#adminMain [data-upload]').forEach(inp=>{
+    inp.addEventListener('change',async ()=>{
+      const key=inp.dataset.upload; const file=inp.files[0]; if(!file)return;
+      const fld = IMAGE_FIELDS.find(f=>f.key===key);
+      openCropper(file, key, fld?fld.dims:null);
+      inp.value='';
+    });
+  });
+  document.querySelectorAll('#adminMain [data-clear]').forEach(b=>{
+    b.onclick=async()=>{
+      const key=b.dataset.clear; data.images[key]='';
+      try{ await saveContent(); toast('已清除'); buildForm(); }
+      catch(e){ toast('清除失败：'+e.message); }
+    };
+  });
+}
+
+/* ---------- upload + crop ---------- */
+async function doUpload(key, blob, filename){
+  const res=await fetch('/api/upload',{method:'POST',headers:{'X-Filename':filename,'X-Admin-Password':PASS},body:blob});
+  const j=await res.json();
+  if(!res.ok)throw new Error(j.error||'上传失败');
+  data.images[key]='assets/'+filename;
+  await saveContent();
+  toast('图片已上传并保存'); buildForm();
+}
+
+let cropCtx = null;
+function openCropper(file, key, dims){
+  const reader = new FileReader();
+  reader.onload = e => {
+    const im = new Image();
+    im.onload = () => {
+      cropCtx = {file, key, dims, natW:im.naturalWidth, natH:im.naturalHeight, imgSrc:e.target.result, box:null, aspect:null, target:null};
+      if(dims){
+        const m = dims.match(/(\d+)\s*[×xX]\s*(\d+)/);
+        if(m){ const tw=+m[1], th=+m[2]; cropCtx.aspect = tw/th; cropCtx.target = [tw,th]; }
+      }
+      showCropModal();
+    };
+    im.src = e.target.result;
+  };
+  reader.readAsDataURL(file);
+}
+
+function showCropModal(){
+  const modal = document.getElementById('cropModal');
+  const im = document.getElementById('cropImg');
+  const stage = document.getElementById('cropStage');
+  im.onload = () => {
+    const dispW = im.clientWidth, dispH = im.clientHeight;
+    stage.style.width = dispW+'px';
+    stage.style.height = dispH+'px';
+    let boxW, boxH;
+    if(cropCtx.aspect){
+      boxW = dispW*0.9; boxH = boxW/cropCtx.aspect;
+      if(boxH > dispH*0.95){ boxH = dispH*0.95; boxW = boxH*cropCtx.aspect; }
+    } else { boxW = dispW*0.9; boxH = dispH*0.9; }
+    cropCtx.box = {x:(dispW-boxW)/2, y:(dispH-boxH)/2, w:boxW, h:boxH};
+    cropCtx.scale = dispW/cropCtx.natW;
+    positionBox(); updateCropSize();
+  };
+  im.src = cropCtx.imgSrc;
+  document.getElementById('cropDim').textContent = cropCtx.dims ? ('建议 '+cropCtx.dims) : '';
+  modal.classList.remove('hidden');
+}
+
+function positionBox(){
+  const b = cropCtx.box;
+  const el = document.getElementById('cropBox');
+  el.style.left = b.x+'px'; el.style.top = b.y+'px';
+  el.style.width = b.w+'px'; el.style.height = b.h+'px';
+}
+
+function updateCropSize(){
+  const b = cropCtx.box, sc = cropCtx.scale;
+  document.getElementById('cropSize').textContent =
+    `裁剪区域：${Math.round(b.w/sc)} × ${Math.round(b.h/sc)} px`;
+}
+
+function closeCrop(){
+  document.getElementById('cropModal').classList.add('hidden');
+  cropCtx = null;
+}
+
+function attachCropHandlers(){
+  const stage = document.getElementById('cropStage');
+  const boxEl = document.getElementById('cropBox');
+  let mode=null, startX=0, startY=0, startBox=null;
+  function rel(e){ const r=stage.getBoundingClientRect(); return {x:e.clientX-r.left, y:e.clientY-r.top}; }
+  boxEl.addEventListener('pointerdown', e=>{
+    if(e.target.classList.contains('crop-handle')) return;
+    mode='move'; startX=e.clientX; startY=e.clientY; startBox={...cropCtx.box};
+    boxEl.setPointerCapture(e.pointerId); e.preventDefault();
+  });
+  document.getElementById('cropHandle').addEventListener('pointerdown', e=>{
+    mode='resize'; startX=e.clientX; startY=e.clientY; startBox={...cropCtx.box};
+    e.stopPropagation(); e.preventDefault();
+  });
+  window.addEventListener('pointermove', e=>{
+    if(!mode || !cropCtx) return;
+    const dx=e.clientX-startX, dy=e.clientY-startY;
+    const r=stage.getBoundingClientRect(); const SW=r.width, SH=r.height;
+    if(mode==='move'){
+      let x=Math.max(0,Math.min(startBox.x+dx, SW-startBox.w));
+      let y=Math.max(0,Math.min(startBox.y+dy, SH-startBox.h));
+      cropCtx.box={...startBox,x,y};
+    } else {
+      let w=Math.max(30, startBox.w+dx);
+      let h = cropCtx.aspect ? w/cropCtx.aspect : Math.max(30, startBox.h+dy);
+      if(cropCtx.aspect){
+        if(startBox.y+h > SH){ h = SH-startBox.y; w = h*cropCtx.aspect; }
+        if(startBox.x+w > SW){ w = SW-startBox.x; h = w/cropCtx.aspect; }
+      } else {
+        let hh=Math.max(30, startBox.h+dy);
+        if(startBox.y+hh>SH) hh=SH-startBox.y;
+        h=hh; w=Math.max(30, startBox.w+dx);
+        if(startBox.x+w>SW) w=SW-startBox.x;
+      }
+      cropCtx.box={x:startBox.x,y:startBox.y,w,h};
+    }
+    positionBox(); updateCropSize();
+  });
+  window.addEventListener('pointerup', ()=>{ mode=null; });
+}
+
+document.getElementById('cropCancel').onclick = closeCrop;
+document.getElementById('cropSkip').onclick = async ()=>{
+  const f = cropCtx.file;
+  const ext = f.name.includes('.') ? f.name.slice(f.name.lastIndexOf('.')) : '.jpg';
+  const ctx = cropCtx;
+  closeCrop();
+  try{ await doUpload(ctx.key, f, ctx.key+ext); }
+  catch(e){ toast('上传失败：'+e.message); }
+};
+document.getElementById('cropOk').onclick = ()=>{
+  const b=cropCtx.box, sc=cropCtx.scale;
+  const sx=b.x/sc, sy=b.y/sc, sw=b.w/sc, sh=b.h/sc;
+  const [tw,th] = cropCtx.target || [Math.round(sw), Math.round(sh)];
+  const c=document.createElement('canvas'); c.width=tw; c.height=th;
+  const cx=c.getContext('2d');
+  cx.drawImage(document.getElementById('cropImg'), sx, sy, sw, sh, 0, 0, tw, th);
+  c.toBlob(async blob=>{
+    const ctx=cropCtx;
+    closeCrop();
+    try{ await doUpload(ctx.key, blob, ctx.key+'.jpg'); }
+    catch(e){ toast('上传失败：'+e.message); }
+  }, 'image/jpeg', 0.92);
+};
+
+async function saveContent(){
+  const res=await fetch('/api/content',{method:'POST',headers:{'Content-Type':'application/json','X-Admin-Password':PASS},body:JSON.stringify(data)});
+  const j=await res.json();
+  if(!res.ok)throw new Error(j.error||'保存失败');
+}
+
+let toastTimer;
+function toast(msg){
+  const t=document.getElementById('toast');
+  t.textContent=msg;t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer=setTimeout(()=>t.classList.remove('show'),2200);
+}
+
+async function load(){
+  const res=await fetch('/api/content');
+  data=await res.json();
+  buildForm();
+}
+
+document.getElementById('loginBtn').onclick=async()=>{
+  const p=document.getElementById('pass').value;
+  const probe=await fetch('/api/check',{method:'POST',headers:{'X-Admin-Password':p}});
+  if(probe.status===401){document.getElementById('loginErr').textContent='密码错误';return;}
+  PASS=p;
+  document.getElementById('login').classList.add('hidden');
+  document.getElementById('app').classList.remove('hidden');
+  attachCropHandlers();
+  await load();
+};
+document.getElementById('pass').addEventListener('keydown',e=>{if(e.key==='Enter')document.getElementById('loginBtn').click();});
+document.getElementById('logoutBtn').onclick=()=>{PASS='';location.reload();};
+document.getElementById('saveBtn').onclick=async()=>{
+  try{ await saveContent(); toast('全部修改已保存'); }
+  catch(e){ toast('保存失败：'+e.message); }
+};
+</script>
+</body>
+</html>

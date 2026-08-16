@@ -1,0 +1,2 @@
+# 本项目仅使用 Python 标准库，无需第三方依赖。
+# 保留此文件以便 Railway / Nixpacks 正确识别为 Python 项目。
