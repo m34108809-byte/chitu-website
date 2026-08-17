@@ -1370,7 +1370,95 @@ img {
   padding: 18px 20px;
   border-radius: var(--radius-sm);
   border-left: 3px solid var(--gold);
-  margin-bottom: 8px;
+  margin-bottom: 40px;
+}
+
+/* ===== 门店户型与价格 ===== */
+.store-rooms {
+  margin-top: 56px;
+}
+.rooms-head {
+  text-align: center;
+  margin-bottom: 32px;
+}
+.rooms-head h2 {
+  font-size: 30px;
+  color: var(--green);
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+.rooms-head p {
+  color: var(--text-secondary);
+  font-size: 15px;
+}
+.room-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+.room-card {
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  transition: transform .2s, box-shadow .2s;
+}
+.room-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(30, 58, 43, .12);
+}
+.room-thumb {
+  height: 170px;
+  background: var(--bg-green-light);
+  overflow: hidden;
+}
+.room-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.room-thumb-ph {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  font-size: 14px;
+  background: var(--bg-2);
+}
+.room-body {
+  padding: 18px 20px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.room-body h3 {
+  font-size: 20px;
+  color: var(--green);
+}
+.room-meta {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+.room-config {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin: 0;
+}
+.room-price {
+  margin-top: 6px;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--gold);
+}
+.room-price span {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--text-secondary);
+  margin-left: 4px;
 }
 
 /* ===== 补贴详情页（详细版） ===== */
@@ -1720,5 +1808,18 @@ img {
   .float-cta svg {
     width: 21px;
     height: 21px;
+  }
+
+  .store-rooms {
+    margin-top: 40px;
+  }
+  .rooms-head h2 {
+    font-size: 24px;
+  }
+  .room-thumb {
+    height: 140px;
+  }
+  .room-body h3 {
+    font-size: 18px;
   }
 }

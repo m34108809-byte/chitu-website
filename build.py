@@ -35,13 +35,41 @@ def render_store_page(loc, data):
     map_url = f'https://map.baidu.com/search/{q}'
     brand = data.get('brand', {})
     footer = data.get('footer', {})
+    contact = data.get('contact', {})
     if ipath:
         hero = f'<img class="store-hero-img" src="{e(ipath)}" alt="{e(loc.get("name"))}">'
     else:
         hero = '<div class="img-placeholder"><span>门店实景图<br><em>点击后台上传</em></span></div>'
-    highlights = ''.join(f'<li>{e(h)}</li>' for h in loc.get('highlights', []))
     detail = loc.get('detail', '')
-    detail_html = f'<p class="store-detail-text">{ml(detail)}</p>' if detail else ''
+    detail_html = f'<div class="store-detail-text">{ml(detail)}</div>' if detail else ''
+    highlights = ''.join(f'<li>{e(h)}</li>' for h in loc.get('highlights', []))
+    # 房型区块（后续可填真实房型）
+    rooms = loc.get('rooms', [])
+    room_cards = ''
+    for r in rooms:
+        rimg = img.get(r.get('imgKey', ''))
+        if rimg:
+            thumb = f'<img src="{e(rimg)}" alt="{e(r.get("name", ""))}">'
+        else:
+            thumb = '<div class="room-thumb-ph">房型图</div>'
+        rmeta = ' · '.join(x for x in [r.get('area', ''), r.get('capacity', '')] if x)
+        room_cards += (
+            '<div class="room-card">'
+            '<div class="room-thumb">' + thumb + '</div>'
+            '<div class="room-body">'
+            f'<h3>{e(r.get("name", ""))}</h3>'
+            + (f'<div class="room-meta">{e(rmeta)}</div>' if rmeta else '')
+            + (f'<p class="room-config">{e(r.get("config", ""))}</p>' if r.get('config') else '')
+            + f'<div class="room-price">{e(r.get("price", ""))}<span>{e(r.get("unit", ""))}</span></div>'
+            '</div></div>'
+        )
+    rooms_block = (
+        '<section class="store-rooms">'
+        '<div class="rooms-head"><h2>户型与价格</h2>'
+        '<p>灵活选择，拎包入驻。实时空置与具体房型欢迎来电预约看房。</p></div>'
+        f'<div class="room-grid">{room_cards}</div>'
+        '</section>'
+    ) if rooms else ''
     footer_links = ''.join(
         f'<a href="{e(l.get("href", "#"))}">{e(l.get("text", ""))}</a>' for l in footer.get('links', []))
     footer_contacts = ''.join(f'<p>{e(c)}</p>' for c in footer.get('contacts', []))
@@ -82,29 +110,32 @@ def render_store_page(loc, data):
     </div>
   </section>
   <section class="section section-light">
-    <div class="container store-detail">
+    <div class="container">
       {detail_html}
-      <div class="store-info">
-        <h2>门店信息</h2>
-        <ul class="store-facts">
-          <li><b>地址</b><span>{e(addr)}</span></li>
-          <li><b>定位</b><a href="{map_url}" target="_blank" rel="noopener">{e(loc.get('position') or loc.get('metro', ''))} · 点此导航</a></li>
-          <li><b>地铁</b><span>{e(loc.get('metro', ''))}</span></li>
-          <li><b>联系人</b><span>{e(loc.get('contact') or '专属顾问')}</span></li>
-          <li><b>电话</b><a href="tel:{e(phone)}">{e(phone)}</a></li>
-        </ul>
-        <div class="location-price">{e(loc.get('priceLabel', ''))} <strong>{e(loc.get('price', ''))}</strong>{e(loc.get('priceUnit', ''))}</div>
-        <div class="store-actions">
-          <a class="btn btn-primary" href="tel:{e(phone)}">电话预约看房</a>
-          <a class="btn btn-outline" href="{map_url}" target="_blank" rel="noopener">地图导航</a>
-          <a class="btn btn-outline" href="index.html#locations">返回门店列表</a>
+      <div class="store-detail">
+        <div class="store-info">
+          <h2>门店信息</h2>
+          <ul class="store-facts">
+            <li><b>地址</b><span>{e(addr)}</span></li>
+            <li><b>定位</b><a href="{map_url}" target="_blank" rel="noopener">{e(loc.get('position') or loc.get('metro', ''))} · 点此导航</a></li>
+            <li><b>地铁</b><span>{e(loc.get('metro', ''))}</span></li>
+            <li><b>联系人</b><span>{e(loc.get('contact') or '专属顾问')}</span></li>
+            <li><b>电话</b><a href="tel:{e(phone)}">{e(phone)}</a></li>
+          </ul>
+          <div class="location-price">{e(loc.get('priceLabel', ''))} <strong>{e(loc.get('price', ''))}</strong>{e(loc.get('priceUnit', ''))}</div>
+          <div class="store-actions">
+            <a class="btn btn-primary" href="tel:{e(phone)}">电话预约看房</a>
+            <a class="btn btn-outline" href="{map_url}" target="_blank" rel="noopener">地图导航</a>
+            <a class="btn btn-outline" href="index.html#locations">返回门店列表</a>
+          </div>
+        </div>
+        <div class="store-highlights">
+          <h2>门店亮点</h2>
+          <ul>{highlights}</ul>
+          <p class="store-note">{e(contact.get('note', ''))}</p>
         </div>
       </div>
-      <div class="store-highlights">
-        <h2>门店亮点</h2>
-        <ul>{highlights}</ul>
-        <p class="store-note">{e(data.get('contact', {}).get('note', ''))}</p>
-      </div>
+      {rooms_block}
     </div>
   </section>
 </main>

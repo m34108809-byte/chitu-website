@@ -197,6 +197,12 @@ function buildForm(){
   // Locations
   let locHTML = d.locations.map((l,i)=>{
     const hi = l.highlights.map((h,j)=>`<div class="row"><input data-bind="locations.${i}.highlights.${j}" value="${esc(h)}"><button class="del" data-del-path="locations.${i}.highlights" data-idx="${j}">×</button></div>`).join('');
+    const rooms = (l.rooms||[]).map((r,j)=>`<div class="item sub-item"><div class="item-head">房型 ${j+1} · ${esc(r.name||'')}</div>`+
+      `<div class="grid2">${field('名称','locations.'+i+'.rooms.'+j+'.name',r.name)}${field('面积','locations.'+i+'.rooms.'+j+'.area',r.area)}</div>`+
+      `<div class="grid2">${field('可容纳','locations.'+i+'.rooms.'+j+'.capacity',r.capacity)}${field('价格','locations.'+i+'.rooms.'+j+'.price',r.price)}</div>`+
+      `<div class="grid2">${field('价格单位','locations.'+i+'.rooms.'+j+'.unit',r.unit)}${field('配图键','locations.'+i+'.rooms.'+j+'.imgKey',r.imgKey)}</div>`+
+      field('配置描述','locations.'+i+'.rooms.'+j+'.config',r.config,true)+
+      `<button class="del" data-del-path="locations.${i}.rooms" data-idx="${j}">删除此房型</button></div>`).join('');
     return `<div class="item"><div class="item-head">门店 ${i+1} · ${esc(l.tag)}</div>`+
       `<div class="grid2">${field('标签','locations.'+i+'.tag',l.tag)}${field('名称','locations.'+i+'.name',l.name)}</div>`+
       field('地址','locations.'+i+'.addr',l.addr)+
@@ -207,6 +213,7 @@ function buildForm(){
       `<div class="grid2">${field('联系人','locations.'+i+'.contact',l.contact)}${field('预约电话','locations.'+i+'.phone',l.phone)}</div>`+
       `<div class="grid2">${field('门店详情页 slug','locations.'+i+'.slug',l.slug)}</div>`+
       `<div class="sub">门店详情页正文（在 store-${esc(l.slug)}.html 顶部展示）</div>`+field('门店详情长描述','locations.'+i+'.detail',l.detail,true)+
+      `<div class="sub">户型与价格（详情页卡片展示，可后续增删真实房型）</div>`+rooms+`<button class="add" data-add-path="locations.${i}.rooms">+ 添加房型</button>`
       `<div class="sub">亮点</div>`+hi+`<button class="add" data-add-path="locations.${i}.highlights">+ 添加亮点</button></div>`;
   }).join('');
   s += section('sec-locations','门店信息','四家门店的地址、价格与亮点；slug 决定门店详情页网址（如 ruyi → store-ruyi.html）',locHTML);
@@ -326,7 +333,7 @@ function bindStructural(){
     };
   });
   document.querySelectorAll('#adminMain [data-add-path]').forEach(b=>{
-    b.onclick=()=>{getByPath(data,b.dataset.addPath).push('');buildForm();};
+    b.onclick=()=>{const p=b.dataset.addPath;const arr=getByPath(data,p);if(p.endsWith('.rooms'))arr.push({name:'新房型',area:'',capacity:'',price:'',unit:'',config:''});else arr.push('');buildForm();};
   });
   document.querySelectorAll('#adminMain [data-del-path]').forEach(b=>{
     b.onclick=()=>{const arr=getByPath(data,b.dataset.delPath);arr.splice(+b.dataset.idx,1);buildForm();};
