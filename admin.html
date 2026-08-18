@@ -490,10 +490,8 @@ document.getElementById('cropSkip').onclick = async ()=>{
 document.getElementById('cropOk').onclick = ()=>{
   const b=cropCtx.box, sc=cropCtx.scale;
   const sx=b.x/sc, sy=b.y/sc, sw=b.w/sc, sh=b.h/sc;
-  // 保留原图分辨率（仅裁剪不缩小），最大边限 2000px 控制文件大小，避免上传后模糊
-  let ow=Math.round(sw), oh=Math.round(sh);
-  const MAXEDGE=2000;
-  if(Math.max(ow,oh)>MAXEDGE){ const r=MAXEDGE/Math.max(ow,oh); ow=Math.round(ow*r); oh=Math.round(oh*r); }
+  // 完全保留原图分辨率：仅裁剪、不做任何缩放，保证高清图质量
+  const ow=Math.round(sw), oh=Math.round(sh);
   const c=document.createElement('canvas'); c.width=ow; c.height=oh;
   const cx=c.getContext('2d');
   cx.drawImage(document.getElementById('cropImg'), sx, sy, sw, sh, 0, 0, ow, oh);
@@ -502,7 +500,7 @@ document.getElementById('cropOk').onclick = ()=>{
     closeCrop();
     try{ await doUpload(ctx.key, blob, ctx.key+'.jpg', ctx.targetPath); }
     catch(e){ toast('上传失败：'+e.message); }
-  }, 'image/jpeg', 0.92);
+  }, 'image/jpeg', 0.95);
 };
 
 async function saveContent(){
