@@ -147,11 +147,12 @@ function section(id,title,desc,inner){
 }
 
 // 通用图片上传控件：预览 + 上传 + 清除，门店与图片管理区块共用
-function imgBlock(key, label, dims){
+function imgBlock(key, label, dims, targetPath){
   const path = (data.images && data.images[key])||'';
   const prev = path ? `<div class="img-prev"><img src="${esc(path)}"></div>` : `<div class="img-prev">未上传</div>`;
   const dimText = dims ? `建议尺寸：<b>${esc(dims)}</b>` : '原图尺寸即可';
-  return `<div class="img-row" data-key="${key}">${prev}<div class="img-info"><div class="k">${esc(label)}</div><div class="p">${path?esc(path):'（暂无图片，官网显示占位框）'}</div><div class="img-dim" data-rec="${esc(dims||'')}">${dimText}</div></div><div class="img-acts"><label class="badge">上传图片<input type="file" accept="image/*" data-upload="${key}"></label>${path?`<button class="badge clear" data-clear="${key}">清除</button>`:''}</div></div>`;
+  const tpAttr = targetPath?` data-target-path="${targetPath}"`:'';
+  return `<div class="img-row" data-key="${key}">${prev}<div class="img-info"><div class="k">${esc(label)}</div><div class="p">${path?esc(path):'（暂无图片，官网显示占位框）'}</div><div class="img-dim" data-rec="${esc(dims||'')}">${dimText}</div></div><div class="img-acts"><label class="badge">上传图片<input type="file" accept="image/*" data-upload="${key}"${tpAttr}></label>${path?`<button class="badge clear" data-clear="${key}"${tpAttr}>清除</button>`:''}</div></div>`;
 }
 
 const IMAGE_FIELDS = [
@@ -205,12 +206,16 @@ function buildForm(){
   // Locations
   let locHTML = d.locations.map((l,i)=>{
     const hi = l.highlights.map((h,j)=>`<div class="row"><input data-bind="locations.${i}.highlights.${j}" value="${esc(h)}"><button class="del" data-del-path="locations.${i}.highlights" data-idx="${j}">×</button></div>`).join('');
-    const rooms = (l.rooms||[]).map((r,j)=>`<div class="item sub-item"><div class="item-head">房型 ${j+1} · ${esc(r.name||'')}</div>`+
+    const rooms = (l.rooms||[]).map((r,j)=>{
+      const roomKey = r.imgKey || ('loc'+(i+1)+'_room'+(j+1));
+      return `<div class="item sub-item"><div class="item-head">房型 ${j+1} · ${esc(r.name||'')}</div>`+
       `<div class="grid2">${field('名称','locations.'+i+'.rooms.'+j+'.name',r.name)}${field('面积','locations.'+i+'.rooms.'+j+'.area',r.area)}</div>`+
       `<div class="grid2">${field('可容纳','locations.'+i+'.rooms.'+j+'.capacity',r.capacity)}${field('价格','locations.'+i+'.rooms.'+j+'.price',r.price)}</div>`+
-      `<div class="grid2">${field('价格单位','locations.'+i+'.rooms.'+j+'.unit',r.unit)}${field('配图键','locations.'+i+'.rooms.'+j+'.imgKey',r.imgKey)}</div>`+
+      `<div class="grid2">${field('价格单位','locations.'+i+'.rooms.'+j+'.unit',r.unit)}${field('房型标签','locations.'+i+'.rooms.'+j+'.tag',r.tag)}</div>`+
       field('配置描述','locations.'+i+'.rooms.'+j+'.config',r.config,true)+
-      `<button class="del" data-del-path="locations.${i}.rooms" data-idx="${j}">删除此房型</button></div>`).join('');
+      `<div class="sub">房型配图（详情页房型卡片展示，建议 960×540）</div>`+imgBlock(roomKey,'房型配图 · '+(r.name||('房型'+(j+1))),'960×540（16:9）','locations.'+i+'.rooms.'+j+'.imgKey')+
+      `<button class="del" data-del-path="locations.${i}.rooms" data-idx="${j}">删除此房型</button></div>`;
+    }).join('');
     const imgKey = l.imgKey || ('loc'+(i+1));
     return `<div class="item"><div class="item-head">门店 ${i+1} · ${esc(l.tag)}</div>`+
       `<div class="grid2">${field('标签','locations.'+i+'.tag',l.tag)}${field('名称','locations.'+i+'.name',l.name)}</div>`+
@@ -349,13 +354,14 @@ function bindImages(){
     inp.addEventListener('change',async ()=>{
       const key=inp.dataset.upload; const file=inp.files[0]; if(!file)return;
       const fld = IMAGE_FIELDS.find(f=>f.key===key);
-      openCropper(file, key, fld?fld.dims:null);
+      openCropper(file, key, fld?fld.dims:null, inp.dataset.targetPath||null);
       inp.value='';
     });
   });
   document.querySelectorAll('#adminMain [data-clear]').forEach(b=>{
     b.onclick=async()=>{
       const key=b.dataset.clear; data.images[key]='';
+      if(b.dataset.targetPath){ const p=b.dataset.targetPath; setByPath(data,p,''); }
       try{ await saveContent(); toast('已清除'); buildForm(); }
       catch(e){ toast('清除失败：'+e.message); }
     };
@@ -363,22 +369,23 @@ function bindImages(){
 }
 
 /* ---------- upload + crop ---------- */
-async function doUpload(key, blob, filename){
+async function doUpload(key, blob, filename, targetPath){
   const res=await fetch('/api/upload',{method:'POST',headers:{'X-Filename':filename,'X-Admin-Password':PASS},body:blob});
   const j=await res.json();
   if(!res.ok)throw new Error(j.error||'上传失败');
   data.images[key]='assets/'+filename;
+  if(targetPath){ setByPath(data, targetPath, key); }
   await saveContent();
   toast('图片已上传并保存'); buildForm();
 }
 
 let cropCtx = null;
-function openCropper(file, key, dims){
+function openCropper(file, key, dims, targetPath){
   const reader = new FileReader();
   reader.onload = e => {
     const im = new Image();
     im.onload = () => {
-      cropCtx = {file, key, dims, natW:im.naturalWidth, natH:im.naturalHeight, imgSrc:e.target.result, box:null, aspect:null, target:null};
+      cropCtx = {file, key, dims, targetPath, natW:im.naturalWidth, natH:im.naturalHeight, imgSrc:e.target.result, box:null, aspect:null, target:null};
       if(dims){
         const m = dims.match(/(\d+)\s*[×xX]\s*(\d+)/);
         if(m){ const tw=+m[1], th=+m[2]; cropCtx.aspect = tw/th; cropCtx.target = [tw,th]; }
@@ -477,7 +484,7 @@ document.getElementById('cropSkip').onclick = async ()=>{
   const ext = f.name.includes('.') ? f.name.slice(f.name.lastIndexOf('.')) : '.jpg';
   const ctx = cropCtx;
   closeCrop();
-  try{ await doUpload(ctx.key, f, ctx.key+ext); }
+  try{ await doUpload(ctx.key, f, ctx.key+ext, ctx.targetPath); }
   catch(e){ toast('上传失败：'+e.message); }
 };
 document.getElementById('cropOk').onclick = ()=>{
@@ -490,7 +497,7 @@ document.getElementById('cropOk').onclick = ()=>{
   c.toBlob(async blob=>{
     const ctx=cropCtx;
     closeCrop();
-    try{ await doUpload(ctx.key, blob, ctx.key+'.jpg'); }
+    try{ await doUpload(ctx.key, blob, ctx.key+'.jpg', ctx.targetPath); }
     catch(e){ toast('上传失败：'+e.message); }
   }, 'image/jpeg', 0.92);
 };
