@@ -146,6 +146,14 @@ function section(id,title,desc,inner){
   return `<section class="card" id="${id}"><h2>${title}</h2>${desc?`<p class="hint">${desc}</p>`:''}${inner}</section>`;
 }
 
+// 通用图片上传控件：预览 + 上传 + 清除，门店与图片管理区块共用
+function imgBlock(key, label, dims){
+  const path = (data.images && data.images[key])||'';
+  const prev = path ? `<div class="img-prev"><img src="${esc(path)}"></div>` : `<div class="img-prev">未上传</div>`;
+  const dimText = dims ? `建议尺寸：<b>${esc(dims)}</b>` : '原图尺寸即可';
+  return `<div class="img-row" data-key="${key}">${prev}<div class="img-info"><div class="k">${esc(label)}</div><div class="p">${path?esc(path):'（暂无图片，官网显示占位框）'}</div><div class="img-dim" data-rec="${esc(dims||'')}">${dimText}</div></div><div class="img-acts"><label class="badge">上传图片<input type="file" accept="image/*" data-upload="${key}"></label>${path?`<button class="badge clear" data-clear="${key}">清除</button>`:''}</div></div>`;
+}
+
 const IMAGE_FIELDS = [
   {key:'hero',label:'首屏主视觉（右侧大图）',dims:'800×600（4:3）'},
   {key:'bg1',label:'首屏背景轮播图 1',dims:'1920×1080（16:9）'},
@@ -203,8 +211,10 @@ function buildForm(){
       `<div class="grid2">${field('价格单位','locations.'+i+'.rooms.'+j+'.unit',r.unit)}${field('配图键','locations.'+i+'.rooms.'+j+'.imgKey',r.imgKey)}</div>`+
       field('配置描述','locations.'+i+'.rooms.'+j+'.config',r.config,true)+
       `<button class="del" data-del-path="locations.${i}.rooms" data-idx="${j}">删除此房型</button></div>`).join('');
+    const imgKey = l.imgKey || ('loc'+(i+1));
     return `<div class="item"><div class="item-head">门店 ${i+1} · ${esc(l.tag)}</div>`+
       `<div class="grid2">${field('标签','locations.'+i+'.tag',l.tag)}${field('名称','locations.'+i+'.name',l.name)}</div>`+
+      `<div class="sub">门店封面图（官网门店卡片与详情页展示）</div>`+imgBlock(imgKey,'门店封面图 · '+esc(l.tag),'960×540（16:9）')+
       field('地址','locations.'+i+'.addr',l.addr)+
       field('定位/交通描述','locations.'+i+'.position',l.position || l.metro)+
       field('地铁信息','locations.'+i+'.metro',l.metro)+
@@ -282,13 +292,7 @@ function buildForm(){
   navItems.push(['sec-footer','页脚']);
 
   // Images
-  let imgInner = IMAGE_FIELDS.map(im=>{
-    const path = d.images[im.key]||'';
-    const prev = path ? `<div class="img-prev"><img src="${esc(path)}"></div>` : `<div class="img-prev">未上传</div>`;
-    const dimId = 'dim-'+im.key;
-    const dimText = im.dims ? `建议尺寸：<b>${esc(im.dims)}</b>` : '原图尺寸即可';
-    return `<div class="img-row" data-key="${im.key}">${prev}<div class="img-info"><div class="k">${esc(im.label)}</div><div class="p">${path?esc(path):'（暂无图片，占位框显示在官网）'}</div><div class="img-dim" id="${dimId}" data-rec="${esc(im.dims||'')}">${dimText}</div></div><div class="img-acts"><label class="badge">上传图片<input type="file" accept="image/*" data-upload="${im.key}"></label>${path?`<button class="badge clear" data-clear="${im.key}">清除</button>`:''}</div></div>`;
-  }).join('');
+  let imgInner = IMAGE_FIELDS.map(im=>imgBlock(im.key, im.label, im.dims)).join('');
   s += section('sec-images','图片管理','上传/替换官网各位置图片；可裁剪到建议尺寸，保存后立即生效',imgInner);
   navItems.push(['sec-images','图片']);
 
