@@ -213,7 +213,7 @@ function buildForm(){
       `<div class="grid2">${field('联系人','locations.'+i+'.contact',l.contact)}${field('预约电话','locations.'+i+'.phone',l.phone)}</div>`+
       `<div class="grid2">${field('门店详情页 slug','locations.'+i+'.slug',l.slug)}</div>`+
       `<div class="sub">门店详情页正文（在 store-${esc(l.slug)}.html 顶部展示）</div>`+field('门店详情长描述','locations.'+i+'.detail',l.detail,true)+
-      `<div class="sub">户型与价格（详情页卡片展示，可后续增删真实房型）</div>`+rooms+`<button class="add" data-add-path="locations.${i}.rooms">+ 添加房型</button>`
+      `<div class="sub">户型与价格（详情页卡片展示，可后续增删真实房型）</div>`+rooms+`<button class="add" data-add-path="locations.${i}.rooms">+ 添加房型</button>`+
       `<div class="sub">亮点</div>`+hi+`<button class="add" data-add-path="locations.${i}.highlights">+ 添加亮点</button></div>`;
   }).join('');
   s += section('sec-locations','门店信息','四家门店的地址、价格与亮点；slug 决定门店详情页网址（如 ruyi → store-ruyi.html）',locHTML);
