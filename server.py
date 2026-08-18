@@ -63,6 +63,35 @@ ADMIN_PASS = os.environ.get('CHITU_ADMIN_PASS', 'chitu2026')
 ALLOWED_EXT = {'.jpg', '.jpeg', '.png', '.webp', '.gif', '.svg', '.avif'}
 SAFE_NAME = re.compile(r'^[A-Za-z0-9_.-]+$')
 
+# 全局灯箱（lightbox）：点击前台任意内容图，全屏按原图分辨率查看。
+# 通过事件委托生效，兼容首页 JS 动态渲染的图（带 data-cls）与门店详情页静态图。
+_LIGHTBOX_HTML = (
+    '<style>'
+    '.lb-overlay{position:fixed;inset:0;background:rgba(8,20,15,.92);display:none;'
+    'align-items:center;justify-content:center;z-index:99999;cursor:zoom-out;padding:20px}'
+    '.lb-overlay.open{display:flex}'
+    '.lb-overlay img{max-width:96vw;max-height:96vh;object-fit:contain;'
+    'box-shadow:0 12px 60px rgba(0,0,0,.6);background:#fff}'
+    '.lb-hint{position:fixed;left:0;right:0;bottom:16px;text-align:center;color:#fff;'
+    'font-size:13px;opacity:.65;z-index:100000;pointer-events:none}'
+    '</style>'
+    '<div class="lb-overlay" id="lbOverlay"><img id="lbImg" alt=""><div class="lb-hint">点击任意处关闭 · 原图分辨率</div></div>'
+    '<script>'
+    '(function(){'
+    "var SEL='[data-cls], .room-thumb img, .store-hero-img';"
+    "document.addEventListener('click',function(e){"
+    'var img=e.target.closest(SEL);'
+    "if(!img||img.closest('.lb-overlay'))return;"
+    'e.preventDefault();'
+    "var ov=document.getElementById('lbOverlay');"
+    "document.getElementById('lbImg').src=img.currentSrc||img.src;"
+    "ov.classList.add('open');"
+    '});'
+    "document.getElementById('lbOverlay').addEventListener('click',function(){this.classList.remove('open');});"
+    '})();'
+    '</script>'
+)
+
 
 class Handler(SimpleHTTPRequestHandler):
     server_version = 'ChituSite/1.1'
@@ -80,6 +109,14 @@ class Handler(SimpleHTTPRequestHandler):
     def _auth(self):
         return self.headers.get('X-Admin-Password') == ADMIN_PASS
 
+    def _inject(self, html):
+        """在 HTML 末尾注入全局灯箱资源（仅作用于前台页面）。"""
+        if isinstance(html, bytes):
+            html = html.decode('utf-8')
+        if '</body>' in html:
+            return html.replace('</body>', _LIGHTBOX_HTML + '</body>', 1)
+        return html + _LIGHTBOX_HTML
+
     def _serve_file(self, path, ctype):
         try:
             with open(path, 'rb') as f:
@@ -96,6 +133,14 @@ class Handler(SimpleHTTPRequestHandler):
         p = urlparse(self.path).path
         if p in ('/admin', '/admin/'):
             return self._serve_file(os.path.join(ROOT, 'admin.html'), 'text/html; charset=utf-8')
+        if p in ('/', '/index.html'):
+            idx = os.path.join(ROOT, 'index.html')
+            try:
+                with open(idx, 'r', encoding='utf-8') as f:
+                    html = f.read()
+            except OSError:
+                return self._send(404, json.dumps({'error': 'not found'}))
+            return self._send(200, self._inject(html), 'text/html; charset=utf-8')
         if p == '/api/content':
             try:
                 with open(DATA, 'rb') as f:
@@ -121,7 +166,7 @@ class Handler(SimpleHTTPRequestHandler):
             if not item:
                 return self._send(404, json.dumps({'error': 'not found'}))
             html = build.render_store_page(item, d) if kind == 'store' else build.render_subsidy_page(item, d)
-            return self._send(200, html, 'text/html; charset=utf-8')
+            return self._send(200, self._inject(html), 'text/html; charset=utf-8')
         # 持久化 assets（上传的图片在 DATA_DIR/assets）优先于源码 assets
         if p.startswith('/assets/') and DATA_DIR != ROOT:
             cand = os.path.join(DATA_DIR, p.lstrip('/'))
