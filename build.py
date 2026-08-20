@@ -15,6 +15,10 @@ from urllib.parse import quote
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DIST = os.path.join(ROOT, "dist")
+# 站点正式域名（用于 sitemap.xml / robots.txt 的绝对地址）。
+# 部署到最终域名后，如需更换可改这里，或用环境变量覆盖：
+#   SITE_BASE=https://你的域名/ python3 build.py
+SITE_BASE = os.environ.get("SITE_BASE", "https://keyteam.work/")
 
 
 def e(s):
@@ -74,13 +78,43 @@ def render_store_page(loc, data):
         f'<a href="{e(l.get("href", "#"))}">{e(l.get("text", ""))}</a>' for l in footer.get('links', []))
     footer_contacts = ''.join(f'<p>{e(c)}</p>' for c in footer.get('contacts', []))
     phone = loc.get('phone', '')
+    name = loc.get('name', '')
+    og_image = ipath if ipath else 'assets/logo.png'
+    jsonld = json.dumps({
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": name,
+        "image": og_image,
+        "url": f"store-{loc.get('slug')}.html",
+        "telephone": f"+86-{phone}" if phone else "",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": addr,
+            "addressLocality": "广州市",
+            "addressRegion": "广东省",
+            "addressCountry": "CN"
+        },
+        "description": f"赤兔文创 {name}，位于{addr}，提供灵活工位、可注册地址与工商财税企业服务。",
+        "areaServed": "广州海珠区"
+    }, ensure_ascii=False)
     return f'''<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{e(loc.get('name', ''))} · 赤兔文创</title>
-<meta name="description" content="{e(addr)}">
+<title>{e(name)} · 赤兔文创 | 广州海珠联合办公</title>
+<meta name="description" content="{e(name)}位于{e(addr)}，广州海珠区一价全包创享办公社区，提供灵活工位、可注册地址、工商财税企业服务一条龙。">
+<meta name="keywords" content="广州联合办公,海珠联合办公,广州办公室租赁,海珠写字楼,可注册地址,工商财税,{e(name)}">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="store-{e(loc.get('slug',''))}.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="{e(name)} · 赤兔文创">
+<meta property="og:description" content="{e(name)}位于{e(addr)}，一价全包创享办公社区。">
+<meta property="og:url" content="store-{e(loc.get('slug',''))}.html">
+<meta property="og:image" content="{e(og_image)}">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{jsonld}</script>
 <link rel="stylesheet" href="styles.css">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -193,13 +227,40 @@ def render_subsidy_page(sub, data):
         f'<a href="{e(l.get("href", "#"))}">{e(l.get("text", ""))}</a>' for l in footer.get('links', []))
     footer_contacts = ''.join(f'<p>{e(c)}</p>' for c in footer.get('contacts', []))
     phone = (brand.get('wechat') or contact.get('btnHref', '').replace('tel:', '') or '18903005927')
+    name = sub.get('name', '')
+    og_image = ipath if ipath else 'assets/logo.png'
+    jsonld = json.dumps({
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": name,
+        "image": og_image,
+        "url": f"subsidy-{sub.get('slug')}.html",
+        "provider": {
+            "@type": "Organization",
+            "name": brand.get('name', '赤兔文创'),
+            "telephone": "+86-18903005927"
+        },
+        "areaServed": "广州海珠区",
+        "description": (sub.get('summary') or name)
+    }, ensure_ascii=False)
     return f'''<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{e(sub.get('name', ''))} · 企业补贴 · 赤兔文创</title>
-<meta name="description" content="{e(sub.get('summary', ''))}">
+<title>{e(sub.get('name', ''))} · 企业补贴 · 赤兔文创 | 广州海珠</title>
+<meta name="description" content="{e(sub.get('summary', '') or sub.get('name', ''))}，广州海珠区创业补贴申办服务，赤兔文创提供工商财税与企业服务一条龙协助。">
+<meta name="keywords" content="广州创业补贴,海珠创业补贴,一次性创业补贴,创业租金补贴,工商财税,赤兔文创">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="subsidy-{e(sub.get('slug',''))}.html">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:title" content="{e(sub.get('name', ''))} · 企业补贴 · 赤兔文创">
+<meta property="og:description" content="{e(sub.get('summary', '') or sub.get('name', ''))}，广州海珠区创业补贴申办服务。">
+<meta property="og:url" content="subsidy-{e(sub.get('slug',''))}.html">
+<meta property="og:image" content="{e(og_image)}">
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">{jsonld}</script>
 <link rel="stylesheet" href="styles.css">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
@@ -334,10 +395,30 @@ def main():
             f.write(page)
         subsidy_count += 1
 
+    # 生成 sitemap.xml 与 robots.txt（绝对地址基于 SITE_BASE）
+    all_pages = ["index.html"]
+    for loc in data.get('locations', []):
+        if loc.get('slug'):
+            all_pages.append(f"store-{loc['slug']}.html")
+    for sub in data.get('subsidies', []):
+        if sub.get('slug'):
+            all_pages.append(f"subsidy-{sub['slug']}.html")
+    sm = ['<?xml version="1.0" encoding="UTF-8"?>',
+          '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    for u in all_pages:
+        sm.append(f'  <url><loc>{SITE_BASE}{u}</loc>'
+                  f'<changefreq>weekly</changefreq><priority>0.8</priority></url>')
+    sm.append('</urlset>')
+    with open(os.path.join(DIST, 'sitemap.xml'), 'w', encoding='utf-8') as f:
+        f.write('\n'.join(sm))
+    with open(os.path.join(DIST, 'robots.txt'), 'w', encoding='utf-8') as f:
+        f.write(f"User-agent: *\nAllow: /\nSitemap: {SITE_BASE}sitemap.xml\n")
+
     print("✅ 构建完成 ->", DIST)
     print("   内联数据大小:", os.path.getsize(os.path.join(DIST, "content.js")), "bytes")
     print("   assets 文件数:", len(os.listdir(os.path.join(DIST, "assets"))))
     print("   门店详情页:", store_count, " | 企业补贴页:", subsidy_count)
+    print("   sitemap.xml / robots.txt 已生成 (SITE_BASE =", SITE_BASE, ")")
 
 
 if __name__ == "__main__":
