@@ -33,7 +33,8 @@ if ROOT not in sys.path:
 import build
 
 # 数据持久化目录：云端用持久卷（如 /data），本地默认与代码同目录
-DATA_DIR = os.environ.get('CHITU_DATA_DIR')
+# 优先级：CHITU_DATA_DIR > Railway 挂卷时自动注入的 RAILWAY_VOLUME_MOUNT_PATH
+DATA_DIR = os.environ.get('CHITU_DATA_DIR') or os.environ.get('RAILWAY_VOLUME_MOUNT_PATH')
 if DATA_DIR:
     os.makedirs(os.path.join(DATA_DIR, 'assets'), exist_ok=True)
     # 首次初始化：从源码拷贝初始 data.json 与 assets（仅在目标缺失时）
@@ -248,7 +249,7 @@ class Handler(SimpleHTTPRequestHandler):
             return self._send(200, self._inject(html), 'text/html; charset=utf-8')
         if p == '/api/status':
             # 后台用此接口判断是否启用了持久化（CHITU_DATA_DIR 指向持久卷）
-            persisted = bool(os.environ.get('CHITU_DATA_DIR'))
+            persisted = bool(DATA_DIR != ROOT)
             return self._send(200, json.dumps({'persisted': persisted}), 'application/json; charset=utf-8')
         if p == '/api/content':
             try:
