@@ -1,1 +1,985 @@
-{"brand":{"name":"赤兔文创 · 创享办公社区","wechat":"18903005927"},"hero":{"title":"赤兔文创 · 不止办公 更是企业成长生态引擎","subtitle":"精装交付· 拎包入驻 · 360°成长引擎","lead":"面向初创企业、小微企业、自由职业者与商务洽谈客户，提供办公空间、工商财税、外资签证代办等一条龙企业服务。海珠区四店网络，就近选择。","cta1":{"text":"查看门店","href":"#locations"},"cta2":{"text":"电话咨询","href":"tel:18903005927"},"meta":[{"pre":"","bold":"工位/茶室/接待区/前台/公区/会议室/咖啡吧","post":"齐全"},{"pre":"","bold":"24小时","post":"独立空调与高速网络"},{"pre":"可","bold":"注册公司","post":""}],"bgImages":[{"imgKey":"bg1","label":"首屏背景轮播图 1"},{"imgKey":"bg2","label":"首屏背景轮播图 2"},{"imgKey":"bg3","label":"首屏背景轮播图 3"}]},"featuresHeader":{"title":"为什么选择赤兔文创","sub":"把繁琐留给赤兔，把专注还给创业"},"features":[{"icon":"layers","title":"精装交付","desc":"24H空调、物业、千兆网络、保洁，无隐形消费，预算更清晰。"},{"icon":"box","title":"拎包入驻","desc":"家具齐全、装修到位，签约即可办公，可注册公司。"},{"icon":"users","title":"共享空间","desc":"会议室、茶室、茶水间、打印、前台代收快递，配套齐全，降低运营成本。"},{"icon":"clock","title":"24小时自由办公","desc":"独立空调与高速网络全天候可用，弹性匹配你的工作节奏。"},{"icon":"shield","title":"360°成长引擎","desc":"工商财税、政策补贴、融资对接扶持，陪伴企业从0到1。"},{"icon":"map-pin","title":"多店网络","desc":"海珠区 4 家场地（晓港 / 客村 / 鹭江 / 宝岗）就近选择，灵活换址。"}],"locationsHeader":{"title":"海珠区四店可选","sub":"总有一家在你身边"},"locations":[{"imgKey":"loc1","tag":"晓港","name":"赤兔如意港","addr":"海珠区昌岗东路 271 号 5、6 层","position":"8号线晓港站 A 出口，步行 1 分钟","metro":"8号线晓港站 A 出口，步行 1 分钟","priceLabel":"独立办公室","price":"¥980","priceUnit":"/月起","highlights":["新中式隔音茶室，配功夫茶具、投屏白板","超大会议室（20-70人）配 LED 屏 / 音响 / 麦克风","1 小时起租、扫码自助入场"],"contact":"李先生","phone":"18102220465","slug":"ruyi","detail":"赤兔如意港坐落于海珠区昌岗东路 271 号 5、6 层，交通便捷（8号线晓港站 A 出口，步行 1 分钟），是赤兔文创旗下创享办公社区之一。空间精装交付、家具齐全，签约即可办公并可注册公司；配备会议室、茶室、共享公区与高速网络，专属顾问提供工商财税、政策补贴、企业服务一条龙支持。","rooms":[{"name":"开放工位","area":"约12㎡","capacity":"1人","price":"¥500","unit":"/人·月起","config":"独立办公桌+人体工学椅，共享会议室每月赠送2小时，享公共休闲区与免费茶饮。"},{"name":"独立办公室","area":"约25㎡","capacity":"3-4人","price":"¥980","unit":"/间·月起","config":"独立门锁可注册公司，含工位桌椅与文件柜，适合初创团队拎包入驻。"}]},{"imgKey":"loc2","tag":"客村","name":"赤兔数字港","addr":"海珠区新港中路 302 号农业银行楼上","position":"3/8号线客村站 D 出口，步行 5 分钟","metro":"3/8号线客村站 D 出口，步行 5 分钟","priceLabel":"4人办公室","price":"¥2800","priceUnit":"/月起","highlights":["户型最多（4-10人及 113㎡ 大空间）","大会议室现代风 / 电竞风，配白板 / 麦克风 / 射笔","「假装上班」体验工位约 40 元/天"],"contact":"郭先生","phone":"18102586047","slug":"kecun","detail":"赤兔数字港坐落于海珠区新港中路 302 号农业银行楼上，交通便捷（3/8号线客村站 D 出口，步行 5 分钟），是赤兔文创旗下创享办公社区之一。空间精装交付、家具齐全，签约即可办公并可注册公司；配备会议室、茶室、共享公区与高速网络，专属顾问提供工商财税、政策补贴、企业服务一条龙支持。","rooms":[{"name":"开放工位","area":"约12㎡","capacity":"1人","price":"¥600","unit":"/人·月起","config":"临窗工位，独立办公桌+人体工学椅，享公共休闲区与免费茶饮。"},{"name":"4人办公室","area":"约30㎡","capacity":"4人","price":"¥2800","unit":"/间·月起","config":"独立门锁可注册公司，含4组工位桌椅与文件柜，适合小团队。"}]},{"imgKey":"loc3","tag":"鹭江","name":"赤兔联合办公（鹭江）","addr":"下渡路 64 号 2 楼","position":"8号线鹭江站 D 出口，约 200 米","metro":"8号线鹭江站 D 出口，约 200 米","priceLabel":"独立办公室","price":"¥800","priceUnit":"/月起","highlights":["交通便利，步行 2 分钟即达","「假装上班」工位长租约 800 元/月","免费茶水 / 休息区 / 物品寄存 / 智能门禁"],"contact":"张小姐","phone":"13378682992","slug":"lujiang","detail":"赤兔联合办公（鹭江）坐落于下渡路 64 号 2 楼，交通便捷（8号线鹭江站 D 出口，约 200 米），是赤兔文创旗下创享办公社区之一。空间精装交付、家具齐全，签约即可办公并可注册公司；配备会议室、茶室、共享公区与高速网络，专属顾问提供工商财税、政策补贴、企业服务一条龙支持。","rooms":[{"name":"开放工位","area":"约12㎡","capacity":"1人","price":"¥500","unit":"/人·月起","config":"独立办公桌+人体工学椅，共享会议室每月赠送2小时，享公共休闲区。"},{"name":"独立办公室","area":"约25㎡","capacity":"3-4人","price":"¥980","unit":"/间·月起","config":"独立门锁可注册公司，含工位桌椅与文件柜，近鹭江站。"}]},{"imgKey":"loc4","tag":"宝岗","name":"企程创意空间","addr":"宝岗路 248 号宝岗大厦 2 楼","position":"8号线凤凰新村站 A 出口，步行 10 分钟","metro":"8号线凤凰新村站 A 出口，步行 10 分钟","priceLabel":"单人间","price":"¥800","priceUnit":"/月起","highlights":["四店中价格最低，性价比最高","工商财税服务：可注册、解锁工商异常、各类许可证","临近江南西商圈，独立办公室"],"contact":"黄先生","phone":"19002093728","slug":"baogang","detail":"企程创意空间坐落于宝岗路 248 号宝岗大厦 2 楼，交通便捷（8号线凤凰新村站 A 出口，步行 10 分钟），是赤兔文创旗下创享办公社区之一。空间精装交付、家具齐全，签约即可办公并可注册公司；配备会议室、茶室、共享公区与高速网络，专属顾问提供工商财税、政策补贴、企业服务一条龙支持。","rooms":[{"name":"开放工位","area":"约12㎡","capacity":"1人","price":"¥500","unit":"/人·月起","config":"独立办公桌+人体工学椅，共享会议室每月赠送2小时，享公共休闲区与免费茶饮。"}]}],"galleryHeader":{"title":"环境实景","sub":"舒适的空间，明亮通透的办公氛围"},"gallery":[{"imgKey":"g1","label":"开放工位区","span":true},{"imgKey":"g2","label":"独立办公室","span":false},{"imgKey":"g3","label":"会议室","span":false},{"imgKey":"g4","label":"茶室包间","span":false},{"imgKey":"g5","label":"公共休闲区 / 前台","span":true},{"imgKey":"g6","label":"路演 / 活动区","span":false}],"servicesHeader":{"title":"空间与服务","sub":"不只是办公位，更是企业发展的后盾"},"services":[{"icon":"desk","title":"灵活工位","desc":"体验工位约 40 元/天，长租工位约 800 元/人·月起，适合自由职业者、考研群体及初创团队。"},{"icon":"office","title":"独立办公室","desc":"1 人至 113㎡ 多种户型，家具齐全、可注册公司，精装交付无隐形消费。"},{"icon":"meeting","title":"会议室","desc":"小会议室（4-10人）¥99/小时，中会议室（10-15人）¥129/小时，大会议室（20-70人）¥159/小时，均配白板、投影或 LED 屏。"},{"icon":"tea","title":"茶室包间","desc":"¥58/小时，环境安静优雅，配功夫茶具、免费茶叶，适合商务洽谈。"},{"icon":"doc","title":"工商财税服务","desc":"可注册公司、解锁工商异常、办理进出口 / 食品 / 医疗 / 劳务派遣等各类许可证。"},{"icon":"money","title":"政策与融资对接","desc":"政策补贴申报、融资对接扶持，助力企业降低启动成本、加速成长。"},{"icon":"visa","title":"外资签证与商务服务","desc":"外资公司注册、外商代表处设立，外国人工作签证 / 商务签证代办、居留许可延期与变更，助力外籍人才与外资企业落地广州。"},{"icon":"doc","title":"商业资源对接&沙龙","desc":"每个月定期不定期沙龙，促进资源整合交流，汇聚粤港澳大湾区商会成员，上千家企业齐聚赤兔进行商业交流活动，为您的商业道路铺路。"}],"faqHeader":{"title":"常见问题","sub":"租房前你可能想知道这些"},"faqs":[{"q":"入驻 / 签约流程是怎样的？","a":"看房 → 签约（可注册公司）→ 拎包入驻。四店可就近选择，具体房源以实时空房为准。"},{"q":"租金包含哪些费用？","a":"一价全包：水费、空调安装、物业、网络、保洁全免，无隐形消费。部分增值服务（如会议室、茶室按时段计费）另行结算。"},{"q":"可以开发票吗？","a":"可开租金发票，普票约 6% / 专票约 10%（以各店实际政策为准）。"},{"q":"是否需要押金？","a":"具体押金方式以各店签约政策为准，行业常见为押二付一，建议看房时与门店确认。"},{"q":"能否注册公司？","a":"可以。赤兔文创提供注册地址及工商财税服务。均是正规产权证，在街道办理的备案，可以办理更可办理进出口、食品、医疗、劳务派遣，可办理危化证，出版物许可证，医疗器械等。"},{"q":"配套有哪些？","a":"茶室，会议室，面试室，户外花园，智慧门锁，接待区，洽谈室，茶水吧，咖啡吧。"}],"contact":{"title":"现在就找到适合你的办公空间","sub":"加微信获取实景图、空房照片和最新优惠","btnText":"微信 / 电话：18903005927","btnHref":"tel:18903005927","note":"统一微信号，各店具体地址与房源可加微信后由专属顾问详细介绍。"},"footer":{"brand":"企业生态引擎 · 拎包入驻 · 创享办公社区","links":[{"text":"品牌介绍","href":"#about"},{"text":"门店信息","href":"#locations"},{"text":"空间服务","href":"#services"},{"text":"常见问题","href":"#faq"},{"text":"企业补贴","href":"#subsidy"}],"contactTitle":"联系我们","contacts":["统一微信：18903005927","服务范围：广州海珠区（晓港 / 客村 / 鹭江 / 宝岗）"],"copy":"© 2017 赤兔文创 · 广州红杉云科技有限公司旗下品牌"},"images":{"hero":"assets/hero.jpg","banner":"assets/banner.jpg","bg1":"assets/bg1.jpg","bg2":"assets/bg2.jpg","bg3":"assets/bg3.jpg","loc1":"assets/loc1.jpg","loc2":"assets/loc2.jpg","loc3":"assets/loc3.jpg","loc4":"assets/loc4.jpg","g1":"assets/g1.jpg","g2":"assets/g2.jpg","g3":"assets/g3.jpg","g4":"assets/g4.jpg","g5":"assets/g5.jpg","g6":"assets/g6.jpg","sub1":"assets/sub1.jpg","sub2":"assets/sub2.jpg"},"subsidyHeader":{"title":"企业补贴","sub":"政府创业与就业补贴申报辅导，赤兔协助整理材料，助你合规申领、降低成本。"},"subsidies":[{"tag":"创业补贴","name":"一次性创业补贴","slug":"startup-grant","imgKey":"sub1","summary":"面向符合条件的新注册初创企业法定代表人，给予一次性 10000 元创业资助，缓解创业初期成本压力，无需返还。","policy":"政策依据：《广东省就业创业补贴补助申请办理指导清单（2026年修订版）》（粤人社规〔2026〕20号），由广东省人力资源和社会保障厅、广东省财政厅印发，2026年6月17日起实施，有效期5年。线上申办依托「广东省就业一体化信息系统」（广东公共就业服务云平台）。","object":"在我省创办初创企业、担任法定代表人/经营者等的「创业重点扶持对象」。","objectDetail":"创业重点扶持对象（未达法定退休年龄、未享受基本养老保险待遇，符合以下任一类即可）：\n1. 普通高等学校、职业学校、技工院校学生（在校及毕业5年内）和毕业5年内的出国（境）留学回国人员；\n2. 退役军人；\n3. 在本省登记的失业人员；\n4. 在本省认定的就业困难人员；\n5. 返乡创业人员（分三类）；\n6. 45周岁以下的港澳台居民。","standard":"一次性 10000 元。","standardDetail":"同一人员及同一创业主体只能享受一次本项补贴，无需返还。","conditions":["初创主体：在我省登记注册3年内的小微企业、个体工商户、社会组织、律师事务所、会计师事务所、农民专业合作社，您担任法定代表人/经营者/负责人等职务。","注册登记满12个月，且申请时未被市场监管部门列入「经营异常名录」。","申请补贴前连续6个月正常经营，且有不少于1名员工（不含创业者本人）按规定缴纳社会保险费。","注意：变更过法定代表人的创业主体不能申请；申请人若在非本人名下用人单位参保企业职工养老保险，将不予通过。"],"materials":["符合条件人员基本身份类证明。","创业重点扶持对象佐证材料（如毕业生提供毕业证书、留学回国人员提供学历学位认证书、退役军人提供退役证/转业证、返乡人员提供户口簿或《就业创业证》/社保缴费记录等）。","企业近6个月正常经营的佐证材料：提供资金流水，以及工资支付凭证、财务报表、纳税记录、经营许可证、合同与订单记录等至少一项。","小微企业佐证材料：企业填写《调查单位基本情况》（表号101-1表）；未纳入填报范围的填写《企业划型承诺书》。"],"process":["备齐营业执照与身份证明、重点扶持对象佐证、正常经营佐证等材料。","登录广东公共就业服务云平台（ggfw.hrss.gd.gov.cn）在线申请，或向登记注册地人社部门/公共就业服务机构提交。","区公共就业服务机构与区人社局受理、审核。","审核通过名单公示。","补贴资金拨付至申请人银行账户。"],"agency":"受理机构：创业主体登记注册地所在区人力资源社会保障部门 / 公共就业服务机构。\n线上申办：广东公共就业服务云平台 https://ggfw.hrss.gd.gov.cn/employment/internet/portal/#/home\n申请时限：须于创业主体登记注册之日起3年内提出申请（租金补贴最后一次不超过注册之日起4年）。","company":["提供「可注册公司」的合规办公地址——租赁合同与注册登记地一致，直接满足补贴对场地的硬性要求。","工商财税一条龙：营业执照办理、代理记账、纳税记录出具，帮你备齐「正常经营佐证材料」。","园区专属顾问协助整理、代填申报材料，对接街道与人社部门，提高通过率。","入驻即可用，最快当天拿地址，不耽误「注册登记满12个月」的起算。","温馨提示：补贴由人社部门审核发放，最终以登记注册地人社部门解释为准；赤兔提供地址与申报协助服务，不承诺补贴必然获批。"],"highlights":["一次性发放，无需返还","可与租金补贴、创业带动就业补贴叠加","赤兔协助整理申报材料"]},{"tag":"租金补贴","name":"创业租金补贴","slug":"rent-subsidy","imgKey":"sub2","summary":"对租赁非本人名下场地经营、符合条件的初创企业，按实际租金给予补贴，珠三角地区每年最高6000元，最长3年。","policy":"政策依据：《广东省就业创业补贴补助申请办理指导清单（2026年修订版）》（粤人社规〔2026〕20号），由广东省人力资源和社会保障厅、广东省财政厅印发，2026年6月17日起实施，有效期5年。线上申办依托「广东省就业一体化信息系统」（广东公共就业服务云平台）。","object":"租赁非本人名下场地经营、属于「创业重点扶持对象」的初创企业法定代表人/经营者。","objectDetail":"创业重点扶持对象（未达法定退休年龄、未享受基本养老保险待遇，符合以下任一类即可）：\n1. 普通高等学校、职业学校、技工院校学生（在校及毕业5年内）和毕业5年内的出国（境）留学回国人员；\n2. 退役军人；\n3. 在本省登记的失业人员；\n4. 在本省认定的就业困难人员；\n5. 返乡创业人员（分三类）；\n6. 45周岁以下的港澳台居民。","standard":"珠三角地区每年最高6000元，最长3年（广州属珠三角地区）。","standardDetail":"实际租金低于补贴标准的，按实际租金补贴；当年度累计已付租金超过上限的，按当年度最高标准补贴。","conditions":["初创主体：在我省登记注册3年内的小微企业、个体工商户、社会组织、律所、会计师事务所、农民专业合作社，您担任法定代表人/经营者等，且属于创业重点扶持对象。","注册登记满12个月，申请时未被列入「经营异常名录」。","申请补贴前连续6个月正常经营，且有不少于1名员工（不含本人）按规定缴纳社保。","租赁非本人名下场地用于经营，且租赁地址与注册登记地一致。","所申请补贴的租金发生在创业主体登记注册之日起3年内。","注意：变更过法定代表人的不能申请；申请人若在非本人名下用人单位参保养老，不予通过。"],"materials":["符合条件人员基本身份类证明。","创业重点扶持对象佐证材料（同一次性创业补贴）。","企业近6个月正常经营的佐证材料（资金流水 + 工资/财报/纳税等至少一项）。","小微企业佐证材料（《调查单位基本情况》或《企业划型承诺书》）。","场地产权证明、租赁合同及租金发票（首次申请须完整提交；再次申请仅需经营佐证 + 租金发票 + 变动材料）。"],"process":["签订合规租赁合同（地址与注册登记地一致）并取得租金发票。","登录广东公共就业服务云平台在线申请，或向登记注册地人社部门提交。","区公共就业服务机构与区人社局受理、审核、公示。","按年度拨付补贴（首次须于注册之日起3年内提出，最后一次不超过注册之日起4年）。"],"agency":"受理机构：创业主体登记注册地所在区人力资源社会保障部门 / 公共就业服务机构。\n线上申办：广东公共就业服务云平台 https://ggfw.hrss.gd.gov.cn/employment/internet/portal/#/home\n申请时限：须于创业主体登记注册之日起3年内提出申请（租金补贴最后一次不超过注册之日起4年）。","company":["提供「可注册公司」的合规办公地址，租赁合同与注册登记地一致，正是租金补贴的核心前提。","入驻即签正规租赁合同、可开具租金发票，直接满足「场地产权证明、租赁合同及租金发票」材料要求。","工商财税一条龙：营业执照、代理记账、纳税记录，备齐「正常经营佐证」。","专属顾问协助整理申报材料、对接街道/人社部门。","一价全包、灵活工位，租金可控，补贴按实际租金核拨更划算。","温馨提示：补贴由人社部门审核发放，最终以登记注册地人社部门解释为准；赤兔提供地址、合同、发票及申报协助，不承诺补贴必然获批。"],"highlights":["按实际租金比例补贴","最长补贴3年","需入驻合规场地且地址与注册地一致"]}]}
+{
+  "brand": {
+    "name": "赤兔文创 · 创享办公社区",
+    "wechat": "18903005927"
+  },
+  "hero": {
+    "title": "赤兔文创 · 不止办公 更是企业成长生态引擎",
+    "subtitle": "精装交付· 拎包入驻 · 360°成长引擎",
+    "lead": "面向初创企业、小微企业、自由职业者与商务洽谈客户，提供办公空间、工商财税、外资签证代办等一条龙企业服务。海珠区四店网络，就近选择。",
+    "cta1": {
+      "text": "查看门店",
+      "href": "#locations"
+    },
+    "cta2": {
+      "text": "电话咨询",
+      "href": "tel:18903005927"
+    },
+    "meta": [
+      {
+        "pre": "",
+        "bold": "工位/茶室/接待区/前台/公区/会议室/咖啡吧",
+        "post": "齐全"
+      },
+      {
+        "pre": "",
+        "bold": "24小时",
+        "post": "独立空调与高速网络"
+      },
+      {
+        "pre": "可",
+        "bold": "注册公司",
+        "post": ""
+      }
+    ],
+    "bgImages": [
+      {
+        "imgKey": "bg1",
+        "label": "首屏背景轮播图 1"
+      },
+      {
+        "imgKey": "bg2",
+        "label": "首屏背景轮播图 2"
+      },
+      {
+        "imgKey": "bg3",
+        "label": "首屏背景轮播图 3"
+      }
+    ]
+  },
+  "featuresHeader": {
+    "title": "为什么选择赤兔文创",
+    "sub": "把繁琐留给赤兔，把专注还给创业"
+  },
+  "features": [
+    {
+      "icon": "layers",
+      "title": "精装交付",
+      "desc": "24H空调、物业、千兆网络、保洁，无隐形消费，预算更清晰。"
+    },
+    {
+      "icon": "box",
+      "title": "拎包入驻",
+      "desc": "家具齐全、装修到位，签约即可办公，可注册公司。"
+    },
+    {
+      "icon": "users",
+      "title": "共享空间",
+      "desc": "会议室、茶室、茶水间、打印、前台代收快递，配套齐全，降低运营成本。"
+    },
+    {
+      "icon": "clock",
+      "title": "24小时自由办公",
+      "desc": "独立空调与高速网络全天候可用，弹性匹配你的工作节奏。"
+    },
+    {
+      "icon": "shield",
+      "title": "360°成长引擎",
+      "desc": "工商财税、政策补贴、融资对接扶持，陪伴企业从0到1。"
+    },
+    {
+      "icon": "map-pin",
+      "title": "多店网络",
+      "desc": "海珠区 4 家场地（晓港 / 客村 / 鹭江 / 宝岗）就近选择，灵活换址。"
+    }
+  ],
+  "locationsHeader": {
+    "title": "海珠区四店可选",
+    "sub": "总有一家在你身边"
+  },
+  "locations": [
+    {
+      "imgKey": "loc1",
+      "tag": "晓港",
+      "name": "赤兔如意港",
+      "addr": "海珠区昌岗东路 271 号 5、6 层",
+      "position": "8号线晓港站 A 出口，步行 1 分钟",
+      "metro": "8号线晓港站 A 出口，步行 1 分钟",
+      "priceLabel": "独立办公室",
+      "price": "¥980",
+      "priceUnit": "/月起",
+      "highlights": [
+        "新中式隔音茶室，配功夫茶具、投屏白板",
+        "超大会议室（20-70人）配 LED 屏 / 音响 / 麦克风",
+        "1 小时起租、扫码自助入场"
+      ],
+      "contact": "李先生",
+      "phone": "18102220465",
+      "slug": "ruyi",
+      "detail": "赤兔如意港坐落于海珠区昌岗东路 271 号 5、6 层，交通便捷（8号线晓港站 A 出口，步行 1 分钟），是赤兔文创旗下创享办公社区之一。空间精装交付、家具齐全，签约即可办公并可注册公司；配备会议室、茶室、共享公区与高速网络，专属顾问提供工商财税、政策补贴、企业服务一条龙支持。",
+      "rooms": [
+        {
+          "name": "开放工位",
+          "area": "约12㎡",
+          "capacity": "1人",
+          "price": "¥500",
+          "unit": "/人·月起",
+          "config": "独立办公桌+人体工学椅，共享会议室每月赠送2小时，享公共休闲区与免费茶饮。"
+        },
+        {
+          "name": "独立办公室",
+          "area": "约25㎡",
+          "capacity": "3-4人",
+          "price": "¥980",
+          "unit": "/间·月起",
+          "config": "独立门锁可注册公司，含工位桌椅与文件柜，适合初创团队拎包入驻。"
+        }
+      ]
+    },
+    {
+      "imgKey": "loc2",
+      "tag": "客村",
+      "name": "赤兔数字港",
+      "addr": "海珠区新港中路 302 号农业银行楼上",
+      "position": "3/8号线客村站 D 出口，步行 5 分钟",
+      "metro": "3/8号线客村站 D 出口，步行 5 分钟",
+      "priceLabel": "4人办公室",
+      "price": "¥2800",
+      "priceUnit": "/月起",
+      "highlights": [
+        "户型最多（4-10人及 113㎡ 大空间）",
+        "大会议室现代风 / 电竞风，配白板 / 麦克风 / 射笔",
+        "「假装上班」体验工位约 40 元/天"
+      ],
+      "contact": "郭先生",
+      "phone": "18102586047",
+      "slug": "kecun",
+      "detail": "赤兔数字港坐落于海珠区新港中路 302 号农业银行楼上，交通便捷（3/8号线客村站 D 出口，步行 5 分钟），是赤兔文创旗下创享办公社区之一。空间精装交付、家具齐全，签约即可办公并可注册公司；配备会议室、茶室、共享公区与高速网络，专属顾问提供工商财税、政策补贴、企业服务一条龙支持。",
+      "rooms": [
+        {
+          "name": "开放工位",
+          "area": "约12㎡",
+          "capacity": "1人",
+          "price": "¥600",
+          "unit": "/人·月起",
+          "config": "临窗工位，独立办公桌+人体工学椅，享公共休闲区与免费茶饮。"
+        },
+        {
+          "name": "4人办公室",
+          "area": "约30㎡",
+          "capacity": "4人",
+          "price": "¥2800",
+          "unit": "/间·月起",
+          "config": "独立门锁可注册公司，含4组工位桌椅与文件柜，适合小团队。"
+        }
+      ]
+    },
+    {
+      "imgKey": "loc3",
+      "tag": "鹭江",
+      "name": "赤兔联合办公（鹭江）",
+      "addr": "下渡路 64 号 2 楼",
+      "position": "8号线鹭江站 D 出口，约 200 米",
+      "metro": "8号线鹭江站 D 出口，约 200 米",
+      "priceLabel": "独立办公室",
+      "price": "¥800",
+      "priceUnit": "/月起",
+      "highlights": [
+        "交通便利，步行 2 分钟即达",
+        "「假装上班」工位长租约 800 元/月",
+        "免费茶水 / 休息区 / 物品寄存 / 智能门禁"
+      ],
+      "contact": "张小姐",
+      "phone": "13378682992",
+      "slug": "lujiang",
+      "detail": "赤兔联合办公（鹭江）坐落于下渡路 64 号 2 楼，交通便捷（8号线鹭江站 D 出口，约 200 米），是赤兔文创旗下创享办公社区之一。空间精装交付、家具齐全，签约即可办公并可注册公司；配备会议室、茶室、共享公区与高速网络，专属顾问提供工商财税、政策补贴、企业服务一条龙支持。",
+      "rooms": [
+        {
+          "name": "开放工位",
+          "area": "约12㎡",
+          "capacity": "1人",
+          "price": "¥500",
+          "unit": "/人·月起",
+          "config": "独立办公桌+人体工学椅，共享会议室每月赠送2小时，享公共休闲区。"
+        },
+        {
+          "name": "独立办公室",
+          "area": "约25㎡",
+          "capacity": "3-4人",
+          "price": "¥980",
+          "unit": "/间·月起",
+          "config": "独立门锁可注册公司，含工位桌椅与文件柜，近鹭江站。"
+        }
+      ]
+    },
+    {
+      "imgKey": "loc4",
+      "tag": "宝岗",
+      "name": "企程创意空间",
+      "addr": "宝岗路 248 号宝岗大厦 2 楼",
+      "position": "8号线凤凰新村站 A 出口，步行 10 分钟",
+      "metro": "8号线凤凰新村站 A 出口，步行 10 分钟",
+      "priceLabel": "单人间",
+      "price": "¥800",
+      "priceUnit": "/月起",
+      "highlights": [
+        "四店中价格最低，性价比最高",
+        "工商财税服务：可注册、解锁工商异常、各类许可证",
+        "临近江南西商圈，独立办公室"
+      ],
+      "contact": "黄先生",
+      "phone": "19002093728",
+      "slug": "baogang",
+      "detail": "企程创意空间坐落于宝岗路 248 号宝岗大厦 2 楼，交通便捷（8号线凤凰新村站 A 出口，步行 10 分钟），是赤兔文创旗下创享办公社区之一。空间精装交付、家具齐全，签约即可办公并可注册公司；配备会议室、茶室、共享公区与高速网络，专属顾问提供工商财税、政策补贴、企业服务一条龙支持。",
+      "rooms": [
+        {
+          "name": "开放工位",
+          "area": "约12㎡",
+          "capacity": "1人",
+          "price": "¥500",
+          "unit": "/人·月起",
+          "config": "独立办公桌+人体工学椅，共享会议室每月赠送2小时，享公共休闲区与免费茶饮。"
+        }
+      ]
+    }
+  ],
+  "galleryHeader": {
+    "title": "环境实景",
+    "sub": "舒适的空间，明亮通透的办公氛围"
+  },
+  "gallery": [
+    {
+      "imgKey": "g1",
+      "label": "开放工位区",
+      "span": true
+    },
+    {
+      "imgKey": "g2",
+      "label": "独立办公室",
+      "span": false
+    },
+    {
+      "imgKey": "g3",
+      "label": "会议室",
+      "span": false
+    },
+    {
+      "imgKey": "g4",
+      "label": "茶室包间",
+      "span": false
+    },
+    {
+      "imgKey": "g5",
+      "label": "公共休闲区 / 前台",
+      "span": true
+    },
+    {
+      "imgKey": "g6",
+      "label": "路演 / 活动区",
+      "span": false
+    }
+  ],
+  "servicesHeader": {
+    "title": "空间与服务",
+    "sub": "不只是办公位，更是企业发展的后盾"
+  },
+  "services": [
+    {
+      "icon": "desk",
+      "title": "灵活工位",
+      "desc": "体验工位约 40 元/天，长租工位约 800 元/人·月起，适合自由职业者、考研群体及初创团队。"
+    },
+    {
+      "icon": "office",
+      "title": "独立办公室",
+      "desc": "1 人至 113㎡ 多种户型，家具齐全、可注册公司，精装交付无隐形消费。"
+    },
+    {
+      "icon": "meeting",
+      "title": "会议室",
+      "desc": "小会议室（4-10人）¥99/小时，中会议室（10-15人）¥129/小时，大会议室（20-70人）¥159/小时，均配白板、投影或 LED 屏。"
+    },
+    {
+      "icon": "tea",
+      "title": "茶室包间",
+      "desc": "¥58/小时，环境安静优雅，配功夫茶具、免费茶叶，适合商务洽谈。"
+    },
+    {
+      "icon": "doc",
+      "title": "工商财税服务",
+      "desc": "可注册公司、解锁工商异常、办理进出口 / 食品 / 医疗 / 劳务派遣等各类许可证。"
+    },
+    {
+      "icon": "money",
+      "title": "政策与融资对接",
+      "desc": "政策补贴申报、融资对接扶持，助力企业降低启动成本、加速成长。"
+    },
+    {
+      "icon": "visa",
+      "title": "外资签证与商务服务",
+      "desc": "外资公司注册、外商代表处设立，外国人工作签证 / 商务签证代办、居留许可延期与变更，助力外籍人才与外资企业落地广州。"
+    },
+    {
+      "icon": "doc",
+      "title": "商业资源对接&沙龙",
+      "desc": "每个月定期不定期沙龙，促进资源整合交流，汇聚粤港澳大湾区商会成员，上千家企业齐聚赤兔进行商业交流活动，为您的商业道路铺路。"
+    }
+  ],
+  "faqHeader": {
+    "title": "常见问题",
+    "sub": "租房前你可能想知道这些"
+  },
+  "faqs": [
+    {
+      "q": "入驻 / 签约流程是怎样的？",
+      "a": "看房 → 签约（可注册公司）→ 拎包入驻。四店可就近选择，具体房源以实时空房为准。"
+    },
+    {
+      "q": "租金包含哪些费用？",
+      "a": "一价全包：水费、空调安装、物业、网络、保洁全免，无隐形消费。部分增值服务（如会议室、茶室按时段计费）另行结算。"
+    },
+    {
+      "q": "可以开发票吗？",
+      "a": "可开租金发票，普票约 6% / 专票约 10%（以各店实际政策为准）。"
+    },
+    {
+      "q": "是否需要押金？",
+      "a": "具体押金方式以各店签约政策为准，行业常见为押二付一，建议看房时与门店确认。"
+    },
+    {
+      "q": "能否注册公司？",
+      "a": "可以。赤兔文创提供注册地址及工商财税服务。均是正规产权证，在街道办理的备案，可以办理更可办理进出口、食品、医疗、劳务派遣，可办理危化证，出版物许可证，医疗器械等。"
+    },
+    {
+      "q": "配套有哪些？",
+      "a": "茶室，会议室，面试室，户外花园，智慧门锁，接待区，洽谈室，茶水吧，咖啡吧。"
+    }
+  ],
+  "contact": {
+    "title": "现在就找到适合你的办公空间",
+    "sub": "加微信获取实景图、空房照片和最新优惠",
+    "btnText": "微信 / 电话：18903005927",
+    "btnHref": "tel:18903005927",
+    "note": "统一微信号，各店具体地址与房源可加微信后由专属顾问详细介绍。"
+  },
+  "footer": {
+    "brand": "企业生态引擎 · 拎包入驻 · 创享办公社区",
+    "links": [
+      {
+        "text": "品牌介绍",
+        "href": "#about"
+      },
+      {
+        "text": "门店信息",
+        "href": "#locations"
+      },
+      {
+        "text": "空间服务",
+        "href": "#services"
+      },
+      {
+        "text": "常见问题",
+        "href": "#faq"
+      },
+      {
+        "text": "企业补贴",
+        "href": "#subsidy"
+      }
+    ],
+    "contactTitle": "联系我们",
+    "contacts": [
+      "统一微信：18903005927",
+      "服务范围：广州海珠区（晓港 / 客村 / 鹭江 / 宝岗）"
+    ],
+    "copy": "© 2017 赤兔文创 · 广州红杉云科技有限公司旗下品牌"
+  },
+  "images": {
+    "hero": "assets/hero.jpg",
+    "banner": "assets/banner.jpg",
+    "bg1": "assets/bg1.jpg",
+    "bg2": "assets/bg2.jpg",
+    "bg3": "assets/bg3.jpg",
+    "loc1": "assets/loc1.jpg",
+    "loc2": "assets/loc2.jpg",
+    "loc3": "assets/loc3.jpg",
+    "loc4": "assets/loc4.jpg",
+    "g1": "assets/g1.jpg",
+    "g2": "assets/g2.jpg",
+    "g3": "assets/g3.jpg",
+    "g4": "assets/g4.jpg",
+    "g5": "assets/g5.jpg",
+    "g6": "assets/g6.jpg",
+    "sub1": "assets/sub1.jpg",
+    "sub2": "assets/sub2.jpg"
+  },
+  "subsidyHeader": {
+    "title": "企业补贴",
+    "sub": "政府创业与就业补贴申报辅导，赤兔协助整理材料，助你合规申领、降低成本。"
+  },
+  "subsidies": [
+    {
+      "tag": "创业补贴",
+      "name": "一次性创业补贴",
+      "slug": "startup-grant",
+      "imgKey": "sub1",
+      "summary": "面向符合条件的新注册初创企业法定代表人，给予一次性 10000 元创业资助，缓解创业初期成本压力，无需返还。",
+      "policy": "政策依据：《广东省就业创业补贴补助申请办理指导清单（2026年修订版）》（粤人社规〔2026〕20号），由广东省人力资源和社会保障厅、广东省财政厅印发，2026年6月17日起实施，有效期5年。线上申办依托「广东省就业一体化信息系统」（广东公共就业服务云平台）。",
+      "object": "在我省创办初创企业、担任法定代表人/经营者等的「创业重点扶持对象」。",
+      "objectDetail": "创业重点扶持对象（未达法定退休年龄、未享受基本养老保险待遇，符合以下任一类即可）：\n1. 普通高等学校、职业学校、技工院校学生（在校及毕业5年内）和毕业5年内的出国（境）留学回国人员；\n2. 退役军人；\n3. 在本省登记的失业人员；\n4. 在本省认定的就业困难人员；\n5. 返乡创业人员（分三类）；\n6. 45周岁以下的港澳台居民。",
+      "standard": "一次性 10000 元。",
+      "standardDetail": "同一人员及同一创业主体只能享受一次本项补贴，无需返还。",
+      "conditions": [
+        "初创主体：在我省登记注册3年内的小微企业、个体工商户、社会组织、律师事务所、会计师事务所、农民专业合作社，您担任法定代表人/经营者/负责人等职务。",
+        "注册登记满12个月，且申请时未被市场监管部门列入「经营异常名录」。",
+        "申请补贴前连续6个月正常经营，且有不少于1名员工（不含创业者本人）按规定缴纳社会保险费。",
+        "注意：变更过法定代表人的创业主体不能申请；申请人若在非本人名下用人单位参保企业职工养老保险，将不予通过。"
+      ],
+      "materials": [
+        "符合条件人员基本身份类证明。",
+        "创业重点扶持对象佐证材料（如毕业生提供毕业证书、留学回国人员提供学历学位认证书、退役军人提供退役证/转业证、返乡人员提供户口簿或《就业创业证》/社保缴费记录等）。",
+        "企业近6个月正常经营的佐证材料：提供资金流水，以及工资支付凭证、财务报表、纳税记录、经营许可证、合同与订单记录等至少一项。",
+        "小微企业佐证材料：企业填写《调查单位基本情况》（表号101-1表）；未纳入填报范围的填写《企业划型承诺书》。"
+      ],
+      "process": [
+        "备齐营业执照与身份证明、重点扶持对象佐证、正常经营佐证等材料。",
+        "登录广东公共就业服务云平台（ggfw.hrss.gd.gov.cn）在线申请，或向登记注册地人社部门/公共就业服务机构提交。",
+        "区公共就业服务机构与区人社局受理、审核。",
+        "审核通过名单公示。",
+        "补贴资金拨付至申请人银行账户。"
+      ],
+      "agency": "受理机构：创业主体登记注册地所在区人力资源社会保障部门 / 公共就业服务机构。\n线上申办：广东公共就业服务云平台 https://ggfw.hrss.gd.gov.cn/employment/internet/portal/#/home\n申请时限：须于创业主体登记注册之日起3年内提出申请（租金补贴最后一次不超过注册之日起4年）。",
+      "company": [
+        "提供「可注册公司」的合规办公地址——租赁合同与注册登记地一致，直接满足补贴对场地的硬性要求。",
+        "工商财税一条龙：营业执照办理、代理记账、纳税记录出具，帮你备齐「正常经营佐证材料」。",
+        "园区专属顾问协助整理、代填申报材料，对接街道与人社部门，提高通过率。",
+        "入驻即可用，最快当天拿地址，不耽误「注册登记满12个月」的起算。",
+        "温馨提示：补贴由人社部门审核发放，最终以登记注册地人社部门解释为准；赤兔提供地址与申报协助服务，不承诺补贴必然获批。"
+      ],
+      "highlights": [
+        "一次性发放，无需返还",
+        "可与租金补贴、创业带动就业补贴叠加",
+        "赤兔协助整理申报材料"
+      ]
+    },
+    {
+      "tag": "租金补贴",
+      "name": "创业租金补贴",
+      "slug": "rent-subsidy",
+      "imgKey": "sub2",
+      "summary": "对租赁非本人名下场地经营、符合条件的初创企业，按实际租金给予补贴，珠三角地区每年最高6000元，最长3年。",
+      "policy": "政策依据：《广东省就业创业补贴补助申请办理指导清单（2026年修订版）》（粤人社规〔2026〕20号），由广东省人力资源和社会保障厅、广东省财政厅印发，2026年6月17日起实施，有效期5年。线上申办依托「广东省就业一体化信息系统」（广东公共就业服务云平台）。",
+      "object": "租赁非本人名下场地经营、属于「创业重点扶持对象」的初创企业法定代表人/经营者。",
+      "objectDetail": "创业重点扶持对象（未达法定退休年龄、未享受基本养老保险待遇，符合以下任一类即可）：\n1. 普通高等学校、职业学校、技工院校学生（在校及毕业5年内）和毕业5年内的出国（境）留学回国人员；\n2. 退役军人；\n3. 在本省登记的失业人员；\n4. 在本省认定的就业困难人员；\n5. 返乡创业人员（分三类）；\n6. 45周岁以下的港澳台居民。",
+      "standard": "珠三角地区每年最高6000元，最长3年（广州属珠三角地区）。",
+      "standardDetail": "实际租金低于补贴标准的，按实际租金补贴；当年度累计已付租金超过上限的，按当年度最高标准补贴。",
+      "conditions": [
+        "初创主体：在我省登记注册3年内的小微企业、个体工商户、社会组织、律所、会计师事务所、农民专业合作社，您担任法定代表人/经营者等，且属于创业重点扶持对象。",
+        "注册登记满12个月，申请时未被列入「经营异常名录」。",
+        "申请补贴前连续6个月正常经营，且有不少于1名员工（不含本人）按规定缴纳社保。",
+        "租赁非本人名下场地用于经营，且租赁地址与注册登记地一致。",
+        "所申请补贴的租金发生在创业主体登记注册之日起3年内。",
+        "注意：变更过法定代表人的不能申请；申请人若在非本人名下用人单位参保养老，不予通过。"
+      ],
+      "materials": [
+        "符合条件人员基本身份类证明。",
+        "创业重点扶持对象佐证材料（同一次性创业补贴）。",
+        "企业近6个月正常经营的佐证材料（资金流水 + 工资/财报/纳税等至少一项）。",
+        "小微企业佐证材料（《调查单位基本情况》或《企业划型承诺书》）。",
+        "场地产权证明、租赁合同及租金发票（首次申请须完整提交；再次申请仅需经营佐证 + 租金发票 + 变动材料）。"
+      ],
+      "process": [
+        "签订合规租赁合同（地址与注册登记地一致）并取得租金发票。",
+        "登录广东公共就业服务云平台在线申请，或向登记注册地人社部门提交。",
+        "区公共就业服务机构与区人社局受理、审核、公示。",
+        "按年度拨付补贴（首次须于注册之日起3年内提出，最后一次不超过注册之日起4年）。"
+      ],
+      "agency": "受理机构：创业主体登记注册地所在区人力资源社会保障部门 / 公共就业服务机构。\n线上申办：广东公共就业服务云平台 https://ggfw.hrss.gd.gov.cn/employment/internet/portal/#/home\n申请时限：须于创业主体登记注册之日起3年内提出申请（租金补贴最后一次不超过注册之日起4年）。",
+      "company": [
+        "提供「可注册公司」的合规办公地址，租赁合同与注册登记地一致，正是租金补贴的核心前提。",
+        "入驻即签正规租赁合同、可开具租金发票，直接满足「场地产权证明、租赁合同及租金发票」材料要求。",
+        "工商财税一条龙：营业执照、代理记账、纳税记录，备齐「正常经营佐证」。",
+        "专属顾问协助整理申报材料、对接街道/人社部门。",
+        "一价全包、灵活工位，租金可控，补贴按实际租金核拨更划算。",
+        "温馨提示：补贴由人社部门审核发放，最终以登记注册地人社部门解释为准；赤兔提供地址、合同、发票及申报协助，不承诺补贴必然获批。"
+      ],
+      "highlights": [
+        "按实际租金比例补贴",
+        "最长补贴3年",
+        "需入驻合规场地且地址与注册地一致"
+      ]
+    }
+  ],
+  "en": {
+    "brand": {
+      "name": "Chitu KEY TEAM · Creative Workspace Community",
+      "wechat": "18903005927"
+    },
+    "hero": {
+      "title": "Chitu KEY TEAM · More Than an Office — A Business Growth Ecosystem",
+      "subtitle": "Move-in Ready · Furnished · 360° Growth Engine",
+      "lead": "We serve startups, small businesses, freelancers and corporate clients with end-to-end business services — workspace, company registration, tax & accounting, and foreign-visa assistance. Four locations across Haizhu District — pick the one nearest you.",
+      "cta1": {
+        "text": "View Locations",
+        "href": "#locations"
+      },
+      "cta2": {
+        "text": "Call Us",
+        "href": "tel:18903005927"
+      },
+      "meta": [
+        {
+          "pre": "",
+          "bold": "Workstations / tea rooms / reception / lobby / common areas / meeting rooms / coffee bar",
+          "post": "all included"
+        },
+        {
+          "pre": "",
+          "bold": "24/7",
+          "post": "private A/C & high-speed internet"
+        },
+        {
+          "pre": "Register your ",
+          "bold": "company address",
+          "post": ""
+        }
+      ],
+      "bgImages": [
+        {
+          "imgKey": "bg1",
+          "label": "Homepage background 1"
+        },
+        {
+          "imgKey": "bg2",
+          "label": "Homepage background 2"
+        },
+        {
+          "imgKey": "bg3",
+          "label": "Homepage background 3"
+        }
+      ]
+    },
+    "featuresHeader": {
+      "title": "Why Chitu KEY TEAM",
+      "sub": "Leave the hassle to us, keep your focus on the business"
+    },
+    "features": [
+      {
+        "icon": "layers",
+        "title": "Move-in Ready",
+        "desc": "24/7 A/C, property management, gigabit internet and cleaning — all included with no hidden fees, so your budget stays clear."
+      },
+      {
+        "icon": "box",
+        "title": "Furnished & Ready",
+        "desc": "Fully furnished and finished — start working the day you sign, and register your company here."
+      },
+      {
+        "icon": "users",
+        "title": "Shared Spaces",
+        "desc": "Meeting rooms, tea rooms, pantry, printing and front-desk mail handling — fully equipped to lower your operating costs."
+      },
+      {
+        "icon": "clock",
+        "title": "24/7 Access",
+        "desc": "Private A/C and high-speed internet available around the clock, flexibly matching your work rhythm."
+      },
+      {
+        "icon": "shield",
+        "title": "360° Growth Engine",
+        "desc": "Company registration, tax & accounting, policy subsidies and funding connections — supporting your business from 0 to 1."
+      },
+      {
+        "icon": "map-pin",
+        "title": "Multi-Location Network",
+        "desc": "Four venues across Haizhu District (Xiaogang / Kecun / Lujiang / Baogang) — choose the nearest and switch freely."
+      }
+    ],
+    "locationsHeader": {
+      "title": "Four Locations in Haizhu",
+      "sub": "There is always one near you"
+    },
+    "locations": [
+      {
+        "imgKey": "loc1",
+        "tag": "Xiaogang",
+        "name": "Chitu Ruyi Port",
+        "addr": "5F-6F, No.271 Changgang East Rd, Haizhu District",
+        "position": "Exit A, Xiaogang Station (Line 8), 1-min walk",
+        "metro": "Exit A, Xiaogang Station (Line 8), 1-min walk",
+        "priceLabel": "Private Office",
+        "price": "¥980",
+        "priceUnit": "/mo",
+        "highlights": [
+          "New-Chinese-style soundproof tea room with kung-fu tea set and screen-sharing whiteboard",
+          "Large meeting room (20-70 pax) with LED screen / audio / microphones",
+          "Rent from 1 hour, self-check-in by QR code"
+        ],
+        "contact": "Mr. Li",
+        "phone": "18102220465",
+        "slug": "ruyi",
+        "detail": "Chitu Ruyi Port is located on 5F-6F, No.271 Changgang East Rd, Haizhu District, with convenient transport (Exit A, Xiaogang Station Line 8, 1-min walk). It is one of the co-working communities under Chitu KEY TEAM. The space is move-in ready and fully furnished — start working upon signing and register your company here. Equipped with meeting rooms, tea rooms, shared common areas and high-speed internet, with dedicated advisors providing one-stop company registration, tax & accounting, policy subsidies and business services.",
+        "rooms": [
+          {
+            "name": "Open Workspace",
+            "area": "~12㎡",
+            "capacity": "1 person",
+            "price": "¥500",
+            "unit": "/person/mo",
+            "config": "Private desk + ergonomic chair; 2 free meeting-room hours monthly; access to lounge and free tea."
+          },
+          {
+            "name": "Private Office",
+            "area": "~25㎡",
+            "capacity": "3-4 people",
+            "price": "¥980",
+            "unit": "/room/mo",
+            "config": "Lockable door, company-registration ready, with desks and filing cabinet — ideal for startups to move in directly."
+          }
+        ]
+      },
+      {
+        "imgKey": "loc2",
+        "tag": "Kecun",
+        "name": "Chitu Digital Port",
+        "addr": "Above Agricultural Bank, No.302 Xin'gang Middle Rd, Haizhu District",
+        "position": "Exit D, Kecun Station (Line 3/8), 5-min walk",
+        "metro": "Exit D, Kecun Station (Line 3/8), 5-min walk",
+        "priceLabel": "4-Person Office",
+        "price": "¥2800",
+        "priceUnit": "/mo",
+        "highlights": [
+          "Most layout options (4-10 pax and a 113㎡ large space)",
+          "Large meeting rooms in modern / esports style, with whiteboard / mic / presenter remote",
+          "'Pretend-to-work' day pass about ¥40/day"
+        ],
+        "contact": "Mr. Guo",
+        "phone": "18102586047",
+        "slug": "kecun",
+        "detail": "Chitu Digital Port is located above the Agricultural Bank, No.302 Xin'gang Middle Rd, Haizhu District, with convenient transport (Exit D, Kecun Station Line 3/8, 5-min walk). It is one of the co-working communities under Chitu KEY TEAM. The space is move-in ready and fully furnished — start working upon signing and register your company here. Equipped with meeting rooms, tea rooms, shared common areas and high-speed internet, with dedicated advisors providing one-stop company registration, tax & accounting, policy subsidies and business services.",
+        "rooms": [
+          {
+            "name": "Open Workspace",
+            "area": "~12㎡",
+            "capacity": "1 person",
+            "price": "¥600",
+            "unit": "/person/mo",
+            "config": "Window-side desk + ergonomic chair; access to lounge and free tea."
+          },
+          {
+            "name": "4-Person Office",
+            "area": "~30㎡",
+            "capacity": "4 people",
+            "price": "¥2800",
+            "unit": "/room/mo",
+            "config": "Lockable door, company-registration ready, with 4 desks and filing cabinet — ideal for small teams."
+          }
+        ]
+      },
+      {
+        "imgKey": "loc3",
+        "tag": "Lujiang",
+        "name": "Chitu Co-working (Lujiang)",
+        "addr": "2F, No.64 Xiadu Rd",
+        "position": "Exit D, Lujiang Station (Line 8), ~200m",
+        "metro": "Exit D, Lujiang Station (Line 8), ~200m",
+        "priceLabel": "Private Office",
+        "price": "¥800",
+        "priceUnit": "/mo",
+        "highlights": [
+          "Convenient transport, 2-min walk",
+          "'Pretend-to-work' desk long-term about ¥800/month",
+          "Free tea / rest area / item storage / smart access"
+        ],
+        "contact": "Ms. Zhang",
+        "phone": "13378682992",
+        "slug": "lujiang",
+        "detail": "Chitu Co-working (Lujiang) is located on 2F, No.64 Xiadu Rd, with convenient transport (Exit D, Lujiang Station Line 8, ~200m). It is one of the co-working communities under Chitu KEY TEAM. The space is move-in ready and fully furnished — start working upon signing and register your company here. Equipped with meeting rooms, tea rooms, shared common areas and high-speed internet, with dedicated advisors providing one-stop company registration, tax & accounting, policy subsidies and business services.",
+        "rooms": [
+          {
+            "name": "Open Workspace",
+            "area": "~12㎡",
+            "capacity": "1 person",
+            "price": "¥500",
+            "unit": "/person/mo",
+            "config": "Private desk + ergonomic chair; 2 free meeting-room hours monthly; access to lounge."
+          },
+          {
+            "name": "Private Office",
+            "area": "~25㎡",
+            "capacity": "3-4 people",
+            "price": "¥980",
+            "unit": "/room/mo",
+            "config": "Lockable door, company-registration ready, with desks and filing cabinet, near Lujiang Station."
+          }
+        ]
+      },
+      {
+        "imgKey": "loc4",
+        "tag": "Baogang",
+        "name": "Qicheng Creative Space",
+        "addr": "2F, Baogang Building, No.248 Baogang Rd",
+        "position": "Exit A, Fenghuang Xincun Station (Line 8), 10-min walk",
+        "metro": "Exit A, Fenghuang Xincun Station (Line 8), 10-min walk",
+        "priceLabel": "Single Room",
+        "price": "¥800",
+        "priceUnit": "/mo",
+        "highlights": [
+          "Lowest price among the four venues, best value",
+          "Company & tax services: registration, clearing abnormal status, various licenses",
+          "Near Jiangnanxi commercial area, private offices"
+        ],
+        "contact": "Mr. Huang",
+        "phone": "19002093728",
+        "slug": "baogang",
+        "detail": "Qicheng Creative Space is located on 2F, Baogang Building, No.248 Baogang Rd, with convenient transport (Exit A, Fenghuang Xincun Station Line 8, 10-min walk). It is one of the co-working communities under Chitu KEY TEAM. The space is move-in ready and fully furnished — start working upon signing and register your company here. Equipped with meeting rooms, tea rooms, shared common areas and high-speed internet, with dedicated advisors providing one-stop company registration, tax & accounting, policy subsidies and business services.",
+        "rooms": [
+          {
+            "name": "Open Workspace",
+            "area": "~12㎡",
+            "capacity": "1 person",
+            "price": "¥500",
+            "unit": "/person/mo",
+            "config": "Private desk + ergonomic chair; 2 free meeting-room hours monthly; access to lounge and free tea."
+          }
+        ]
+      }
+    ],
+    "galleryHeader": {
+      "title": "Gallery",
+      "sub": "Comfortable spaces with bright, open working atmosphere"
+    },
+    "gallery": [
+      {
+        "imgKey": "g1",
+        "label": "Open Workspace",
+        "span": true
+      },
+      {
+        "imgKey": "g2",
+        "label": "Private Office",
+        "span": false
+      },
+      {
+        "imgKey": "g3",
+        "label": "Meeting Room",
+        "span": false
+      },
+      {
+        "imgKey": "g4",
+        "label": "Tea Room",
+        "span": false
+      },
+      {
+        "imgKey": "g5",
+        "label": "Lounge / Reception",
+        "span": true
+      },
+      {
+        "imgKey": "g6",
+        "label": "Pitch / Event Area",
+        "span": false
+      }
+    ],
+    "servicesHeader": {
+      "title": "Spaces & Services",
+      "sub": "More than a desk — your backbone for business growth"
+    },
+    "services": [
+      {
+        "icon": "desk",
+        "title": "Flexible Desk",
+        "desc": "Day pass about ¥40/day; long-term desk about ¥800/person/mo — ideal for freelancers, exam prep and startups."
+      },
+      {
+        "icon": "office",
+        "title": "Private Office",
+        "desc": "From 1-person to 113㎡ layouts, fully furnished and company-registration ready, move-in ready with no hidden fees."
+      },
+      {
+        "icon": "meeting",
+        "title": "Meeting Rooms",
+        "desc": "Small (4-10 pax) ¥99/hr, medium (10-15 pax) ¥129/hr, large (20-70 pax) ¥159/hr — all with whiteboard, projector or LED screen."
+      },
+      {
+        "icon": "tea",
+        "title": "Tea Room",
+        "desc": "¥58/hr, quiet and elegant, with kung-fu tea set and free tea — ideal for business talks."
+      },
+      {
+        "icon": "doc",
+        "title": "Company & Tax Services",
+        "desc": "Company registration, clearing abnormal status, and licenses for import/export, food, medical, labor dispatch, etc."
+      },
+      {
+        "icon": "money",
+        "title": "Policy & Funding",
+        "desc": "Subsidy application support and funding connections to lower startup costs and accelerate growth."
+      },
+      {
+        "icon": "visa",
+        "title": "Foreign-Investment & Visa Services",
+        "desc": "Foreign company registration, representative office setup, work/business visa assistance for foreigners, residence-permit extension and change — helping foreign talent and companies land in Guangzhou."
+      },
+      {
+        "icon": "doc",
+        "title": "Business Networking & Salons",
+        "desc": "Regular and ad-hoc salons each month to foster resource integration, gathering members of the Greater Bay Area chambers of commerce — over a thousand enterprises meet at Chitu for business exchange, paving the way for your venture."
+      }
+    ],
+    "faqHeader": {
+      "title": "FAQ",
+      "sub": "What you may want to know before renting"
+    },
+    "faqs": [
+      {
+        "q": "What is the move-in / signing process?",
+        "a": "Viewing → signing (company registration available) → move in. Choose any of the four venues; actual availability is subject to real-time vacancies."
+      },
+      {
+        "q": "What is included in the rent?",
+        "a": "All-inclusive: water, A/C installation, property management, internet and cleaning are all free, with no hidden fees. Some value-added services (e.g. meeting rooms, tea rooms billed by time) are settled separately."
+      },
+      {
+        "q": "Can you issue invoices?",
+        "a": "Rent invoices available — general invoice ~6% / special invoice ~10% (subject to each venue's actual policy)."
+      },
+      {
+        "q": "Is a deposit required?",
+        "a": "Deposit terms follow each venue's signing policy; the industry norm is two months' deposit plus one month in advance. Confirm with the venue when viewing."
+      },
+      {
+        "q": "Can I register a company here?",
+        "a": "Yes. Chitu KEY TEAM provides a registered address and company/tax services. All are proper property certificates filed with the subdistrict office, enabling import/export, food, medical, labor dispatch, hazardous-chemical, publication and medical-device permits, etc."
+      },
+      {
+        "q": "What amenities are included?",
+        "a": "Tea rooms, meeting rooms, interview rooms, outdoor garden, smart locks, reception, negotiation rooms, pantry and coffee bar."
+      }
+    ],
+    "contact": {
+      "title": "Find the workspace that fits you — now",
+      "sub": "Add WeChat for real photos, vacancy shots and latest offers",
+      "btnText": "WeChat / Tel: 18903005927",
+      "btnHref": "tel:18903005927",
+      "note": "One WeChat ID for all; add it and a dedicated advisor will walk you through each venue's address and availability in detail."
+    },
+    "footer": {
+      "brand": "Business Ecosystem Engine · Move-in Ready · Creative Workspace Community",
+      "links": [
+        {
+          "text": "About",
+          "href": "#about"
+        },
+        {
+          "text": "Locations",
+          "href": "#locations"
+        },
+        {
+          "text": "Spaces & Services",
+          "href": "#services"
+        },
+        {
+          "text": "FAQ",
+          "href": "#faq"
+        },
+        {
+          "text": "Subsidies",
+          "href": "#subsidy"
+        }
+      ],
+      "contactTitle": "Contact Us",
+      "contacts": [
+        "WeChat: 18903005927",
+        "Service area: Haizhu District, Guangzhou (Xiaogang / Kecun / Lujiang / Baogang)"
+      ],
+      "copy": "© 2017 Chitu KEY TEAM · A brand of Guangzhou Redwood Cloud Technology Co., Ltd."
+    },
+    "subsidyHeader": {
+      "title": "Business Subsidies",
+      "sub": "Government startup & employment subsidy application support — Chitu helps organize your documents for compliant claims and lower costs."
+    },
+    "subsidies": [
+      {
+        "tag": "Startup Grant",
+        "name": "One-time Startup Grant",
+        "slug": "startup-grant",
+        "imgKey": "sub1",
+        "summary": "A one-time ¥10,000 startup grant for eligible legal representatives of newly registered startups, easing early-stage costs — no repayment required.",
+        "policy": "Policy basis: \"Guangdong Employment and Entrepreneurship Subsidy Guidelines (2026 Revision)\" (Yue Ren She Gui [2026] No.20), issued by the Guangdong Dept. of Human Resources & Social Security and the Dept. of Finance, effective June 17, 2026 for 5 years. Online filing via the Guangdong Public Employment Service Cloud Platform.",
+        "object": "\"Key supported entrepreneurship groups\" who founded a startup in our province and serve as its legal representative / operator.",
+        "objectDetail": "Key supported entrepreneurship groups (below statutory retirement age, not yet receiving basic pension, meeting any one of the following):\n1. Students from regular universities, vocational and technical schools (enrolled or within 5 years of graduation) and overseas returnees within 5 years of graduation;\n2. Veterans;\n3. Registered unemployed persons in the province;\n4. Recognized employment-disadvantaged persons in the province;\n5. Returning entrepreneurs (three categories);\n6. Hong Kong, Macao and Taiwan residents under 45.",
+        "standard": "One-time ¥10,000.",
+        "standardDetail": "The same person and same startup entity may receive this subsidy only once; no repayment required.",
+        "conditions": [
+          "Startup entity: a micro/small enterprise, individual business, social organization, law firm, accounting firm or farmers' cooperative registered in our province within 3 years, where you serve as legal representative / operator / responsible person.",
+          "Registered for at least 12 months and not listed in the \"Abnormal Operation List\" by market regulators at application time.",
+          "Normal operation for 6 consecutive months before applying, with at least 1 employee (other than the entrepreneur) paying social insurance per regulations.",
+          "Note: entities that changed their legal representative cannot apply; applications are rejected if the applicant is covered by employer pension insurance at a unit not under their own name."
+        ],
+        "materials": [
+          "Basic identity proof of the eligible person.",
+          "Supporting documents for the key supported group (e.g., graduation certificate for graduates, academic credential certification for returnees, veteran / demobilization certificate for veterans, household register or Employment & Entrepreneurship Certificate / social-insurance records for returnees).",
+          "Proof of normal operation in the last 6 months: provide fund flow plus at least one of payroll, financial statements, tax records, operating license, contracts or order records.",
+          "Micro/small enterprise proof: the \"Basic Information of Surveyed Units\" form (No. 101-1), or an \"Enterprise Type Commitment Letter\" if not within the reporting scope."
+        ],
+        "process": [
+          "Prepare business license, identity proof, key-group supporting docs and normal-operation proof.",
+          "Apply online via the Guangdong Public Employment Service Cloud Platform (ggfw.hrss.gd.gov.cn) or submit to the local human-resources department / public employment service agency.",
+          "District public employment agency and district HR bureau accept and review.",
+          "Public notice of approved applicants.",
+          "Subsidy funds transferred to the applicant's bank account."
+        ],
+        "agency": "Accepting agency: the district HR & social-security department / public employment service agency where the startup is registered.\nOnline filing: Guangdong Public Employment Service Cloud Platform https://ggfw.hrss.gd.gov.cn/employment/internet/portal/#/home\nDeadline: apply within 3 years from the startup's registration (for rent subsidy, the last application no later than 4 years from registration).",
+        "company": [
+          "Provide a compliant office address \"ready for company registration\" — lease contract matches the registration address, directly meeting the subsidy's hard venue requirement.",
+          "One-stop company & tax services: business-license handling, bookkeeping and tax-record issuance, helping you prepare the \"normal operation\" proof.",
+          "Dedicated park advisors help organize and pre-fill application documents and liaise with the subdistrict and HR departments to raise approval rates.",
+          "Available upon move-in; get the address the same day at fastest, without delaying the \"12 months from registration\" clock.",
+          "Note: subsidies are reviewed and paid by HR departments; final interpretation rests with the local HR department. Chitu provides the address and application assistance but does not guarantee approval."
+        ],
+        "highlights": [
+          "One-time payout, no repayment",
+          "Can be combined with rent subsidy and job-creation subsidy",
+          "Chitu helps organize application documents"
+        ]
+      },
+      {
+        "tag": "Rent Subsidy",
+        "name": "Startup Rent Subsidy",
+        "slug": "rent-subsidy",
+        "imgKey": "sub2",
+        "summary": "For eligible startups leasing a venue not under the founder's own name, a subsidy based on actual rent — up to ¥6,000/year in the Pearl River Delta, for up to 3 years.",
+        "policy": "Policy basis: \"Guangdong Employment and Entrepreneurship Subsidy Guidelines (2026 Revision)\" (Yue Ren She Gui [2026] No.20), issued by the Guangdong Dept. of Human Resources & Social Security and the Dept. of Finance, effective June 17, 2026 for 5 years. Online filing via the Guangdong Public Employment Service Cloud Platform.",
+        "object": "Legal representatives / operators of eligible startups who lease a venue not under their own name and belong to the \"key supported entrepreneurship groups\".",
+        "objectDetail": "Key supported entrepreneurship groups (below statutory retirement age, not yet receiving basic pension, meeting any one of the following):\n1. Students from regular universities, vocational and technical schools (enrolled or within 5 years of graduation) and overseas returnees within 5 years of graduation;\n2. Veterans;\n3. Registered unemployed persons in the province;\n4. Recognized employment-disadvantaged persons in the province;\n5. Returning entrepreneurs (three categories);\n6. Hong Kong, Macao and Taiwan residents under 45.",
+        "standard": "Up to ¥6,000/year in the Pearl River Delta, for up to 3 years (Guangzhou is in the PRD).",
+        "standardDetail": "If actual rent is below the cap, the actual rent is subsidized; if cumulative paid rent in a year exceeds the cap, the annual cap applies.",
+        "conditions": [
+          "Startup entity: micro/small enterprise, individual business, social organization, law firm, accounting firm or farmers' cooperative registered in our province within 3 years, where you serve as legal representative / operator and belong to the key supported group.",
+          "Registered for at least 12 months and not listed in the \"Abnormal Operation List\" at application.",
+          "Normal operation for 6 consecutive months before applying, with at least 1 employee (other than you) paying social insurance.",
+          "Leasing a venue not under your own name for business, with the lease address matching the registration address.",
+          "The rent claimed occurred within 3 years from the startup's registration.",
+          "Note: entities that changed their legal representative cannot apply; applications are rejected if the applicant is covered by employer pension insurance at a unit not under their own name."
+        ],
+        "materials": [
+          "Basic identity proof of the eligible person.",
+          "Key-group supporting documents (same as the one-time startup grant).",
+          "Proof of normal operation in the last 6 months (fund flow + at least one of payroll / financials / tax).",
+          "Micro/small enterprise proof (\"Basic Information of Surveyed Units\" or \"Enterprise Type Commitment Letter\").",
+          "Venue property proof, lease contract and rent invoice (full submission for first application; only operation proof + rent invoice + change docs for renewals)."
+        ],
+        "process": [
+          "Sign a compliant lease (address matching registration) and obtain a rent invoice.",
+          "Apply online via the Guangdong Public Employment Service Cloud Platform or submit to the local HR department.",
+          "District public employment agency and district HR bureau accept, review and publicize.",
+          "Subsidy paid annually (first application within 3 years of registration; last no later than 4 years)."
+        ],
+        "agency": "Accepting agency: the district HR & social-security department / public employment service agency where the startup is registered.\nOnline filing: Guangdong Public Employment Service Cloud Platform https://ggfw.hrss.gd.gov.cn/employment/internet/portal/#/home\nDeadline: apply within 3 years from the startup's registration (for rent subsidy, the last application no later than 4 years from registration).",
+        "company": [
+          "Provide a compliant office address \"ready for company registration\" with lease matching the registration — exactly the core precondition for the rent subsidy.",
+          "Move in and sign a proper lease with rent invoices available, directly meeting the \"venue property proof, lease contract and rent invoice\" requirement.",
+          "One-stop company & tax services: business license, bookkeeping, tax records — preparing the \"normal operation\" proof.",
+          "Dedicated advisors help organize documents and liaise with subdistrict / HR departments.",
+          "All-inclusive pricing and flexible desks keep rent controllable, making the actual-rent subsidy more worthwhile.",
+          "Note: subsidies are reviewed and paid by HR departments; final interpretation rests with the local HR department. Chitu provides address, contract, invoice and application assistance but does not guarantee approval."
+        ],
+        "highlights": [
+          "Subsidy proportional to actual rent",
+          "Up to 3 years",
+          "Requires a compliant venue with address matching registration"
+        ]
+      }
+    ]
+  }
+}

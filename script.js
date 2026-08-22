@@ -90,8 +90,9 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* ---------- render ---------- */
-  function render(data) {
-    const img = data.images || {};
+  function render(content, images) {
+    const data = content;
+    const img = images || {};
 
     // Hero
     const heroText = document.getElementById('hero-text');
@@ -238,6 +239,40 @@ document.addEventListener('DOMContentLoaded', () => {
     observeReveals(document.body);
   }
 
+  /* ---------- language switch ---------- */
+  const LANG_KEY = 'chitu_lang';
+  let currentLang = localStorage.getItem(LANG_KEY) || 'zh';
+
+  const NAV_TEXT = {
+    zh: { about: '品牌', locations: '门店', gallery: '实景', services: '服务', subsidy: '企业补贴', faq: 'FAQ', contact: '联系我们' },
+    en: { about: 'About', locations: 'Locations', gallery: 'Gallery', services: 'Spaces', subsidy: 'Subsidies', faq: 'FAQ', contact: 'Contact' }
+  };
+
+  function showLang(l) {
+    currentLang = l;
+    try { localStorage.setItem(LANG_KEY, l); } catch (e) {}
+    const root = window.__SITE_DATA__ || {};
+    const content = (l === 'en' && root.en) ? root.en : root;
+    const images = root.images || {};
+    document.documentElement.lang = (l === 'en') ? 'en' : 'zh-CN';
+    render(content, images);
+    updateLangUI();
+  }
+
+  function updateLangUI() {
+    const sw = document.getElementById('langSwitch');
+    if (sw) {
+      sw.querySelectorAll('button[data-lang]').forEach(b => {
+        b.classList.toggle('active', b.dataset.lang === currentLang);
+      });
+    }
+    const navText = NAV_TEXT[currentLang] || NAV_TEXT.zh;
+    document.querySelectorAll('#nav a').forEach(a => {
+      const key = (a.getAttribute('href') || '').replace('#', '');
+      if (navText[key]) a.textContent = navText[key];
+    });
+  }
+
   /* ---------- hero carousel ---------- */
   function initHeroCarousel(root, count) {
     if (count <= 1) return;
@@ -256,12 +291,12 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ---------- load ---------- */
   if (window.__SITE_DATA__) {
     // 静态托管模式（已内联数据，无需后端）
-    render(window.__SITE_DATA__);
+    showLang(currentLang);
   } else {
     // 本地后端模式
     fetch('/api/content')
       .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
-      .then(render)
+      .then(d => { window.__SITE_DATA__ = d; showLang(currentLang); })
       .catch(err => {
         document.getElementById('hero-text').innerHTML =
           '<h1>赤兔文创 · 创享办公社区</h1>' +
@@ -269,5 +304,13 @@ document.addEventListener('DOMContentLoaded', () => {
           '启动命令：<code>python server.py</code>，然后访问 http://localhost:8080/</p>';
         console.error('加载内容失败：', err);
       });
+  }
+
+  // 语言切换按钮
+  const langSw = document.getElementById('langSwitch');
+  if (langSw) {
+    langSw.querySelectorAll('button[data-lang]').forEach(b => {
+      b.addEventListener('click', () => showLang(b.dataset.lang));
+    });
   }
 });

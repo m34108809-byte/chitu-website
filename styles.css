@@ -1823,3 +1823,9 @@ img {
     font-size: 18px;
   }
 }
+
+/* 语言切换按钮 */
+.lang-switch{display:inline-flex;align-items:center;gap:2px;margin-left:14px;border:1px solid rgba(30,58,43,.25);border-radius:20px;padding:2px;flex-shrink:0}
+.lang-switch button{font-family:inherit;font-size:13px;line-height:1;padding:5px 11px;border:none;background:transparent;color:#1a3c34;cursor:pointer;border-radius:16px;transition:.2s}
+.lang-switch button.active{background:#1a3c34;color:#fff}
+@media(max-width:768px){.lang-switch{margin-left:8px}.lang-switch button{padding:4px 9px}}

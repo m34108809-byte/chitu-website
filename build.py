@@ -2,10 +2,11 @@
 # -*- coding: utf-8 -*-
 """
 把"数据驱动"版的赤兔官网构建为纯静态站点（dist/），用于 CloudStudio 公网部署。
-- 读取 data.json -> 生成 dist/content.js（内联 window.__SITE_DATA__）
+- 读取 data.json -> 生成 dist/content.js（内联 window.__SITE_DATA__，含 zh + en 子树 + images）
 - 复制 styles.css / script.js / assets/ 到 dist/
 - index.html 注入 content.js 引用，前端优先用内联数据，无需后端
-- 为每个带 slug 的门店生成 store-<slug>.html 独立详情页
+- 为每个带 slug 的门店/补贴生成双语详情页（store-<slug>.html / subsidy-<slug>.html），
+  页面内同时含中文层(#store-zh)与英文层(#store-en)，由底部脚本按 localStorage 切换。
 后台（server.py / admin.html）不参与静态部署，保留本地编辑用。
 """
 import json
@@ -31,8 +32,40 @@ def ml(s):
     return e(s).replace('\n', '<br>')
 
 
-def render_store_page(loc, data):
-    img = data.get('images', {})
+# 详情页底部语言切换脚本（普通字符串，{ } 为 JS 语法，无需转义）
+SWITCH_JS = """
+(function(){
+  var NAV={about:'品牌',locations:'门店',gallery:'实景',services:'服务',subsidy:'企业补贴',faq:'FAQ',contact:'联系我们'};
+  var NAVen={about:'About',locations:'Locations',gallery:'Gallery',services:'Spaces',subsidy:'Subsidies',faq:'FAQ',contact:'Contact'};
+  var KEY='chitu_lang';
+  var lang=localStorage.getItem(KEY)||'zh';
+  function apply(l){
+    lang=l;try{localStorage.setItem(KEY,l);}catch(e){}
+    var z=document.getElementById('store-zh'),n=document.getElementById('store-en');
+    if(z)z.style.display=l==='en'?'none':'';
+    if(n)n.style.display=l==='en'?'':'none';
+    document.documentElement.lang=l==='en'?'en':'zh-CN';
+    var btns=document.querySelectorAll('#langSwitch button');
+    for(var i=0;i<btns.length;i++){btns[i].classList.toggle('active',btns[i].dataset.lang===l);}
+    var t=(l==='en')?NAVen:NAV;
+    var as=document.querySelectorAll('#nav a[data-nav]');
+    for(var j=0;j<as.length;j++){var k=as[j].dataset.nav; if(t[k])as[j].textContent=t[k];}
+  }
+  var sb=document.querySelectorAll('#langSwitch button');
+  for(var m=0;m<sb.length;m++){sb[m].addEventListener('click',function(){apply(this.dataset.lang);});}
+  apply(lang);
+})();
+"""
+
+NAV_ITEMS = [('about', '品牌', 'About'), ('locations', '门店', 'Locations'),
+             ('gallery', '实景', 'Gallery'), ('services', '服务', 'Spaces'),
+             ('subsidy', '企业补贴', 'Subsidies'), ('faq', 'FAQ', 'FAQ'),
+             ('contact', '联系我们', 'Contact')]
+
+
+def _store_inner(loc, data, images):
+    """生成门店详情页主体 HTML（不含外壳），返回 (inner_html, meta)。"""
+    img = images
     ipath = img.get(loc.get('imgKey', ''))
     addr = loc.get('addr', '') or loc.get('name', '')
     q = quote(addr)
@@ -47,7 +80,6 @@ def render_store_page(loc, data):
     detail = loc.get('detail', '')
     detail_html = f'<div class="store-detail-text">{ml(detail)}</div>' if detail else ''
     highlights = ''.join(f'<li>{e(h)}</li>' for h in loc.get('highlights', []))
-    # 房型区块（后续可填真实房型）
     rooms = loc.get('rooms', [])
     room_cards = ''
     for r in rooms:
@@ -85,7 +117,6 @@ def render_store_page(loc, data):
         "@type": "LocalBusiness",
         "name": name,
         "image": og_image,
-        "url": f"store-{loc.get('slug')}.html",
         "telephone": f"+86-{phone}" if phone else "",
         "address": {
             "@type": "PostalAddress",
@@ -97,48 +128,12 @@ def render_store_page(loc, data):
         "description": f"赤兔文创 {name}，位于{addr}，提供灵活工位、可注册地址与工商财税企业服务。",
         "areaServed": "广州海珠区"
     }, ensure_ascii=False)
-    return f'''<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{e(name)} · 赤兔文创 | 广州海珠联合办公</title>
-<meta name="description" content="{e(name)}位于{e(addr)}，广州海珠区一价全包创享办公社区，提供灵活工位、可注册地址、工商财税企业服务一条龙。">
-<meta name="keywords" content="广州联合办公,海珠联合办公,广州办公室租赁,海珠写字楼,可注册地址,工商财税,{e(name)}">
-<meta name="robots" content="index,follow">
-<link rel="canonical" href="store-{e(loc.get('slug',''))}.html">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="zh_CN">
-<meta property="og:title" content="{e(name)} · 赤兔文创">
-<meta property="og:description" content="{e(name)}位于{e(addr)}，一价全包创享办公社区。">
-<meta property="og:url" content="store-{e(loc.get('slug',''))}.html">
-<meta property="og:image" content="{e(og_image)}">
-<meta name="twitter:card" content="summary_large_image">
-<script type="application/ld+json">{jsonld}</script>
-<link rel="stylesheet" href="styles.css">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-<header class="header">
-  <div class="container nav-container">
-    <a href="index.html" class="logo"><img src="assets/logo.png" alt="赤兔文创"></a>
-    <nav class="nav">
-      <a href="index.html#about">品牌</a>
-      <a href="index.html#locations">门店</a>
-      <a href="index.html#gallery">实景</a>
-      <a href="index.html#services">服务</a>
-      <a href="index.html#faq">FAQ</a>
-      <a href="index.html#contact" class="nav-cta">联系我们</a>
-    </nav>
-  </div>
-</header>
-<main>
-  <section class="store-hero">
+    inner = f'''  <section class="store-hero">
     {hero}
     <div class="store-hero-overlay">
       <div class="container">
         <span class="location-tag">{e(loc.get('tag', ''))}</span>
-        <h1>{e(loc.get('name', ''))}</h1>
+        <h1>{e(name)}</h1>
         <p>{e(addr)}</p>
       </div>
     </div>
@@ -171,28 +166,14 @@ def render_store_page(loc, data):
       </div>
       {rooms_block}
     </div>
-  </section>
-</main>
-<footer class="footer">
-  <div class="container footer-grid">
-    <div class="footer-brand">
-      <img src="assets/logo.png" alt="赤兔文创" class="footer-logo">
-      <p>{e(footer.get('brand', ''))}</p>
-    </div>
-    <div class="footer-links"><h4>快速导航</h4>{footer_links}</div>
-    <div class="footer-contact"><h4>{e(footer.get('contactTitle', '联系我们'))}</h4>{footer_contacts}</div>
-  </div>
-  <div class="container footer-copy"><p>{e(footer.get('copy', ''))}</p></div>
-</footer>
-    <a href="tel:{e(phone)}" class="float-cta" aria-label="电话咨询">
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-</a>
-</body>
-</html>'''
+  </section>'''
+    meta = {'title': name, 'jsonld': jsonld, 'og_image': og_image, 'phone': phone}
+    return inner, meta
 
 
-def render_subsidy_page(sub, data):
-    img = data.get('images', {})
+def _subsidy_inner(sub, data, images):
+    """生成补贴详情页主体 HTML（不含外壳），返回 (inner_html, meta)。"""
+    img = images
     ipath = img.get(sub.get('imgKey', ''))
     brand = data.get('brand', {})
     footer = data.get('footer', {})
@@ -234,7 +215,6 @@ def render_subsidy_page(sub, data):
         "@type": "Service",
         "name": name,
         "image": og_image,
-        "url": f"subsidy-{sub.get('slug')}.html",
         "provider": {
             "@type": "Organization",
             "name": brand.get('name', '赤兔文创'),
@@ -243,49 +223,12 @@ def render_subsidy_page(sub, data):
         "areaServed": "广州海珠区",
         "description": (sub.get('summary') or name)
     }, ensure_ascii=False)
-    return f'''<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>{e(sub.get('name', ''))} · 企业补贴 · 赤兔文创 | 广州海珠</title>
-<meta name="description" content="{e(sub.get('summary', '') or sub.get('name', ''))}，广州海珠区创业补贴申办服务，赤兔文创提供工商财税与企业服务一条龙协助。">
-<meta name="keywords" content="广州创业补贴,海珠创业补贴,一次性创业补贴,创业租金补贴,工商财税,赤兔文创">
-<meta name="robots" content="index,follow">
-<link rel="canonical" href="subsidy-{e(sub.get('slug',''))}.html">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="zh_CN">
-<meta property="og:title" content="{e(sub.get('name', ''))} · 企业补贴 · 赤兔文创">
-<meta property="og:description" content="{e(sub.get('summary', '') or sub.get('name', ''))}，广州海珠区创业补贴申办服务。">
-<meta property="og:url" content="subsidy-{e(sub.get('slug',''))}.html">
-<meta property="og:image" content="{e(og_image)}">
-<meta name="twitter:card" content="summary_large_image">
-<script type="application/ld+json">{jsonld}</script>
-<link rel="stylesheet" href="styles.css">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&family=Noto+Serif+SC:wght@500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-<header class="header">
-  <div class="container nav-container">
-    <a href="index.html" class="logo"><img src="assets/logo.png" alt="赤兔文创"></a>
-    <nav class="nav">
-      <a href="index.html#about">品牌</a>
-      <a href="index.html#locations">门店</a>
-      <a href="index.html#gallery">实景</a>
-      <a href="index.html#services">服务</a>
-      <a href="index.html#subsidy">企业补贴</a>
-      <a href="index.html#faq">FAQ</a>
-      <a href="index.html#contact" class="nav-cta">联系我们</a>
-    </nav>
-  </div>
-</header>
-<main>
-  <section class="store-hero">
+    inner = f'''  <section class="store-hero">
     {hero}
     <div class="store-hero-overlay">
       <div class="container">
         <span class="location-tag">{e(sub.get('tag', ''))}</span>
-        <h1>{e(sub.get('name', ''))}</h1>
+        <h1>{e(name)}</h1>
         <p>{e(sub.get('standard', ''))}</p>
       </div>
     </div>
@@ -296,26 +239,11 @@ def render_subsidy_page(sub, data):
   <section class="section section-light">
     <div class="container sub-detail">
       {f'<p class="subsidy-summary">{e(summary)}</p>' if summary else ''}
-      <div class="sub-block">
-        <h2>补贴对象</h2>
-        {object_html}
-      </div>
-      <div class="sub-block">
-        <h2>补贴标准</h2>
-        {standard_html}
-      </div>
-      <div class="sub-block">
-        <h2>申请条件</h2>
-        <ul class="subsidy-cond">{conditions}</ul>
-      </div>
-      <div class="sub-block">
-        <h2>所需材料</h2>
-        <ul class="subsidy-mat">{materials}</ul>
-      </div>
-      <div class="sub-block">
-        <h2>办理流程</h2>
-        <ol class="subsidy-flow">{process}</ol>
-      </div>
+      <div class="sub-block"><h2>补贴对象</h2>{object_html}</div>
+      <div class="sub-block"><h2>补贴标准</h2>{standard_html}</div>
+      <div class="sub-block"><h2>申请条件</h2><ul class="subsidy-cond">{conditions}</ul></div>
+      <div class="sub-block"><h2>所需材料</h2><ul class="subsidy-mat">{materials}</ul></div>
+      <div class="sub-block"><h2>办理流程</h2><ol class="subsidy-flow">{process}</ol></div>
       {agency}
       {company_html}
       <div class="store-actions sub-actions">
@@ -324,24 +252,67 @@ def render_subsidy_page(sub, data):
       </div>
       <p class="subsidy-disclaimer">{e(disclaimer)}</p>
     </div>
-  </section>
+  </section>'''
+    meta = {'title': name, 'jsonld': jsonld, 'og_image': og_image, 'phone': phone}
+    return inner, meta
+
+
+def _shell(zh_inner, en_inner, title, jsonld, og_image, phone):
+    """组装完整详情页：中/英双层 + 切换按钮 + 切换脚本。"""
+    nav_html = ''.join(f'<a href="index.html#{k}" data-nav="{k}">{zh}</a>' for k, zh, en in NAV_ITEMS)
+    footer_nav = ''.join(f'<a href="index.html#{k}">{zh}</a>' for k, zh, en in NAV_ITEMS)
+    return f'''<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{e(title)} · 赤兔文创 | 广州海珠联合办公</title>
+<meta name="robots" content="index,follow">
+<meta property="og:title" content="{e(title)}">
+<meta property="og:image" content="{e(og_image)}">
+<script type="application/ld+json">{jsonld}</script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header"><div class="container nav-container">
+<a href="index.html" class="logo"><img src="assets/logo.png" alt="赤兔文创"></a>
+<nav class="nav" id="nav">{nav_html}</nav>
+<div class="lang-switch" id="langSwitch"><button type="button" data-lang="zh" class="active">中</button><button type="button" data-lang="en">EN</button></div>
+<button class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button>
+</div></header>
+<main>
+<div id="store-zh">{zh_inner}</div>
+<div id="store-en" style="display:none">{en_inner}</div>
 </main>
-<footer class="footer">
-  <div class="container footer-grid">
-    <div class="footer-brand">
-      <img src="assets/logo.png" alt="赤兔文创" class="footer-logo">
-      <p>{e(footer.get('brand', ''))}</p>
-    </div>
-    <div class="footer-links"><h4>快速导航</h4>{footer_links}</div>
-    <div class="footer-contact"><h4>{e(footer.get('contactTitle', '联系我们'))}</h4>{footer_contacts}</div>
-  </div>
-  <div class="container footer-copy"><p>{e(footer.get('copy', ''))}</p></div>
-</footer>
-<a href="tel:{e(phone)}" class="float-cta" aria-label="电话咨询">
-  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-</a>
+<footer class="footer"><div class="container footer-grid"><div class="footer-brand"><img src="assets/logo.png" alt="赤兔文创" class="footer-logo"><p>企业生态引擎 · 拎包入驻 · 创享办公社区</p></div><div class="footer-links"><h4>快速导航</h4>{footer_nav}</div><div class="footer-contact"><h4>联系我们</h4><p>微信：18903005927</p></div></div><div class="container footer-copy"><p>© 2017 赤兔文创 · 广州红杉云科技有限公司旗下品牌</p></div></footer>
+<a href="tel:{e(phone)}" class="float-cta" aria-label="电话咨询"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
+<script>{SWITCH_JS}</script>
 </body>
 </html>'''
+
+
+def render_store_page(loc, data):
+    images = data.get('images', {})
+    en = data.get('en') or {}
+    en_loc = next((x for x in en.get('locations', []) if x.get('slug') == loc.get('slug')), None)
+    zh_inner, zh_meta = _store_inner(loc, data, images)
+    if en_loc:
+        en_inner, _ = _store_inner(en_loc, en, images)
+    else:
+        en_inner = zh_inner
+    return _shell(zh_inner, en_inner, zh_meta['title'], zh_meta['jsonld'], zh_meta['og_image'], zh_meta['phone'])
+
+
+def render_subsidy_page(sub, data):
+    images = data.get('images', {})
+    en = data.get('en') or {}
+    en_sub = next((x for x in en.get('subsidies', []) if x.get('slug') == sub.get('slug')), None)
+    zh_inner, zh_meta = _subsidy_inner(sub, data, images)
+    if en_sub:
+        en_inner, _ = _subsidy_inner(en_sub, en, images)
+    else:
+        en_inner = zh_inner
+    return _shell(zh_inner, en_inner, zh_meta['title'], zh_meta['jsonld'], zh_meta['og_image'], zh_meta['phone'])
 
 
 def main():
@@ -357,7 +328,7 @@ def main():
     shutil.copy(os.path.join(ROOT, "styles.css"), os.path.join(DIST, "styles.css"))
     shutil.copy(os.path.join(ROOT, "script.js"), os.path.join(DIST, "script.js"))
 
-    # 生成内联数据文件
+    # 生成内联数据文件（含 zh + en 子树 + images）
     with open(os.path.join(DIST, "content.js"), "w", encoding="utf-8") as f:
         f.write("window.__SITE_DATA__ = ")
         json.dump(data, f, ensure_ascii=False)
@@ -373,7 +344,7 @@ def main():
     with open(os.path.join(DIST, "index.html"), "w", encoding="utf-8") as f:
         f.write(html)
 
-    # 生成各门店独立详情页
+    # 生成各门店独立详情页（双语）
     store_count = 0
     for loc in data.get('locations', []):
         slug = loc.get('slug')
@@ -384,7 +355,7 @@ def main():
             f.write(page)
         store_count += 1
 
-    # 生成各企业补贴独立详情页
+    # 生成各企业补贴独立详情页（双语）
     subsidy_count = 0
     for sub in data.get('subsidies', []):
         slug = sub.get('slug')
@@ -417,7 +388,7 @@ def main():
     print("✅ 构建完成 ->", DIST)
     print("   内联数据大小:", os.path.getsize(os.path.join(DIST, "content.js")), "bytes")
     print("   assets 文件数:", len(os.listdir(os.path.join(DIST, "assets"))))
-    print("   门店详情页:", store_count, " | 企业补贴页:", subsidy_count)
+    print("   门店详情页(双语):", store_count, " | 企业补贴页(双语):", subsidy_count)
     print("   sitemap.xml / robots.txt 已生成 (SITE_BASE =", SITE_BASE, ")")
 
 

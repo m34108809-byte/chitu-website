@@ -59,6 +59,45 @@ DATA = os.path.join(DATA_DIR, 'data.json')
 ASSETS = os.path.join(DATA_DIR, 'assets')
 ADMIN_PASS = os.environ.get('CHITU_ADMIN_PASS', 'chitu2026')
 
+
+def _sync_en():
+    """en 是多语言翻译资产（由 make_en.py 基于中文源生成），始终以源码为准。
+    这样无论是否启用持久卷（CHITU_DATA_DIR），线上英文内容都跟随最新部署，
+    且后台只编辑中文、保存时不会丢失英文子树。"""
+    src = os.path.join(ROOT, 'data.json')
+    if not os.path.isfile(src):
+        return
+    try:
+        with open(src, 'r', encoding='utf-8') as f:
+            src_data = json.load(f)
+    except Exception:
+        return
+    en = src_data.get('en')
+    if not en:
+        return
+    if os.path.isfile(DATA):
+        try:
+            with open(DATA, 'r', encoding='utf-8') as f:
+                d = json.load(f)
+        except Exception:
+            d = {}
+    else:
+        d = {}
+    if d.get('en') == en:
+        return
+    d['en'] = en
+    try:
+        tmp = DATA + '.tmp'
+        with open(tmp, 'w', encoding='utf-8') as f:
+            json.dump(d, f, ensure_ascii=False, indent=2)
+        os.replace(tmp, DATA)
+        print(' 已同步 en 子树 -> %s' % DATA)
+    except Exception as e:
+        print(' [warn] 无法同步 en 子树到 %s: %s' % (DATA, e))
+
+
+_sync_en()
+
 # 允许上传的图片扩展名
 ALLOWED_EXT = {'.jpg', '.jpeg', '.png', '.webp', '.gif', '.svg', '.avif'}
 SAFE_NAME = re.compile(r'^[A-Za-z0-9_.-]+$')
