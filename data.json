@@ -124,7 +124,60 @@
           "unit": "/间·月起",
           "config": "独立门锁可注册公司，含工位桌椅与文件柜，适合初创团队拎包入驻。"
         }
-      ]
+      ],
+      "hourly": [
+        {
+          "cat": "会议室",
+          "name": "小型会议室",
+          "capacity": "4-6人",
+          "area": "约20㎡",
+          "hourly": "¥80",
+          "halfDay": "¥300",
+          "fullDay": "¥500",
+          "config": "高清投屏、白板、高速WiFi，适合商务洽谈与小团队会议。"
+        },
+        {
+          "cat": "会议室",
+          "name": "中型会议室",
+          "capacity": "10-15人",
+          "area": "约35㎡",
+          "hourly": "¥120",
+          "halfDay": "¥450",
+          "fullDay": "¥800",
+          "config": "LED屏、音响、麦克风，适合项目评审与路演。"
+        },
+        {
+          "cat": "会议室",
+          "name": "大型会议室",
+          "capacity": "20-50人",
+          "area": "约70㎡",
+          "hourly": "¥160",
+          "halfDay": "¥600",
+          "fullDay": "¥1100",
+          "config": "全套影音设备，适合发布会、培训与大型会议。"
+        },
+        {
+          "cat": "茶室",
+          "name": "新中式茶室包厢",
+          "capacity": "2-4人",
+          "area": "约15㎡",
+          "hourly": "¥58",
+          "halfDay": "¥220",
+          "fullDay": "¥400",
+          "config": "独立隔音、功夫茶具、免费茶叶，适合私密商务洽谈。"
+        },
+        {
+          "cat": "课室",
+          "name": "培训课室",
+          "capacity": "20-40人",
+          "area": "约50㎡",
+          "hourly": "¥100",
+          "halfDay": "¥380",
+          "fullDay": "¥700",
+          "config": "课桌椅、投屏、白板，适合培训、沙龙与分享会。"
+        }
+      ],
+      "meituan": "https://www.meituan.com/search/?query=%E8%B5%A4%E5%85%94%E5%A6%82%E6%84%8F%E6%B8%AF%20%E4%BC%9A%E8%AE%AE%E5%AE%A4"
     },
     {
       "imgKey": "loc2",
@@ -162,7 +215,60 @@
           "unit": "/间·月起",
           "config": "独立门锁可注册公司，含4组工位桌椅与文件柜，适合小团队。"
         }
-      ]
+      ],
+      "hourly": [
+        {
+          "cat": "会议室",
+          "name": "小型会议室",
+          "capacity": "4-6人",
+          "area": "约20㎡",
+          "hourly": "¥80",
+          "halfDay": "¥300",
+          "fullDay": "¥500",
+          "config": "白板、投屏、高速WiFi，适合团队碰头与面试。"
+        },
+        {
+          "cat": "会议室",
+          "name": "中型会议室",
+          "capacity": "10-15人",
+          "area": "约40㎡",
+          "hourly": "¥120",
+          "halfDay": "¥450",
+          "fullDay": "¥800",
+          "config": "音响、麦克风、LED屏，适合项目评审。"
+        },
+        {
+          "cat": "会议室",
+          "name": "大型会议室（113㎡）",
+          "capacity": "30-80人",
+          "area": "约113㎡",
+          "hourly": "¥180",
+          "halfDay": "¥700",
+          "fullDay": "¥1300",
+          "config": "电竞/现代双风格，全套影音，适合发布会与大型活动。"
+        },
+        {
+          "cat": "茶室",
+          "name": "新中式茶室包厢",
+          "capacity": "2-4人",
+          "area": "约15㎡",
+          "hourly": "¥58",
+          "halfDay": "¥220",
+          "fullDay": "¥400",
+          "config": "独立隔音、功夫茶具、免费茶叶，适合私密洽谈。"
+        },
+        {
+          "cat": "课室",
+          "name": "培训课室",
+          "capacity": "20-40人",
+          "area": "约55㎡",
+          "hourly": "¥100",
+          "halfDay": "¥380",
+          "fullDay": "¥700",
+          "config": "课桌椅、投屏、白板，适合培训与分享会。"
+        }
+      ],
+      "meituan": "https://www.meituan.com/search/?query=%E8%B5%A4%E5%85%94%E6%95%B0%E5%AD%97%E6%B8%AF%20%E4%BC%9A%E8%AE%AE%E5%AE%A4"
     },
     {
       "imgKey": "loc3",
@@ -200,7 +306,50 @@
           "unit": "/间·月起",
           "config": "独立门锁可注册公司，含工位桌椅与文件柜，近鹭江站。"
         }
-      ]
+      ],
+      "hourly": [
+        {
+          "cat": "会议室",
+          "name": "小型会议室",
+          "capacity": "4-6人",
+          "area": "约18㎡",
+          "hourly": "¥80",
+          "halfDay": "¥300",
+          "fullDay": "¥500",
+          "config": "白板、投屏、高速WiFi，适合商务洽谈。"
+        },
+        {
+          "cat": "会议室",
+          "name": "中型会议室",
+          "capacity": "10-15人",
+          "area": "约35㎡",
+          "hourly": "¥120",
+          "halfDay": "¥450",
+          "fullDay": "¥800",
+          "config": "音响、麦克风、投屏，适合评审与路演。"
+        },
+        {
+          "cat": "茶室",
+          "name": "新中式茶室包厢",
+          "capacity": "2-4人",
+          "area": "约15㎡",
+          "hourly": "¥58",
+          "halfDay": "¥220",
+          "fullDay": "¥400",
+          "config": "独立隔音、功夫茶具、免费茶叶，适合私密会客。"
+        },
+        {
+          "cat": "课室",
+          "name": "培训课室",
+          "capacity": "20-40人",
+          "area": "约50㎡",
+          "hourly": "¥100",
+          "halfDay": "¥380",
+          "fullDay": "¥700",
+          "config": "课桌椅、投屏、白板，适合培训、沙龙。"
+        }
+      ],
+      "meituan": "https://www.meituan.com/search/?query=%E8%B5%A4%E5%85%94%E8%81%94%E5%90%88%E5%8A%9E%E5%85%AC%E9%B9%AD%E6%B1%9F%20%E4%BC%9A%E8%AE%AE%E5%AE%A4"
     },
     {
       "imgKey": "loc4",
@@ -230,7 +379,50 @@
           "unit": "/人·月起",
           "config": "独立办公桌+人体工学椅，共享会议室每月赠送2小时，享公共休闲区与免费茶饮。"
         }
-      ]
+      ],
+      "hourly": [
+        {
+          "cat": "会议室",
+          "name": "小型会议室",
+          "capacity": "4-6人",
+          "area": "约18㎡",
+          "hourly": "¥70",
+          "halfDay": "¥260",
+          "fullDay": "¥450",
+          "config": "白板、投屏、高速WiFi，适合商务洽谈（本店价格最优）。"
+        },
+        {
+          "cat": "会议室",
+          "name": "中型会议室",
+          "capacity": "10-15人",
+          "area": "约35㎡",
+          "hourly": "¥110",
+          "halfDay": "¥400",
+          "fullDay": "¥720",
+          "config": "音响、麦克风、投屏，适合项目评审。"
+        },
+        {
+          "cat": "茶室",
+          "name": "新中式茶室包厢",
+          "capacity": "2-4人",
+          "area": "约15㎡",
+          "hourly": "¥50",
+          "halfDay": "¥190",
+          "fullDay": "¥360",
+          "config": "独立隔音、功夫茶具、免费茶叶，适合私密会客。"
+        },
+        {
+          "cat": "课室",
+          "name": "培训课室",
+          "capacity": "20-40人",
+          "area": "约50㎡",
+          "hourly": "¥90",
+          "halfDay": "¥340",
+          "fullDay": "¥620",
+          "config": "课桌椅、投屏、白板，适合培训、沙龙。"
+        }
+      ],
+      "meituan": "https://www.meituan.com/search/?query=%E4%BC%81%E7%A8%8B%E5%88%9B%E6%84%8F%E7%A9%BA%E9%97%B4%20%E4%BC%9A%E8%AE%AE%E5%AE%A4"
     }
   ],
   "galleryHeader": {
@@ -712,7 +904,60 @@
             "unit": "/room/mo",
             "config": "Lockable door, company-registration ready, with desks and filing cabinet — ideal for startups to move in directly."
           }
-        ]
+        ],
+        "hourly": [
+          {
+            "cat": "Meeting Room",
+            "name": "Small Meeting Room",
+            "capacity": "4-6 pax",
+            "area": "~20㎡",
+            "hourly": "¥80",
+            "halfDay": "¥300",
+            "fullDay": "¥500",
+            "config": "HD screen, whiteboard and high-speed WiFi — ideal for talks and small-team meetings."
+          },
+          {
+            "cat": "Meeting Room",
+            "name": "Medium Meeting Room",
+            "capacity": "10-15 pax",
+            "area": "~35㎡",
+            "hourly": "¥120",
+            "halfDay": "¥450",
+            "fullDay": "¥800",
+            "config": "LED screen, audio and mics — good for reviews and pitches."
+          },
+          {
+            "cat": "Meeting Room",
+            "name": "Large Meeting Room",
+            "capacity": "20-50 pax",
+            "area": "~70㎡",
+            "hourly": "¥160",
+            "halfDay": "¥600",
+            "fullDay": "¥1100",
+            "config": "Full AV setup — for launches, training and large meetings."
+          },
+          {
+            "cat": "Tea Room",
+            "name": "New-Chinese Tea Room",
+            "capacity": "2-4 pax",
+            "area": "~15㎡",
+            "hourly": "¥58",
+            "halfDay": "¥220",
+            "fullDay": "¥400",
+            "config": "Soundproof, kung-fu tea set and free tea — for private business talks."
+          },
+          {
+            "cat": "Training Room",
+            "name": "Training Room",
+            "capacity": "20-40 pax",
+            "area": "~50㎡",
+            "hourly": "¥100",
+            "halfDay": "¥380",
+            "fullDay": "¥700",
+            "config": "Desks, screen and whiteboard — for training, salons and meetups."
+          }
+        ],
+        "meituan": "https://www.meituan.com/search/?query=%E8%B5%A4%E5%85%94%E5%A6%82%E6%84%8F%E6%B8%AF%20%E4%BC%9A%E8%AE%AE%E5%AE%A4"
       },
       {
         "imgKey": "loc2",
@@ -750,7 +995,60 @@
             "unit": "/room/mo",
             "config": "Lockable door, company-registration ready, with 4 desks and filing cabinet — ideal for small teams."
           }
-        ]
+        ],
+        "hourly": [
+          {
+            "cat": "Meeting Room",
+            "name": "Small Meeting Room",
+            "capacity": "4-6 pax",
+            "area": "~20㎡",
+            "hourly": "¥80",
+            "halfDay": "¥300",
+            "fullDay": "¥500",
+            "config": "Whiteboard, screen and WiFi — for standups and interviews."
+          },
+          {
+            "cat": "Meeting Room",
+            "name": "Medium Meeting Room",
+            "capacity": "10-15 pax",
+            "area": "~40㎡",
+            "hourly": "¥120",
+            "halfDay": "¥450",
+            "fullDay": "¥800",
+            "config": "Audio, mics and LED screen — for reviews."
+          },
+          {
+            "cat": "Meeting Room",
+            "name": "Large Meeting Room (113㎡)",
+            "capacity": "30-80 pax",
+            "area": "~113㎡",
+            "hourly": "¥180",
+            "halfDay": "¥700",
+            "fullDay": "¥1300",
+            "config": "Modern / esports dual style, full AV — for launches and big events."
+          },
+          {
+            "cat": "Tea Room",
+            "name": "New-Chinese Tea Room",
+            "capacity": "2-4 pax",
+            "area": "~15㎡",
+            "hourly": "¥58",
+            "halfDay": "¥220",
+            "fullDay": "¥400",
+            "config": "Soundproof, kung-fu tea set and free tea — for private talks."
+          },
+          {
+            "cat": "Training Room",
+            "name": "Training Room",
+            "capacity": "20-40 pax",
+            "area": "~55㎡",
+            "hourly": "¥100",
+            "halfDay": "¥380",
+            "fullDay": "¥700",
+            "config": "Desks, screen and whiteboard — for training and meetups."
+          }
+        ],
+        "meituan": "https://www.meituan.com/search/?query=%E8%B5%A4%E5%85%94%E6%95%B0%E5%AD%97%E6%B8%AF%20%E4%BC%9A%E8%AE%AE%E5%AE%A4"
       },
       {
         "imgKey": "loc3",
@@ -788,7 +1086,50 @@
             "unit": "/room/mo",
             "config": "Lockable door, company-registration ready, with desks and filing cabinet, near Lujiang Station."
           }
-        ]
+        ],
+        "hourly": [
+          {
+            "cat": "Meeting Room",
+            "name": "Small Meeting Room",
+            "capacity": "4-6 pax",
+            "area": "~18㎡",
+            "hourly": "¥80",
+            "halfDay": "¥300",
+            "fullDay": "¥500",
+            "config": "Whiteboard, screen and WiFi — for business talks."
+          },
+          {
+            "cat": "Meeting Room",
+            "name": "Medium Meeting Room",
+            "capacity": "10-15 pax",
+            "area": "~35㎡",
+            "hourly": "¥120",
+            "halfDay": "¥450",
+            "fullDay": "¥800",
+            "config": "Audio, mics and screen — for reviews and pitches."
+          },
+          {
+            "cat": "Tea Room",
+            "name": "New-Chinese Tea Room",
+            "capacity": "2-4 pax",
+            "area": "~15㎡",
+            "hourly": "¥58",
+            "halfDay": "¥220",
+            "fullDay": "¥400",
+            "config": "Soundproof, kung-fu tea set and free tea — for private meetings."
+          },
+          {
+            "cat": "Training Room",
+            "name": "Training Room",
+            "capacity": "20-40 pax",
+            "area": "~50㎡",
+            "hourly": "¥100",
+            "halfDay": "¥380",
+            "fullDay": "¥700",
+            "config": "Desks, screen and whiteboard — for training and salons."
+          }
+        ],
+        "meituan": "https://www.meituan.com/search/?query=%E8%B5%A4%E5%85%94%E8%81%94%E5%90%88%E5%8A%9E%E5%85%AC%E9%B9%AD%E6%B1%9F%20%E4%BC%9A%E8%AE%AE%E5%AE%A4"
       },
       {
         "imgKey": "loc4",
@@ -818,7 +1159,50 @@
             "unit": "/person/mo",
             "config": "Private desk + ergonomic chair; 2 free meeting-room hours monthly; access to lounge and free tea."
           }
-        ]
+        ],
+        "hourly": [
+          {
+            "cat": "Meeting Room",
+            "name": "Small Meeting Room",
+            "capacity": "4-6 pax",
+            "area": "~18㎡",
+            "hourly": "¥70",
+            "halfDay": "¥260",
+            "fullDay": "¥450",
+            "config": "Whiteboard, screen and WiFi — for talks (best value here)."
+          },
+          {
+            "cat": "Meeting Room",
+            "name": "Medium Meeting Room",
+            "capacity": "10-15 pax",
+            "area": "~35㎡",
+            "hourly": "¥110",
+            "halfDay": "¥400",
+            "fullDay": "¥720",
+            "config": "Audio, mics and screen — for reviews."
+          },
+          {
+            "cat": "Tea Room",
+            "name": "New-Chinese Tea Room",
+            "capacity": "2-4 pax",
+            "area": "~15㎡",
+            "hourly": "¥50",
+            "halfDay": "¥190",
+            "fullDay": "¥360",
+            "config": "Soundproof, kung-fu tea set and free tea — for private meetings."
+          },
+          {
+            "cat": "Training Room",
+            "name": "Training Room",
+            "capacity": "20-40 pax",
+            "area": "~50㎡",
+            "hourly": "¥90",
+            "halfDay": "¥340",
+            "fullDay": "¥620",
+            "config": "Desks, screen and whiteboard — for training and salons."
+          }
+        ],
+        "meituan": "https://www.meituan.com/search/?query=%E4%BC%81%E7%A8%8B%E5%88%9B%E6%84%8F%E7%A9%BA%E9%97%B4%20%E4%BC%9A%E8%AE%AE%E5%AE%A4"
       }
     ],
     "galleryHeader": {
@@ -1280,7 +1664,60 @@
             "unit": "/間·月起",
             "config": "獨立門鎖可註冊公司，含工位桌椅與文件櫃，適合初創團隊拎包入駐。"
           }
-        ]
+        ],
+        "hourly": [
+          {
+            "cat": "會議室",
+            "name": "小型會議室",
+            "capacity": "4-6人",
+            "area": "約20㎡",
+            "hourly": "¥80",
+            "halfDay": "¥300",
+            "fullDay": "¥500",
+            "config": "高清投屏、白板、高速WiFi，適合商務洽談與小團隊會議。"
+          },
+          {
+            "cat": "會議室",
+            "name": "中型會議室",
+            "capacity": "10-15人",
+            "area": "約35㎡",
+            "hourly": "¥120",
+            "halfDay": "¥450",
+            "fullDay": "¥800",
+            "config": "LED屏、音響、麥克風，適合項目評審與路演。"
+          },
+          {
+            "cat": "會議室",
+            "name": "大型會議室",
+            "capacity": "20-50人",
+            "area": "約70㎡",
+            "hourly": "¥160",
+            "halfDay": "¥600",
+            "fullDay": "¥1100",
+            "config": "全套影音設備，適合發佈會、培訓與大型會議。"
+          },
+          {
+            "cat": "茶室",
+            "name": "新中式茶室包廂",
+            "capacity": "2-4人",
+            "area": "約15㎡",
+            "hourly": "¥58",
+            "halfDay": "¥220",
+            "fullDay": "¥400",
+            "config": "獨立隔音、功夫茶具、免費茶葉，適合私密商務洽談。"
+          },
+          {
+            "cat": "課室",
+            "name": "培訓課室",
+            "capacity": "20-40人",
+            "area": "約50㎡",
+            "hourly": "¥100",
+            "halfDay": "¥380",
+            "fullDay": "¥700",
+            "config": "課桌椅、投屏、白板，適合培訓、沙龍與分享會。"
+          }
+        ],
+        "meituan": "https://www.meituan.com/search/?query=%E8%B5%A4%E5%85%94%E5%A6%82%E6%84%8F%E6%B8%AF%20%E4%BC%9A%E8%AE%AE%E5%AE%A4"
       },
       {
         "imgKey": "loc2",
@@ -1318,7 +1755,60 @@
             "unit": "/間·月起",
             "config": "獨立門鎖可註冊公司，含4組工位桌椅與文件櫃，適合小團隊。"
           }
-        ]
+        ],
+        "hourly": [
+          {
+            "cat": "會議室",
+            "name": "小型會議室",
+            "capacity": "4-6人",
+            "area": "約20㎡",
+            "hourly": "¥80",
+            "halfDay": "¥300",
+            "fullDay": "¥500",
+            "config": "白板、投屏、高速WiFi，適合團隊碰頭與面試。"
+          },
+          {
+            "cat": "會議室",
+            "name": "中型會議室",
+            "capacity": "10-15人",
+            "area": "約40㎡",
+            "hourly": "¥120",
+            "halfDay": "¥450",
+            "fullDay": "¥800",
+            "config": "音響、麥克風、LED屏，適合項目評審。"
+          },
+          {
+            "cat": "會議室",
+            "name": "大型會議室（113㎡）",
+            "capacity": "30-80人",
+            "area": "約113㎡",
+            "hourly": "¥180",
+            "halfDay": "¥700",
+            "fullDay": "¥1300",
+            "config": "電競/現代雙風格，全套影音，適合發佈會與大型活動。"
+          },
+          {
+            "cat": "茶室",
+            "name": "新中式茶室包廂",
+            "capacity": "2-4人",
+            "area": "約15㎡",
+            "hourly": "¥58",
+            "halfDay": "¥220",
+            "fullDay": "¥400",
+            "config": "獨立隔音、功夫茶具、免費茶葉，適合私密洽談。"
+          },
+          {
+            "cat": "課室",
+            "name": "培訓課室",
+            "capacity": "20-40人",
+            "area": "約55㎡",
+            "hourly": "¥100",
+            "halfDay": "¥380",
+            "fullDay": "¥700",
+            "config": "課桌椅、投屏、白板，適合培訓與分享會。"
+          }
+        ],
+        "meituan": "https://www.meituan.com/search/?query=%E8%B5%A4%E5%85%94%E6%95%B0%E5%AD%97%E6%B8%AF%20%E4%BC%9A%E8%AE%AE%E5%AE%A4"
       },
       {
         "imgKey": "loc3",
@@ -1356,7 +1846,50 @@
             "unit": "/間·月起",
             "config": "獨立門鎖可註冊公司，含工位桌椅與文件櫃，近鷺江站。"
           }
-        ]
+        ],
+        "hourly": [
+          {
+            "cat": "會議室",
+            "name": "小型會議室",
+            "capacity": "4-6人",
+            "area": "約18㎡",
+            "hourly": "¥80",
+            "halfDay": "¥300",
+            "fullDay": "¥500",
+            "config": "白板、投屏、高速WiFi，適合商務洽談。"
+          },
+          {
+            "cat": "會議室",
+            "name": "中型會議室",
+            "capacity": "10-15人",
+            "area": "約35㎡",
+            "hourly": "¥120",
+            "halfDay": "¥450",
+            "fullDay": "¥800",
+            "config": "音響、麥克風、投屏，適合評審與路演。"
+          },
+          {
+            "cat": "茶室",
+            "name": "新中式茶室包廂",
+            "capacity": "2-4人",
+            "area": "約15㎡",
+            "hourly": "¥58",
+            "halfDay": "¥220",
+            "fullDay": "¥400",
+            "config": "獨立隔音、功夫茶具、免費茶葉，適合私密會客。"
+          },
+          {
+            "cat": "課室",
+            "name": "培訓課室",
+            "capacity": "20-40人",
+            "area": "約50㎡",
+            "hourly": "¥100",
+            "halfDay": "¥380",
+            "fullDay": "¥700",
+            "config": "課桌椅、投屏、白板，適合培訓、沙龍。"
+          }
+        ],
+        "meituan": "https://www.meituan.com/search/?query=%E8%B5%A4%E5%85%94%E8%81%94%E5%90%88%E5%8A%9E%E5%85%AC%E9%B9%AD%E6%B1%9F%20%E4%BC%9A%E8%AE%AE%E5%AE%A4"
       },
       {
         "imgKey": "loc4",
@@ -1386,7 +1919,50 @@
             "unit": "/人·月起",
             "config": "獨立辦公桌+人體工學椅，共享會議室每月贈送2小時，享公共休閒區與免費茶飲。"
           }
-        ]
+        ],
+        "hourly": [
+          {
+            "cat": "會議室",
+            "name": "小型會議室",
+            "capacity": "4-6人",
+            "area": "約18㎡",
+            "hourly": "¥70",
+            "halfDay": "¥260",
+            "fullDay": "¥450",
+            "config": "白板、投屏、高速WiFi，適合商務洽談（本店價格最優）。"
+          },
+          {
+            "cat": "會議室",
+            "name": "中型會議室",
+            "capacity": "10-15人",
+            "area": "約35㎡",
+            "hourly": "¥110",
+            "halfDay": "¥400",
+            "fullDay": "¥720",
+            "config": "音響、麥克風、投屏，適合項目評審。"
+          },
+          {
+            "cat": "茶室",
+            "name": "新中式茶室包廂",
+            "capacity": "2-4人",
+            "area": "約15㎡",
+            "hourly": "¥50",
+            "halfDay": "¥190",
+            "fullDay": "¥360",
+            "config": "獨立隔音、功夫茶具、免費茶葉，適合私密會客。"
+          },
+          {
+            "cat": "課室",
+            "name": "培訓課室",
+            "capacity": "20-40人",
+            "area": "約50㎡",
+            "hourly": "¥90",
+            "halfDay": "¥340",
+            "fullDay": "¥620",
+            "config": "課桌椅、投屏、白板，適合培訓、沙龍。"
+          }
+        ],
+        "meituan": "https://www.meituan.com/search/?query=%E4%BC%81%E7%A8%8B%E5%88%9B%E6%84%8F%E7%A9%BA%E9%97%B4%20%E4%BC%9A%E8%AE%AE%E5%AE%A4"
       }
     ],
     "galleryHeader": {

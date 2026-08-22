@@ -65,7 +65,71 @@ NAV_ITEMS = [('about', '品牌', 'About'), ('locations', '门店', 'Locations'),
              ('contact', '联系我们', 'Contact')]
 
 
-def _store_inner(loc, data, images):
+HOURLY_I18N = {
+    'zh': {
+        'title': '临租空间',
+        'sub': '会议室 / 茶室 / 课室按小时、半日、全日灵活短租，欢迎来电或美团下单预订。',
+        'venue': '场地', 'cap': '容纳', 'area': '面积',
+        'hourly': '时租', 'half': '半日', 'full': '全日', 'config': '配置说明',
+        'meituan': '去美团看团购', 'call': '电话预订',
+    },
+    'en': {
+        'title': 'Hourly Rental',
+        'sub': 'Meeting rooms, tea rooms and classrooms for hourly, half-day and full-day rental. Call us or book on Meituan.',
+        'venue': 'Venue', 'cap': 'Capacity', 'area': 'Area',
+        'hourly': 'Hourly', 'half': 'Half-day', 'full': 'Full-day', 'config': 'Setup',
+        'meituan': 'View on Meituan', 'call': 'Call to Book',
+    },
+    'zh-Hant': {
+        'title': '臨租空間',
+        'sub': '會議室 / 茶室 / 課室按小時、半日、全日靈活短租，歡迎來電或美團下單預訂。',
+        'venue': '場地', 'cap': '容納', 'area': '面積',
+        'hourly': '時租', 'half': '半日', 'full': '全日', 'config': '配置說明',
+        'meituan': '去美團看團購', 'call': '電話預訂',
+    },
+}
+
+
+def _hourly_block(loc, lang, phone):
+    """生成临租空间栏（会议室/茶室/课室短租），无数据返回空串。"""
+    hourly = loc.get('hourly', [])
+    if not hourly:
+        return ''
+    t = HOURLY_I18N.get(lang, HOURLY_I18N['zh'])
+    rows = ''
+    for h in hourly:
+        rows += (
+            '<tr>'
+            f'<td><span class="hourly-cat">{e(h.get("cat", ""))}</span>'
+            f'<b class="hourly-name">{e(h.get("name", ""))}</b></td>'
+            f'<td>{e(h.get("capacity", ""))}</td>'
+            f'<td>{e(h.get("area", ""))}</td>'
+            f'<td class="hourly-price">{e(h.get("hourly", ""))}</td>'
+            f'<td>{e(h.get("halfDay", ""))}</td>'
+            f'<td>{e(h.get("fullDay", ""))}</td>'
+            f'<td class="hourly-config">{e(h.get("config", ""))}</td>'
+            '</tr>'
+        )
+    meituan = loc.get('meituan', '')
+    meituan_btn = (
+        f'<a class="btn btn-primary" href="{e(meituan)}" target="_blank" rel="noopener">{t["meituan"]}</a>'
+    ) if meituan else ''
+    call_btn = f'<a class="btn btn-outline" href="tel:{e(phone)}">{t["call"]}</a>' if phone else ''
+    return (
+        '<section class="store-hourly">'
+        f'<div class="rooms-head"><h2>{t["title"]}</h2><p>{t["sub"]}</p></div>'
+        '<div class="hourly-table-wrap"><table class="hourly-table">'
+        '<thead><tr>'
+        f'<th>{t["venue"]}</th><th>{t["cap"]}</th><th>{t["area"]}</th>'
+        f'<th>{t["hourly"]}</th><th>{t["half"]}</th><th>{t["full"]}</th><th>{t["config"]}</th>'
+        '</tr></thead>'
+        f'<tbody>{rows}</tbody></table></div>'
+        f'<div class="store-actions hourly-actions">{meituan_btn}{call_btn}</div>'
+        '</section>'
+    )
+
+
+def _store_inner(loc, data, images, lang='zh'):
     """生成门店详情页主体 HTML（不含外壳），返回 (inner_html, meta)。"""
     img = images
     ipath = img.get(loc.get('imgKey', ''))
@@ -167,6 +231,7 @@ def _store_inner(loc, data, images):
         </div>
       </div>
       {rooms_block}
+      {_hourly_block(loc, lang, phone)}
     </div>
   </section>'''
     meta = {'title': name, 'jsonld': jsonld, 'og_image': og_image, 'phone': phone}
@@ -302,8 +367,8 @@ def render_store_page(loc, data, version=''):
     en_loc = next((x for x in en.get('locations', []) if x.get('slug') == loc.get('slug')), None)
     tw_loc = next((x for x in tw.get('locations', []) if x.get('slug') == loc.get('slug')), None)
     zh_inner, zh_meta = _store_inner(loc, data, images)
-    en_inner = _store_inner(en_loc, en, images)[0] if en_loc else zh_inner
-    tw_inner = _store_inner(tw_loc, tw, images)[0] if tw_loc else zh_inner
+    en_inner = _store_inner(en_loc, en, images, lang='en')[0] if en_loc else zh_inner
+    tw_inner = _store_inner(tw_loc, tw, images, lang='zh-Hant')[0] if tw_loc else zh_inner
     return _shell(zh_inner, en_inner, tw_inner, zh_meta['title'], zh_meta['jsonld'], zh_meta['og_image'], zh_meta['phone'], version)
 
 
