@@ -20,7 +20,9 @@ import json
 import mimetypes
 import os
 import re
+import shutil
 import sys
+import time
 from http.server import SimpleHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import urlparse
 
@@ -232,6 +234,10 @@ class Handler(SimpleHTTPRequestHandler):
             html = html.replace('src="script.js"', 'src="script.js?v=%s"' % APP_VERSION)
             html = html.replace('href="styles.css"', 'href="styles.css?v=%s"' % APP_VERSION)
             return self._send(200, self._inject(html), 'text/html; charset=utf-8')
+        if p == '/api/status':
+            # 后台用此接口判断是否启用了持久化（CHITU_DATA_DIR 指向持久卷）
+            persisted = bool(os.environ.get('CHITU_DATA_DIR'))
+            return self._send(200, json.dumps({'persisted': persisted}), 'application/json; charset=utf-8')
         if p == '/api/content':
             try:
                 with open(DATA, 'rb') as f:
@@ -278,6 +284,22 @@ class Handler(SimpleHTTPRequestHandler):
             raw = self.rfile.read(length)
             try:
                 json.loads(raw)  # 校验是否为合法 JSON
+                # 保存前自动备份当前版本（防止误操作/覆盖，保留最近 50 份）
+                try:
+                    if os.path.isfile(DATA):
+                        bdir = os.path.join(DATA_DIR, 'backups')
+                        os.makedirs(bdir, exist_ok=True)
+                        bpath = os.path.join(bdir, 'data-%s.json' % time.strftime('%Y%m%d-%H%M%S'))
+                        shutil.copy2(DATA, bpath)
+                        olds = sorted(x for x in os.listdir(bdir)
+                                      if x.startswith('data-') and x.endswith('.json'))
+                        for x in olds[:-50]:
+                            try:
+                                os.remove(os.path.join(bdir, x))
+                            except OSError:
+                                pass
+                except Exception as e:
+                    print(' [warn] 保存前备份失败: %s' % e)
                 tmp = DATA + '.tmp'
                 with open(tmp, 'wb') as f:
                     f.write(raw)
