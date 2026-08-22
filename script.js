@@ -245,16 +245,17 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const NAV_TEXT = {
     zh: { about: '品牌', locations: '门店', gallery: '实景', services: '服务', subsidy: '企业补贴', faq: 'FAQ', contact: '联系我们' },
-    en: { about: 'About', locations: 'Locations', gallery: 'Gallery', services: 'Spaces', subsidy: 'Subsidies', faq: 'FAQ', contact: 'Contact' }
+    en: { about: 'About', locations: 'Locations', gallery: 'Gallery', services: 'Spaces', subsidy: 'Subsidies', faq: 'FAQ', contact: 'Contact' },
+    zhHant: { about: '品牌', locations: '門店', gallery: '實景', services: '服務', subsidy: '企業補貼', faq: 'FAQ', contact: '聯繫我們' }
   };
 
   function showLang(l) {
     currentLang = l;
     try { localStorage.setItem(LANG_KEY, l); } catch (e) {}
     const root = window.__SITE_DATA__ || {};
-    const content = (l === 'en' && root.en) ? root.en : root;
+    const content = root[l] || root;
     const images = root.images || {};
-    document.documentElement.lang = (l === 'en') ? 'en' : 'zh-CN';
+    document.documentElement.lang = (l === 'en') ? 'en' : (l === 'zhHant' ? 'zh-Hant' : 'zh-CN');
     render(content, images);
     updateLangUI();
   }

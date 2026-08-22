@@ -35,25 +35,27 @@ def ml(s):
 # 详情页底部语言切换脚本（普通字符串，{ } 为 JS 语法，无需转义）
 SWITCH_JS = """
 (function(){
-  var NAV={about:'品牌',locations:'门店',gallery:'实景',services:'服务',subsidy:'企业补贴',faq:'FAQ',contact:'联系我们'};
-  var NAVen={about:'About',locations:'Locations',gallery:'Gallery',services:'Spaces',subsidy:'Subsidies',faq:'FAQ',contact:'Contact'};
+  var NAV={
+    zh:{about:'品牌',locations:'门店',gallery:'实景',services:'服务',subsidy:'企业补贴',faq:'FAQ',contact:'联系我们'},
+    en:{about:'About',locations:'Locations',gallery:'Gallery',services:'Spaces',subsidy:'Subsidies',faq:'FAQ',contact:'Contact'},
+    zhHant:{about:'品牌',locations:'門店',gallery:'實景',services:'服務',subsidy:'企業補貼',faq:'FAQ',contact:'聯繫我們'}
+  };
+  var LAYERS={zh:'store-zh',en:'store-en',zhHant:'store-tw'};
   var KEY='chitu_lang';
-  var lang=localStorage.getItem(KEY)||'zh';
   function apply(l){
-    lang=l;try{localStorage.setItem(KEY,l);}catch(e){}
-    var z=document.getElementById('store-zh'),n=document.getElementById('store-en');
-    if(z)z.style.display=l==='en'?'none':'';
-    if(n)n.style.display=l==='en'?'':'none';
-    document.documentElement.lang=l==='en'?'en':'zh-CN';
+    if(!NAV[l]) l='zh';
+    try{localStorage.setItem(KEY,l);}catch(e){}
+    for(var k in LAYERS){var el=document.getElementById(LAYERS[k]); if(el) el.style.display=(k===l)?'':'none';}
+    document.documentElement.lang=(l==='en')?'en':((l==='zhHant')?'zh-Hant':'zh-CN');
     var btns=document.querySelectorAll('#langSwitch button');
     for(var i=0;i<btns.length;i++){btns[i].classList.toggle('active',btns[i].dataset.lang===l);}
-    var t=(l==='en')?NAVen:NAV;
-    var as=document.querySelectorAll('#nav a[data-nav]');
-    for(var j=0;j<as.length;j++){var k=as[j].dataset.nav; if(t[k])as[j].textContent=t[k];}
+    var t=NAV[l]; var as=document.querySelectorAll('#nav a[data-nav]');
+    for(var j=0;j<as.length;j++){var kk=as[j].dataset.nav; if(t[kk])as[j].textContent=t[kk];}
   }
+  var saved=localStorage.getItem(KEY)||'zh';
+  apply(saved);
   var sb=document.querySelectorAll('#langSwitch button');
   for(var m=0;m<sb.length;m++){sb[m].addEventListener('click',function(){apply(this.dataset.lang);});}
-  apply(lang);
 })();
 """
 
@@ -257,10 +259,11 @@ def _subsidy_inner(sub, data, images):
     return inner, meta
 
 
-def _shell(zh_inner, en_inner, title, jsonld, og_image, phone):
+def _shell(zh_inner, en_inner, tw_inner, title, jsonld, og_image, phone, version=''):
     """组装完整详情页：中/英双层 + 切换按钮 + 切换脚本。"""
     nav_html = ''.join(f'<a href="index.html#{k}" data-nav="{k}">{zh}</a>' for k, zh, en in NAV_ITEMS)
     footer_nav = ''.join(f'<a href="index.html#{k}">{zh}</a>' for k, zh, en in NAV_ITEMS)
+    css = f'styles.css?v={version}' if version else 'styles.css'
     return f'''<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -271,18 +274,19 @@ def _shell(zh_inner, en_inner, title, jsonld, og_image, phone):
 <meta property="og:title" content="{e(title)}">
 <meta property="og:image" content="{e(og_image)}">
 <script type="application/ld+json">{jsonld}</script>
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="{css}">
 </head>
 <body>
 <header class="header"><div class="container nav-container">
 <a href="index.html" class="logo"><img src="assets/logo.png" alt="赤兔文创"></a>
 <nav class="nav" id="nav">{nav_html}</nav>
-<div class="lang-switch" id="langSwitch"><button type="button" data-lang="zh" class="active">中</button><button type="button" data-lang="en">EN</button></div>
+<div class="lang-switch" id="langSwitch"><button type="button" data-lang="zh" class="active">中</button><button type="button" data-lang="zhHant">繁</button><button type="button" data-lang="en">EN</button></div>
 <button class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button>
 </div></header>
 <main>
 <div id="store-zh">{zh_inner}</div>
 <div id="store-en" style="display:none">{en_inner}</div>
+<div id="store-tw" style="display:none">{tw_inner}</div>
 </main>
 <footer class="footer"><div class="container footer-grid"><div class="footer-brand"><img src="assets/logo.png" alt="赤兔文创" class="footer-logo"><p>企业生态引擎 · 拎包入驻 · 创享办公社区</p></div><div class="footer-links"><h4>快速导航</h4>{footer_nav}</div><div class="footer-contact"><h4>联系我们</h4><p>微信：18903005927</p></div></div><div class="container footer-copy"><p>© 2017 赤兔文创 · 广州红杉云科技有限公司旗下品牌</p></div></footer>
 <a href="tel:{e(phone)}" class="float-cta" aria-label="电话咨询"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
@@ -291,28 +295,28 @@ def _shell(zh_inner, en_inner, title, jsonld, og_image, phone):
 </html>'''
 
 
-def render_store_page(loc, data):
+def render_store_page(loc, data, version=''):
     images = data.get('images', {})
     en = data.get('en') or {}
+    tw = data.get('zhHant') or {}
     en_loc = next((x for x in en.get('locations', []) if x.get('slug') == loc.get('slug')), None)
+    tw_loc = next((x for x in tw.get('locations', []) if x.get('slug') == loc.get('slug')), None)
     zh_inner, zh_meta = _store_inner(loc, data, images)
-    if en_loc:
-        en_inner, _ = _store_inner(en_loc, en, images)
-    else:
-        en_inner = zh_inner
-    return _shell(zh_inner, en_inner, zh_meta['title'], zh_meta['jsonld'], zh_meta['og_image'], zh_meta['phone'])
+    en_inner = _store_inner(en_loc, en, images)[0] if en_loc else zh_inner
+    tw_inner = _store_inner(tw_loc, tw, images)[0] if tw_loc else zh_inner
+    return _shell(zh_inner, en_inner, tw_inner, zh_meta['title'], zh_meta['jsonld'], zh_meta['og_image'], zh_meta['phone'], version)
 
 
-def render_subsidy_page(sub, data):
+def render_subsidy_page(sub, data, version=''):
     images = data.get('images', {})
     en = data.get('en') or {}
+    tw = data.get('zhHant') or {}
     en_sub = next((x for x in en.get('subsidies', []) if x.get('slug') == sub.get('slug')), None)
+    tw_sub = next((x for x in tw.get('subsidies', []) if x.get('slug') == sub.get('slug')), None)
     zh_inner, zh_meta = _subsidy_inner(sub, data, images)
-    if en_sub:
-        en_inner, _ = _subsidy_inner(en_sub, en, images)
-    else:
-        en_inner = zh_inner
-    return _shell(zh_inner, en_inner, zh_meta['title'], zh_meta['jsonld'], zh_meta['og_image'], zh_meta['phone'])
+    en_inner = _subsidy_inner(en_sub, en, images)[0] if en_sub else zh_inner
+    tw_inner = _subsidy_inner(tw_sub, tw, images)[0] if tw_sub else zh_inner
+    return _shell(zh_inner, en_inner, tw_inner, zh_meta['title'], zh_meta['jsonld'], zh_meta['og_image'], zh_meta['phone'], version)
 
 
 def main():

@@ -60,10 +60,12 @@ ASSETS = os.path.join(DATA_DIR, 'assets')
 ADMIN_PASS = os.environ.get('CHITU_ADMIN_PASS', 'chitu2026')
 
 
-def _sync_en():
-    """en 是多语言翻译资产（由 make_en.py 基于中文源生成），始终以源码为准。
-    这样无论是否启用持久卷（CHITU_DATA_DIR），线上英文内容都跟随最新部署，
-    且后台只编辑中文、保存时不会丢失英文子树。"""
+# 源码中由构建脚本生成的多语言子树（en=英文，zhHant=繁体中文），始终以源码为准同步到线上数据。
+# 这样无论是否启用持久卷（CHITU_DATA_DIR），多语言内容都跟随最新部署，且后台只编辑中文不会丢失。
+SYNC_LANGS = ['en', 'zhHant']
+
+
+def _sync_langs():
     src = os.path.join(ROOT, 'data.json')
     if not os.path.isfile(src):
         return
@@ -71,9 +73,6 @@ def _sync_en():
         with open(src, 'r', encoding='utf-8') as f:
             src_data = json.load(f)
     except Exception:
-        return
-    en = src_data.get('en')
-    if not en:
         return
     if os.path.isfile(DATA):
         try:
@@ -83,20 +82,40 @@ def _sync_en():
             d = {}
     else:
         d = {}
-    if d.get('en') == en:
-        return
-    d['en'] = en
+    changed = False
+    for lang in SYNC_LANGS:
+        sub = src_data.get(lang)
+        if not sub:
+            continue
+        if d.get(lang) == sub:
+            continue
+        d[lang] = sub
+        changed = True
+        print(' 已同步 %s 子树 -> %s' % (lang, DATA))
+    if changed:
+        try:
+            tmp = DATA + '.tmp'
+            with open(tmp, 'w', encoding='utf-8') as f:
+                json.dump(d, f, ensure_ascii=False, indent=2)
+            os.replace(tmp, DATA)
+        except Exception as e:
+            print(' [warn] 无法同步语言子树到 %s: %s' % (DATA, e))
+
+
+_sync_langs()
+
+
+def _app_version():
+    """基于静态资源修改时间生成版本号，用于 script.js / styles.css 的缓存击穿，
+    确保每次部署后浏览器/CDN 拉取最新前端资源。"""
     try:
-        tmp = DATA + '.tmp'
-        with open(tmp, 'w', encoding='utf-8') as f:
-            json.dump(d, f, ensure_ascii=False, indent=2)
-        os.replace(tmp, DATA)
-        print(' 已同步 en 子树 -> %s' % DATA)
-    except Exception as e:
-        print(' [warn] 无法同步 en 子树到 %s: %s' % (DATA, e))
+        return str(int(max(os.path.getmtime(os.path.join(ROOT, 'script.js')),
+                            os.path.getmtime(os.path.join(ROOT, 'styles.css')))))
+    except Exception:
+        return '1'
 
 
-_sync_en()
+APP_VERSION = _app_version()
 
 # 站点正式域名（用于 sitemap.xml 的绝对地址），可用环境变量覆盖
 SITE_BASE = os.environ.get('CHITU_SITE_BASE', 'https://keyteam.work').rstrip('/') + '/'
@@ -210,6 +229,8 @@ class Handler(SimpleHTTPRequestHandler):
                     html = f.read()
             except OSError:
                 return self._send(404, json.dumps({'error': 'not found'}))
+            html = html.replace('src="script.js"', 'src="script.js?v=%s"' % APP_VERSION)
+            html = html.replace('href="styles.css"', 'href="styles.css?v=%s"' % APP_VERSION)
             return self._send(200, self._inject(html), 'text/html; charset=utf-8')
         if p == '/api/content':
             try:
@@ -235,7 +256,7 @@ class Handler(SimpleHTTPRequestHandler):
                 item = next((x for x in d.get('subsidies', []) if x.get('slug') == slug), None)
             if not item:
                 return self._send(404, json.dumps({'error': 'not found'}))
-            html = build.render_store_page(item, d) if kind == 'store' else build.render_subsidy_page(item, d)
+            html = build.render_store_page(item, d, APP_VERSION) if kind == 'store' else build.render_subsidy_page(item, d, APP_VERSION)
             return self._send(200, self._inject(html), 'text/html; charset=utf-8')
         # 持久化 assets（上传的图片在 DATA_DIR/assets）优先于源码 assets
         if p.startswith('/assets/') and DATA_DIR != ROOT:
