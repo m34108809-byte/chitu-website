@@ -98,6 +98,35 @@ def _sync_en():
 
 _sync_en()
 
+# 站点正式域名（用于 sitemap.xml 的绝对地址），可用环境变量覆盖
+SITE_BASE = os.environ.get('CHITU_SITE_BASE', 'https://keyteam.work').rstrip('/') + '/'
+
+
+def build_sitemap():
+    """动态生成 sitemap.xml（首页 / 门店 / 补贴页），始终与线上数据一致。"""
+    urls = [SITE_BASE]
+    try:
+        with open(DATA, 'r', encoding='utf-8') as f:
+            d = json.load(f)
+        for loc in d.get('locations', []):
+            slug = loc.get('slug')
+            if slug:
+                urls.append('%sstore-%s.html' % (SITE_BASE, slug))
+        for sub in d.get('subsidies', []):
+            slug = sub.get('slug')
+            if slug:
+                urls.append('%ssubsidy-%s.html' % (SITE_BASE, slug))
+    except Exception:
+        pass
+    lines = ['<?xml version="1.0" encoding="UTF-8"?>',
+             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    for u in urls:
+        lines.append('  <url><loc>%s</loc><changefreq>weekly</changefreq>'
+                     '<priority>0.8</priority></url>' % u)
+    lines.append('</urlset>')
+    return '\n'.join(lines)
+
+
 # 允许上传的图片扩展名
 ALLOWED_EXT = {'.jpg', '.jpeg', '.png', '.webp', '.gif', '.svg', '.avif'}
 SAFE_NAME = re.compile(r'^[A-Za-z0-9_.-]+$')
@@ -170,6 +199,8 @@ class Handler(SimpleHTTPRequestHandler):
 
     def do_GET(self):
         p = urlparse(self.path).path
+        if p == '/sitemap.xml':
+            return self._send(200, build_sitemap(), 'application/xml; charset=utf-8')
         if p in ('/admin', '/admin/'):
             return self._serve_file(os.path.join(ROOT, 'admin.html'), 'text/html; charset=utf-8')
         if p in ('/', '/index.html'):
