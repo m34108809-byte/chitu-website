@@ -400,7 +400,9 @@
     "g5": "assets/g5.jpg",
     "g6": "assets/g6.jpg",
     "sub1": "assets/sub1.jpg",
-    "sub2": "assets/sub2.jpg"
+    "sub2": "assets/sub2.jpg",
+    "sub3": "assets/sub1.jpg",
+    "sub4": "assets/sub2.jpg"
   },
   "subsidyHeader": {
     "title": "企业补贴",
@@ -496,6 +498,91 @@
         "按实际租金比例补贴",
         "最长补贴3年",
         "需入驻合规场地且地址与注册地一致"
+      ]
+    },
+    {
+      "tag": "港澳台青年",
+      "name": "港澳台青年创业扶持",
+      "slug": "hmt-youth",
+      "imgKey": "sub3",
+      "summary": "面向 45 周岁以下、具有中国国籍的港澳居民及符合条件的港澳台青年，在广州（大湾区内地九市）创办初创企业，可享一次性创业资助、租金补贴、创业孵化与培训补贴、创业担保贷款等全周期扶持；落户南沙还可叠加 2 万元创业资助及最高 30 万元成长奖励。",
+      "policy": "政策依据：《支持港澳青年在粤港澳大湾区就业创业的实施细则》（粤人社规〔2025〕47号，广东省人社厅、省委台办、省委港澳办、省财政厅、省税务局联合印发，适用于广州等大湾区内地九市）；《广州市南沙区促进港澳青年就业创业实施办法》（南沙区人社局，2026 年 7 月印发）。",
+      "object": "45 周岁（含）以下、具有中国国籍的港澳居民，以及符合条件的港澳台青年，在大湾区内地九市创办初创企业并担任法定代表人/经营者。",
+      "objectDetail": "适用要点：\n1. 港澳青年：45 周岁以下、具有中国国籍的港澳居民；\n2. 初创企业：在大湾区内地九市登记注册 3 年内的小微企业、个体工商户、社会组织、律所、会计师事务所、农民专业合作社等；\n3. 南沙区对首次到南沙实际经营的港澳青创企业，另设阶梯式成长奖励（见「补贴标准」）。",
+      "standard": "省细则：一次性创业资助 10000 元；创业租金补贴最高 6000 元/年（最长 3 年）；创业孵化补贴 3000 元/年（最长 2 年）；创业培训补贴最高 2800 元；创业担保贷款（个人最高 50 万 / 合伙最高 300 万 / 小微最高 500 万）。\n南沙区：创业资助 2 万元（实际经营满 6 个月）；阶梯成长奖励 满 1 年 5 万 / 满 2 年 10 万 / 满 3 年 15 万；发展突出奖励 30 万；政府资助 1:1 配套最高 30 万；参赛支持 5 万；贷款贴息 50% 最高 30 万。",
+      "standardDetail": "南沙奖励与省补贴可叠加；同一事项按「就高不重复」原则执行。",
+      "conditions": [
+        "省一次性创业资助：初创企业法定代表人/经营者属在校或毕业 5 年内港澳籍学生（内地或境外高校），或创办主体为驿道客栈/民宿/农家乐；登记注册满 6 个月，申请前连续 3 个月有在职员工（不含本人）正常缴社保，且未被列入经营异常名录。",
+        "南沙创业资助：首次到南沙开展实际经营活动的港澳青创企业，实际经营满 6 个月。",
+        "阶梯成长奖励：经营满 1 / 2 / 3 年且发展成效明显 / 显著。"
+      ],
+      "materials": [
+        "港澳居民身份凭证（港澳居民居住证 / 港澳居民来往内地通行证等）。",
+        "学历证明（港澳籍学生提供毕业证书；境外高校提供学位认证）。",
+        "营业执照、正常经营佐证（资金流水 + 纳税/社保/合同与订单等至少一项）。",
+        "租赁场地用于经营的提供产权证明 / 租赁合同（申请租金补贴时）。",
+        "南沙区叠加奖励另按区办法提交实际经营、成长成效等佐证。"
+      ],
+      "process": [
+        "备齐港澳居民身份、学历、营业执照及正常经营佐证。",
+        "登录广东公共就业服务云平台（ggfw.hrss.gd.gov.cn）或向南沙区 / 登记注册地人社部门申请。",
+        "受理、审核、公示。",
+        "补贴 / 奖励拨付至企业账户。"
+      ],
+      "agency": "受理机构：登记注册地（南沙区）人力资源社会保障部门 / 公共就业服务机构。\n线上申办：广东公共就业服务云平台 https://ggfw.hrss.gd.gov.cn/employment/internet/portal/#/home\n南沙区咨询：广州市南沙区人力资源和社会保障局。",
+      "company": [
+        "提供「可注册公司」的合规办公地址，租赁合同与注册地一致，满足场地硬性要求。",
+        "广州四店网络，便于就近落地与实际经营。",
+        "工商财税一条龙：营业执照、代理记账、纳税记录，备齐正常经营佐证。",
+        "专属顾问协助整理、代填申报材料，对接街道 / 人社部门，提高通过率。",
+        "温馨提示：补贴由人社部门审核发放，最终以登记注册地人社部门解释为准；赤兔提供地址与申报协助，不承诺补贴必然获批。"
+      ],
+      "highlights": [
+        "港澳青年专属：一次性资助 + 租金 + 孵化 + 培训 + 贷款",
+        "落户南沙再叠加 2 万 ~ 30 万成长奖励",
+        "赤兔协助整理申报材料"
+      ]
+    },
+    {
+      "tag": "外籍人才",
+      "name": "外籍人才创业扶持",
+      "slug": "foreign-talent",
+      "imgKey": "sub4",
+      "summary": "普通外籍创业者暂不在广东省常规一次性创业补贴 / 租金补贴范围内（该补贴面向中国公民及 45 周岁以下、中国国籍的港澳台居民）。但外籍高层次人才、留学回国的外籍人士及符合条件的外籍高校毕业生，可走高层次人才 / 留学人员通道，并享受广州南沙海外人才奖励、个税补贴等支持；可先由赤兔免费评估资格，并代办工作许可与居留。",
+      "policy": "政策依据：广东省《就业创业补贴补助申请办理指导清单（2026 年修订版）》（粤人社规〔2026〕20号）明确「创业重点扶持对象」不含外国国籍；广州市人才「四高」政策及南沙区海外人才奖励。",
+      "object": "持有有效工作许可 / 居留、并符合以下情形之一的外籍人士：\n1. 外籍高层次人才（持《外国人工作许可证》A 类，或被认定为高层次 / 紧缺人才）；\n2. 在我国高校毕业、取得学士及以上学位的外籍留学生（可参照留学人员 / 外籍人才创业通道）；\n3. 携带科技成果或符合广州重点产业方向的外籍创业人才。",
+      "objectDetail": "重要说明：广东省一次性创业补贴、租金补贴的对象为「创业重点扶持对象」，即中国公民及港澳台居民（中国国籍）等，不含普通外籍人士。外籍人士创业扶持主要通过人才类政策落地，因城因才而异，需先完成资格 / 人才认定。",
+      "standard": "广州 / 南沙可对接的支持（以最新政策为准）：\n· 新引进南沙区工作的国际知名高校博士、持有国际职业资格证书的海外人才，给予最高 100 万元人才奖励；\n· 境外人才在广州市缴纳个税超过应纳税所得额 15% 的部分，每个纳税年度最高给予 500 万元财政补贴；\n· 外籍高层次人才可对接创业担保贷款、项目补助、场地与签证便利；\n· 外籍高校毕业生在部分城市（如厦门、上海）可按留学人员通道享 20-50 万元创业资助，广州以人才认定后配套支持为主。",
+      "standardDetail": "上述为人才类扶持，并非普惠式「一次性创业补贴」；需先通过资格 / 人才认定，具体金额与条件以登记注册地及人才部门解释为准。",
+      "conditions": [
+        "先取得合法在华工作 / 创业身份（外国人工作许可证、居留许可，或设立外资企业 / 代表处）。",
+        "符合高层次人才、留学回国（外籍）或重点产业方向之一。",
+        "在广州（尤其南沙）注册企业并实际经营。"
+      ],
+      "materials": [
+        "护照、签证 / 居留许可、外国人工作许可证。",
+        "学历学位认证（境外高校）。",
+        "高层次人才 / 紧缺人才认定材料（如适用）。",
+        "营业执照、实际经营与投资佐证。"
+      ],
+      "process": [
+        "由赤兔 / 顾问先做免费资格评估，判断可走的人才 / 补贴通道。",
+        "办理外资企业注册或代表处设立、工作许可证与居留许可。",
+        "按认定结果向南沙 / 广州人才部门或人社部门提交对应资助 / 奖励申请。",
+        "审核通过后拨付。"
+      ],
+      "agency": "受理机构：广州市 / 南沙区人力资源社会保障部门、科技（人才）部门、公安出入境管理部门。\n线上申办：广东政务服务网 https://www.gdzwfw.gov.cn/ ；广东公共就业服务云平台 https://ggfw.hrss.gd.gov.cn/\n注：外籍人士创业以资格评估为先，具体以各部门最新解释为准。",
+      "company": [
+        "外资公司注册、外商代表处设立，外国人工作签证 / 商务签证代办、居留许可延期与变更（见「外资签证与商务服务」）。",
+        "先做免费资格评估，匹配可申请的补贴 / 人才奖励通道，避免走弯路。",
+        "提供可注册公司的合规办公地址与工商财税一条龙，满足落地与实际经营要求。",
+        "专属顾问对接街道、人社与人才部门，协助整理申报材料。",
+        "温馨提示：普通外籍人士暂不在广东省常规创业补贴范围内；最终能否享受以资格认定及部门解释为准，赤兔提供评估、签证与申报协助，不承诺补贴必然获批。"
+      ],
+      "highlights": [
+        "普通外籍不在常规创业补贴范围（如实告知）",
+        "可走高层次人才 / 留学回国通道 + 南沙最高 100 万人才奖励",
+        "赤兔免费资格评估 + 签证 / 居留代办"
       ]
     }
   ],
@@ -979,6 +1066,91 @@
           "Up to 3 years",
           "Requires a compliant venue with address matching registration"
         ]
+      },
+      {
+        "tag": "HMT Youth",
+        "name": "HMT Youth Startup Support",
+        "slug": "hmt-youth",
+        "imgKey": "sub3",
+        "summary": "For Hong Kong, Macao and Taiwan residents under 45 with Chinese nationality, and eligible HMT youth, who start an early-stage business in Guangzhou (the nine GBA mainland cities) — a full-cycle package: one-time startup grant, rent subsidy, incubation & training subsidies, and guaranteed loans. Settling in Nansha adds a ¥20,000 startup grant and growth rewards up to ¥300,000.",
+        "policy": "Policy basis: \"Implementation Rules for Supporting HMT Youth Employment and Entrepreneurship in the Guangdong-Hong Kong-Macao Greater Bay Area\" (Yue Ren She Gui [2025] No.47, issued by Guangdong HR Dept., Taiwan Affairs Office, HMT Affairs Office, Finance Dept. and Tax Bureau; covers Guangzhou and the other eight GBA mainland cities); and \"Nansha District, Guangzhou — Measures for Promoting HMT Youth Employment and Entrepreneurship\" (Nansha HR Bureau, July 2026).",
+        "object": "HMT residents under 45 with Chinese nationality, and eligible HMT youth, who found an early-stage business in the nine GBA mainland cities and serve as its legal representative / operator.",
+        "objectDetail": "Key points:\n1. HMT youth: under 45 with Chinese nationality.\n2. Early-stage entity: micro/small enterprise, individual business, social organization, law firm, accounting firm or farmers' cooperative registered in the nine GBA mainland cities within 3 years.\n3. Nansha offers additional tiered growth rewards for HMT startups first operating there (see \"Standard\").",
+        "standard": "Provincial rules: one-time startup grant ¥10,000; rent subsidy up to ¥6,000/year (up to 3 years); incubation subsidy ¥3,000/year (up to 2 years); training subsidy up to ¥2,800; guaranteed loans (personal up to ¥500k / partnership up to ¥3M / micro-enterprise up to ¥5M).\nNansha: startup grant ¥20,000 (6 months of actual operation); tiered growth rewards — year 1 ¥50k / year 2 ¥100k / year 3 ¥150k; outstanding-development award ¥300k; 1:1 matching of government grants up to ¥300k; competition support ¥50k; 50% interest discount up to ¥300k.",
+        "standardDetail": "Nansha rewards stack with provincial subsidies; for overlapping items, the higher amount applies (no duplication).",
+        "conditions": [
+          "Provincial one-time grant: the legal representative/operator is an HMT student enrolled or within 5 years of graduation (mainland or overseas university), or the entity is a post-house / B&B / farm-stay; registered for 6+ months, with employees (other than the founder) paying social insurance for 3 consecutive months before applying, and not on the Abnormal Operation List.",
+          "Nansha startup grant: an HMT startup first operating in Nansha with 6 months of actual operation.",
+          "Tiered growth rewards: 1 / 2 / 3 years of operation with clear / significant progress."
+        ],
+        "materials": [
+          "HMT resident ID (Residence Permit for HMT Residents / Mainland Travel Permit for HMT Residents).",
+          "Education proof (graduation certificate for HMT students; degree authentication for overseas universities).",
+          "Business license and normal-operation proof (fund flow + at least one of tax / social insurance / contracts & orders).",
+          "Property proof / lease contract if premises are leased for business (for rent subsidy).",
+          "Nansha additional rewards require actual-operation and progress evidence per district rules."
+        ],
+        "process": [
+          "Prepare HMT ID, education proof, business license and normal-operation evidence.",
+          "Apply via the Guangdong Public Employment Service Cloud Platform (ggfw.hrss.gd.gov.cn) or the Nansha / registration-district HR department.",
+          "Acceptance, review and public notice.",
+          "Subsidy / reward paid to the company account."
+        ],
+        "agency": "Accepting agency: the HR & social-security department / public employment service agency of the registration district (Nansha).\nOnline filing: Guangdong Public Employment Service Cloud Platform https://ggfw.hrss.gd.gov.cn/employment/internet/portal/#/home\nNansha inquiries: Nansha District Bureau of Human Resources and Social Security, Guangzhou.",
+        "company": [
+          "Provide a compliant office address \"ready for company registration\" with lease matching the registration — meeting the hard venue requirement.",
+          "Four Haizhu venues across Guangzhou for convenient landing and actual operation.",
+          "One-stop company & tax services: business license, bookkeeping, tax records — preparing the normal-operation proof.",
+          "Dedicated advisors organize and pre-fill documents and liaise with subdistrict / HR departments to raise approval rates.",
+          "Note: subsidies are reviewed and paid by HR departments; final interpretation rests with the local HR department. Chitu provides the address and application assistance but does not guarantee approval."
+        ],
+        "highlights": [
+          "HMT-youth exclusive: grant + rent + incubation + training + loans",
+          "Settling in Nansha adds ¥20k–¥300k growth rewards",
+          "Chitu helps organize application documents"
+        ]
+      },
+      {
+        "tag": "Foreign Talent",
+        "name": "Foreign Talent Startup Support",
+        "slug": "foreign-talent",
+        "imgKey": "sub4",
+        "summary": "Ordinary foreign nationals are NOT covered by Guangdong's standard one-time startup / rent subsidies (those target Chinese citizens and HMT residents with Chinese nationality under 45). But foreign high-level talents, overseas-returnee foreign nationals and eligible foreign graduates can access talent / returnee channels, plus Nansha overseas-talent rewards and individual-income-tax subsidies in Guangzhou. Chitu offers a free eligibility assessment and handles work permits & residence.",
+        "policy": "Policy basis: Guangdong \"Employment and Entrepreneurship Subsidy Guidelines (2026 Revision)\" (Yue Ren She Gui [2026] No.20) explicitly excludes foreign nationals from \"key supported entrepreneurship groups\"; Guangzhou talent \"Four Highs\" policy and Nansha overseas-talent rewards.",
+        "object": "Foreign nationals holding a valid work / residence permit and meeting one of the following:\n1. Foreign high-level talent (Category A Foreigner Work Permit, or recognized high-level / scarce talent);\n2. Foreign students who graduated from Chinese universities with a bachelor's degree or above (may use the returnee / foreign-talent startup channel);\n3. Foreign entrepreneurial talents bringing scientific results or fitting Guangzhou's key industries.",
+        "objectDetail": "Important: Guangdong's one-time startup and rent subsidies go to \"key supported entrepreneurship groups\" — Chinese citizens and HMT residents (Chinese nationality), not ordinary foreigners. Foreign entrepreneurship support is delivered mainly through talent policies, which vary by city and talent profile and require eligibility / talent recognition first.",
+        "standard": "Supports accessible in Guangzhou / Nansha (subject to latest policy):\n· Up to ¥1,000,000 talent reward for internationally renowned PhDs or overseas-talent holders of international professional certificates newly working in Nansha;\n· Up to ¥5,000,000 annual fiscal subsidy for overseas talent whose Guangzhou individual income tax exceeds 15% of taxable income;\n· Foreign high-level talents can access guaranteed loans, project grants, venue and visa facilitation;\n· Foreign graduates in some cities (e.g. Xiamen, Shanghai) get ¥200k–¥500k startup funding via the returnee channel; Guangzhou mainly supports after talent recognition.",
+        "standardDetail": "These are talent-class supports, not a universal one-time startup subsidy; eligibility / talent recognition is required first, and amounts are subject to the registration district and talent departments.",
+        "conditions": [
+          "Obtain a lawful work / startup status in China (Foreigner Work Permit, residence permit, or set up a foreign-invested enterprise / representative office).",
+          "Meet one of: high-level talent, overseas returnee (foreign), or key-industry direction.",
+          "Register and actually operate a company in Guangzhou (especially Nansha)."
+        ],
+        "materials": [
+          "Passport, visa / residence permit, Foreigner Work Permit.",
+          "Degree authentication (overseas universities).",
+          "High-level / scarce talent recognition materials (if applicable).",
+          "Business license, actual-operation and investment evidence."
+        ],
+        "process": [
+          "Chitu / advisor runs a free eligibility assessment to identify the right talent / subsidy channel.",
+          "Set up the foreign-invested enterprise or representative office, and obtain work permit & residence permit.",
+          "Submit the corresponding grant / reward application to Nansha / Guangzhou talent or HR departments per recognition result.",
+          "Paid after approval."
+        ],
+        "agency": "Accepting agencies: Guangzhou / Nansha HR & social-security departments, science & technology (talent) departments, and public security exit-entry authorities.\nOnline filing: Guangdong Government Service Net https://www.gdzwfw.gov.cn/ ; Guangdong Public Employment Service Cloud Platform https://ggfw.hrss.gd.gov.cn/\nNote: for foreigners, eligibility assessment comes first; final interpretation rests with each department.",
+        "company": [
+          "Foreign company registration, representative office setup, work / business visa assistance and residence-permit extension & change (see \"Foreign-Investment & Visa Services\").",
+          "Free eligibility assessment first, to match applicable subsidy / talent-reward channels and avoid dead ends.",
+          "Compliant office address ready for company registration plus one-stop company & tax services for landing and actual operation.",
+          "Dedicated advisors liaise with subdistrict, HR and talent departments and help organize documents.",
+          "Note: ordinary foreigners are not in Guangdong's standard startup-subsidy scope; whether you qualify depends on talent recognition and department interpretation. Chitu provides assessment, visa and application assistance but does not guarantee approval."
+        ],
+        "highlights": [
+          "Ordinary foreigners not in standard startup-subsidy scope (stated plainly)",
+          "High-level / returnee channels + Nansha reward up to ¥1M",
+          "Chitu free eligibility assessment + visa / residence handling"
+        ]
       }
     ]
   },
@@ -1461,6 +1633,91 @@
           "按實際租金比例補貼",
           "最長補貼3年",
           "需入駐合規場地且地址與註冊地一致"
+        ]
+      },
+      {
+        "tag": "港澳臺青年",
+        "name": "港澳臺青年創業扶持",
+        "slug": "hmt-youth",
+        "imgKey": "sub3",
+        "summary": "面向 45 週歲以下、具有中國國籍的港澳居民及符合條件的港澳臺青年，在廣州（大灣區內地九市）創辦初創企業，可享一次性創業資助、租金補貼、創業孵化與培訓補貼、創業擔保貸款等全週期扶持；落戶南沙還可疊加 2 萬元創業資助及最高 30 萬元成長獎勵。",
+        "policy": "政策依據：《支持港澳青年在粵港澳大灣區就業創業的實施細則》（粵人社規〔2025〕47號，廣東省人社廳、省委臺辦、省委港澳辦、省財政廳、省稅務局聯合印發，適用於廣州等大灣區內地九市）；《廣州市南沙區促進港澳青年就業創業實施辦法》（南沙區人社局，2026 年 7 月印發）。",
+        "object": "45 週歲（含）以下、具有中國國籍的港澳居民，以及符合條件的港澳臺青年，在大灣區內地九市創辦初創企業並擔任法定代表人/經營者。",
+        "objectDetail": "適用要點：\n1. 港澳青年：45 週歲以下、具有中國國籍的港澳居民；\n2. 初創企業：在大灣區內地九市登記註冊 3 年內的小微企業、個體工商戶、社會組織、律所、會計師事務所、農民專業合作社等；\n3. 南沙區對首次到南沙實際經營的港澳青創企業，另設階梯式成長獎勵（見「補貼標準」）。",
+        "standard": "省細則：一次性創業資助 10000 元；創業租金補貼最高 6000 元/年（最長 3 年）；創業孵化補貼 3000 元/年（最長 2 年）；創業培訓補貼最高 2800 元；創業擔保貸款（個人最高 50 萬 / 合夥最高 300 萬 / 小微最高 500 萬）。\n南沙區：創業資助 2 萬元（實際經營滿 6 個月）；階梯成長獎勵 滿 1 年 5 萬 / 滿 2 年 10 萬 / 滿 3 年 15 萬；發展突出獎勵 30 萬；政府資助 1:1 配套最高 30 萬；參賽支持 5 萬；貸款貼息 50% 最高 30 萬。",
+        "standardDetail": "南沙獎勵與省補貼可疊加；同一事項按「就高不重複」原則執行。",
+        "conditions": [
+          "省一次性創業資助：初創企業法定代表人/經營者屬在校或畢業 5 年內港澳籍學生（內地或境外高校），或創辦主體爲驛道客棧/民宿/農家樂；登記註冊滿 6 個月，申請前連續 3 個月有在職員工（不含本人）正常繳社保，且未被列入經營異常名錄。",
+          "南沙創業資助：首次到南沙開展實際經營活動的港澳青創企業，實際經營滿 6 個月。",
+          "階梯成長獎勵：經營滿 1 / 2 / 3 年且發展成效明顯 / 顯著。"
+        ],
+        "materials": [
+          "港澳居民身份憑證（港澳居民居住證 / 港澳居民來往內地通行證等）。",
+          "學歷證明（港澳籍學生提供畢業證書；境外高校提供學位認證）。",
+          "營業執照、正常經營佐證（資金流水 + 納稅/社保/合同與訂單等至少一項）。",
+          "租賃場地用於經營的提供產權證明 / 租賃合同（申請租金補貼時）。",
+          "南沙區疊加獎勵另按區辦法提交實際經營、成長成效等佐證。"
+        ],
+        "process": [
+          "備齊港澳居民身份、學歷、營業執照及正常經營佐證。",
+          "登錄廣東公共就業服務雲平臺（ggfw.hrss.gd.gov.cn）或向南沙區 / 登記註冊地人社部門申請。",
+          "受理、審覈、公示。",
+          "補貼 / 獎勵撥付至企業賬戶。"
+        ],
+        "agency": "受理機構：登記註冊地（南沙區）人力資源社會保障部門 / 公共就業服務機構。\n線上申辦：廣東公共就業服務雲平臺 https://ggfw.hrss.gd.gov.cn/employment/internet/portal/#/home\n南沙區諮詢：廣州市南沙區人力資源和社會保障局。",
+        "company": [
+          "提供「可註冊公司」的合規辦公地址，租賃合同與註冊地一致，滿足場地硬性要求。",
+          "廣州四店網絡，便於就近落地與實際經營。",
+          "工商財稅一條龍：營業執照、代理記賬、納稅記錄，備齊正常經營佐證。",
+          "專屬顧問協助整理、代填申報材料，對接街道 / 人社部門，提高通過率。",
+          "溫馨提示：補貼由人社部門審覈發放，最終以登記註冊地人社部門解釋爲準；赤兔提供地址與申報協助，不承諾補貼必然獲批。"
+        ],
+        "highlights": [
+          "港澳青年專屬：一次性資助 + 租金 + 孵化 + 培訓 + 貸款",
+          "落戶南沙再疊加 2 萬 ~ 30 萬成長獎勵",
+          "赤兔協助整理申報材料"
+        ]
+      },
+      {
+        "tag": "外籍人才",
+        "name": "外籍人才創業扶持",
+        "slug": "foreign-talent",
+        "imgKey": "sub4",
+        "summary": "普通外籍創業者暫不在廣東省常規一次性創業補貼 / 租金補貼範圍內（該補貼面向中國公民及 45 週歲以下、中國國籍的港澳臺居民）。但外籍高層次人才、留學回國的外籍人士及符合條件的外籍高校畢業生，可走高層次人才 / 留學人員通道，並享受廣州南沙海外人才獎勵、個稅補貼等支持；可先由赤兔免費評估資格，並代辦工作許可與居留。",
+        "policy": "政策依據：廣東省《就業創業補貼補助申請辦理指導清單（2026 年修訂版）》（粵人社規〔2026〕20號）明確「創業重點扶持對象」不含外國國籍；廣州市人才「四高」政策及南沙區海外人才獎勵。",
+        "object": "持有有效工作許可 / 居留、並符合以下情形之一的外籍人士：\n1. 外籍高層次人才（持《外國人工作許可證》A 類，或被認定爲高層次 / 緊缺人才）；\n2. 在我國高校畢業、取得學士及以上學位的外籍留學生（可參照留學人員 / 外籍人才創業通道）；\n3. 攜帶科技成果或符合廣州重點產業方向的外籍創業人才。",
+        "objectDetail": "重要說明：廣東省一次性創業補貼、租金補貼的對象爲「創業重點扶持對象」，即中國公民及港澳臺居民（中國國籍）等，不含普通外籍人士。外籍人士創業扶持主要通過人才類政策落地，因城因才而異，需先完成資格 / 人才認定。",
+        "standard": "廣州 / 南沙可對接的支持（以最新政策爲準）：\n· 新引進南沙區工作的國際知名高校博士、持有國際職業資格證書的海外人才，給予最高 100 萬元人才獎勵；\n· 境外人才在廣州市繳納個稅超過應納稅所得額 15% 的部分，每個納稅年度最高給予 500 萬元財政補貼；\n· 外籍高層次人才可對接創業擔保貸款、項目補助、場地與簽證便利；\n· 外籍高校畢業生在部分城市（如廈門、上海）可按留學人員通道享 20-50 萬元創業資助，廣州以人才認定後配套支持爲主。",
+        "standardDetail": "上述爲人才類扶持，並非普惠式「一次性創業補貼」；需先通過資格 / 人才認定，具體金額與條件以登記註冊地及人才部門解釋爲準。",
+        "conditions": [
+          "先取得合法在華工作 / 創業身份（外國人工作許可證、居留許可，或設立外資企業 / 代表處）。",
+          "符合高層次人才、留學回國（外籍）或重點產業方向之一。",
+          "在廣州（尤其南沙）註冊企業並實際經營。"
+        ],
+        "materials": [
+          "護照、簽證 / 居留許可、外國人工作許可證。",
+          "學歷學位認證（境外高校）。",
+          "高層次人才 / 緊缺人才認定材料（如適用）。",
+          "營業執照、實際經營與投資佐證。"
+        ],
+        "process": [
+          "由赤兔 / 顧問先做免費資格評估，判斷可走的人才 / 補貼通道。",
+          "辦理外資企業註冊或代表處設立、工作許可證與居留許可。",
+          "按認定結果向南沙 / 廣州人才部門或人社部門提交對應資助 / 獎勵申請。",
+          "審覈通過後撥付。"
+        ],
+        "agency": "受理機構：廣州市 / 南沙區人力資源社會保障部門、科技（人才）部門、公安出入境管理部門。\n線上申辦：廣東政務服務網 https://www.gdzwfw.gov.cn/ ；廣東公共就業服務雲平臺 https://ggfw.hrss.gd.gov.cn/\n注：外籍人士創業以資格評估爲先，具體以各部門最新解釋爲準。",
+        "company": [
+          "外資公司註冊、外商代表處設立，外國人工作簽證 / 商務簽證代辦、居留許可延期與變更（見「外資簽證與商務服務」）。",
+          "先做免費資格評估，匹配可申請的補貼 / 人才獎勵通道，避免走彎路。",
+          "提供可註冊公司的合規辦公地址與工商財稅一條龍，滿足落地與實際經營要求。",
+          "專屬顧問對接街道、人社與人才部門，協助整理申報材料。",
+          "溫馨提示：普通外籍人士暫不在廣東省常規創業補貼範圍內；最終能否享受以資格認定及部門解釋爲準，赤兔提供評估、簽證與申報協助，不承諾補貼必然獲批。"
+        ],
+        "highlights": [
+          "普通外籍不在常規創業補貼範圍（如實告知）",
+          "可走高層次人才 / 留學回國通道 + 南沙最高 100 萬人才獎勵",
+          "赤兔免費資格評估 + 簽證 / 居留代辦"
         ]
       }
     ]
