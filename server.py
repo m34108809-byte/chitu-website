@@ -66,7 +66,7 @@ ADMIN_PASS = os.environ.get('CHITU_ADMIN_PASS', 'chitu2026')
 # 源码中由构建脚本生成的多语言子树（en=英文，zhHant=繁体中文），始终以源码为准同步到线上数据。
 # 这样无论是否启用持久卷（CHITU_DATA_DIR），多语言内容都跟随最新部署，且后台只编辑中文不会丢失。
 SYNC_LANGS = ['en', 'zhHant']
-# 始终以源码为准的门店字段（后台暂不提供编辑入口，随部署更新，避免线上旧数据缺新栏位）
+# 门店新增栏位：仅当线上数据缺失时才从源码补齐（不覆盖已有内容，保证部署不改动用户已保存的数据）
 SYNC_STORE_FIELDS = ['hourly', 'meituan']
 
 
@@ -97,14 +97,14 @@ def _sync_langs():
         d[lang] = sub
         changed = True
         print(' 已同步 %s 子树 -> %s' % (lang, DATA))
-    # 按 slug 合并源码门店的 hourly/meituan 到线上中文 locations（保留用户其余编辑）
+    # 按 slug 补齐源码门店新增栏位（hourly/meituan）：仅线上缺失时补入，绝不覆盖已有内容
     src_locs = {x.get('slug'): x for x in src_data.get('locations', []) if x.get('slug')}
     for loc in d.get('locations', []):
         s = src_locs.get(loc.get('slug'))
         if not s:
             continue
         for field in SYNC_STORE_FIELDS:
-            if s.get(field) and loc.get(field) != s[field]:
+            if s.get(field) and not loc.get(field):
                 loc[field] = s[field]
                 changed = True
     if changed:
