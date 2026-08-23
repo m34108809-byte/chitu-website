@@ -226,6 +226,15 @@ function buildForm(){
       `<div class="sub">房型配图（详情页房型卡片展示，建议 960×540）</div>`+imgBlock(roomKey,'房型配图 · '+(r.name||('房型'+(j+1))),'960×540（16:9）','locations.'+i+'.rooms.'+j+'.imgKey')+
       `<button class="del" data-del-path="locations.${i}.rooms" data-idx="${j}">删除此房型</button></div>`;
     }).join('');
+    const hourly = (l.hourly||[]).map((h,j)=>{
+      return `<div class="item sub-item"><div class="item-head">临租 ${j+1} · ${esc(h.cat||'')} · ${esc(h.name||'')}</div>`+
+      `<div class="grid2">${field('类别（会议室/茶室/课室）','locations.'+i+'.hourly.'+j+'.cat',h.cat)}${field('名称','locations.'+i+'.hourly.'+j+'.name',h.name)}</div>`+
+      `<div class="grid2">${field('可容纳','locations.'+i+'.hourly.'+j+'.capacity',h.capacity)}${field('面积','locations.'+i+'.hourly.'+j+'.area',h.area)}</div>`+
+      `<div class="grid2">${field('时租价格（如 ¥80）','locations.'+i+'.hourly.'+j+'.hourly',h.hourly)}${field('半日价格','locations.'+i+'.hourly.'+j+'.halfDay',h.halfDay)}</div>`+
+      field('全日价格','locations.'+i+'.hourly.'+j+'.fullDay',h.fullDay)+
+      field('配置描述','locations.'+i+'.hourly.'+j+'.config',h.config,true)+
+      `<button class="del" data-del-path="locations.${i}.hourly" data-idx="${j}">删除此临租</button></div>`;
+    }).join('');
     const imgKey = l.imgKey || ('loc'+(i+1));
     return `<div class="item"><div class="item-head">门店 ${i+1} · ${esc(l.tag)}</div>`+
       `<div class="grid2">${field('标签','locations.'+i+'.tag',l.tag)}${field('名称','locations.'+i+'.name',l.name)}</div>`+
@@ -239,6 +248,8 @@ function buildForm(){
       `<div class="grid2">${field('门店详情页 slug','locations.'+i+'.slug',l.slug)}</div>`+
       `<div class="sub">门店详情页正文（在 store-${esc(l.slug)}.html 顶部展示）</div>`+field('门店详情长描述','locations.'+i+'.detail',l.detail,true)+
       `<div class="sub">户型与价格（详情页卡片展示，可后续增删真实房型）</div>`+rooms+`<button class="add" data-add-path="locations.${i}.rooms">+ 添加房型</button>`+
+      `<div class="sub">临租空间（会议室/茶室/课室 时租·半日·全日价格，详情页临租栏展示；繁体/英文自动同步）</div>`+hourly+`<button class="add" data-add-path="locations.${i}.hourly">+ 添加临租</button>`+
+      field('美团团购链接','locations.'+i+'.meituan',l.meituan)+
       `<div class="sub">亮点</div>`+hi+`<button class="add" data-add-path="locations.${i}.highlights">+ 添加亮点</button></div>`;
   }).join('');
   s += section('sec-locations','门店信息','四家门店的地址、价格与亮点；slug 决定门店详情页网址（如 ruyi → store-ruyi.html）',locHTML);
@@ -352,7 +363,7 @@ function bindStructural(){
     };
   });
   document.querySelectorAll('#adminMain [data-add-path]').forEach(b=>{
-    b.onclick=()=>{const p=b.dataset.addPath;const arr=getByPath(data,p);if(p.endsWith('.rooms'))arr.push({name:'新房型',area:'',capacity:'',price:'',unit:'',config:''});else arr.push('');buildForm();};
+    b.onclick=()=>{const p=b.dataset.addPath;const arr=getByPath(data,p);if(p.endsWith('.rooms'))arr.push({name:'新房型',area:'',capacity:'',price:'',unit:'',config:''});else if(p.endsWith('.hourly'))arr.push({cat:'会议室',name:'新临租场地',capacity:'',area:'',hourly:'',halfDay:'',fullDay:'',config:''});else arr.push('');buildForm();};
   });
   document.querySelectorAll('#adminMain [data-del-path]').forEach(b=>{
     b.onclick=()=>{const arr=getByPath(data,b.dataset.delPath);arr.splice(+b.dataset.idx,1);buildForm();};

@@ -1,0 +1,3169 @@
+{
+  "brand": {
+    "name": "赤兔文创 · 创享办公社区",
+    "wechat": "18903005927"
+  },
+  "hero": {
+    "title": "赤兔文创 · 不止办公 更是企业成长生态引擎",
+    "subtitle": "精装交付· 拎包入驻 · 360°成长引擎",
+    "lead": "面向初创企业、小微企业、自由职业者与商务洽谈客户，提供办公空间、工商财税、外资签证代办等一条龙企业服务。海珠区四店网络，就近选择。",
+    "cta1": {
+      "text": "查看门店",
+      "href": "#locations"
+    },
+    "cta2": {
+      "text": "电话咨询",
+      "href": "tel:18903005927"
+    },
+    "meta": [
+      {
+        "pre": "",
+        "bold": "工位/茶室/接待区/前台/公区/会议室/咖啡吧",
+        "post": "齐全"
+      },
+      {
+        "pre": "",
+        "bold": "24小时",
+        "post": "独立空调与高速网络"
+      },
+      {
+        "pre": "可",
+        "bold": "注册公司",
+        "post": ""
+      }
+    ],
+    "bgImages": [
+      {
+        "imgKey": "bg1",
+        "label": "首屏背景轮播图 1"
+      },
+      {
+        "imgKey": "bg2",
+        "label": "首屏背景轮播图 2"
+      },
+      {
+        "imgKey": "bg3",
+        "label": "首屏背景轮播图 3"
+      }
+    ]
+  },
+  "featuresHeader": {
+    "title": "为什么选择赤兔文创",
+    "sub": "把繁琐留给赤兔，把专注还给创业"
+  },
+  "features": [
+    {
+      "icon": "layers",
+      "title": "精装交付",
+      "desc": "24H空调、物业、千兆网络、保洁，无隐形消费，预算更清晰。"
+    },
+    {
+      "icon": "box",
+      "title": "拎包入驻",
+      "desc": "家具齐全、装修到位，签约即可办公，可注册公司。"
+    },
+    {
+      "icon": "users",
+      "title": "共享空间",
+      "desc": "会议室、茶室、茶水间、打印、前台代收快递，配套齐全，降低运营成本。"
+    },
+    {
+      "icon": "clock",
+      "title": "24小时自由办公",
+      "desc": "独立空调与高速网络全天候可用，弹性匹配你的工作节奏。"
+    },
+    {
+      "icon": "shield",
+      "title": "360°成长引擎",
+      "desc": "工商财税、政策补贴、融资对接扶持，陪伴企业从0到1。"
+    },
+    {
+      "icon": "map-pin",
+      "title": "多店网络",
+      "desc": "海珠区 4 家场地（晓港 / 客村 / 鹭江 / 宝岗）就近选择，灵活换址。"
+    }
+  ],
+  "locationsHeader": {
+    "title": "海珠区四店可选",
+    "sub": "总有一家在你身边"
+  },
+  "locations": [
+    {
+      "imgKey": "loc1",
+      "tag": "晓港",
+      "name": "赤兔如意港",
+      "addr": "海珠区昌岗东路 271 号 5、6 层",
+      "position": "8号线晓港站 A 出口，步行 1 分钟",
+      "metro": "8号线晓港站 A 出口，步行 1 分钟",
+      "priceLabel": "独立办公室",
+      "price": "¥980",
+      "priceUnit": "/月起",
+      "highlights": [
+        "新中式隔音茶室，配功夫茶具、投屏白板",
+        "超大会议室（20-70人）配 LED 屏 / 音响 / 麦克风",
+        "1 小时起租、扫码自助入场"
+      ],
+      "contact": "李先生",
+      "phone": "18102220465",
+      "slug": "ruyi",
+      "detail": "赤兔如意港坐落于海珠区昌岗东路 271 号 5、6 层，交通便捷（8号线晓港站 A 出口，步行 1 分钟），是赤兔文创旗下创享办公社区之一。空间精装交付、家具齐全，签约即可办公并可注册公司；配备会议室、茶室、共享公区与高速网络，专属顾问提供工商财税、政策补贴、企业服务一条龙支持。",
+      "rooms": [
+        {
+          "name": "开放工位",
+          "area": "约12㎡",
+          "capacity": "1人",
+          "price": "¥500",
+          "unit": "/人·月起",
+          "config": "独立办公桌+人体工学椅，共享会议室每月赠送2小时，享公共休闲区与免费茶饮。",
+          "imgKey": "loc1_room1"
+        },
+        {
+          "name": "一人间",
+          "area": "约10㎡",
+          "capacity": "1人",
+          "price": "¥980",
+          "unit": "/间·月起",
+          "config": "单人独立私密办公室，配备全套工位桌椅 + 文件柜，空间可用来注册公司，创业者带上办公物品就能直接入驻办公。",
+          "imgKey": "loc1_room2"
+        },
+        {
+          "name": "二人间",
+          "area": "约14㎡",
+          "capacity": "2人",
+          "price": "¥1800",
+          "unit": "/间·月起",
+          "config": "适合双人搭档办公的独立房间，家具配齐含桌椅与收纳文件柜，支持工商注册，环境安静，即租即用拎包办公。",
+          "imgKey": "loc1_room3"
+        },
+        {
+          "name": "三人间",
+          "area": "约21㎡",
+          "capacity": "3人",
+          "price": "¥2400",
+          "unit": "/间·月起",
+          "config": "小型团队专属独立办公室，室内配套办公桌椅和文件储物柜，可注册公司，格局紧凑实用，省去前期装修布置。",
+          "imgKey": "loc1_room4"
+        },
+        {
+          "name": "四人间",
+          "area": "约28㎡",
+          "capacity": "4人",
+          "price": "¥2800",
+          "unit": "/间·月起",
+          "config": "4 人独立办公场地，全套办公家具配齐，自带文件收纳柜，场地可注册公司，适合中小型稳定小组长期办公。",
+          "imgKey": "loc1_room5"
+        },
+        {
+          "name": "五人间",
+          "area": "约35㎡",
+          "capacity": "5人",
+          "price": "¥3500",
+          "unit": "/间·月起",
+          "config": "宽敞的 5 人独立办公室，桌椅、文件柜一应俱全，不用额外采购家具，场地支持工商注册，团队入驻无压力。",
+          "imgKey": "loc1_room6"
+        },
+        {
+          "name": "六人间",
+          "area": "约38㎡",
+          "capacity": "6人",
+          "price": "¥4200",
+          "unit": "/间·月起",
+          "config": "大空间独立办公室，全套办公家具到位，含工位桌椅与文件柜，满足 6 人团队办公需求，场地可注册，直接开工。",
+          "imgKey": "loc1_room7"
+        },
+        {
+          "name": "七人间",
+          "area": "约45㎡",
+          "capacity": "6人",
+          "price": "¥4200",
+          "unit": "/间·月起",
+          "config": "大面积独立办公室，桌椅文件柜全部配齐，可用于公司注册，空间宽松不拥挤，适配 7 人规模团队办公。",
+          "imgKey": "loc1_room8"
+        },
+        {
+          "name": "大开间",
+          "area": "约65㎡",
+          "capacity": "10人",
+          "price": "¥5100",
+          "unit": "/间·月起",
+          "config": "通透无隔断的开阔办公空间，配齐桌椅、文件柜，支持公司注册，内部格局可以自由摆放，适配灵活办公需求。",
+          "imgKey": "loc1_room9"
+        },
+        {
+          "name": "1+1户型",
+          "area": "约108㎡",
+          "capacity": "16-20人",
+          "price": "¥9580",
+          "unit": "/间·月起",
+          "config": "双分区办公户型，办公区 + 独立隔间，全套桌椅文件柜配置，隔间可以用作接待室，场地支持注册，拎包即可入驻。",
+          "imgKey": "loc1_room10"
+        },
+        {
+          "name": "2+1户型",
+          "area": "约108㎡",
+          "capacity": "16-20人",
+          "price": "¥9580",
+          "unit": "/间·月起",
+          "config": "双独立隔间搭配大办公区，家具齐全，带桌椅与文件收纳柜，办公、洽谈分区互不干扰，可办理公司注册。",
+          "imgKey": "loc1_room11"
+        }
+      ],
+      "hourly": [
+        {
+          "cat": "会议室",
+          "name": "小型会议室",
+          "capacity": "4-6人",
+          "area": "约20㎡",
+          "hourly": "¥80",
+          "halfDay": "¥300",
+          "fullDay": "¥500",
+          "config": "高清投屏、白板、高速WiFi，适合商务洽谈与小团队会议。"
+        },
+        {
+          "cat": "会议室",
+          "name": "中型会议室",
+          "capacity": "10-15人",
+          "area": "约35㎡",
+          "hourly": "¥120",
+          "halfDay": "¥450",
+          "fullDay": "¥800",
+          "config": "LED屏、音响、麦克风，适合项目评审与路演。"
+        },
+        {
+          "cat": "会议室",
+          "name": "大型会议室",
+          "capacity": "20-50人",
+          "area": "约70㎡",
+          "hourly": "¥160",
+          "halfDay": "¥600",
+          "fullDay": "¥1100",
+          "config": "全套影音设备，适合发布会、培训与大型会议。"
+        },
+        {
+          "cat": "茶室",
+          "name": "新中式茶室包厢",
+          "capacity": "2-4人",
+          "area": "约15㎡",
+          "hourly": "¥58",
+          "halfDay": "¥220",
+          "fullDay": "¥400",
+          "config": "独立隔音、功夫茶具、免费茶叶，适合私密商务洽谈。"
+        },
+        {
+          "cat": "课室",
+          "name": "培训课室",
+          "capacity": "20-40人",
+          "area": "约50㎡",
+          "hourly": "¥100",
+          "halfDay": "¥380",
+          "fullDay": "¥700",
+          "config": "课桌椅、投屏、白板，适合培训、沙龙与分享会。"
+        }
+      ],
+      "meituan": "https://www.meituan.com/search/?query=%E8%B5%A4%E5%85%94%E5%A6%82%E6%84%8F%E6%B8%AF%20%E4%BC%9A%E8%AE%AE%E5%AE%A4"
+    },
+    {
+      "imgKey": "loc2",
+      "tag": "客村",
+      "name": "赤兔数字港",
+      "addr": "海珠区新港中路 302 号农业银行楼上",
+      "position": "3/8号线客村站 D 出口，步行 5 分钟",
+      "metro": "3/8号线客村站 D 出口，步行 5 分钟",
+      "priceLabel": "4人办公室",
+      "price": "¥2800",
+      "priceUnit": "/月起",
+      "highlights": [
+        "户型最多（4-10人及 113㎡ 大空间）",
+        "大会议室现代风 / 电竞风，配白板 / 麦克风 / 射笔",
+        "「假装上班」体验工位约 40 元/天"
+      ],
+      "contact": "郭先生",
+      "phone": "18102586047",
+      "slug": "kecun",
+      "detail": "赤兔数字港坐落于海珠区新港中路 302 号农业银行楼上，交通便捷（3/8号线客村站 D 出口，步行 5 分钟），是赤兔文创旗下创享办公社区之一。空间精装交付、家具齐全，签约即可办公并可注册公司；配备会议室、茶室、共享公区与高速网络，专属顾问提供工商财税、政策补贴、企业服务一条龙支持。",
+      "rooms": [
+        {
+          "name": "开放工位",
+          "area": "约12㎡",
+          "capacity": "1人",
+          "price": "¥600",
+          "unit": "/人·月起",
+          "config": "开放式共享办公工位，配备独立办公桌以及人体工学椅，可使用公共休闲区、免费茶饮，适合自由职业者、个人创业者短期办公。",
+          "imgKey": "loc2_room1"
+        },
+        {
+          "name": "6人间（带双露台）",
+          "area": "约30㎡",
+          "capacity": "6人",
+          "price": "¥4900",
+          "unit": "/间·月起",
+          "config": "稀缺带露台户型，室内配齐整套办公家具，休闲露台可用来放松洽谈，可注册公司，6 人团队办公兼顾工作与休闲。",
+          "imgKey": "loc2_room2"
+        },
+        {
+          "name": "6人间（带露台）",
+          "area": "约30㎡",
+          "capacity": "6人",
+          "price": "¥5200",
+          "unit": "/间·月起",
+          "config": "宽敞独立办公室，自带户外露台空间，桌椅文件柜配套齐全，环境舒适，支持企业注册，适合需要户外休闲区的团队。",
+          "imgKey": "loc2_room3"
+        },
+        {
+          "name": "7人间",
+          "area": "约35㎡",
+          "capacity": "7人",
+          "price": "¥4500",
+          "unit": "/间·月起",
+          "config": "格局方正开阔，充足的工位和储物文件柜，不用额外采购办公家具，场地可办理公司注册，7 人团队入驻即开工。",
+          "imgKey": "loc2_room4"
+        },
+        {
+          "name": "8人间",
+          "area": "约40㎡",
+          "capacity": "8人",
+          "price": "¥5600",
+          "unit": "/间·月起",
+          "config": "大面积独立办公场地，工位桌椅、文件储物柜一应俱全，能够用来注册企业，满足 8 人团队日常办公需求。",
+          "imgKey": "loc2_room5"
+        },
+        {
+          "name": "9人间",
+          "area": "约45㎡",
+          "capacity": "9人",
+          "price": "¥6300",
+          "unit": "/间·月起",
+          "config": "户型方正实用，全套办公桌椅与收纳柜已配备，省去装修采购成本，场地可注册，适配 9人规模团队。",
+          "imgKey": "loc2_room6"
+        },
+        {
+          "name": "12人间",
+          "area": "约70㎡",
+          "capacity": "12人",
+          "price": "¥8400",
+          "unit": "/间·月起",
+          "config": "大面积团队办公室，配套整套办公家具，空间宽裕，支持工商注册，适合 12 人中型团队整租办公。",
+          "imgKey": "loc2_room7"
+        },
+        {
+          "name": "1+1户型",
+          "area": "约88㎡",
+          "capacity": "16人",
+          "price": "¥9580",
+          "unit": "/间·月起",
+          "config": "一室一隔间的分区户型，主办公区 + 独立隔间，可作为专属会客室，家具全部配齐，场地支持注册，办公接待两不误。",
+          "imgKey": "loc2_room8"
+        },
+        {
+          "name": "2+1户型",
+          "area": "约113㎡",
+          "capacity": "20人",
+          "price": "¥9800",
+          "unit": "/间·月起",
+          "config": "2间独立隔间+开放办公区，配有独立厨房、洗手间，功能分区清晰，家具配套齐全，可以分开办公、独立洽谈，场地支持企业注册。",
+          "imgKey": "loc2_room9"
+        }
+      ],
+      "hourly": [
+        {
+          "cat": "会议室",
+          "name": "小型会议室",
+          "capacity": "4-6人",
+          "area": "约20㎡",
+          "hourly": "¥80",
+          "halfDay": "¥300",
+          "fullDay": "¥500",
+          "config": "白板、投屏、高速WiFi，适合团队碰头与面试。"
+        },
+        {
+          "cat": "会议室",
+          "name": "中型会议室",
+          "capacity": "10-15人",
+          "area": "约40㎡",
+          "hourly": "¥120",
+          "halfDay": "¥450",
+          "fullDay": "¥800",
+          "config": "音响、麦克风、LED屏，适合项目评审。"
+        },
+        {
+          "cat": "会议室",
+          "name": "大型会议室（113㎡）",
+          "capacity": "30-80人",
+          "area": "约113㎡",
+          "hourly": "¥180",
+          "halfDay": "¥700",
+          "fullDay": "¥1300",
+          "config": "电竞/现代双风格，全套影音，适合发布会与大型活动。"
+        },
+        {
+          "cat": "茶室",
+          "name": "新中式茶室包厢",
+          "capacity": "2-4人",
+          "area": "约15㎡",
+          "hourly": "¥58",
+          "halfDay": "¥220",
+          "fullDay": "¥400",
+          "config": "独立隔音、功夫茶具、免费茶叶，适合私密洽谈。"
+        },
+        {
+          "cat": "课室",
+          "name": "培训课室",
+          "capacity": "20-40人",
+          "area": "约55㎡",
+          "hourly": "¥100",
+          "halfDay": "¥380",
+          "fullDay": "¥700",
+          "config": "课桌椅、投屏、白板，适合培训与分享会。"
+        }
+      ],
+      "meituan": "https://www.meituan.com/search/?query=%E8%B5%A4%E5%85%94%E6%95%B0%E5%AD%97%E6%B8%AF%20%E4%BC%9A%E8%AE%AE%E5%AE%A4"
+    },
+    {
+      "imgKey": "loc3",
+      "tag": "鹭江",
+      "name": "赤兔联合办公（鹭江）",
+      "addr": "下渡路 64 号 2 楼",
+      "position": "8号线鹭江站 D 出口，约 200 米",
+      "metro": "8号线鹭江站 D 出口，约 200 米",
+      "priceLabel": "独立办公室",
+      "price": "¥800",
+      "priceUnit": "/月起",
+      "highlights": [
+        "交通便利，步行 2 分钟即达",
+        "「假装上班」工位长租约 800 元/月",
+        "免费茶水 / 休息区 / 物品寄存 / 智能门禁"
+      ],
+      "contact": "张小姐",
+      "phone": "13378682992",
+      "slug": "lujiang",
+      "detail": "赤兔联合办公（鹭江）坐落于下渡路 64 号 2 楼，交通便捷（8号线鹭江站 D 出口，约 200 米），是赤兔文创旗下创享办公社区之一。空间精装交付、家具齐全，签约即可办公并可注册公司；配备会议室、茶室、共享公区与高速网络，专属顾问提供工商财税、政策补贴、企业服务一条龙支持。",
+      "rooms": [
+        {
+          "name": "开放工位",
+          "area": "约12㎡",
+          "capacity": "1人",
+          "price": "¥500",
+          "unit": "/人·月起",
+          "config": "独立办公桌+人体工学椅，共享会议室每月赠送2小时，享公共休闲区。",
+          "imgKey": "loc3_room1"
+        },
+        {
+          "name": "2人间",
+          "area": "约10㎡",
+          "capacity": "2人",
+          "price": "¥1500",
+          "unit": "/间·月起",
+          "config": "紧邻鹭江地铁站出行便捷，双人独立办公空间，全套桌椅文件柜配齐，场地支持工商注册，适合双人搭档创业办公。",
+          "imgKey": "loc3_room2"
+        },
+        {
+          "name": "3人间",
+          "area": "约15㎡",
+          "capacity": "3人",
+          "price": "¥2300",
+          "unit": "/间·月起",
+          "config": "小团队优选独立办公室，户型紧凑利用率高，办公家具一应俱全，24 小时可办公，拎包就能投入使用。",
+          "imgKey": "loc3_room3"
+        },
+        {
+          "name": "4人间",
+          "area": "约20㎡",
+          "capacity": "4人",
+          "price": "¥3000",
+          "unit": "/间·月起",
+          "config": "采光条件良好的封闭独立房间，配套完整办公设施，千兆网络接入，可用来注册公司，省心开启日常办公。",
+          "imgKey": "loc3_room4"
+        },
+        {
+          "name": "5人间",
+          "area": "约25㎡",
+          "capacity": "5人",
+          "price": "¥3500",
+          "unit": "/间·月起",
+          "config": "空间宽敞不压抑，自带全套工位与储物柜体，独立空调可自主调控，5 人团队无需额外采购家具直接入驻。",
+          "imgKey": "loc3_room5"
+        },
+        {
+          "name": "7人间",
+          "area": "约35㎡",
+          "capacity": "7人",
+          "price": "¥4900",
+          "unit": "/间·月起",
+          "config": "整体格局方正，硬件配套齐全，可办理企业注册，适合控制成本的中小团队。",
+          "imgKey": "loc3_room6"
+        },
+        {
+          "name": "10人间",
+          "area": "约50㎡",
+          "capacity": "10人",
+          "price": "¥7000",
+          "unit": "/间·月起",
+          "config": "大面积独立办公场地，空间余量充足，整套办公家具到位，支持公司挂靠注册，适配十人规模成熟团队。",
+          "imgKey": "loc3_room7"
+        }
+      ],
+      "hourly": [
+        {
+          "cat": "会议室",
+          "name": "小型会议室",
+          "capacity": "4-6人",
+          "area": "约18㎡",
+          "hourly": "¥80",
+          "halfDay": "¥300",
+          "fullDay": "¥500",
+          "config": "白板、投屏、高速WiFi，适合商务洽谈。"
+        },
+        {
+          "cat": "会议室",
+          "name": "中型会议室",
+          "capacity": "10-15人",
+          "area": "约35㎡",
+          "hourly": "¥120",
+          "halfDay": "¥450",
+          "fullDay": "¥800",
+          "config": "音响、麦克风、投屏，适合评审与路演。"
+        },
+        {
+          "cat": "茶室",
+          "name": "新中式茶室包厢",
+          "capacity": "2-4人",
+          "area": "约15㎡",
+          "hourly": "¥58",
+          "halfDay": "¥220",
+          "fullDay": "¥400",
+          "config": "独立隔音、功夫茶具、免费茶叶，适合私密会客。"
+        },
+        {
+          "cat": "课室",
+          "name": "培训课室",
+          "capacity": "20-40人",
+          "area": "约50㎡",
+          "hourly": "¥100",
+          "halfDay": "¥380",
+          "fullDay": "¥700",
+          "config": "课桌椅、投屏、白板，适合培训、沙龙。"
+        }
+      ],
+      "meituan": "https://www.meituan.com/search/?query=%E8%B5%A4%E5%85%94%E8%81%94%E5%90%88%E5%8A%9E%E5%85%AC%E9%B9%AD%E6%B1%9F%20%E4%BC%9A%E8%AE%AE%E5%AE%A4"
+    },
+    {
+      "imgKey": "loc4",
+      "tag": "宝岗",
+      "name": "企程创意空间",
+      "addr": "宝岗路 248 号宝岗大厦 2 楼",
+      "position": "8号线凤凰新村站 A 出口，步行 10 分钟",
+      "metro": "8号线凤凰新村站 A 出口，步行 10 分钟",
+      "priceLabel": "单人间",
+      "price": "¥800",
+      "priceUnit": "/月起",
+      "highlights": [
+        "四店中价格最低，性价比最高",
+        "工商财税服务：可注册、解锁工商异常、各类许可证",
+        "临近江南西商圈，独立办公室"
+      ],
+      "contact": "黄先生",
+      "phone": "19002093728",
+      "slug": "baogang",
+      "detail": "企程创意空间坐落于宝岗路 248 号宝岗大厦 2 楼，交通便捷（8号线凤凰新村站 A 出口，步行 10 分钟），是赤兔文创旗下创享办公社区之一。空间精装交付、家具齐全，签约即可办公并可注册公司；配备会议室、茶室、共享公区与高速网络，专属顾问提供工商财税、政策补贴、企业服务一条龙支持。",
+      "rooms": [
+        {
+          "name": "开放工位",
+          "area": "约12㎡",
+          "capacity": "1人",
+          "price": "¥500",
+          "unit": "/人·月起",
+          "config": "独立办公桌+人体工学椅，共享会议室每月赠送2小时，享公共休闲区与免费茶饮。",
+          "imgKey": "loc4_room1"
+        },
+        {
+          "name": "1人间",
+          "area": "约10㎡",
+          "capacity": "1人",
+          "price": "¥780",
+          "unit": "/间·月起",
+          "config": "小巧精致单人独立办公室，办公桌椅、文件柜全部配齐，空间私密性好，适合个体创业者，入驻即可办公。",
+          "imgKey": "loc4_room2"
+        },
+        {
+          "name": "2人间",
+          "area": "约12㎡",
+          "capacity": "2人",
+          "price": "¥1200",
+          "unit": "/间·月起",
+          "config": "双人独立封闭空间，家具配套齐全，格局紧凑实用，两个人办公互不干扰，场地支持工商注册。",
+          "imgKey": "loc4_room3"
+        },
+        {
+          "name": "3人间",
+          "area": "约18㎡",
+          "capacity": "3人",
+          "price": "¥1800",
+          "unit": "/间·月起",
+          "config": "高性价比小型团队办公室，空间利用率高，基础办公设施一步到位，省去自行购置家具的麻烦。",
+          "imgKey": "loc4_room4"
+        },
+        {
+          "name": "4人间",
+          "area": "约25㎡",
+          "capacity": "4人",
+          "price": "¥2400",
+          "unit": "/间·月起",
+          "config": "方正通透的独立办公间，预留充足活动空间，全套工位、收纳柜配齐，适合初创 4 人小组稳定办公。",
+          "imgKey": "loc4_room5"
+        },
+        {
+          "name": "5人间",
+          "area": "约30㎡",
+          "capacity": "5人",
+          "price": "¥3000",
+          "unit": "/间·月起",
+          "config": "宽松舒适的独立房间，室内储物、办公家具一应俱全，可 24 小时办公，中小型团队直接拎包开工。",
+          "imgKey": "loc4_room6"
+        },
+        {
+          "name": "6人间",
+          "area": "约38㎡",
+          "capacity": "6人",
+          "price": "¥3600",
+          "unit": "/间·月起",
+          "config": "中等规模团队专属办公室，整体空间开阔不拥挤，硬件配套完善，支持企业注册，即租即用。",
+          "imgKey": "loc4_room7"
+        },
+        {
+          "name": "8人间",
+          "area": "约50㎡",
+          "capacity": "8人",
+          "price": "¥4800",
+          "unit": "/间·月起",
+          "config": "大面积独立办公场地，充足工位搭配文件收纳柜，整体布局灵活，适配 8 人团队日常办公需求。",
+          "imgKey": "loc4_room8"
+        },
+        {
+          "name": "10人间",
+          "area": "约65㎡",
+          "capacity": "10人",
+          "price": "¥6000",
+          "unit": "/间·月起",
+          "config": "宽敞方正的大办公室，配套全套办公家具，空间余量充足，适合人员稳定、规模偏大的创业团队。",
+          "imgKey": "loc4_room9"
+        },
+        {
+          "name": "13人间",
+          "area": "约75㎡",
+          "capacity": "13人",
+          "price": "¥7800",
+          "unit": " /间·月起",
+          "config": "超大独立办公空间，可容纳十多人同时办公，配套设施齐全，可塑性强，适合成熟团队整间承租。",
+          "imgKey": "loc4_room10"
+        }
+      ],
+      "hourly": [
+        {
+          "cat": "会议室",
+          "name": "小型会议室",
+          "capacity": "4-6人",
+          "area": "约18㎡",
+          "hourly": "¥70",
+          "halfDay": "¥260",
+          "fullDay": "¥450",
+          "config": "白板、投屏、高速WiFi，适合商务洽谈（本店价格最优）。"
+        },
+        {
+          "cat": "会议室",
+          "name": "中型会议室",
+          "capacity": "10-15人",
+          "area": "约35㎡",
+          "hourly": "¥110",
+          "halfDay": "¥400",
+          "fullDay": "¥720",
+          "config": "音响、麦克风、投屏，适合项目评审。"
+        },
+        {
+          "cat": "茶室",
+          "name": "新中式茶室包厢",
+          "capacity": "2-4人",
+          "area": "约15㎡",
+          "hourly": "¥50",
+          "halfDay": "¥190",
+          "fullDay": "¥360",
+          "config": "独立隔音、功夫茶具、免费茶叶，适合私密会客。"
+        },
+        {
+          "cat": "课室",
+          "name": "培训课室",
+          "capacity": "20-40人",
+          "area": "约50㎡",
+          "hourly": "¥90",
+          "halfDay": "¥340",
+          "fullDay": "¥620",
+          "config": "课桌椅、投屏、白板，适合培训、沙龙。"
+        }
+      ],
+      "meituan": "https://www.meituan.com/search/?query=%E4%BC%81%E7%A8%8B%E5%88%9B%E6%84%8F%E7%A9%BA%E9%97%B4%20%E4%BC%9A%E8%AE%AE%E5%AE%A4"
+    }
+  ],
+  "galleryHeader": {
+    "title": "环境实景",
+    "sub": "舒适的空间，明亮通透的办公氛围"
+  },
+  "gallery": [
+    {
+      "imgKey": "g1",
+      "label": "开放工位区",
+      "span": true
+    },
+    {
+      "imgKey": "g2",
+      "label": "独立办公室",
+      "span": false
+    },
+    {
+      "imgKey": "g3",
+      "label": "会议室",
+      "span": false
+    },
+    {
+      "imgKey": "g4",
+      "label": "茶室包间",
+      "span": false
+    },
+    {
+      "imgKey": "g5",
+      "label": "公共休闲区 / 前台",
+      "span": true
+    },
+    {
+      "imgKey": "g6",
+      "label": "路演 / 活动区",
+      "span": false
+    }
+  ],
+  "servicesHeader": {
+    "title": "空间与服务",
+    "sub": "不只是办公位，更是企业发展的后盾"
+  },
+  "services": [
+    {
+      "icon": "desk",
+      "title": "灵活工位",
+      "desc": "体验工位约 40 元/天，长租工位约 800 元/人·月起，适合自由职业者、考研群体及初创团队。"
+    },
+    {
+      "icon": "office",
+      "title": "独立办公室",
+      "desc": "1 人至 113㎡ 多种户型，家具齐全、可注册公司，精装交付无隐形消费。"
+    },
+    {
+      "icon": "meeting",
+      "title": "会议室",
+      "desc": "小会议室（4-10人）¥99/小时，中会议室（10-15人）¥129/小时，大会议室（20-70人）¥159/小时，均配白板、投影或 LED 屏。"
+    },
+    {
+      "icon": "tea",
+      "title": "茶室包间",
+      "desc": "¥58/小时，环境安静优雅，配功夫茶具、免费茶叶，适合商务洽谈。"
+    },
+    {
+      "icon": "doc",
+      "title": "工商财税服务",
+      "desc": "可注册公司、解锁工商异常、办理进出口 / 食品 / 医疗 / 劳务派遣等各类许可证。"
+    },
+    {
+      "icon": "money",
+      "title": "政策与融资对接",
+      "desc": "政策补贴申报、融资对接扶持，助力企业降低启动成本、加速成长。"
+    },
+    {
+      "icon": "visa",
+      "title": "外资签证与商务服务",
+      "desc": "外资公司注册、外商代表处设立，外国人工作签证 / 商务签证代办、居留许可延期与变更，助力外籍人才与外资企业落地广州。"
+    },
+    {
+      "icon": "doc",
+      "title": "商业资源对接&沙龙",
+      "desc": "每个月定期不定期沙龙，促进资源整合交流，汇聚粤港澳大湾区商会成员，上千家企业齐聚赤兔进行商业交流活动，为您的商业道路铺路。"
+    }
+  ],
+  "faqHeader": {
+    "title": "常见问题",
+    "sub": "租房前你可能想知道这些"
+  },
+  "faqs": [
+    {
+      "q": "入驻 / 签约流程是怎样的？",
+      "a": "看房 → 签约（可注册公司）→ 拎包入驻。四店可就近选择，具体房源以实时空房为准。"
+    },
+    {
+      "q": "租金包含哪些费用？",
+      "a": "一价全包：水费、空调安装、物业、网络、保洁全免，无隐形消费。部分增值服务（如会议室、茶室按时段计费）另行结算。"
+    },
+    {
+      "q": "可以开发票吗？",
+      "a": "可开租金发票，普票约 6% / 专票约 10%（以各店实际政策为准）。"
+    },
+    {
+      "q": "是否需要押金？",
+      "a": "具体押金方式以各店签约政策为准，行业常见为押二付一，建议看房时与门店确认。"
+    },
+    {
+      "q": "能否注册公司？",
+      "a": "可以。赤兔文创提供注册地址及工商财税服务。均是正规产权证，在街道办理的备案，可以办理更可办理进出口、食品、医疗、劳务派遣，可办理危化证，出版物许可证，医疗器械等。"
+    },
+    {
+      "q": "配套有哪些？",
+      "a": "茶室，会议室，面试室，户外花园，智慧门锁，接待区，洽谈室，茶水吧，咖啡吧。"
+    }
+  ],
+  "contact": {
+    "title": "现在就找到适合你的办公空间",
+    "sub": "加微信获取实景图、空房照片和最新优惠",
+    "btnText": "微信 / 电话：18903005927",
+    "btnHref": "tel:18903005927",
+    "note": "统一微信号，各店具体地址与房源可加微信后由专属顾问详细介绍。"
+  },
+  "footer": {
+    "brand": "企业生态引擎 · 拎包入驻 · 创享办公社区",
+    "links": [
+      {
+        "text": "品牌介绍",
+        "href": "#about"
+      },
+      {
+        "text": "门店信息",
+        "href": "#locations"
+      },
+      {
+        "text": "空间服务",
+        "href": "#services"
+      },
+      {
+        "text": "常见问题",
+        "href": "#faq"
+      },
+      {
+        "text": "企业补贴",
+        "href": "#subsidy"
+      }
+    ],
+    "contactTitle": "联系我们",
+    "contacts": [
+      "统一微信：18903005927",
+      "服务范围：广州海珠区（晓港 / 客村 / 鹭江 / 宝岗）"
+    ],
+    "copy": "© 2017 赤兔文创 · 广州红杉云科技有限公司旗下品牌"
+  },
+  "images": {
+    "hero": "assets/hero.jpg",
+    "banner": "assets/banner.jpg",
+    "bg1": "assets/bg1.jpg",
+    "bg2": "assets/bg2.jpg",
+    "bg3": "assets/bg3.jpg",
+    "loc1": "assets/loc1.jpg",
+    "loc2": "assets/loc2.jpg",
+    "loc3": "assets/loc3.jpg",
+    "loc4": "assets/loc4.jpg",
+    "g1": "assets/g1.jpg",
+    "g2": "assets/g2.jpg",
+    "g3": "assets/g3.jpg",
+    "g4": "assets/g4.jpg",
+    "g5": "assets/g5.jpg",
+    "g6": "assets/g6.jpg",
+    "sub1": "assets/sub1.jpg",
+    "sub2": "assets/sub2.jpg",
+    "sub3": "assets/sub1.jpg",
+    "sub4": "assets/sub2.jpg",
+    "loc1_room1": "assets/loc1_room1.jpg",
+    "loc1_room2": "assets/loc1_room2.jpg",
+    "loc1_room3": "assets/loc1_room3.jpg",
+    "loc1_room4": "assets/loc1_room4.jpg",
+    "loc1_room5": "assets/loc1_room5.jpg",
+    "loc1_room6": "assets/loc1_room6.jpg",
+    "loc1_room7": "assets/loc1_room7.jpg",
+    "loc1_room8": "assets/loc1_room8.jpg",
+    "loc1_room9": "assets/loc1_room9.jpg",
+    "loc1_room10": "assets/loc1_room10.jpg",
+    "loc1_room11": "assets/loc1_room11.jpg",
+    "loc2_room1": "assets/loc2_room1.jpg",
+    "loc2_room2": "assets/loc2_room2.jpg",
+    "loc2_room3": "assets/loc2_room3.jpg",
+    "loc2_room4": "assets/loc2_room4.jpg",
+    "loc2_room5": "assets/loc2_room5.jpg",
+    "loc2_room6": "assets/loc2_room6.jpg",
+    "loc2_room7": "assets/loc2_room7.jpg",
+    "loc2_room8": "assets/loc2_room8.jpg",
+    "loc2_room9": "assets/loc2_room9.jpg",
+    "loc3_room2": "assets/loc3_room2.jpg",
+    "loc3_room1": "assets/loc3_room1.jpg",
+    "loc3_room4": "assets/loc3_room4.jpg",
+    "loc3_room3": "assets/loc3_room3.jpg",
+    "loc3_room5": "assets/loc3_room5.jpg",
+    "loc3_room6": "assets/loc3_room6.jpg",
+    "loc3_room7": "assets/loc3_room7.jpg",
+    "loc4_room1": "assets/loc4_room1.jpg",
+    "loc4_room2": "assets/loc4_room2.jpg",
+    "loc4_room3": "assets/loc4_room3.jpg",
+    "loc4_room4": "assets/loc4_room4.jpg",
+    "loc4_room5": "assets/loc4_room5.jpg",
+    "loc4_room6": "assets/loc4_room6.jpg",
+    "loc4_room7": "assets/loc4_room7.jpg",
+    "loc4_room8": "assets/loc4_room8.jpg",
+    "loc4_room9": "assets/loc4_room9.jpg",
+    "loc4_room10": "assets/loc4_room10.jpg"
+  },
+  "subsidyHeader": {
+    "title": "企业补贴",
+    "sub": "政府创业与就业补贴申报辅导，赤兔协助整理材料，助你合规申领、降低成本。"
+  },
+  "subsidies": [
+    {
+      "tag": "创业补贴",
+      "name": "一次性创业补贴",
+      "slug": "startup-grant",
+      "imgKey": "sub1",
+      "summary": "面向符合条件的新注册初创企业法定代表人，给予一次性 10000 元创业资助，缓解创业初期成本压力，无需返还。",
+      "policy": "政策依据：《广东省就业创业补贴补助申请办理指导清单（2026年修订版）》（粤人社规〔2026〕20号），由广东省人力资源和社会保障厅、广东省财政厅印发，2026年6月17日起实施，有效期5年。线上申办依托「广东省就业一体化信息系统」（广东公共就业服务云平台）。",
+      "object": "在我省创办初创企业、担任法定代表人/经营者等的「创业重点扶持对象」。",
+      "objectDetail": "创业重点扶持对象（未达法定退休年龄、未享受基本养老保险待遇，符合以下任一类即可）：\n1. 普通高等学校、职业学校、技工院校学生（在校及毕业5年内）和毕业5年内的出国（境）留学回国人员；\n2. 退役军人；\n3. 在本省登记的失业人员；\n4. 在本省认定的就业困难人员；\n5. 返乡创业人员（分三类）；\n6. 45周岁以下的港澳台居民。",
+      "standard": "一次性 10000 元。",
+      "standardDetail": "同一人员及同一创业主体只能享受一次本项补贴，无需返还。",
+      "conditions": [
+        "初创主体：在我省登记注册3年内的小微企业、个体工商户、社会组织、律师事务所、会计师事务所、农民专业合作社，您担任法定代表人/经营者/负责人等职务。",
+        "注册登记满12个月，且申请时未被市场监管部门列入「经营异常名录」。",
+        "申请补贴前连续6个月正常经营，且有不少于1名员工（不含创业者本人）按规定缴纳社会保险费。",
+        "注意：变更过法定代表人的创业主体不能申请；申请人若在非本人名下用人单位参保企业职工养老保险，将不予通过。"
+      ],
+      "materials": [
+        "符合条件人员基本身份类证明。",
+        "创业重点扶持对象佐证材料（如毕业生提供毕业证书、留学回国人员提供学历学位认证书、退役军人提供退役证/转业证、返乡人员提供户口簿或《就业创业证》/社保缴费记录等）。",
+        "企业近6个月正常经营的佐证材料：提供资金流水，以及工资支付凭证、财务报表、纳税记录、经营许可证、合同与订单记录等至少一项。",
+        "小微企业佐证材料：企业填写《调查单位基本情况》（表号101-1表）；未纳入填报范围的填写《企业划型承诺书》。"
+      ],
+      "process": [
+        "备齐营业执照与身份证明、重点扶持对象佐证、正常经营佐证等材料。",
+        "登录广东公共就业服务云平台（ggfw.hrss.gd.gov.cn）在线申请，或向登记注册地人社部门/公共就业服务机构提交。",
+        "区公共就业服务机构与区人社局受理、审核。",
+        "审核通过名单公示。",
+        "补贴资金拨付至申请人银行账户。"
+      ],
+      "agency": "受理机构：创业主体登记注册地所在区人力资源社会保障部门 / 公共就业服务机构。\n线上申办：广东公共就业服务云平台 https://ggfw.hrss.gd.gov.cn/employment/internet/portal/#/home\n申请时限：须于创业主体登记注册之日起3年内提出申请（租金补贴最后一次不超过注册之日起4年）。",
+      "company": [
+        "提供「可注册公司」的合规办公地址——租赁合同与注册登记地一致，直接满足补贴对场地的硬性要求。",
+        "工商财税一条龙：营业执照办理、代理记账、纳税记录出具，帮你备齐「正常经营佐证材料」。",
+        "园区专属顾问协助整理、代填申报材料，对接街道与人社部门，提高通过率。",
+        "入驻即可用，最快当天拿地址，不耽误「注册登记满12个月」的起算。",
+        "温馨提示：补贴由人社部门审核发放，最终以登记注册地人社部门解释为准；赤兔提供地址与申报协助服务，不承诺补贴必然获批。"
+      ],
+      "highlights": [
+        "一次性发放，无需返还",
+        "可与租金补贴、创业带动就业补贴叠加",
+        "赤兔协助整理申报材料"
+      ]
+    },
+    {
+      "tag": "租金补贴",
+      "name": "创业租金补贴",
+      "slug": "rent-subsidy",
+      "imgKey": "sub2",
+      "summary": "对租赁非本人名下场地经营、符合条件的初创企业，按实际租金给予补贴，珠三角地区每年最高6000元，最长3年。",
+      "policy": "政策依据：《广东省就业创业补贴补助申请办理指导清单（2026年修订版）》（粤人社规〔2026〕20号），由广东省人力资源和社会保障厅、广东省财政厅印发，2026年6月17日起实施，有效期5年。线上申办依托「广东省就业一体化信息系统」（广东公共就业服务云平台）。",
+      "object": "租赁非本人名下场地经营、属于「创业重点扶持对象」的初创企业法定代表人/经营者。",
+      "objectDetail": "创业重点扶持对象（未达法定退休年龄、未享受基本养老保险待遇，符合以下任一类即可）：\n1. 普通高等学校、职业学校、技工院校学生（在校及毕业5年内）和毕业5年内的出国（境）留学回国人员；\n2. 退役军人；\n3. 在本省登记的失业人员；\n4. 在本省认定的就业困难人员；\n5. 返乡创业人员（分三类）；\n6. 45周岁以下的港澳台居民。",
+      "standard": "珠三角地区每年最高6000元，最长3年（广州属珠三角地区）。",
+      "standardDetail": "实际租金低于补贴标准的，按实际租金补贴；当年度累计已付租金超过上限的，按当年度最高标准补贴。",
+      "conditions": [
+        "初创主体：在我省登记注册3年内的小微企业、个体工商户、社会组织、律所、会计师事务所、农民专业合作社，您担任法定代表人/经营者等，且属于创业重点扶持对象。",
+        "注册登记满12个月，申请时未被列入「经营异常名录」。",
+        "申请补贴前连续6个月正常经营，且有不少于1名员工（不含本人）按规定缴纳社保。",
+        "租赁非本人名下场地用于经营，且租赁地址与注册登记地一致。",
+        "所申请补贴的租金发生在创业主体登记注册之日起3年内。",
+        "注意：变更过法定代表人的不能申请；申请人若在非本人名下用人单位参保养老，不予通过。"
+      ],
+      "materials": [
+        "符合条件人员基本身份类证明。",
+        "创业重点扶持对象佐证材料（同一次性创业补贴）。",
+        "企业近6个月正常经营的佐证材料（资金流水 + 工资/财报/纳税等至少一项）。",
+        "小微企业佐证材料（《调查单位基本情况》或《企业划型承诺书》）。",
+        "场地产权证明、租赁合同及租金发票（首次申请须完整提交；再次申请仅需经营佐证 + 租金发票 + 变动材料）。"
+      ],
+      "process": [
+        "签订合规租赁合同（地址与注册登记地一致）并取得租金发票。",
+        "登录广东公共就业服务云平台在线申请，或向登记注册地人社部门提交。",
+        "区公共就业服务机构与区人社局受理、审核、公示。",
+        "按年度拨付补贴（首次须于注册之日起3年内提出，最后一次不超过注册之日起4年）。"
+      ],
+      "agency": "受理机构：创业主体登记注册地所在区人力资源社会保障部门 / 公共就业服务机构。\n线上申办：广东公共就业服务云平台 https://ggfw.hrss.gd.gov.cn/employment/internet/portal/#/home\n申请时限：须于创业主体登记注册之日起3年内提出申请（租金补贴最后一次不超过注册之日起4年）。",
+      "company": [
+        "提供「可注册公司」的合规办公地址，租赁合同与注册登记地一致，正是租金补贴的核心前提。",
+        "入驻即签正规租赁合同、可开具租金发票，直接满足「场地产权证明、租赁合同及租金发票」材料要求。",
+        "工商财税一条龙：营业执照、代理记账、纳税记录，备齐「正常经营佐证」。",
+        "专属顾问协助整理申报材料、对接街道/人社部门。",
+        "一价全包、灵活工位，租金可控，补贴按实际租金核拨更划算。",
+        "温馨提示：补贴由人社部门审核发放，最终以登记注册地人社部门解释为准；赤兔提供地址、合同、发票及申报协助，不承诺补贴必然获批。"
+      ],
+      "highlights": [
+        "按实际租金比例补贴",
+        "最长补贴3年",
+        "需入驻合规场地且地址与注册地一致"
+      ]
+    },
+    {
+      "tag": "港澳台青年",
+      "name": "港澳台青年创业扶持",
+      "slug": "hmt-youth",
+      "imgKey": "sub3",
+      "summary": "面向 45 周岁以下、具有中国国籍的港澳居民及符合条件的港澳台青年，在广州（大湾区内地九市）创办初创企业，可享一次性创业资助、租金补贴、创业孵化与培训补贴、创业担保贷款等全周期扶持；落户南沙还可叠加 2 万元创业资助及最高 30 万元成长奖励。",
+      "policy": "政策依据：《支持港澳青年在粤港澳大湾区就业创业的实施细则》（粤人社规〔2025〕47号，广东省人社厅、省委台办、省委港澳办、省财政厅、省税务局联合印发，适用于广州等大湾区内地九市）；《广州市南沙区促进港澳青年就业创业实施办法》（南沙区人社局，2026 年 7 月印发）。",
+      "object": "45 周岁（含）以下、具有中国国籍的港澳居民，以及符合条件的港澳台青年，在大湾区内地九市创办初创企业并担任法定代表人/经营者。",
+      "objectDetail": "适用要点：\n1. 港澳青年：45 周岁以下、具有中国国籍的港澳居民；\n2. 初创企业：在大湾区内地九市登记注册 3 年内的小微企业、个体工商户、社会组织、律所、会计师事务所、农民专业合作社等；\n3. 南沙区对首次到南沙实际经营的港澳青创企业，另设阶梯式成长奖励（见「补贴标准」）。",
+      "standard": "省细则：一次性创业资助 10000 元；创业租金补贴最高 6000 元/年（最长 3 年）；创业孵化补贴 3000 元/年（最长 2 年）；创业培训补贴最高 2800 元；创业担保贷款（个人最高 50 万 / 合伙最高 300 万 / 小微最高 500 万）。\n南沙区：创业资助 2 万元（实际经营满 6 个月）；阶梯成长奖励 满 1 年 5 万 / 满 2 年 10 万 / 满 3 年 15 万；发展突出奖励 30 万；政府资助 1:1 配套最高 30 万；参赛支持 5 万；贷款贴息 50% 最高 30 万。",
+      "standardDetail": "南沙奖励与省补贴可叠加；同一事项按「就高不重复」原则执行。",
+      "conditions": [
+        "省一次性创业资助：初创企业法定代表人/经营者属在校或毕业 5 年内港澳籍学生（内地或境外高校），或创办主体为驿道客栈/民宿/农家乐；登记注册满 6 个月，申请前连续 3 个月有在职员工（不含本人）正常缴社保，且未被列入经营异常名录。",
+        "南沙创业资助：首次到南沙开展实际经营活动的港澳青创企业，实际经营满 6 个月。",
+        "阶梯成长奖励：经营满 1 / 2 / 3 年且发展成效明显 / 显著。"
+      ],
+      "materials": [
+        "港澳居民身份凭证（港澳居民居住证 / 港澳居民来往内地通行证等）。",
+        "学历证明（港澳籍学生提供毕业证书；境外高校提供学位认证）。",
+        "营业执照、正常经营佐证（资金流水 + 纳税/社保/合同与订单等至少一项）。",
+        "租赁场地用于经营的提供产权证明 / 租赁合同（申请租金补贴时）。",
+        "南沙区叠加奖励另按区办法提交实际经营、成长成效等佐证。"
+      ],
+      "process": [
+        "备齐港澳居民身份、学历、营业执照及正常经营佐证。",
+        "登录广东公共就业服务云平台（ggfw.hrss.gd.gov.cn）或向南沙区 / 登记注册地人社部门申请。",
+        "受理、审核、公示。",
+        "补贴 / 奖励拨付至企业账户。"
+      ],
+      "agency": "受理机构：登记注册地（南沙区）人力资源社会保障部门 / 公共就业服务机构。\n线上申办：广东公共就业服务云平台 https://ggfw.hrss.gd.gov.cn/employment/internet/portal/#/home\n南沙区咨询：广州市南沙区人力资源和社会保障局。",
+      "company": [
+        "提供「可注册公司」的合规办公地址，租赁合同与注册地一致，满足场地硬性要求。",
+        "广州四店网络，便于就近落地与实际经营。",
+        "工商财税一条龙：营业执照、代理记账、纳税记录，备齐正常经营佐证。",
+        "专属顾问协助整理、代填申报材料，对接街道 / 人社部门，提高通过率。",
+        "温馨提示：补贴由人社部门审核发放，最终以登记注册地人社部门解释为准；赤兔提供地址与申报协助，不承诺补贴必然获批。"
+      ],
+      "highlights": [
+        "港澳青年专属：一次性资助 + 租金 + 孵化 + 培训 + 贷款",
+        "落户南沙再叠加 2 万 ~ 30 万成长奖励",
+        "赤兔协助整理申报材料"
+      ]
+    },
+    {
+      "tag": "外籍人才",
+      "name": "外籍人才创业扶持",
+      "slug": "foreign-talent",
+      "imgKey": "sub4",
+      "summary": "普通外籍创业者暂不在广东省常规一次性创业补贴 / 租金补贴范围内（该补贴面向中国公民及 45 周岁以下、中国国籍的港澳台居民）。但外籍高层次人才、留学回国的外籍人士及符合条件的外籍高校毕业生，可走高层次人才 / 留学人员通道，并享受广州南沙海外人才奖励、个税补贴等支持；可先由赤兔免费评估资格，并代办工作许可与居留。",
+      "policy": "政策依据：广东省《就业创业补贴补助申请办理指导清单（2026 年修订版）》（粤人社规〔2026〕20号）明确「创业重点扶持对象」不含外国国籍；广州市人才「四高」政策及南沙区海外人才奖励。",
+      "object": "持有有效工作许可 / 居留、并符合以下情形之一的外籍人士：\n1. 外籍高层次人才（持《外国人工作许可证》A 类，或被认定为高层次 / 紧缺人才）；\n2. 在我国高校毕业、取得学士及以上学位的外籍留学生（可参照留学人员 / 外籍人才创业通道）；\n3. 携带科技成果或符合广州重点产业方向的外籍创业人才。",
+      "objectDetail": "重要说明：广东省一次性创业补贴、租金补贴的对象为「创业重点扶持对象」，即中国公民及港澳台居民（中国国籍）等，不含普通外籍人士。外籍人士创业扶持主要通过人才类政策落地，因城因才而异，需先完成资格 / 人才认定。",
+      "standard": "广州 / 南沙可对接的支持（以最新政策为准）：\n· 新引进南沙区工作的国际知名高校博士、持有国际职业资格证书的海外人才，给予最高 100 万元人才奖励；\n· 境外人才在广州市缴纳个税超过应纳税所得额 15% 的部分，每个纳税年度最高给予 500 万元财政补贴；\n· 外籍高层次人才可对接创业担保贷款、项目补助、场地与签证便利；\n· 外籍高校毕业生在部分城市（如厦门、上海）可按留学人员通道享 20-50 万元创业资助，广州以人才认定后配套支持为主。",
+      "standardDetail": "上述为人才类扶持，并非普惠式「一次性创业补贴」；需先通过资格 / 人才认定，具体金额与条件以登记注册地及人才部门解释为准。",
+      "conditions": [
+        "先取得合法在华工作 / 创业身份（外国人工作许可证、居留许可，或设立外资企业 / 代表处）。",
+        "符合高层次人才、留学回国（外籍）或重点产业方向之一。",
+        "在广州（尤其南沙）注册企业并实际经营。"
+      ],
+      "materials": [
+        "护照、签证 / 居留许可、外国人工作许可证。",
+        "学历学位认证（境外高校）。",
+        "高层次人才 / 紧缺人才认定材料（如适用）。",
+        "营业执照、实际经营与投资佐证。"
+      ],
+      "process": [
+        "由赤兔 / 顾问先做免费资格评估，判断可走的人才 / 补贴通道。",
+        "办理外资企业注册或代表处设立、工作许可证与居留许可。",
+        "按认定结果向南沙 / 广州人才部门或人社部门提交对应资助 / 奖励申请。",
+        "审核通过后拨付。"
+      ],
+      "agency": "受理机构：广州市 / 南沙区人力资源社会保障部门、科技（人才）部门、公安出入境管理部门。\n线上申办：广东政务服务网 https://www.gdzwfw.gov.cn/ ；广东公共就业服务云平台 https://ggfw.hrss.gd.gov.cn/\n注：外籍人士创业以资格评估为先，具体以各部门最新解释为准。",
+      "company": [
+        "外资公司注册、外商代表处设立，外国人工作签证 / 商务签证代办、居留许可延期与变更（见「外资签证与商务服务」）。",
+        "先做免费资格评估，匹配可申请的补贴 / 人才奖励通道，避免走弯路。",
+        "提供可注册公司的合规办公地址与工商财税一条龙，满足落地与实际经营要求。",
+        "专属顾问对接街道、人社与人才部门，协助整理申报材料。",
+        "温馨提示：普通外籍人士暂不在广东省常规创业补贴范围内；最终能否享受以资格认定及部门解释为准，赤兔提供评估、签证与申报协助，不承诺补贴必然获批。"
+      ],
+      "highlights": [
+        "普通外籍不在常规创业补贴范围（如实告知）",
+        "可走高层次人才 / 留学回国通道 + 南沙最高 100 万人才奖励",
+        "赤兔免费资格评估 + 签证 / 居留代办"
+      ]
+    }
+  ],
+  "en": {
+    "brand": {
+      "name": "Chitu KEY TEAM · Creative Workspace Community",
+      "wechat": "18903005927"
+    },
+    "hero": {
+      "title": "Chitu KEY TEAM · More Than an Office — A Business Growth Ecosystem",
+      "subtitle": "Move-in Ready · Furnished · 360° Growth Engine",
+      "lead": "We serve startups, small businesses, freelancers and corporate clients with end-to-end business services — workspace, company registration, tax & accounting, and foreign-visa assistance. Four locations across Haizhu District — pick the one nearest you.",
+      "cta1": {
+        "text": "View Locations",
+        "href": "#locations"
+      },
+      "cta2": {
+        "text": "Call Us",
+        "href": "tel:18903005927"
+      },
+      "meta": [
+        {
+          "pre": "",
+          "bold": "Workstations / tea rooms / reception / lobby / common areas / meeting rooms / coffee bar",
+          "post": "all included"
+        },
+        {
+          "pre": "",
+          "bold": "24/7",
+          "post": "private A/C & high-speed internet"
+        },
+        {
+          "pre": "Register your ",
+          "bold": "company address",
+          "post": ""
+        }
+      ],
+      "bgImages": [
+        {
+          "imgKey": "bg1",
+          "label": "Homepage background 1"
+        },
+        {
+          "imgKey": "bg2",
+          "label": "Homepage background 2"
+        },
+        {
+          "imgKey": "bg3",
+          "label": "Homepage background 3"
+        }
+      ]
+    },
+    "featuresHeader": {
+      "title": "Why Chitu KEY TEAM",
+      "sub": "Leave the hassle to us, keep your focus on the business"
+    },
+    "features": [
+      {
+        "icon": "layers",
+        "title": "Move-in Ready",
+        "desc": "24/7 A/C, property management, gigabit internet and cleaning — all included with no hidden fees, so your budget stays clear."
+      },
+      {
+        "icon": "box",
+        "title": "Furnished & Ready",
+        "desc": "Fully furnished and finished — start working the day you sign, and register your company here."
+      },
+      {
+        "icon": "users",
+        "title": "Shared Spaces",
+        "desc": "Meeting rooms, tea rooms, pantry, printing and front-desk mail handling — fully equipped to lower your operating costs."
+      },
+      {
+        "icon": "clock",
+        "title": "24/7 Access",
+        "desc": "Private A/C and high-speed internet available around the clock, flexibly matching your work rhythm."
+      },
+      {
+        "icon": "shield",
+        "title": "360° Growth Engine",
+        "desc": "Company registration, tax & accounting, policy subsidies and funding connections — supporting your business from 0 to 1."
+      },
+      {
+        "icon": "map-pin",
+        "title": "Multi-Location Network",
+        "desc": "Four venues across Haizhu District (Xiaogang / Kecun / Lujiang / Baogang) — choose the nearest and switch freely."
+      }
+    ],
+    "locationsHeader": {
+      "title": "Four Locations in Haizhu",
+      "sub": "There is always one near you"
+    },
+    "locations": [
+      {
+        "imgKey": "loc1",
+        "tag": "Xiaogang",
+        "name": "Chitu Ruyi Port",
+        "addr": "5F-6F, No.271 Changgang East Rd, Haizhu District",
+        "position": "Exit A, Xiaogang Station (Line 8), 1-min walk",
+        "metro": "Exit A, Xiaogang Station (Line 8), 1-min walk",
+        "priceLabel": "Private Office",
+        "price": "¥980",
+        "priceUnit": "/mo",
+        "highlights": [
+          "New-Chinese-style soundproof tea room with kung-fu tea set and screen-sharing whiteboard",
+          "Large meeting room (20-70 pax) with LED screen / audio / microphones",
+          "Rent from 1 hour, self-check-in by QR code"
+        ],
+        "contact": "Mr. Li",
+        "phone": "18102220465",
+        "slug": "ruyi",
+        "detail": "Chitu Ruyi Port is located on 5F-6F, No.271 Changgang East Rd, Haizhu District, with convenient transport (Exit A, Xiaogang Station Line 8, 1-min walk). It is one of the co-working communities under Chitu KEY TEAM. The space is move-in ready and fully furnished — start working upon signing and register your company here. Equipped with meeting rooms, tea rooms, shared common areas and high-speed internet, with dedicated advisors providing one-stop company registration, tax & accounting, policy subsidies and business services.",
+        "rooms": [
+          {
+            "name": "Open Workspace",
+            "area": "~12㎡",
+            "capacity": "1 person",
+            "price": "¥500",
+            "unit": "/person/mo",
+            "config": "Private desk + ergonomic chair; 2 free meeting-room hours monthly; access to lounge and free tea.",
+            "imgKey": "loc1_room1"
+          },
+          {
+            "name": "Single Room",
+            "area": "~10㎡",
+            "capacity": "1 person",
+            "price": "¥980",
+            "unit": "/room/mo",
+            "config": "Private single-person office with a full set of desk, ergonomic chair and filing cabinet. The space can be used for company registration — bring your office supplies and start working right away.",
+            "imgKey": "loc1_room2"
+          },
+          {
+            "name": "2-Person Room",
+            "area": "~14㎡",
+            "capacity": "2 persons",
+            "price": "¥1800",
+            "unit": "/room/mo",
+            "config": "Independent room ideal for two-person teams, fully furnished with desks, chairs and storage cabinets. Supports business registration; quiet environment, move-in ready.",
+            "imgKey": "loc1_room3"
+          },
+          {
+            "name": "3-Person Room",
+            "area": "~21㎡",
+            "capacity": "3 persons",
+            "price": "¥2400",
+            "unit": "/room/mo",
+            "config": "Dedicated private office for small teams with desks, chairs and filing cabinets. Company registration supported; compact and practical layout, no renovation needed.",
+            "imgKey": "loc1_room4"
+          },
+          {
+            "name": "4-Person Room",
+            "area": "~28㎡",
+            "capacity": "4 persons",
+            "price": "¥2800",
+            "unit": "/room/mo",
+            "config": "Independent office space for 4 with a full set of office furniture and filing cabinets. Supports company registration; ideal for small stable teams working long-term.",
+            "imgKey": "loc1_room5"
+          },
+          {
+            "name": "5-Person Room",
+            "area": "~35㎡",
+            "capacity": "5 persons",
+            "price": "¥3500",
+            "unit": "/room/mo",
+            "config": "Spacious private office for 5 with desks, chairs and filing cabinets all included — no extra furniture to buy. Supports business registration; teams can move in with ease.",
+            "imgKey": "loc1_room6"
+          },
+          {
+            "name": "6-Person Room",
+            "area": "~38㎡",
+            "capacity": "6 persons",
+            "price": "¥4200",
+            "unit": "/room/mo",
+            "config": "Large private office fully equipped with workstations, chairs and filing cabinets. Meets the needs of a 6-person team; registration supported and ready to start.",
+            "imgKey": "loc1_room7"
+          },
+          {
+            "name": "7-Person Room",
+            "area": "~45㎡",
+            "capacity": "6 persons",
+            "price": "¥4200",
+            "unit": "/room/mo",
+            "config": "Extra-large private office, fully equipped with desks, chairs and filing cabinets. Can be used for company registration; spacious layout suitable for a 7-person team.",
+            "imgKey": "loc1_room8"
+          },
+          {
+            "name": "Open-Plan Office",
+            "area": "~65㎡",
+            "capacity": "10 persons",
+            "price": "¥5100",
+            "unit": "/room/mo",
+            "config": "Bright open workspace without partitions, fully equipped with desks, chairs and filing cabinets. Supports company registration; flexible layout for agile working needs.",
+            "imgKey": "loc1_room9"
+          },
+          {
+            "name": "1+1 Layout",
+            "area": "~108㎡",
+            "capacity": "16-20 persons",
+            "price": "¥9580",
+            "unit": "/room/mo",
+            "config": "Dual-zone office layout with an open work area plus an independent room, fully furnished with desks and filing cabinets. The room can serve as a reception area; registration supported, move-in ready.",
+            "imgKey": "loc1_room10"
+          },
+          {
+            "name": "2+1 Layout",
+            "area": "~108㎡",
+            "capacity": "16-20 persons",
+            "price": "¥9580",
+            "unit": "/room/mo",
+            "config": "Two independent rooms plus a large open work area, fully furnished with desks, chairs and filing cabinets. Separate zones for working and meetings without interference; company registration available.",
+            "imgKey": "loc1_room11"
+          }
+        ],
+        "hourly": [
+          {
+            "cat": "Meeting Room",
+            "name": "Small Meeting Room",
+            "capacity": "4-6 pax",
+            "area": "~20㎡",
+            "hourly": "¥80",
+            "halfDay": "¥300",
+            "fullDay": "¥500",
+            "config": "HD screen, whiteboard and high-speed WiFi — ideal for talks and small-team meetings."
+          },
+          {
+            "cat": "Meeting Room",
+            "name": "Medium Meeting Room",
+            "capacity": "10-15 pax",
+            "area": "~35㎡",
+            "hourly": "¥120",
+            "halfDay": "¥450",
+            "fullDay": "¥800",
+            "config": "LED screen, audio and mics — good for reviews and pitches."
+          },
+          {
+            "cat": "Meeting Room",
+            "name": "Large Meeting Room",
+            "capacity": "20-50 pax",
+            "area": "~70㎡",
+            "hourly": "¥160",
+            "halfDay": "¥600",
+            "fullDay": "¥1100",
+            "config": "Full AV setup — for launches, training and large meetings."
+          },
+          {
+            "cat": "Tea Room",
+            "name": "New-Chinese Tea Room",
+            "capacity": "2-4 pax",
+            "area": "~15㎡",
+            "hourly": "¥58",
+            "halfDay": "¥220",
+            "fullDay": "¥400",
+            "config": "Soundproof, kung-fu tea set and free tea — for private business talks."
+          },
+          {
+            "cat": "Training Room",
+            "name": "Training Room",
+            "capacity": "20-40 pax",
+            "area": "~50㎡",
+            "hourly": "¥100",
+            "halfDay": "¥380",
+            "fullDay": "¥700",
+            "config": "Desks, screen and whiteboard — for training, salons and meetups."
+          }
+        ],
+        "meituan": "https://www.meituan.com/search/?query=%E8%B5%A4%E5%85%94%E5%A6%82%E6%84%8F%E6%B8%AF%20%E4%BC%9A%E8%AE%AE%E5%AE%A4"
+      },
+      {
+        "imgKey": "loc2",
+        "tag": "Kecun",
+        "name": "Chitu Digital Port",
+        "addr": "Above Agricultural Bank, No.302 Xin'gang Middle Rd, Haizhu District",
+        "position": "Exit D, Kecun Station (Line 3/8), 5-min walk",
+        "metro": "Exit D, Kecun Station (Line 3/8), 5-min walk",
+        "priceLabel": "4-Person Office",
+        "price": "¥2800",
+        "priceUnit": "/mo",
+        "highlights": [
+          "Most layout options (4-10 pax and a 113㎡ large space)",
+          "Large meeting rooms in modern / esports style, with whiteboard / mic / presenter remote",
+          "'Pretend-to-work' day pass about ¥40/day"
+        ],
+        "contact": "Mr. Guo",
+        "phone": "18102586047",
+        "slug": "kecun",
+        "detail": "Chitu Digital Port is located above the Agricultural Bank, No.302 Xin'gang Middle Rd, Haizhu District, with convenient transport (Exit D, Kecun Station Line 3/8, 5-min walk). It is one of the co-working communities under Chitu KEY TEAM. The space is move-in ready and fully furnished — start working upon signing and register your company here. Equipped with meeting rooms, tea rooms, shared common areas and high-speed internet, with dedicated advisors providing one-stop company registration, tax & accounting, policy subsidies and business services.",
+        "rooms": [
+          {
+            "name": "Open Workspace",
+            "area": "~12㎡",
+            "capacity": "1 person",
+            "price": "¥600",
+            "unit": "/person/mo",
+            "config": "Window-side desk + ergonomic chair; access to lounge and free tea.",
+            "imgKey": "loc2_room1"
+          },
+          {
+            "name": "6-Person Room (Double Terrace)",
+            "area": "~30㎡",
+            "capacity": "6 persons",
+            "price": "¥4900",
+            "unit": "/room/mo",
+            "config": "Rare layout with two terraces. Fully furnished indoors plus relaxing outdoor terraces for breaks and informal meetings. Company registration supported; a balance of work and leisure for a 6-person team.",
+            "imgKey": "loc2_room2"
+          },
+          {
+            "name": "6-Person Room (Terrace)",
+            "area": "~30㎡",
+            "capacity": "6 persons",
+            "price": "¥5200",
+            "unit": "/room/mo",
+            "config": "Spacious private office with an outdoor terrace. Desks, chairs and filing cabinets all included; comfortable environment, business registration supported. Great for teams wanting an outdoor retreat.",
+            "imgKey": "loc2_room3"
+          },
+          {
+            "name": "7-Person Room",
+            "area": "~35㎡",
+            "capacity": "7 persons",
+            "price": "¥4500",
+            "unit": "/room/mo",
+            "config": "Square and open layout with ample workstations and storage cabinets — no extra furniture needed. Company registration available; a 7-person team can start work immediately.",
+            "imgKey": "loc2_room4"
+          },
+          {
+            "name": "8-Person Room",
+            "area": "~40㎡",
+            "capacity": "8 persons",
+            "price": "¥5600",
+            "unit": "/room/mo",
+            "config": "Large independent office with workstations, chairs and filing cabinets all in place. Can be used for business registration; meets the daily needs of an 8-person team.",
+            "imgKey": "loc2_room5"
+          },
+          {
+            "name": "9-Person Room",
+            "area": "~45㎡",
+            "capacity": "9 persons",
+            "price": "¥6300",
+            "unit": "/room/mo",
+            "config": "Practical square layout with a full set of desks, chairs and storage cabinets — saves renovation and purchasing costs. Registration supported; fits a 9-person team.",
+            "imgKey": "loc2_room6"
+          },
+          {
+            "name": "12-Person Room",
+            "area": "~70㎡",
+            "capacity": "12 persons",
+            "price": "¥8400",
+            "unit": "/room/mo",
+            "config": "Large team office with a complete set of office furniture and generous space. Supports business registration; ideal for a 12-person mid-size team renting as a whole.",
+            "imgKey": "loc2_room7"
+          },
+          {
+            "name": "1+1 Layout",
+            "area": "~88㎡",
+            "capacity": "16 persons",
+            "price": "¥9580",
+            "unit": "/room/mo",
+            "config": "One open area plus one independent room. The room can be used as a private meeting space. Fully furnished and registration supported — working and receiving guests both covered.",
+            "imgKey": "loc2_room8"
+          },
+          {
+            "name": "2+1 Layout",
+            "area": "~113㎡",
+            "capacity": "20 persons",
+            "price": "¥9800",
+            "unit": "/room/mo",
+            "config": "Two independent rooms plus an open work area, with a private kitchen and bathroom. Clear functional zones, fully furnished — teams can work and hold meetings separately. Business registration supported.",
+            "imgKey": "loc2_room9"
+          }
+        ],
+        "hourly": [
+          {
+            "cat": "Meeting Room",
+            "name": "Small Meeting Room",
+            "capacity": "4-6 pax",
+            "area": "~20㎡",
+            "hourly": "¥80",
+            "halfDay": "¥300",
+            "fullDay": "¥500",
+            "config": "Whiteboard, screen and WiFi — for standups and interviews."
+          },
+          {
+            "cat": "Meeting Room",
+            "name": "Medium Meeting Room",
+            "capacity": "10-15 pax",
+            "area": "~40㎡",
+            "hourly": "¥120",
+            "halfDay": "¥450",
+            "fullDay": "¥800",
+            "config": "Audio, mics and LED screen — for reviews."
+          },
+          {
+            "cat": "Meeting Room",
+            "name": "Large Meeting Room (113㎡)",
+            "capacity": "30-80 pax",
+            "area": "~113㎡",
+            "hourly": "¥180",
+            "halfDay": "¥700",
+            "fullDay": "¥1300",
+            "config": "Modern / esports dual style, full AV — for launches and big events."
+          },
+          {
+            "cat": "Tea Room",
+            "name": "New-Chinese Tea Room",
+            "capacity": "2-4 pax",
+            "area": "~15㎡",
+            "hourly": "¥58",
+            "halfDay": "¥220",
+            "fullDay": "¥400",
+            "config": "Soundproof, kung-fu tea set and free tea — for private talks."
+          },
+          {
+            "cat": "Training Room",
+            "name": "Training Room",
+            "capacity": "20-40 pax",
+            "area": "~55㎡",
+            "hourly": "¥100",
+            "halfDay": "¥380",
+            "fullDay": "¥700",
+            "config": "Desks, screen and whiteboard — for training and meetups."
+          }
+        ],
+        "meituan": "https://www.meituan.com/search/?query=%E8%B5%A4%E5%85%94%E6%95%B0%E5%AD%97%E6%B8%AF%20%E4%BC%9A%E8%AE%AE%E5%AE%A4"
+      },
+      {
+        "imgKey": "loc3",
+        "tag": "Lujiang",
+        "name": "Chitu Co-working (Lujiang)",
+        "addr": "2F, No.64 Xiadu Rd",
+        "position": "Exit D, Lujiang Station (Line 8), ~200m",
+        "metro": "Exit D, Lujiang Station (Line 8), ~200m",
+        "priceLabel": "Private Office",
+        "price": "¥800",
+        "priceUnit": "/mo",
+        "highlights": [
+          "Convenient transport, 2-min walk",
+          "'Pretend-to-work' desk long-term about ¥800/month",
+          "Free tea / rest area / item storage / smart access"
+        ],
+        "contact": "Ms. Zhang",
+        "phone": "13378682992",
+        "slug": "lujiang",
+        "detail": "Chitu Co-working (Lujiang) is located on 2F, No.64 Xiadu Rd, with convenient transport (Exit D, Lujiang Station Line 8, ~200m). It is one of the co-working communities under Chitu KEY TEAM. The space is move-in ready and fully furnished — start working upon signing and register your company here. Equipped with meeting rooms, tea rooms, shared common areas and high-speed internet, with dedicated advisors providing one-stop company registration, tax & accounting, policy subsidies and business services.",
+        "rooms": [
+          {
+            "name": "Open Workspace",
+            "area": "~12㎡",
+            "capacity": "1 person",
+            "price": "¥500",
+            "unit": "/person/mo",
+            "config": "Private desk + ergonomic chair; 2 free meeting-room hours monthly; access to lounge.",
+            "imgKey": "loc3_room1"
+          },
+          {
+            "name": "2-Person Room",
+            "area": "~10㎡",
+            "capacity": "2 persons",
+            "price": "¥1500",
+            "unit": "/room/mo",
+            "config": "Next to Lujiang metro station for easy commuting. Independent space for two with desks, chairs and filing cabinets included. Business registration supported — ideal for two-person startups.",
+            "imgKey": "loc3_room2"
+          },
+          {
+            "name": "3-Person Room",
+            "area": "~15㎡",
+            "capacity": "3 persons",
+            "price": "¥2300",
+            "unit": "/room/mo",
+            "config": "A great choice for small teams: compact, highly efficient layout with complete office furniture. 24-hour access; ready for immediate use.",
+            "imgKey": "loc3_room3"
+          },
+          {
+            "name": "4-Person Room",
+            "area": "~20㎡",
+            "capacity": "4 persons",
+            "price": "¥3000",
+            "unit": "/room/mo",
+            "config": "Well-lit enclosed private room with complete office facilities and gigabit internet. Can be used for company registration — start daily work worry-free.",
+            "imgKey": "loc3_room4"
+          },
+          {
+            "name": "5-Person Room",
+            "area": "~25㎡",
+            "capacity": "5 persons",
+            "price": "¥3500",
+            "unit": "/room/mo",
+            "config": "Spacious and comfortable, with full workstations and storage cabinets plus independently controlled air conditioning. A 5-person team can move in without buying any furniture.",
+            "imgKey": "loc3_room5"
+          },
+          {
+            "name": "7-Person Room",
+            "area": "~35㎡",
+            "capacity": "7 persons",
+            "price": "¥4900",
+            "unit": "/room/mo",
+            "config": "Square layout with complete hardware. Business registration available — suitable for small and mid-size teams keeping costs down.",
+            "imgKey": "loc3_room6"
+          },
+          {
+            "name": "10-Person Room",
+            "area": "~50㎡",
+            "capacity": "10 persons",
+            "price": "¥7000",
+            "unit": "/room/mo",
+            "config": "Large independent office with generous space and a full set of office furniture. Supports company registration; fits an established ten-person team.",
+            "imgKey": "loc3_room7"
+          }
+        ],
+        "hourly": [
+          {
+            "cat": "Meeting Room",
+            "name": "Small Meeting Room",
+            "capacity": "4-6 pax",
+            "area": "~18㎡",
+            "hourly": "¥80",
+            "halfDay": "¥300",
+            "fullDay": "¥500",
+            "config": "Whiteboard, screen and WiFi — for business talks."
+          },
+          {
+            "cat": "Meeting Room",
+            "name": "Medium Meeting Room",
+            "capacity": "10-15 pax",
+            "area": "~35㎡",
+            "hourly": "¥120",
+            "halfDay": "¥450",
+            "fullDay": "¥800",
+            "config": "Audio, mics and screen — for reviews and pitches."
+          },
+          {
+            "cat": "Tea Room",
+            "name": "New-Chinese Tea Room",
+            "capacity": "2-4 pax",
+            "area": "~15㎡",
+            "hourly": "¥58",
+            "halfDay": "¥220",
+            "fullDay": "¥400",
+            "config": "Soundproof, kung-fu tea set and free tea — for private meetings."
+          },
+          {
+            "cat": "Training Room",
+            "name": "Training Room",
+            "capacity": "20-40 pax",
+            "area": "~50㎡",
+            "hourly": "¥100",
+            "halfDay": "¥380",
+            "fullDay": "¥700",
+            "config": "Desks, screen and whiteboard — for training and salons."
+          }
+        ],
+        "meituan": "https://www.meituan.com/search/?query=%E8%B5%A4%E5%85%94%E8%81%94%E5%90%88%E5%8A%9E%E5%85%AC%E9%B9%AD%E6%B1%9F%20%E4%BC%9A%E8%AE%AE%E5%AE%A4"
+      },
+      {
+        "imgKey": "loc4",
+        "tag": "Baogang",
+        "name": "Qicheng Creative Space",
+        "addr": "2F, Baogang Building, No.248 Baogang Rd",
+        "position": "Exit A, Fenghuang Xincun Station (Line 8), 10-min walk",
+        "metro": "Exit A, Fenghuang Xincun Station (Line 8), 10-min walk",
+        "priceLabel": "Single Room",
+        "price": "¥800",
+        "priceUnit": "/mo",
+        "highlights": [
+          "Lowest price among the four venues, best value",
+          "Company & tax services: registration, clearing abnormal status, various licenses",
+          "Near Jiangnanxi commercial area, private offices"
+        ],
+        "contact": "Mr. Huang",
+        "phone": "19002093728",
+        "slug": "baogang",
+        "detail": "Qicheng Creative Space is located on 2F, Baogang Building, No.248 Baogang Rd, with convenient transport (Exit A, Fenghuang Xincun Station Line 8, 10-min walk). It is one of the co-working communities under Chitu KEY TEAM. The space is move-in ready and fully furnished — start working upon signing and register your company here. Equipped with meeting rooms, tea rooms, shared common areas and high-speed internet, with dedicated advisors providing one-stop company registration, tax & accounting, policy subsidies and business services.",
+        "rooms": [
+          {
+            "name": "Open Workspace",
+            "area": "~12㎡",
+            "capacity": "1 person",
+            "price": "¥500",
+            "unit": "/person/mo",
+            "config": "Private desk + ergonomic chair; 2 free meeting-room hours monthly; access to lounge and free tea.",
+            "imgKey": "loc4_room1"
+          },
+          {
+            "name": "Single Room",
+            "area": "~10㎡",
+            "capacity": "1 person",
+            "price": "¥780",
+            "unit": "/room/mo",
+            "config": "Compact and refined single-person office with desk, chair and filing cabinet all included. Very private — ideal for solo entrepreneurs; start working on day one.",
+            "imgKey": "loc4_room2"
+          },
+          {
+            "name": "2-Person Room",
+            "area": "~12㎡",
+            "capacity": "2 persons",
+            "price": "¥1200",
+            "unit": "/room/mo",
+            "config": "Independent enclosed space for two, fully furnished with a compact practical layout. Two people can work without disturbing each other; business registration supported.",
+            "imgKey": "loc4_room3"
+          },
+          {
+            "name": "3-Person Room",
+            "area": "~18㎡",
+            "capacity": "3 persons",
+            "price": "¥1800",
+            "unit": "/room/mo",
+            "config": "Cost-effective office for small teams with high space efficiency. Basic office facilities in place — no need to buy furniture yourself.",
+            "imgKey": "loc4_room4"
+          },
+          {
+            "name": "4-Person Room",
+            "area": "~25㎡",
+            "capacity": "4 persons",
+            "price": "¥2400",
+            "unit": "/room/mo",
+            "config": "Square and airy independent room with plenty of space to move, full workstations and cabinets included. Great for a stable 4-person startup team.",
+            "imgKey": "loc4_room5"
+          },
+          {
+            "name": "5-Person Room",
+            "area": "~30㎡",
+            "capacity": "5 persons",
+            "price": "¥3000",
+            "unit": "/room/mo",
+            "config": "Relaxed and comfortable private room with storage and office furniture all in place. 24-hour access — small teams can start work right away.",
+            "imgKey": "loc4_room6"
+          },
+          {
+            "name": "6-Person Room",
+            "area": "~38㎡",
+            "capacity": "6 persons",
+            "price": "¥3600",
+            "unit": "/room/mo",
+            "config": "Dedicated office for mid-size teams: open, uncrowded space with complete hardware. Business registration supported and ready to use.",
+            "imgKey": "loc4_room7"
+          },
+          {
+            "name": "8-Person Room",
+            "area": "~50㎡",
+            "capacity": "8 persons",
+            "price": "¥4800",
+            "unit": "/room/mo",
+            "config": "Large independent office with ample workstations and filing cabinets. Flexible layout for the daily needs of an 8-person team.",
+            "imgKey": "loc4_room8"
+          },
+          {
+            "name": "10-Person Room",
+            "area": "~65㎡",
+            "capacity": "10 persons",
+            "price": "¥6000",
+            "unit": "/room/mo",
+            "config": "Spacious square office with a full set of office furniture and generous room to grow. Suited to stable, larger startup teams.",
+            "imgKey": "loc4_room9"
+          },
+          {
+            "name": "13-Person Room",
+            "area": "~75㎡",
+            "capacity": "13 persons",
+            "price": "¥7800",
+            "unit": "/room/mo",
+            "config": "Extra-large independent space that seats more than ten. Complete facilities and highly adaptable — ideal for established teams renting the whole room.",
+            "imgKey": "loc4_room10"
+          }
+        ],
+        "hourly": [
+          {
+            "cat": "Meeting Room",
+            "name": "Small Meeting Room",
+            "capacity": "4-6 pax",
+            "area": "~18㎡",
+            "hourly": "¥70",
+            "halfDay": "¥260",
+            "fullDay": "¥450",
+            "config": "Whiteboard, screen and WiFi — for talks (best value here)."
+          },
+          {
+            "cat": "Meeting Room",
+            "name": "Medium Meeting Room",
+            "capacity": "10-15 pax",
+            "area": "~35㎡",
+            "hourly": "¥110",
+            "halfDay": "¥400",
+            "fullDay": "¥720",
+            "config": "Audio, mics and screen — for reviews."
+          },
+          {
+            "cat": "Tea Room",
+            "name": "New-Chinese Tea Room",
+            "capacity": "2-4 pax",
+            "area": "~15㎡",
+            "hourly": "¥50",
+            "halfDay": "¥190",
+            "fullDay": "¥360",
+            "config": "Soundproof, kung-fu tea set and free tea — for private meetings."
+          },
+          {
+            "cat": "Training Room",
+            "name": "Training Room",
+            "capacity": "20-40 pax",
+            "area": "~50㎡",
+            "hourly": "¥90",
+            "halfDay": "¥340",
+            "fullDay": "¥620",
+            "config": "Desks, screen and whiteboard — for training and salons."
+          }
+        ],
+        "meituan": "https://www.meituan.com/search/?query=%E4%BC%81%E7%A8%8B%E5%88%9B%E6%84%8F%E7%A9%BA%E9%97%B4%20%E4%BC%9A%E8%AE%AE%E5%AE%A4"
+      }
+    ],
+    "galleryHeader": {
+      "title": "Gallery",
+      "sub": "Comfortable spaces with bright, open working atmosphere"
+    },
+    "gallery": [
+      {
+        "imgKey": "g1",
+        "label": "Open Workspace",
+        "span": true
+      },
+      {
+        "imgKey": "g2",
+        "label": "Private Office",
+        "span": false
+      },
+      {
+        "imgKey": "g3",
+        "label": "Meeting Room",
+        "span": false
+      },
+      {
+        "imgKey": "g4",
+        "label": "Tea Room",
+        "span": false
+      },
+      {
+        "imgKey": "g5",
+        "label": "Lounge / Reception",
+        "span": true
+      },
+      {
+        "imgKey": "g6",
+        "label": "Pitch / Event Area",
+        "span": false
+      }
+    ],
+    "servicesHeader": {
+      "title": "Spaces & Services",
+      "sub": "More than a desk — your backbone for business growth"
+    },
+    "services": [
+      {
+        "icon": "desk",
+        "title": "Flexible Desk",
+        "desc": "Day pass about ¥40/day; long-term desk about ¥800/person/mo — ideal for freelancers, exam prep and startups."
+      },
+      {
+        "icon": "office",
+        "title": "Private Office",
+        "desc": "From 1-person to 113㎡ layouts, fully furnished and company-registration ready, move-in ready with no hidden fees."
+      },
+      {
+        "icon": "meeting",
+        "title": "Meeting Rooms",
+        "desc": "Small (4-10 pax) ¥99/hr, medium (10-15 pax) ¥129/hr, large (20-70 pax) ¥159/hr — all with whiteboard, projector or LED screen."
+      },
+      {
+        "icon": "tea",
+        "title": "Tea Room",
+        "desc": "¥58/hr, quiet and elegant, with kung-fu tea set and free tea — ideal for business talks."
+      },
+      {
+        "icon": "doc",
+        "title": "Company & Tax Services",
+        "desc": "Company registration, clearing abnormal status, and licenses for import/export, food, medical, labor dispatch, etc."
+      },
+      {
+        "icon": "money",
+        "title": "Policy & Funding",
+        "desc": "Subsidy application support and funding connections to lower startup costs and accelerate growth."
+      },
+      {
+        "icon": "visa",
+        "title": "Foreign-Investment & Visa Services",
+        "desc": "Foreign company registration, representative office setup, work/business visa assistance for foreigners, residence-permit extension and change — helping foreign talent and companies land in Guangzhou."
+      },
+      {
+        "icon": "doc",
+        "title": "Business Networking & Salons",
+        "desc": "Regular and ad-hoc salons each month to foster resource integration, gathering members of the Greater Bay Area chambers of commerce — over a thousand enterprises meet at Chitu for business exchange, paving the way for your venture."
+      }
+    ],
+    "faqHeader": {
+      "title": "FAQ",
+      "sub": "What you may want to know before renting"
+    },
+    "faqs": [
+      {
+        "q": "What is the move-in / signing process?",
+        "a": "Viewing → signing (company registration available) → move in. Choose any of the four venues; actual availability is subject to real-time vacancies."
+      },
+      {
+        "q": "What is included in the rent?",
+        "a": "All-inclusive: water, A/C installation, property management, internet and cleaning are all free, with no hidden fees. Some value-added services (e.g. meeting rooms, tea rooms billed by time) are settled separately."
+      },
+      {
+        "q": "Can you issue invoices?",
+        "a": "Rent invoices available — general invoice ~6% / special invoice ~10% (subject to each venue's actual policy)."
+      },
+      {
+        "q": "Is a deposit required?",
+        "a": "Deposit terms follow each venue's signing policy; the industry norm is two months' deposit plus one month in advance. Confirm with the venue when viewing."
+      },
+      {
+        "q": "Can I register a company here?",
+        "a": "Yes. Chitu KEY TEAM provides a registered address and company/tax services. All are proper property certificates filed with the subdistrict office, enabling import/export, food, medical, labor dispatch, hazardous-chemical, publication and medical-device permits, etc."
+      },
+      {
+        "q": "What amenities are included?",
+        "a": "Tea rooms, meeting rooms, interview rooms, outdoor garden, smart locks, reception, negotiation rooms, pantry and coffee bar."
+      }
+    ],
+    "contact": {
+      "title": "Find the workspace that fits you — now",
+      "sub": "Add WeChat for real photos, vacancy shots and latest offers",
+      "btnText": "WeChat / Tel: 18903005927",
+      "btnHref": "tel:18903005927",
+      "note": "One WeChat ID for all; add it and a dedicated advisor will walk you through each venue's address and availability in detail."
+    },
+    "footer": {
+      "brand": "Business Ecosystem Engine · Move-in Ready · Creative Workspace Community",
+      "links": [
+        {
+          "text": "About",
+          "href": "#about"
+        },
+        {
+          "text": "Locations",
+          "href": "#locations"
+        },
+        {
+          "text": "Spaces & Services",
+          "href": "#services"
+        },
+        {
+          "text": "FAQ",
+          "href": "#faq"
+        },
+        {
+          "text": "Subsidies",
+          "href": "#subsidy"
+        }
+      ],
+      "contactTitle": "Contact Us",
+      "contacts": [
+        "WeChat: 18903005927",
+        "Service area: Haizhu District, Guangzhou (Xiaogang / Kecun / Lujiang / Baogang)"
+      ],
+      "copy": "© 2017 Chitu KEY TEAM · A brand of Guangzhou Redwood Cloud Technology Co., Ltd."
+    },
+    "subsidyHeader": {
+      "title": "Business Subsidies",
+      "sub": "Government startup & employment subsidy application support — Chitu helps organize your documents for compliant claims and lower costs."
+    },
+    "subsidies": [
+      {
+        "tag": "Startup Grant",
+        "name": "One-time Startup Grant",
+        "slug": "startup-grant",
+        "imgKey": "sub1",
+        "summary": "A one-time ¥10,000 startup grant for eligible legal representatives of newly registered startups, easing early-stage costs — no repayment required.",
+        "policy": "Policy basis: \"Guangdong Employment and Entrepreneurship Subsidy Guidelines (2026 Revision)\" (Yue Ren She Gui [2026] No.20), issued by the Guangdong Dept. of Human Resources & Social Security and the Dept. of Finance, effective June 17, 2026 for 5 years. Online filing via the Guangdong Public Employment Service Cloud Platform.",
+        "object": "\"Key supported entrepreneurship groups\" who founded a startup in our province and serve as its legal representative / operator.",
+        "objectDetail": "Key supported entrepreneurship groups (below statutory retirement age, not yet receiving basic pension, meeting any one of the following):\n1. Students from regular universities, vocational and technical schools (enrolled or within 5 years of graduation) and overseas returnees within 5 years of graduation;\n2. Veterans;\n3. Registered unemployed persons in the province;\n4. Recognized employment-disadvantaged persons in the province;\n5. Returning entrepreneurs (three categories);\n6. Hong Kong, Macao and Taiwan residents under 45.",
+        "standard": "One-time ¥10,000.",
+        "standardDetail": "The same person and same startup entity may receive this subsidy only once; no repayment required.",
+        "conditions": [
+          "Startup entity: a micro/small enterprise, individual business, social organization, law firm, accounting firm or farmers' cooperative registered in our province within 3 years, where you serve as legal representative / operator / responsible person.",
+          "Registered for at least 12 months and not listed in the \"Abnormal Operation List\" by market regulators at application time.",
+          "Normal operation for 6 consecutive months before applying, with at least 1 employee (other than the entrepreneur) paying social insurance per regulations.",
+          "Note: entities that changed their legal representative cannot apply; applications are rejected if the applicant is covered by employer pension insurance at a unit not under their own name."
+        ],
+        "materials": [
+          "Basic identity proof of the eligible person.",
+          "Supporting documents for the key supported group (e.g., graduation certificate for graduates, academic credential certification for returnees, veteran / demobilization certificate for veterans, household register or Employment & Entrepreneurship Certificate / social-insurance records for returnees).",
+          "Proof of normal operation in the last 6 months: provide fund flow plus at least one of payroll, financial statements, tax records, operating license, contracts or order records.",
+          "Micro/small enterprise proof: the \"Basic Information of Surveyed Units\" form (No. 101-1), or an \"Enterprise Type Commitment Letter\" if not within the reporting scope."
+        ],
+        "process": [
+          "Prepare business license, identity proof, key-group supporting docs and normal-operation proof.",
+          "Apply online via the Guangdong Public Employment Service Cloud Platform (ggfw.hrss.gd.gov.cn) or submit to the local human-resources department / public employment service agency.",
+          "District public employment agency and district HR bureau accept and review.",
+          "Public notice of approved applicants.",
+          "Subsidy funds transferred to the applicant's bank account."
+        ],
+        "agency": "Accepting agency: the district HR & social-security department / public employment service agency where the startup is registered.\nOnline filing: Guangdong Public Employment Service Cloud Platform https://ggfw.hrss.gd.gov.cn/employment/internet/portal/#/home\nDeadline: apply within 3 years from the startup's registration (for rent subsidy, the last application no later than 4 years from registration).",
+        "company": [
+          "Provide a compliant office address \"ready for company registration\" — lease contract matches the registration address, directly meeting the subsidy's hard venue requirement.",
+          "One-stop company & tax services: business-license handling, bookkeeping and tax-record issuance, helping you prepare the \"normal operation\" proof.",
+          "Dedicated park advisors help organize and pre-fill application documents and liaise with the subdistrict and HR departments to raise approval rates.",
+          "Available upon move-in; get the address the same day at fastest, without delaying the \"12 months from registration\" clock.",
+          "Note: subsidies are reviewed and paid by HR departments; final interpretation rests with the local HR department. Chitu provides the address and application assistance but does not guarantee approval."
+        ],
+        "highlights": [
+          "One-time payout, no repayment",
+          "Can be combined with rent subsidy and job-creation subsidy",
+          "Chitu helps organize application documents"
+        ]
+      },
+      {
+        "tag": "Rent Subsidy",
+        "name": "Startup Rent Subsidy",
+        "slug": "rent-subsidy",
+        "imgKey": "sub2",
+        "summary": "For eligible startups leasing a venue not under the founder's own name, a subsidy based on actual rent — up to ¥6,000/year in the Pearl River Delta, for up to 3 years.",
+        "policy": "Policy basis: \"Guangdong Employment and Entrepreneurship Subsidy Guidelines (2026 Revision)\" (Yue Ren She Gui [2026] No.20), issued by the Guangdong Dept. of Human Resources & Social Security and the Dept. of Finance, effective June 17, 2026 for 5 years. Online filing via the Guangdong Public Employment Service Cloud Platform.",
+        "object": "Legal representatives / operators of eligible startups who lease a venue not under their own name and belong to the \"key supported entrepreneurship groups\".",
+        "objectDetail": "Key supported entrepreneurship groups (below statutory retirement age, not yet receiving basic pension, meeting any one of the following):\n1. Students from regular universities, vocational and technical schools (enrolled or within 5 years of graduation) and overseas returnees within 5 years of graduation;\n2. Veterans;\n3. Registered unemployed persons in the province;\n4. Recognized employment-disadvantaged persons in the province;\n5. Returning entrepreneurs (three categories);\n6. Hong Kong, Macao and Taiwan residents under 45.",
+        "standard": "Up to ¥6,000/year in the Pearl River Delta, for up to 3 years (Guangzhou is in the PRD).",
+        "standardDetail": "If actual rent is below the cap, the actual rent is subsidized; if cumulative paid rent in a year exceeds the cap, the annual cap applies.",
+        "conditions": [
+          "Startup entity: micro/small enterprise, individual business, social organization, law firm, accounting firm or farmers' cooperative registered in our province within 3 years, where you serve as legal representative / operator and belong to the key supported group.",
+          "Registered for at least 12 months and not listed in the \"Abnormal Operation List\" at application.",
+          "Normal operation for 6 consecutive months before applying, with at least 1 employee (other than you) paying social insurance.",
+          "Leasing a venue not under your own name for business, with the lease address matching the registration address.",
+          "The rent claimed occurred within 3 years from the startup's registration.",
+          "Note: entities that changed their legal representative cannot apply; applications are rejected if the applicant is covered by employer pension insurance at a unit not under their own name."
+        ],
+        "materials": [
+          "Basic identity proof of the eligible person.",
+          "Key-group supporting documents (same as the one-time startup grant).",
+          "Proof of normal operation in the last 6 months (fund flow + at least one of payroll / financials / tax).",
+          "Micro/small enterprise proof (\"Basic Information of Surveyed Units\" or \"Enterprise Type Commitment Letter\").",
+          "Venue property proof, lease contract and rent invoice (full submission for first application; only operation proof + rent invoice + change docs for renewals)."
+        ],
+        "process": [
+          "Sign a compliant lease (address matching registration) and obtain a rent invoice.",
+          "Apply online via the Guangdong Public Employment Service Cloud Platform or submit to the local HR department.",
+          "District public employment agency and district HR bureau accept, review and publicize.",
+          "Subsidy paid annually (first application within 3 years of registration; last no later than 4 years)."
+        ],
+        "agency": "Accepting agency: the district HR & social-security department / public employment service agency where the startup is registered.\nOnline filing: Guangdong Public Employment Service Cloud Platform https://ggfw.hrss.gd.gov.cn/employment/internet/portal/#/home\nDeadline: apply within 3 years from the startup's registration (for rent subsidy, the last application no later than 4 years from registration).",
+        "company": [
+          "Provide a compliant office address \"ready for company registration\" with lease matching the registration — exactly the core precondition for the rent subsidy.",
+          "Move in and sign a proper lease with rent invoices available, directly meeting the \"venue property proof, lease contract and rent invoice\" requirement.",
+          "One-stop company & tax services: business license, bookkeeping, tax records — preparing the \"normal operation\" proof.",
+          "Dedicated advisors help organize documents and liaise with subdistrict / HR departments.",
+          "All-inclusive pricing and flexible desks keep rent controllable, making the actual-rent subsidy more worthwhile.",
+          "Note: subsidies are reviewed and paid by HR departments; final interpretation rests with the local HR department. Chitu provides address, contract, invoice and application assistance but does not guarantee approval."
+        ],
+        "highlights": [
+          "Subsidy proportional to actual rent",
+          "Up to 3 years",
+          "Requires a compliant venue with address matching registration"
+        ]
+      },
+      {
+        "tag": "HMT Youth",
+        "name": "HMT Youth Startup Support",
+        "slug": "hmt-youth",
+        "imgKey": "sub3",
+        "summary": "For Hong Kong, Macao and Taiwan residents under 45 with Chinese nationality, and eligible HMT youth, who start an early-stage business in Guangzhou (the nine GBA mainland cities) — a full-cycle package: one-time startup grant, rent subsidy, incubation & training subsidies, and guaranteed loans. Settling in Nansha adds a ¥20,000 startup grant and growth rewards up to ¥300,000.",
+        "policy": "Policy basis: \"Implementation Rules for Supporting HMT Youth Employment and Entrepreneurship in the Guangdong-Hong Kong-Macao Greater Bay Area\" (Yue Ren She Gui [2025] No.47, issued by Guangdong HR Dept., Taiwan Affairs Office, HMT Affairs Office, Finance Dept. and Tax Bureau; covers Guangzhou and the other eight GBA mainland cities); and \"Nansha District, Guangzhou — Measures for Promoting HMT Youth Employment and Entrepreneurship\" (Nansha HR Bureau, July 2026).",
+        "object": "HMT residents under 45 with Chinese nationality, and eligible HMT youth, who found an early-stage business in the nine GBA mainland cities and serve as its legal representative / operator.",
+        "objectDetail": "Key points:\n1. HMT youth: under 45 with Chinese nationality.\n2. Early-stage entity: micro/small enterprise, individual business, social organization, law firm, accounting firm or farmers' cooperative registered in the nine GBA mainland cities within 3 years.\n3. Nansha offers additional tiered growth rewards for HMT startups first operating there (see \"Standard\").",
+        "standard": "Provincial rules: one-time startup grant ¥10,000; rent subsidy up to ¥6,000/year (up to 3 years); incubation subsidy ¥3,000/year (up to 2 years); training subsidy up to ¥2,800; guaranteed loans (personal up to ¥500k / partnership up to ¥3M / micro-enterprise up to ¥5M).\nNansha: startup grant ¥20,000 (6 months of actual operation); tiered growth rewards — year 1 ¥50k / year 2 ¥100k / year 3 ¥150k; outstanding-development award ¥300k; 1:1 matching of government grants up to ¥300k; competition support ¥50k; 50% interest discount up to ¥300k.",
+        "standardDetail": "Nansha rewards stack with provincial subsidies; for overlapping items, the higher amount applies (no duplication).",
+        "conditions": [
+          "Provincial one-time grant: the legal representative/operator is an HMT student enrolled or within 5 years of graduation (mainland or overseas university), or the entity is a post-house / B&B / farm-stay; registered for 6+ months, with employees (other than the founder) paying social insurance for 3 consecutive months before applying, and not on the Abnormal Operation List.",
+          "Nansha startup grant: an HMT startup first operating in Nansha with 6 months of actual operation.",
+          "Tiered growth rewards: 1 / 2 / 3 years of operation with clear / significant progress."
+        ],
+        "materials": [
+          "HMT resident ID (Residence Permit for HMT Residents / Mainland Travel Permit for HMT Residents).",
+          "Education proof (graduation certificate for HMT students; degree authentication for overseas universities).",
+          "Business license and normal-operation proof (fund flow + at least one of tax / social insurance / contracts & orders).",
+          "Property proof / lease contract if premises are leased for business (for rent subsidy).",
+          "Nansha additional rewards require actual-operation and progress evidence per district rules."
+        ],
+        "process": [
+          "Prepare HMT ID, education proof, business license and normal-operation evidence.",
+          "Apply via the Guangdong Public Employment Service Cloud Platform (ggfw.hrss.gd.gov.cn) or the Nansha / registration-district HR department.",
+          "Acceptance, review and public notice.",
+          "Subsidy / reward paid to the company account."
+        ],
+        "agency": "Accepting agency: the HR & social-security department / public employment service agency of the registration district (Nansha).\nOnline filing: Guangdong Public Employment Service Cloud Platform https://ggfw.hrss.gd.gov.cn/employment/internet/portal/#/home\nNansha inquiries: Nansha District Bureau of Human Resources and Social Security, Guangzhou.",
+        "company": [
+          "Provide a compliant office address \"ready for company registration\" with lease matching the registration — meeting the hard venue requirement.",
+          "Four Haizhu venues across Guangzhou for convenient landing and actual operation.",
+          "One-stop company & tax services: business license, bookkeeping, tax records — preparing the normal-operation proof.",
+          "Dedicated advisors organize and pre-fill documents and liaise with subdistrict / HR departments to raise approval rates.",
+          "Note: subsidies are reviewed and paid by HR departments; final interpretation rests with the local HR department. Chitu provides the address and application assistance but does not guarantee approval."
+        ],
+        "highlights": [
+          "HMT-youth exclusive: grant + rent + incubation + training + loans",
+          "Settling in Nansha adds ¥20k–¥300k growth rewards",
+          "Chitu helps organize application documents"
+        ]
+      },
+      {
+        "tag": "Foreign Talent",
+        "name": "Foreign Talent Startup Support",
+        "slug": "foreign-talent",
+        "imgKey": "sub4",
+        "summary": "Ordinary foreign nationals are NOT covered by Guangdong's standard one-time startup / rent subsidies (those target Chinese citizens and HMT residents with Chinese nationality under 45). But foreign high-level talents, overseas-returnee foreign nationals and eligible foreign graduates can access talent / returnee channels, plus Nansha overseas-talent rewards and individual-income-tax subsidies in Guangzhou. Chitu offers a free eligibility assessment and handles work permits & residence.",
+        "policy": "Policy basis: Guangdong \"Employment and Entrepreneurship Subsidy Guidelines (2026 Revision)\" (Yue Ren She Gui [2026] No.20) explicitly excludes foreign nationals from \"key supported entrepreneurship groups\"; Guangzhou talent \"Four Highs\" policy and Nansha overseas-talent rewards.",
+        "object": "Foreign nationals holding a valid work / residence permit and meeting one of the following:\n1. Foreign high-level talent (Category A Foreigner Work Permit, or recognized high-level / scarce talent);\n2. Foreign students who graduated from Chinese universities with a bachelor's degree or above (may use the returnee / foreign-talent startup channel);\n3. Foreign entrepreneurial talents bringing scientific results or fitting Guangzhou's key industries.",
+        "objectDetail": "Important: Guangdong's one-time startup and rent subsidies go to \"key supported entrepreneurship groups\" — Chinese citizens and HMT residents (Chinese nationality), not ordinary foreigners. Foreign entrepreneurship support is delivered mainly through talent policies, which vary by city and talent profile and require eligibility / talent recognition first.",
+        "standard": "Supports accessible in Guangzhou / Nansha (subject to latest policy):\n· Up to ¥1,000,000 talent reward for internationally renowned PhDs or overseas-talent holders of international professional certificates newly working in Nansha;\n· Up to ¥5,000,000 annual fiscal subsidy for overseas talent whose Guangzhou individual income tax exceeds 15% of taxable income;\n· Foreign high-level talents can access guaranteed loans, project grants, venue and visa facilitation;\n· Foreign graduates in some cities (e.g. Xiamen, Shanghai) get ¥200k–¥500k startup funding via the returnee channel; Guangzhou mainly supports after talent recognition.",
+        "standardDetail": "These are talent-class supports, not a universal one-time startup subsidy; eligibility / talent recognition is required first, and amounts are subject to the registration district and talent departments.",
+        "conditions": [
+          "Obtain a lawful work / startup status in China (Foreigner Work Permit, residence permit, or set up a foreign-invested enterprise / representative office).",
+          "Meet one of: high-level talent, overseas returnee (foreign), or key-industry direction.",
+          "Register and actually operate a company in Guangzhou (especially Nansha)."
+        ],
+        "materials": [
+          "Passport, visa / residence permit, Foreigner Work Permit.",
+          "Degree authentication (overseas universities).",
+          "High-level / scarce talent recognition materials (if applicable).",
+          "Business license, actual-operation and investment evidence."
+        ],
+        "process": [
+          "Chitu / advisor runs a free eligibility assessment to identify the right talent / subsidy channel.",
+          "Set up the foreign-invested enterprise or representative office, and obtain work permit & residence permit.",
+          "Submit the corresponding grant / reward application to Nansha / Guangzhou talent or HR departments per recognition result.",
+          "Paid after approval."
+        ],
+        "agency": "Accepting agencies: Guangzhou / Nansha HR & social-security departments, science & technology (talent) departments, and public security exit-entry authorities.\nOnline filing: Guangdong Government Service Net https://www.gdzwfw.gov.cn/ ; Guangdong Public Employment Service Cloud Platform https://ggfw.hrss.gd.gov.cn/\nNote: for foreigners, eligibility assessment comes first; final interpretation rests with each department.",
+        "company": [
+          "Foreign company registration, representative office setup, work / business visa assistance and residence-permit extension & change (see \"Foreign-Investment & Visa Services\").",
+          "Free eligibility assessment first, to match applicable subsidy / talent-reward channels and avoid dead ends.",
+          "Compliant office address ready for company registration plus one-stop company & tax services for landing and actual operation.",
+          "Dedicated advisors liaise with subdistrict, HR and talent departments and help organize documents.",
+          "Note: ordinary foreigners are not in Guangdong's standard startup-subsidy scope; whether you qualify depends on talent recognition and department interpretation. Chitu provides assessment, visa and application assistance but does not guarantee approval."
+        ],
+        "highlights": [
+          "Ordinary foreigners not in standard startup-subsidy scope (stated plainly)",
+          "High-level / returnee channels + Nansha reward up to ¥1M",
+          "Chitu free eligibility assessment + visa / residence handling"
+        ]
+      }
+    ]
+  },
+  "zhHant": {
+    "brand": {
+      "name": "赤兔文創 · 創享辦公社區",
+      "wechat": "18903005927"
+    },
+    "hero": {
+      "title": "赤兔文創 · 不止辦公 更是企業成長生態引擎",
+      "subtitle": "精裝交付· 拎包入駐 · 360°成長引擎",
+      "lead": "面向初創企業、小微企業、自由職業者與商務洽談客戶，提供辦公空間、工商財稅、外資簽證代辦等一條龍企業服務。海珠區四店網絡，就近選擇。",
+      "cta1": {
+        "text": "查看門店",
+        "href": "#locations"
+      },
+      "cta2": {
+        "text": "電話諮詢",
+        "href": "tel:18903005927"
+      },
+      "meta": [
+        {
+          "pre": "",
+          "bold": "工位/茶室/接待區/前臺/公區/會議室/咖啡吧",
+          "post": "齊全"
+        },
+        {
+          "pre": "",
+          "bold": "24小時",
+          "post": "獨立空調與高速網絡"
+        },
+        {
+          "pre": "可",
+          "bold": "註冊公司",
+          "post": ""
+        }
+      ],
+      "bgImages": [
+        {
+          "imgKey": "bg1",
+          "label": "首屏背景輪播圖 1"
+        },
+        {
+          "imgKey": "bg2",
+          "label": "首屏背景輪播圖 2"
+        },
+        {
+          "imgKey": "bg3",
+          "label": "首屏背景輪播圖 3"
+        }
+      ]
+    },
+    "featuresHeader": {
+      "title": "爲什麼選擇赤兔文創",
+      "sub": "把繁瑣留給赤兔，把專注還給創業"
+    },
+    "features": [
+      {
+        "icon": "layers",
+        "title": "精裝交付",
+        "desc": "24H空調、物業、千兆網絡、保潔，無隱形消費，預算更清晰。"
+      },
+      {
+        "icon": "box",
+        "title": "拎包入駐",
+        "desc": "傢俱齊全、裝修到位，簽約即可辦公，可註冊公司。"
+      },
+      {
+        "icon": "users",
+        "title": "共享空間",
+        "desc": "會議室、茶室、茶水間、打印、前臺代收快遞，配套齊全，降低運營成本。"
+      },
+      {
+        "icon": "clock",
+        "title": "24小時自由辦公",
+        "desc": "獨立空調與高速網絡全天候可用，彈性匹配你的工作節奏。"
+      },
+      {
+        "icon": "shield",
+        "title": "360°成長引擎",
+        "desc": "工商財稅、政策補貼、融資對接扶持，陪伴企業從0到1。"
+      },
+      {
+        "icon": "map-pin",
+        "title": "多店網絡",
+        "desc": "海珠區 4 家場地（曉港 / 客村 / 鷺江 / 寶崗）就近選擇，靈活換址。"
+      }
+    ],
+    "locationsHeader": {
+      "title": "海珠區四店可選",
+      "sub": "總有一家在你身邊"
+    },
+    "locations": [
+      {
+        "imgKey": "loc1",
+        "tag": "曉港",
+        "name": "赤兔如意港",
+        "addr": "海珠區昌崗東路 271 號 5、6 層",
+        "position": "8號線曉港站 A 出口，步行 1 分鐘",
+        "metro": "8號線曉港站 A 出口，步行 1 分鐘",
+        "priceLabel": "獨立辦公室",
+        "price": "¥980",
+        "priceUnit": "/月起",
+        "highlights": [
+          "新中式隔音茶室，配功夫茶具、投屏白板",
+          "超大會議室（20-70人）配 LED 屏 / 音響 / 麥克風",
+          "1 小時起租、掃碼自助入場"
+        ],
+        "contact": "李先生",
+        "phone": "18102220465",
+        "slug": "ruyi",
+        "detail": "赤兔如意港坐落於海珠區昌崗東路 271 號 5、6 層，交通便捷（8號線曉港站 A 出口，步行 1 分鐘），是赤兔文創旗下創享辦公社區之一。空間精裝交付、傢俱齊全，簽約即可辦公並可註冊公司；配備會議室、茶室、共享公區與高速網絡，專屬顧問提供工商財稅、政策補貼、企業服務一條龍支持。",
+        "rooms": [
+          {
+            "name": "開放工位",
+            "area": "約12㎡",
+            "capacity": "1人",
+            "price": "¥500",
+            "unit": "/人·月起",
+            "config": "獨立辦公桌+人體工學椅，共享會議室每月贈送2小時，享公共休閒區與免費茶飲。",
+            "imgKey": "loc1_room1"
+          },
+          {
+            "name": "一人間",
+            "area": "約10㎡",
+            "capacity": "1人",
+            "price": "¥980",
+            "unit": "/間·月起",
+            "config": "單人獨立私密辦公室，配備全套工位桌椅 + 文件櫃，空間可用來註冊公司，創業者帶上辦公物品就能直接入駐辦公。",
+            "imgKey": "loc1_room2"
+          },
+          {
+            "name": "二人間",
+            "area": "約14㎡",
+            "capacity": "2人",
+            "price": "¥1800",
+            "unit": "/間·月起",
+            "config": "適合雙人搭檔辦公的獨立房間，傢俱配齊含桌椅與收納文件櫃，支持工商註冊，環境安靜，即租即用拎包辦公。",
+            "imgKey": "loc1_room3"
+          },
+          {
+            "name": "三人間",
+            "area": "約21㎡",
+            "capacity": "3人",
+            "price": "¥2400",
+            "unit": "/間·月起",
+            "config": "小型團隊專屬獨立辦公室，室內配套辦公桌椅和文件儲物櫃，可註冊公司，格局緊湊實用，省去前期裝修佈置。",
+            "imgKey": "loc1_room4"
+          },
+          {
+            "name": "四人間",
+            "area": "約28㎡",
+            "capacity": "4人",
+            "price": "¥2800",
+            "unit": "/間·月起",
+            "config": "4 人獨立辦公場地，全套辦公傢俱配齊，自帶文件收納櫃，場地可註冊公司，適合中小型穩定小組長期辦公。",
+            "imgKey": "loc1_room5"
+          },
+          {
+            "name": "五人間",
+            "area": "約35㎡",
+            "capacity": "5人",
+            "price": "¥3500",
+            "unit": "/間·月起",
+            "config": "寬敞的 5 人獨立辦公室，桌椅、文件櫃一應俱全，不用額外採購傢俱，場地支持工商註冊，團隊入駐無壓力。",
+            "imgKey": "loc1_room6"
+          },
+          {
+            "name": "六人間",
+            "area": "約38㎡",
+            "capacity": "6人",
+            "price": "¥4200",
+            "unit": "/間·月起",
+            "config": "大空間獨立辦公室，全套辦公傢俱到位，含工位桌椅與文件櫃，滿足 6 人團隊辦公需求，場地可註冊，直接開工。",
+            "imgKey": "loc1_room7"
+          },
+          {
+            "name": "七人間",
+            "area": "約45㎡",
+            "capacity": "6人",
+            "price": "¥4200",
+            "unit": "/間·月起",
+            "config": "大面積獨立辦公室，桌椅文件櫃全部配齊，可用於公司註冊，空間寬鬆不擁擠，適配 7 人規模團隊辦公。",
+            "imgKey": "loc1_room8"
+          },
+          {
+            "name": "大開間",
+            "area": "約65㎡",
+            "capacity": "10人",
+            "price": "¥5100",
+            "unit": "/間·月起",
+            "config": "通透無隔斷的開闊辦公空間，配齊桌椅、文件櫃，支持公司註冊，內部格局可以自由擺放，適配靈活辦公需求。",
+            "imgKey": "loc1_room9"
+          },
+          {
+            "name": "1+1戶型",
+            "area": "約108㎡",
+            "capacity": "16-20人",
+            "price": "¥9580",
+            "unit": "/間·月起",
+            "config": "雙分區辦公戶型，辦公區 + 獨立隔間，全套桌椅文件櫃配置，隔間可以用作接待室，場地支持註冊，拎包即可入駐。",
+            "imgKey": "loc1_room10"
+          },
+          {
+            "name": "2+1戶型",
+            "area": "約108㎡",
+            "capacity": "16-20人",
+            "price": "¥9580",
+            "unit": "/間·月起",
+            "config": "雙獨立隔間搭配大辦公區，傢俱齊全，帶桌椅與文件收納櫃，辦公、洽談分區互不干擾，可辦理公司註冊。",
+            "imgKey": "loc1_room11"
+          }
+        ],
+        "hourly": [
+          {
+            "cat": "會議室",
+            "name": "小型會議室",
+            "capacity": "4-6人",
+            "area": "約20㎡",
+            "hourly": "¥80",
+            "halfDay": "¥300",
+            "fullDay": "¥500",
+            "config": "高清投屏、白板、高速WiFi，適合商務洽談與小團隊會議。"
+          },
+          {
+            "cat": "會議室",
+            "name": "中型會議室",
+            "capacity": "10-15人",
+            "area": "約35㎡",
+            "hourly": "¥120",
+            "halfDay": "¥450",
+            "fullDay": "¥800",
+            "config": "LED屏、音響、麥克風，適合項目評審與路演。"
+          },
+          {
+            "cat": "會議室",
+            "name": "大型會議室",
+            "capacity": "20-50人",
+            "area": "約70㎡",
+            "hourly": "¥160",
+            "halfDay": "¥600",
+            "fullDay": "¥1100",
+            "config": "全套影音設備，適合發佈會、培訓與大型會議。"
+          },
+          {
+            "cat": "茶室",
+            "name": "新中式茶室包廂",
+            "capacity": "2-4人",
+            "area": "約15㎡",
+            "hourly": "¥58",
+            "halfDay": "¥220",
+            "fullDay": "¥400",
+            "config": "獨立隔音、功夫茶具、免費茶葉，適合私密商務洽談。"
+          },
+          {
+            "cat": "課室",
+            "name": "培訓課室",
+            "capacity": "20-40人",
+            "area": "約50㎡",
+            "hourly": "¥100",
+            "halfDay": "¥380",
+            "fullDay": "¥700",
+            "config": "課桌椅、投屏、白板，適合培訓、沙龍與分享會。"
+          }
+        ],
+        "meituan": "https://www.meituan.com/search/?query=%E8%B5%A4%E5%85%94%E5%A6%82%E6%84%8F%E6%B8%AF%20%E4%BC%9A%E8%AE%AE%E5%AE%A4"
+      },
+      {
+        "imgKey": "loc2",
+        "tag": "客村",
+        "name": "赤兔數字港",
+        "addr": "海珠區新港中路 302 號農業銀行樓上",
+        "position": "3/8號線客村站 D 出口，步行 5 分鐘",
+        "metro": "3/8號線客村站 D 出口，步行 5 分鐘",
+        "priceLabel": "4人辦公室",
+        "price": "¥2800",
+        "priceUnit": "/月起",
+        "highlights": [
+          "戶型最多（4-10人及 113㎡ 大空間）",
+          "大會議室現代風 / 電競風，配白板 / 麥克風 / 射筆",
+          "「假裝上班」體驗工位約 40 元/天"
+        ],
+        "contact": "郭先生",
+        "phone": "18102586047",
+        "slug": "kecun",
+        "detail": "赤兔數字港坐落於海珠區新港中路 302 號農業銀行樓上，交通便捷（3/8號線客村站 D 出口，步行 5 分鐘），是赤兔文創旗下創享辦公社區之一。空間精裝交付、傢俱齊全，簽約即可辦公並可註冊公司；配備會議室、茶室、共享公區與高速網絡，專屬顧問提供工商財稅、政策補貼、企業服務一條龍支持。",
+        "rooms": [
+          {
+            "name": "開放工位",
+            "area": "約12㎡",
+            "capacity": "1人",
+            "price": "¥600",
+            "unit": "/人·月起",
+            "config": "開放式共享辦公工位，配備獨立辦公桌以及人體工學椅，可使用公共休閒區、免費茶飲，適合自由職業者、個人創業者短期辦公。",
+            "imgKey": "loc2_room1"
+          },
+          {
+            "name": "6人間（帶雙露臺）",
+            "area": "約30㎡",
+            "capacity": "6人",
+            "price": "¥4900",
+            "unit": "/間·月起",
+            "config": "稀缺帶露臺戶型，室內配齊整套辦公傢俱，休閒露臺可用來放鬆洽談，可註冊公司，6 人團隊辦公兼顧工作與休閒。",
+            "imgKey": "loc2_room2"
+          },
+          {
+            "name": "6人間（帶露臺）",
+            "area": "約30㎡",
+            "capacity": "6人",
+            "price": "¥5200",
+            "unit": "/間·月起",
+            "config": "寬敞獨立辦公室，自帶戶外露臺空間，桌椅文件櫃配套齊全，環境舒適，支持企業註冊，適合需要戶外休閒區的團隊。",
+            "imgKey": "loc2_room3"
+          },
+          {
+            "name": "7人間",
+            "area": "約35㎡",
+            "capacity": "7人",
+            "price": "¥4500",
+            "unit": "/間·月起",
+            "config": "格局方正開闊，充足的工位和儲物文件櫃，不用額外採購辦公傢俱，場地可辦理公司註冊，7 人團隊入駐即開工。",
+            "imgKey": "loc2_room4"
+          },
+          {
+            "name": "8人間",
+            "area": "約40㎡",
+            "capacity": "8人",
+            "price": "¥5600",
+            "unit": "/間·月起",
+            "config": "大面積獨立辦公場地，工位桌椅、文件儲物櫃一應俱全，能夠用來註冊企業，滿足 8 人團隊日常辦公需求。",
+            "imgKey": "loc2_room5"
+          },
+          {
+            "name": "9人間",
+            "area": "約45㎡",
+            "capacity": "9人",
+            "price": "¥6300",
+            "unit": "/間·月起",
+            "config": "戶型方正實用，全套辦公桌椅與收納櫃已配備，省去裝修採購成本，場地可註冊，適配 9人規模團隊。",
+            "imgKey": "loc2_room6"
+          },
+          {
+            "name": "12人間",
+            "area": "約70㎡",
+            "capacity": "12人",
+            "price": "¥8400",
+            "unit": "/間·月起",
+            "config": "大面積團隊辦公室，配套整套辦公傢俱，空間寬裕，支持工商註冊，適合 12 人中型團隊整租辦公。",
+            "imgKey": "loc2_room7"
+          },
+          {
+            "name": "1+1戶型",
+            "area": "約88㎡",
+            "capacity": "16人",
+            "price": "¥9580",
+            "unit": "/間·月起",
+            "config": "一室一隔間的分區戶型，主辦公區 + 獨立隔間，可作爲專屬會客室，傢俱全部配齊，場地支持註冊，辦公接待兩不誤。",
+            "imgKey": "loc2_room8"
+          },
+          {
+            "name": "2+1戶型",
+            "area": "約113㎡",
+            "capacity": "20人",
+            "price": "¥9800",
+            "unit": "/間·月起",
+            "config": "2間獨立隔間+開放辦公區，配有獨立廚房、洗手間，功能分區清晰，傢俱配套齊全，可以分開辦公、獨立洽談，場地支持企業註冊。",
+            "imgKey": "loc2_room9"
+          }
+        ],
+        "hourly": [
+          {
+            "cat": "會議室",
+            "name": "小型會議室",
+            "capacity": "4-6人",
+            "area": "約20㎡",
+            "hourly": "¥80",
+            "halfDay": "¥300",
+            "fullDay": "¥500",
+            "config": "白板、投屏、高速WiFi，適合團隊碰頭與面試。"
+          },
+          {
+            "cat": "會議室",
+            "name": "中型會議室",
+            "capacity": "10-15人",
+            "area": "約40㎡",
+            "hourly": "¥120",
+            "halfDay": "¥450",
+            "fullDay": "¥800",
+            "config": "音響、麥克風、LED屏，適合項目評審。"
+          },
+          {
+            "cat": "會議室",
+            "name": "大型會議室（113㎡）",
+            "capacity": "30-80人",
+            "area": "約113㎡",
+            "hourly": "¥180",
+            "halfDay": "¥700",
+            "fullDay": "¥1300",
+            "config": "電競/現代雙風格，全套影音，適合發佈會與大型活動。"
+          },
+          {
+            "cat": "茶室",
+            "name": "新中式茶室包廂",
+            "capacity": "2-4人",
+            "area": "約15㎡",
+            "hourly": "¥58",
+            "halfDay": "¥220",
+            "fullDay": "¥400",
+            "config": "獨立隔音、功夫茶具、免費茶葉，適合私密洽談。"
+          },
+          {
+            "cat": "課室",
+            "name": "培訓課室",
+            "capacity": "20-40人",
+            "area": "約55㎡",
+            "hourly": "¥100",
+            "halfDay": "¥380",
+            "fullDay": "¥700",
+            "config": "課桌椅、投屏、白板，適合培訓與分享會。"
+          }
+        ],
+        "meituan": "https://www.meituan.com/search/?query=%E8%B5%A4%E5%85%94%E6%95%B0%E5%AD%97%E6%B8%AF%20%E4%BC%9A%E8%AE%AE%E5%AE%A4"
+      },
+      {
+        "imgKey": "loc3",
+        "tag": "鷺江",
+        "name": "赤兔聯合辦公（鷺江）",
+        "addr": "下渡路 64 號 2 樓",
+        "position": "8號線鷺江站 D 出口，約 200 米",
+        "metro": "8號線鷺江站 D 出口，約 200 米",
+        "priceLabel": "獨立辦公室",
+        "price": "¥800",
+        "priceUnit": "/月起",
+        "highlights": [
+          "交通便利，步行 2 分鐘即達",
+          "「假裝上班」工位長租約 800 元/月",
+          "免費茶水 / 休息區 / 物品寄存 / 智能門禁"
+        ],
+        "contact": "張小姐",
+        "phone": "13378682992",
+        "slug": "lujiang",
+        "detail": "赤兔聯合辦公（鷺江）坐落於下渡路 64 號 2 樓，交通便捷（8號線鷺江站 D 出口，約 200 米），是赤兔文創旗下創享辦公社區之一。空間精裝交付、傢俱齊全，簽約即可辦公並可註冊公司；配備會議室、茶室、共享公區與高速網絡，專屬顧問提供工商財稅、政策補貼、企業服務一條龍支持。",
+        "rooms": [
+          {
+            "name": "開放工位",
+            "area": "約12㎡",
+            "capacity": "1人",
+            "price": "¥500",
+            "unit": "/人·月起",
+            "config": "獨立辦公桌+人體工學椅，共享會議室每月贈送2小時，享公共休閒區。",
+            "imgKey": "loc3_room1"
+          },
+          {
+            "name": "2人間",
+            "area": "約10㎡",
+            "capacity": "2人",
+            "price": "¥1500",
+            "unit": "/間·月起",
+            "config": "緊鄰鷺江地鐵站出行便捷，雙人獨立辦公空間，全套桌椅文件櫃配齊，場地支持工商註冊，適合雙人搭檔創業辦公。",
+            "imgKey": "loc3_room2"
+          },
+          {
+            "name": "3人間",
+            "area": "約15㎡",
+            "capacity": "3人",
+            "price": "¥2300",
+            "unit": "/間·月起",
+            "config": "小團隊優選獨立辦公室，戶型緊湊利用率高，辦公傢俱一應俱全，24 小時可辦公，拎包就能投入使用。",
+            "imgKey": "loc3_room3"
+          },
+          {
+            "name": "4人間",
+            "area": "約20㎡",
+            "capacity": "4人",
+            "price": "¥3000",
+            "unit": "/間·月起",
+            "config": "採光條件良好的封閉獨立房間，配套完整辦公設施，千兆網絡接入，可用來註冊公司，省心開啓日常辦公。",
+            "imgKey": "loc3_room4"
+          },
+          {
+            "name": "5人間",
+            "area": "約25㎡",
+            "capacity": "5人",
+            "price": "¥3500",
+            "unit": "/間·月起",
+            "config": "空間寬敞不壓抑，自帶全套工位與儲物櫃體，獨立空調可自主調控，5 人團隊無需額外採購傢俱直接入駐。",
+            "imgKey": "loc3_room5"
+          },
+          {
+            "name": "7人間",
+            "area": "約35㎡",
+            "capacity": "7人",
+            "price": "¥4900",
+            "unit": "/間·月起",
+            "config": "整體格局方正，硬件配套齊全，可辦理企業註冊，適合控制成本的中小團隊。",
+            "imgKey": "loc3_room6"
+          },
+          {
+            "name": "10人間",
+            "area": "約50㎡",
+            "capacity": "10人",
+            "price": "¥7000",
+            "unit": "/間·月起",
+            "config": "大面積獨立辦公場地，空間餘量充足，整套辦公傢俱到位，支持公司掛靠註冊，適配十人規模成熟團隊。",
+            "imgKey": "loc3_room7"
+          }
+        ],
+        "hourly": [
+          {
+            "cat": "會議室",
+            "name": "小型會議室",
+            "capacity": "4-6人",
+            "area": "約18㎡",
+            "hourly": "¥80",
+            "halfDay": "¥300",
+            "fullDay": "¥500",
+            "config": "白板、投屏、高速WiFi，適合商務洽談。"
+          },
+          {
+            "cat": "會議室",
+            "name": "中型會議室",
+            "capacity": "10-15人",
+            "area": "約35㎡",
+            "hourly": "¥120",
+            "halfDay": "¥450",
+            "fullDay": "¥800",
+            "config": "音響、麥克風、投屏，適合評審與路演。"
+          },
+          {
+            "cat": "茶室",
+            "name": "新中式茶室包廂",
+            "capacity": "2-4人",
+            "area": "約15㎡",
+            "hourly": "¥58",
+            "halfDay": "¥220",
+            "fullDay": "¥400",
+            "config": "獨立隔音、功夫茶具、免費茶葉，適合私密會客。"
+          },
+          {
+            "cat": "課室",
+            "name": "培訓課室",
+            "capacity": "20-40人",
+            "area": "約50㎡",
+            "hourly": "¥100",
+            "halfDay": "¥380",
+            "fullDay": "¥700",
+            "config": "課桌椅、投屏、白板，適合培訓、沙龍。"
+          }
+        ],
+        "meituan": "https://www.meituan.com/search/?query=%E8%B5%A4%E5%85%94%E8%81%94%E5%90%88%E5%8A%9E%E5%85%AC%E9%B9%AD%E6%B1%9F%20%E4%BC%9A%E8%AE%AE%E5%AE%A4"
+      },
+      {
+        "imgKey": "loc4",
+        "tag": "寶崗",
+        "name": "企程創意空間",
+        "addr": "寶崗路 248 號寶崗大廈 2 樓",
+        "position": "8號線鳳凰新村站 A 出口，步行 10 分鐘",
+        "metro": "8號線鳳凰新村站 A 出口，步行 10 分鐘",
+        "priceLabel": "單人間",
+        "price": "¥800",
+        "priceUnit": "/月起",
+        "highlights": [
+          "四店中價格最低，性價比最高",
+          "工商財稅服務：可註冊、解鎖工商異常、各類許可證",
+          "臨近江南西商圈，獨立辦公室"
+        ],
+        "contact": "黃先生",
+        "phone": "19002093728",
+        "slug": "baogang",
+        "detail": "企程創意空間坐落於寶崗路 248 號寶崗大廈 2 樓，交通便捷（8號線鳳凰新村站 A 出口，步行 10 分鐘），是赤兔文創旗下創享辦公社區之一。空間精裝交付、傢俱齊全，簽約即可辦公並可註冊公司；配備會議室、茶室、共享公區與高速網絡，專屬顧問提供工商財稅、政策補貼、企業服務一條龍支持。",
+        "rooms": [
+          {
+            "name": "開放工位",
+            "area": "約12㎡",
+            "capacity": "1人",
+            "price": "¥500",
+            "unit": "/人·月起",
+            "config": "獨立辦公桌+人體工學椅，共享會議室每月贈送2小時，享公共休閒區與免費茶飲。",
+            "imgKey": "loc4_room1"
+          },
+          {
+            "name": "1人間",
+            "area": "約10㎡",
+            "capacity": "1人",
+            "price": "¥780",
+            "unit": "/間·月起",
+            "config": "小巧精緻單人獨立辦公室，辦公桌椅、文件櫃全部配齊，空間私密性好，適合個體創業者，入駐即可辦公。",
+            "imgKey": "loc4_room2"
+          },
+          {
+            "name": "2人間",
+            "area": "約12㎡",
+            "capacity": "2人",
+            "price": "¥1200",
+            "unit": "/間·月起",
+            "config": "雙人獨立封閉空間，傢俱配套齊全，格局緊湊實用，兩個人辦公互不干擾，場地支持工商註冊。",
+            "imgKey": "loc4_room3"
+          },
+          {
+            "name": "3人間",
+            "area": "約18㎡",
+            "capacity": "3人",
+            "price": "¥1800",
+            "unit": "/間·月起",
+            "config": "高性價比小型團隊辦公室，空間利用率高，基礎辦公設施一步到位，省去自行購置傢俱的麻煩。",
+            "imgKey": "loc4_room4"
+          },
+          {
+            "name": "4人間",
+            "area": "約25㎡",
+            "capacity": "4人",
+            "price": "¥2400",
+            "unit": "/間·月起",
+            "config": "方正通透的獨立辦公間，預留充足活動空間，全套工位、收納櫃配齊，適合初創 4 人小組穩定辦公。",
+            "imgKey": "loc4_room5"
+          },
+          {
+            "name": "5人間",
+            "area": "約30㎡",
+            "capacity": "5人",
+            "price": "¥3000",
+            "unit": "/間·月起",
+            "config": "寬鬆舒適的獨立房間，室內儲物、辦公傢俱一應俱全，可 24 小時辦公，中小型團隊直接拎包開工。",
+            "imgKey": "loc4_room6"
+          },
+          {
+            "name": "6人間",
+            "area": "約38㎡",
+            "capacity": "6人",
+            "price": "¥3600",
+            "unit": "/間·月起",
+            "config": "中等規模團隊專屬辦公室，整體空間開闊不擁擠，硬件配套完善，支持企業註冊，即租即用。",
+            "imgKey": "loc4_room7"
+          },
+          {
+            "name": "8人間",
+            "area": "約50㎡",
+            "capacity": "8人",
+            "price": "¥4800",
+            "unit": "/間·月起",
+            "config": "大面積獨立辦公場地，充足工位搭配文件收納櫃，整體佈局靈活，適配 8 人團隊日常辦公需求。",
+            "imgKey": "loc4_room8"
+          },
+          {
+            "name": "10人間",
+            "area": "約65㎡",
+            "capacity": "10人",
+            "price": "¥6000",
+            "unit": "/間·月起",
+            "config": "寬敞方正的大辦公室，配套全套辦公傢俱，空間餘量充足，適合人員穩定、規模偏大的創業團隊。",
+            "imgKey": "loc4_room9"
+          },
+          {
+            "name": "13人間",
+            "area": "約75㎡",
+            "capacity": "13人",
+            "price": "¥7800",
+            "unit": " /間·月起",
+            "config": "超大獨立辦公空間，可容納十多人同時辦公，配套設施齊全，可塑性強，適合成熟團隊整間承租。",
+            "imgKey": "loc4_room10"
+          }
+        ],
+        "hourly": [
+          {
+            "cat": "會議室",
+            "name": "小型會議室",
+            "capacity": "4-6人",
+            "area": "約18㎡",
+            "hourly": "¥70",
+            "halfDay": "¥260",
+            "fullDay": "¥450",
+            "config": "白板、投屏、高速WiFi，適合商務洽談（本店價格最優）。"
+          },
+          {
+            "cat": "會議室",
+            "name": "中型會議室",
+            "capacity": "10-15人",
+            "area": "約35㎡",
+            "hourly": "¥110",
+            "halfDay": "¥400",
+            "fullDay": "¥720",
+            "config": "音響、麥克風、投屏，適合項目評審。"
+          },
+          {
+            "cat": "茶室",
+            "name": "新中式茶室包廂",
+            "capacity": "2-4人",
+            "area": "約15㎡",
+            "hourly": "¥50",
+            "halfDay": "¥190",
+            "fullDay": "¥360",
+            "config": "獨立隔音、功夫茶具、免費茶葉，適合私密會客。"
+          },
+          {
+            "cat": "課室",
+            "name": "培訓課室",
+            "capacity": "20-40人",
+            "area": "約50㎡",
+            "hourly": "¥90",
+            "halfDay": "¥340",
+            "fullDay": "¥620",
+            "config": "課桌椅、投屏、白板，適合培訓、沙龍。"
+          }
+        ],
+        "meituan": "https://www.meituan.com/search/?query=%E4%BC%81%E7%A8%8B%E5%88%9B%E6%84%8F%E7%A9%BA%E9%97%B4%20%E4%BC%9A%E8%AE%AE%E5%AE%A4"
+      }
+    ],
+    "galleryHeader": {
+      "title": "環境實景",
+      "sub": "舒適的空間，明亮通透的辦公氛圍"
+    },
+    "gallery": [
+      {
+        "imgKey": "g1",
+        "label": "開放工位區",
+        "span": true
+      },
+      {
+        "imgKey": "g2",
+        "label": "獨立辦公室",
+        "span": false
+      },
+      {
+        "imgKey": "g3",
+        "label": "會議室",
+        "span": false
+      },
+      {
+        "imgKey": "g4",
+        "label": "茶室包間",
+        "span": false
+      },
+      {
+        "imgKey": "g5",
+        "label": "公共休閒區 / 前臺",
+        "span": true
+      },
+      {
+        "imgKey": "g6",
+        "label": "路演 / 活動區",
+        "span": false
+      }
+    ],
+    "servicesHeader": {
+      "title": "空間與服務",
+      "sub": "不只是辦公位，更是企業發展的後盾"
+    },
+    "services": [
+      {
+        "icon": "desk",
+        "title": "靈活工位",
+        "desc": "體驗工位約 40 元/天，長租工位約 800 元/人·月起，適合自由職業者、考研羣體及初創團隊。"
+      },
+      {
+        "icon": "office",
+        "title": "獨立辦公室",
+        "desc": "1 人至 113㎡ 多種戶型，傢俱齊全、可註冊公司，精裝交付無隱形消費。"
+      },
+      {
+        "icon": "meeting",
+        "title": "會議室",
+        "desc": "小會議室（4-10人）¥99/小時，中會議室（10-15人）¥129/小時，大會議室（20-70人）¥159/小時，均配白板、投影或 LED 屏。"
+      },
+      {
+        "icon": "tea",
+        "title": "茶室包間",
+        "desc": "¥58/小時，環境安靜優雅，配功夫茶具、免費茶葉，適合商務洽談。"
+      },
+      {
+        "icon": "doc",
+        "title": "工商財稅服務",
+        "desc": "可註冊公司、解鎖工商異常、辦理進出口 / 食品 / 醫療 / 勞務派遣等各類許可證。"
+      },
+      {
+        "icon": "money",
+        "title": "政策與融資對接",
+        "desc": "政策補貼申報、融資對接扶持，助力企業降低啓動成本、加速成長。"
+      },
+      {
+        "icon": "visa",
+        "title": "外資簽證與商務服務",
+        "desc": "外資公司註冊、外商代表處設立，外國人工作簽證 / 商務簽證代辦、居留許可延期與變更，助力外籍人才與外資企業落地廣州。"
+      },
+      {
+        "icon": "doc",
+        "title": "商業資源對接&沙龍",
+        "desc": "每個月定期不定期沙龍，促進資源整合交流，匯聚粵港澳大灣區商會成員，上千家企業齊聚赤兔進行商業交流活動，爲您的商業道路鋪路。"
+      }
+    ],
+    "faqHeader": {
+      "title": "常見問題",
+      "sub": "租房前你可能想知道這些"
+    },
+    "faqs": [
+      {
+        "q": "入駐 / 簽約流程是怎樣的？",
+        "a": "看房 → 簽約（可註冊公司）→ 拎包入駐。四店可就近選擇，具體房源以實時空房爲準。"
+      },
+      {
+        "q": "租金包含哪些費用？",
+        "a": "一價全包：水費、空調安裝、物業、網絡、保潔全免，無隱形消費。部分增值服務（如會議室、茶室按時段計費）另行結算。"
+      },
+      {
+        "q": "可以開發票嗎？",
+        "a": "可開租金髮票，普票約 6% / 專票約 10%（以各店實際政策爲準）。"
+      },
+      {
+        "q": "是否需要押金？",
+        "a": "具體押金方式以各店簽約政策爲準，行業常見爲押二付一，建議看房時與門店確認。"
+      },
+      {
+        "q": "能否註冊公司？",
+        "a": "可以。赤兔文創提供註冊地址及工商財稅服務。均是正規產權證，在街道辦理的備案，可以辦理更可辦理進出口、食品、醫療、勞務派遣，可辦理危化證，出版物許可證，醫療器械等。"
+      },
+      {
+        "q": "配套有哪些？",
+        "a": "茶室，會議室，面試室，戶外花園，智慧門鎖，接待區，洽談室，茶水吧，咖啡吧。"
+      }
+    ],
+    "contact": {
+      "title": "現在就找到適合你的辦公空間",
+      "sub": "加微信獲取實景圖、空房照片和最新優惠",
+      "btnText": "微信 / 電話：18903005927",
+      "btnHref": "tel:18903005927",
+      "note": "統一微信號，各店具體地址與房源可加微信後由專屬顧問詳細介紹。"
+    },
+    "footer": {
+      "brand": "企業生態引擎 · 拎包入駐 · 創享辦公社區",
+      "links": [
+        {
+          "text": "品牌介紹",
+          "href": "#about"
+        },
+        {
+          "text": "門店信息",
+          "href": "#locations"
+        },
+        {
+          "text": "空間服務",
+          "href": "#services"
+        },
+        {
+          "text": "常見問題",
+          "href": "#faq"
+        },
+        {
+          "text": "企業補貼",
+          "href": "#subsidy"
+        }
+      ],
+      "contactTitle": "聯繫我們",
+      "contacts": [
+        "統一微信：18903005927",
+        "服務範圍：廣州海珠區（曉港 / 客村 / 鷺江 / 寶崗）"
+      ],
+      "copy": "© 2017 赤兔文創 · 廣州紅杉雲科技有限公司旗下品牌"
+    },
+    "subsidyHeader": {
+      "title": "企業補貼",
+      "sub": "政府創業與就業補貼申報輔導，赤兔協助整理材料，助你合規申領、降低成本。"
+    },
+    "subsidies": [
+      {
+        "tag": "創業補貼",
+        "name": "一次性創業補貼",
+        "slug": "startup-grant",
+        "imgKey": "sub1",
+        "summary": "面向符合條件的新註冊初創企業法定代表人，給予一次性 10000 元創業資助，緩解創業初期成本壓力，無需返還。",
+        "policy": "政策依據：《廣東省就業創業補貼補助申請辦理指導清單（2026年修訂版）》（粵人社規〔2026〕20號），由廣東省人力資源和社會保障廳、廣東省財政廳印發，2026年6月17日起實施，有效期5年。線上申辦依託「廣東省就業一體化信息系統」（廣東公共就業服務雲平臺）。",
+        "object": "在我省創辦初創企業、擔任法定代表人/經營者等的「創業重點扶持對象」。",
+        "objectDetail": "創業重點扶持對象（未達法定退休年齡、未享受基本養老保險待遇，符合以下任一類即可）：\n1. 普通高等學校、職業學校、技工院校學生（在校及畢業5年內）和畢業5年內的出國（境）留學回國人員；\n2. 退役軍人；\n3. 在本省登記的失業人員；\n4. 在本省認定的就業困難人員；\n5. 返鄉創業人員（分三類）；\n6. 45週歲以下的港澳臺居民。",
+        "standard": "一次性 10000 元。",
+        "standardDetail": "同一人員及同一創業主體只能享受一次本項補貼，無需返還。",
+        "conditions": [
+          "初創主體：在我省登記註冊3年內的小微企業、個體工商戶、社會組織、律師事務所、會計師事務所、農民專業合作社，您擔任法定代表人/經營者/負責人等職務。",
+          "註冊登記滿12個月，且申請時未被市場監管部門列入「經營異常名錄」。",
+          "申請補貼前連續6個月正常經營，且有不少於1名員工（不含創業者本人）按規定繳納社會保險費。",
+          "注意：變更過法定代表人的創業主體不能申請；申請人若在非本人名下用人單位參保企業職工養老保險，將不予通過。"
+        ],
+        "materials": [
+          "符合條件人員基本身份類證明。",
+          "創業重點扶持對象佐證材料（如畢業生提供畢業證書、留學回國人員提供學歷學位認證書、退役軍人提供退役證/轉業證、返鄉人員提供戶口簿或《就業創業證》/社保繳費記錄等）。",
+          "企業近6個月正常經營的佐證材料：提供資金流水，以及工資支付憑證、財務報表、納稅記錄、經營許可證、合同與訂單記錄等至少一項。",
+          "小微企業佐證材料：企業填寫《調查單位基本情況》（表號101-1表）；未納入填報範圍的填寫《企業劃型承諾書》。"
+        ],
+        "process": [
+          "備齊營業執照與身份證明、重點扶持對象佐證、正常經營佐證等材料。",
+          "登錄廣東公共就業服務雲平臺（ggfw.hrss.gd.gov.cn）在線申請，或向登記註冊地人社部門/公共就業服務機構提交。",
+          "區公共就業服務機構與區人社局受理、審覈。",
+          "審覈通過名單公示。",
+          "補貼資金撥付至申請人銀行賬戶。"
+        ],
+        "agency": "受理機構：創業主體登記註冊地所在區人力資源社會保障部門 / 公共就業服務機構。\n線上申辦：廣東公共就業服務雲平臺 https://ggfw.hrss.gd.gov.cn/employment/internet/portal/#/home\n申請時限：須於創業主體登記註冊之日起3年內提出申請（租金補貼最後一次不超過註冊之日起4年）。",
+        "company": [
+          "提供「可註冊公司」的合規辦公地址——租賃合同與註冊登記地一致，直接滿足補貼對場地的硬性要求。",
+          "工商財稅一條龍：營業執照辦理、代理記賬、納稅記錄出具，幫你備齊「正常經營佐證材料」。",
+          "園區專屬顧問協助整理、代填申報材料，對接街道與人社部門，提高通過率。",
+          "入駐即可用，最快當天拿地址，不耽誤「註冊登記滿12個月」的起算。",
+          "溫馨提示：補貼由人社部門審覈發放，最終以登記註冊地人社部門解釋爲準；赤兔提供地址與申報協助服務，不承諾補貼必然獲批。"
+        ],
+        "highlights": [
+          "一次性發放，無需返還",
+          "可與租金補貼、創業帶動就業補貼疊加",
+          "赤兔協助整理申報材料"
+        ]
+      },
+      {
+        "tag": "租金補貼",
+        "name": "創業租金補貼",
+        "slug": "rent-subsidy",
+        "imgKey": "sub2",
+        "summary": "對租賃非本人名下場地經營、符合條件的初創企業，按實際租金給予補貼，珠三角地區每年最高6000元，最長3年。",
+        "policy": "政策依據：《廣東省就業創業補貼補助申請辦理指導清單（2026年修訂版）》（粵人社規〔2026〕20號），由廣東省人力資源和社會保障廳、廣東省財政廳印發，2026年6月17日起實施，有效期5年。線上申辦依託「廣東省就業一體化信息系統」（廣東公共就業服務雲平臺）。",
+        "object": "租賃非本人名下場地經營、屬於「創業重點扶持對象」的初創企業法定代表人/經營者。",
+        "objectDetail": "創業重點扶持對象（未達法定退休年齡、未享受基本養老保險待遇，符合以下任一類即可）：\n1. 普通高等學校、職業學校、技工院校學生（在校及畢業5年內）和畢業5年內的出國（境）留學回國人員；\n2. 退役軍人；\n3. 在本省登記的失業人員；\n4. 在本省認定的就業困難人員；\n5. 返鄉創業人員（分三類）；\n6. 45週歲以下的港澳臺居民。",
+        "standard": "珠三角地區每年最高6000元，最長3年（廣州屬珠三角地區）。",
+        "standardDetail": "實際租金低於補貼標準的，按實際租金補貼；當年度累計已付租金超過上限的，按當年度最高標準補貼。",
+        "conditions": [
+          "初創主體：在我省登記註冊3年內的小微企業、個體工商戶、社會組織、律所、會計師事務所、農民專業合作社，您擔任法定代表人/經營者等，且屬於創業重點扶持對象。",
+          "註冊登記滿12個月，申請時未被列入「經營異常名錄」。",
+          "申請補貼前連續6個月正常經營，且有不少於1名員工（不含本人）按規定繳納社保。",
+          "租賃非本人名下場地用於經營，且租賃地址與註冊登記地一致。",
+          "所申請補貼的租金髮生在創業主體登記註冊之日起3年內。",
+          "注意：變更過法定代表人的不能申請；申請人若在非本人名下用人單位參保養老，不予通過。"
+        ],
+        "materials": [
+          "符合條件人員基本身份類證明。",
+          "創業重點扶持對象佐證材料（同一次性創業補貼）。",
+          "企業近6個月正常經營的佐證材料（資金流水 + 工資/財報/納稅等至少一項）。",
+          "小微企業佐證材料（《調查單位基本情況》或《企業劃型承諾書》）。",
+          "場地產權證明、租賃合同及租金髮票（首次申請須完整提交；再次申請僅需經營佐證 + 租金髮票 + 變動材料）。"
+        ],
+        "process": [
+          "簽訂合規租賃合同（地址與註冊登記地一致）並取得租金髮票。",
+          "登錄廣東公共就業服務雲平臺在線申請，或向登記註冊地人社部門提交。",
+          "區公共就業服務機構與區人社局受理、審覈、公示。",
+          "按年度撥付補貼（首次須於註冊之日起3年內提出，最後一次不超過註冊之日起4年）。"
+        ],
+        "agency": "受理機構：創業主體登記註冊地所在區人力資源社會保障部門 / 公共就業服務機構。\n線上申辦：廣東公共就業服務雲平臺 https://ggfw.hrss.gd.gov.cn/employment/internet/portal/#/home\n申請時限：須於創業主體登記註冊之日起3年內提出申請（租金補貼最後一次不超過註冊之日起4年）。",
+        "company": [
+          "提供「可註冊公司」的合規辦公地址，租賃合同與註冊登記地一致，正是租金補貼的核心前提。",
+          "入駐即籤正規租賃合同、可開具租金髮票，直接滿足「場地產權證明、租賃合同及租金髮票」材料要求。",
+          "工商財稅一條龍：營業執照、代理記賬、納稅記錄，備齊「正常經營佐證」。",
+          "專屬顧問協助整理申報材料、對接街道/人社部門。",
+          "一價全包、靈活工位，租金可控，補貼按實際租金覈撥更划算。",
+          "溫馨提示：補貼由人社部門審覈發放，最終以登記註冊地人社部門解釋爲準；赤兔提供地址、合同、發票及申報協助，不承諾補貼必然獲批。"
+        ],
+        "highlights": [
+          "按實際租金比例補貼",
+          "最長補貼3年",
+          "需入駐合規場地且地址與註冊地一致"
+        ]
+      },
+      {
+        "tag": "港澳臺青年",
+        "name": "港澳臺青年創業扶持",
+        "slug": "hmt-youth",
+        "imgKey": "sub3",
+        "summary": "面向 45 週歲以下、具有中國國籍的港澳居民及符合條件的港澳臺青年，在廣州（大灣區內地九市）創辦初創企業，可享一次性創業資助、租金補貼、創業孵化與培訓補貼、創業擔保貸款等全週期扶持；落戶南沙還可疊加 2 萬元創業資助及最高 30 萬元成長獎勵。",
+        "policy": "政策依據：《支持港澳青年在粵港澳大灣區就業創業的實施細則》（粵人社規〔2025〕47號，廣東省人社廳、省委臺辦、省委港澳辦、省財政廳、省稅務局聯合印發，適用於廣州等大灣區內地九市）；《廣州市南沙區促進港澳青年就業創業實施辦法》（南沙區人社局，2026 年 7 月印發）。",
+        "object": "45 週歲（含）以下、具有中國國籍的港澳居民，以及符合條件的港澳臺青年，在大灣區內地九市創辦初創企業並擔任法定代表人/經營者。",
+        "objectDetail": "適用要點：\n1. 港澳青年：45 週歲以下、具有中國國籍的港澳居民；\n2. 初創企業：在大灣區內地九市登記註冊 3 年內的小微企業、個體工商戶、社會組織、律所、會計師事務所、農民專業合作社等；\n3. 南沙區對首次到南沙實際經營的港澳青創企業，另設階梯式成長獎勵（見「補貼標準」）。",
+        "standard": "省細則：一次性創業資助 10000 元；創業租金補貼最高 6000 元/年（最長 3 年）；創業孵化補貼 3000 元/年（最長 2 年）；創業培訓補貼最高 2800 元；創業擔保貸款（個人最高 50 萬 / 合夥最高 300 萬 / 小微最高 500 萬）。\n南沙區：創業資助 2 萬元（實際經營滿 6 個月）；階梯成長獎勵 滿 1 年 5 萬 / 滿 2 年 10 萬 / 滿 3 年 15 萬；發展突出獎勵 30 萬；政府資助 1:1 配套最高 30 萬；參賽支持 5 萬；貸款貼息 50% 最高 30 萬。",
+        "standardDetail": "南沙獎勵與省補貼可疊加；同一事項按「就高不重複」原則執行。",
+        "conditions": [
+          "省一次性創業資助：初創企業法定代表人/經營者屬在校或畢業 5 年內港澳籍學生（內地或境外高校），或創辦主體爲驛道客棧/民宿/農家樂；登記註冊滿 6 個月，申請前連續 3 個月有在職員工（不含本人）正常繳社保，且未被列入經營異常名錄。",
+          "南沙創業資助：首次到南沙開展實際經營活動的港澳青創企業，實際經營滿 6 個月。",
+          "階梯成長獎勵：經營滿 1 / 2 / 3 年且發展成效明顯 / 顯著。"
+        ],
+        "materials": [
+          "港澳居民身份憑證（港澳居民居住證 / 港澳居民來往內地通行證等）。",
+          "學歷證明（港澳籍學生提供畢業證書；境外高校提供學位認證）。",
+          "營業執照、正常經營佐證（資金流水 + 納稅/社保/合同與訂單等至少一項）。",
+          "租賃場地用於經營的提供產權證明 / 租賃合同（申請租金補貼時）。",
+          "南沙區疊加獎勵另按區辦法提交實際經營、成長成效等佐證。"
+        ],
+        "process": [
+          "備齊港澳居民身份、學歷、營業執照及正常經營佐證。",
+          "登錄廣東公共就業服務雲平臺（ggfw.hrss.gd.gov.cn）或向南沙區 / 登記註冊地人社部門申請。",
+          "受理、審覈、公示。",
+          "補貼 / 獎勵撥付至企業賬戶。"
+        ],
+        "agency": "受理機構：登記註冊地（南沙區）人力資源社會保障部門 / 公共就業服務機構。\n線上申辦：廣東公共就業服務雲平臺 https://ggfw.hrss.gd.gov.cn/employment/internet/portal/#/home\n南沙區諮詢：廣州市南沙區人力資源和社會保障局。",
+        "company": [
+          "提供「可註冊公司」的合規辦公地址，租賃合同與註冊地一致，滿足場地硬性要求。",
+          "廣州四店網絡，便於就近落地與實際經營。",
+          "工商財稅一條龍：營業執照、代理記賬、納稅記錄，備齊正常經營佐證。",
+          "專屬顧問協助整理、代填申報材料，對接街道 / 人社部門，提高通過率。",
+          "溫馨提示：補貼由人社部門審覈發放，最終以登記註冊地人社部門解釋爲準；赤兔提供地址與申報協助，不承諾補貼必然獲批。"
+        ],
+        "highlights": [
+          "港澳青年專屬：一次性資助 + 租金 + 孵化 + 培訓 + 貸款",
+          "落戶南沙再疊加 2 萬 ~ 30 萬成長獎勵",
+          "赤兔協助整理申報材料"
+        ]
+      },
+      {
+        "tag": "外籍人才",
+        "name": "外籍人才創業扶持",
+        "slug": "foreign-talent",
+        "imgKey": "sub4",
+        "summary": "普通外籍創業者暫不在廣東省常規一次性創業補貼 / 租金補貼範圍內（該補貼面向中國公民及 45 週歲以下、中國國籍的港澳臺居民）。但外籍高層次人才、留學回國的外籍人士及符合條件的外籍高校畢業生，可走高層次人才 / 留學人員通道，並享受廣州南沙海外人才獎勵、個稅補貼等支持；可先由赤兔免費評估資格，並代辦工作許可與居留。",
+        "policy": "政策依據：廣東省《就業創業補貼補助申請辦理指導清單（2026 年修訂版）》（粵人社規〔2026〕20號）明確「創業重點扶持對象」不含外國國籍；廣州市人才「四高」政策及南沙區海外人才獎勵。",
+        "object": "持有有效工作許可 / 居留、並符合以下情形之一的外籍人士：\n1. 外籍高層次人才（持《外國人工作許可證》A 類，或被認定爲高層次 / 緊缺人才）；\n2. 在我國高校畢業、取得學士及以上學位的外籍留學生（可參照留學人員 / 外籍人才創業通道）；\n3. 攜帶科技成果或符合廣州重點產業方向的外籍創業人才。",
+        "objectDetail": "重要說明：廣東省一次性創業補貼、租金補貼的對象爲「創業重點扶持對象」，即中國公民及港澳臺居民（中國國籍）等，不含普通外籍人士。外籍人士創業扶持主要通過人才類政策落地，因城因才而異，需先完成資格 / 人才認定。",
+        "standard": "廣州 / 南沙可對接的支持（以最新政策爲準）：\n· 新引進南沙區工作的國際知名高校博士、持有國際職業資格證書的海外人才，給予最高 100 萬元人才獎勵；\n· 境外人才在廣州市繳納個稅超過應納稅所得額 15% 的部分，每個納稅年度最高給予 500 萬元財政補貼；\n· 外籍高層次人才可對接創業擔保貸款、項目補助、場地與簽證便利；\n· 外籍高校畢業生在部分城市（如廈門、上海）可按留學人員通道享 20-50 萬元創業資助，廣州以人才認定後配套支持爲主。",
+        "standardDetail": "上述爲人才類扶持，並非普惠式「一次性創業補貼」；需先通過資格 / 人才認定，具體金額與條件以登記註冊地及人才部門解釋爲準。",
+        "conditions": [
+          "先取得合法在華工作 / 創業身份（外國人工作許可證、居留許可，或設立外資企業 / 代表處）。",
+          "符合高層次人才、留學回國（外籍）或重點產業方向之一。",
+          "在廣州（尤其南沙）註冊企業並實際經營。"
+        ],
+        "materials": [
+          "護照、簽證 / 居留許可、外國人工作許可證。",
+          "學歷學位認證（境外高校）。",
+          "高層次人才 / 緊缺人才認定材料（如適用）。",
+          "營業執照、實際經營與投資佐證。"
+        ],
+        "process": [
+          "由赤兔 / 顧問先做免費資格評估，判斷可走的人才 / 補貼通道。",
+          "辦理外資企業註冊或代表處設立、工作許可證與居留許可。",
+          "按認定結果向南沙 / 廣州人才部門或人社部門提交對應資助 / 獎勵申請。",
+          "審覈通過後撥付。"
+        ],
+        "agency": "受理機構：廣州市 / 南沙區人力資源社會保障部門、科技（人才）部門、公安出入境管理部門。\n線上申辦：廣東政務服務網 https://www.gdzwfw.gov.cn/ ；廣東公共就業服務雲平臺 https://ggfw.hrss.gd.gov.cn/\n注：外籍人士創業以資格評估爲先，具體以各部門最新解釋爲準。",
+        "company": [
+          "外資公司註冊、外商代表處設立，外國人工作簽證 / 商務簽證代辦、居留許可延期與變更（見「外資簽證與商務服務」）。",
+          "先做免費資格評估，匹配可申請的補貼 / 人才獎勵通道，避免走彎路。",
+          "提供可註冊公司的合規辦公地址與工商財稅一條龍，滿足落地與實際經營要求。",
+          "專屬顧問對接街道、人社與人才部門，協助整理申報材料。",
+          "溫馨提示：普通外籍人士暫不在廣東省常規創業補貼範圍內；最終能否享受以資格認定及部門解釋爲準，赤兔提供評估、簽證與申報協助，不承諾補貼必然獲批。"
+        ],
+        "highlights": [
+          "普通外籍不在常規創業補貼範圍（如實告知）",
+          "可走高層次人才 / 留學回國通道 + 南沙最高 100 萬人才獎勵",
+          "赤兔免費資格評估 + 簽證 / 居留代辦"
+        ]
+      }
+    ]
+  }
+}

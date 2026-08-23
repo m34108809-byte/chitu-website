@@ -1,4 +1,12 @@
 {
+  "_hourly": {
+    "小型会议室": {"cat": "Meeting Room", "name": "Small Meeting Room", "capacity": "4-6 pax", "area": "~20㎡", "config": "HD screen, whiteboard and high-speed WiFi — ideal for business talks and small-team meetings."},
+    "中型会议室": {"cat": "Meeting Room", "name": "Medium Meeting Room", "capacity": "10-15 pax", "area": "~35㎡", "config": "LED screen, audio system and microphones — good for project reviews and pitch sessions."},
+    "大型会议室": {"cat": "Meeting Room", "name": "Large Meeting Room", "capacity": "20-50 pax", "area": "~70㎡", "config": "Full AV setup — ideal for launches, training sessions and large conferences."},
+    "大型会议室（113㎡）": {"cat": "Meeting Room", "name": "Large Meeting Room (113㎡)", "capacity": "30-80 pax", "area": "~113㎡", "config": "E-sports / modern dual styles with full AV — ideal for launches and large events."},
+    "新中式茶室包厢": {"cat": "Tea Room", "name": "New-Chinese-Style Tea Room", "capacity": "2-4 pax", "area": "~15㎡", "config": "Sound-proofed private booth with kung-fu tea set and free tea — ideal for private business talks."},
+    "培训课室": {"cat": "Classroom", "name": "Training Classroom", "capacity": "20-40 pax", "area": "~50㎡", "config": "Desks, screen projection and whiteboard — ideal for training, salons and sharing sessions."}
+  },
   "ruyi": {
     "一人间": {
       "name": "Single Room",

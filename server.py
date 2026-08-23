@@ -145,6 +145,28 @@ def _sync_rooms_to_langs(d, src_data):
             if ll.get('rooms') != new_rooms:
                 ll['rooms'] = new_rooms
                 changed = True
+            # 临租空间同样镜像到多语言层（时租/半日/全日价格始终跟随中文层）
+            if 'hourly' in zl:
+                hx_extra = (ROOM_TRANS.get('_hourly') or {}) if lang == 'en' else {}
+                new_items = []
+                for hh in (zl.get('hourly') or []):
+                    if lang == 'zhHant':
+                        nh = {k: (_s2t(v) if isinstance(v, str) else v) for k, v in hh.items()}
+                    else:
+                        tr = hx_extra.get(hh.get('name'))
+                        nh = dict(hh)
+                        if tr:
+                            for f in ('cat', 'name', 'capacity', 'area', 'config'):
+                                if tr.get(f):
+                                    nh[f] = tr[f]
+                    new_items.append(nh)
+                if ll.get('hourly') != new_items:
+                    ll['hourly'] = new_items
+                    changed = True
+            # 美团团购链接三语共用，跟随中文层
+            if zl.get('meituan') and ll.get('meituan') != zl['meituan']:
+                ll['meituan'] = zl['meituan']
+                changed = True
     return changed
 
 
