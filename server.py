@@ -70,6 +70,70 @@ SYNC_LANGS = ['en', 'zhHant']
 SYNC_STORE_FIELDS = ['hourly', 'meituan']
 
 
+# 中文房型同步到多语言层时，英文层按 imgKey 匹配复用已翻译的字段
+ROOM_TRANS_FIELDS = ['name', 'config', 'unit', 'capacity', 'area']
+_CC = None
+
+
+def _s2t(s):
+    """简体转繁体（无 opencc 依赖时原样返回）"""
+    global _CC
+    if not isinstance(s, str):
+        return s
+    if _CC is None:
+        try:
+            import opencc
+            _CC = opencc.OpenCC('s2t')
+        except Exception:
+            _CC = False
+    if _CC:
+        return _CC.convert(s)
+    return s
+
+
+def _sync_rooms_to_langs(d, src_data):
+    """把中文层的 rooms 实时镜像到 en / zhHant 层：
+    - zhHant：整条房间简转繁（价格/面积等数字不受影响）
+    - en：优先按 imgKey 匹配旧英文房间、再按房间名匹配源码内置译文，复用已译字段；
+          用户新增房间暂用中文（价格/结构实时正确）
+    返回是否有改动。
+    """
+    changed = False
+    for lang in SYNC_LANGS:
+        lang_locs = {x.get('slug'): x for x in (d.get(lang) or {}).get('locations', []) if x.get('slug')}
+        # 源码「简体房间名 -> 该语言房间」译文字典（用于找回内置翻译）
+        src_zh = {x.get('slug'): x for x in src_data.get('locations', []) if x.get('slug')}
+        src_lang = {x.get('slug'): x for x in (src_data.get(lang) or {}).get('locations', []) if x.get('slug')}
+        for zl in d.get('locations', []):
+            ll = lang_locs.get(zl.get('slug'))
+            if not ll or 'rooms' not in zl:
+                continue
+            old_by_key = {r.get('imgKey'): r for r in (ll.get('rooms') or []) if r.get('imgKey')}
+            name_map = {}
+            sz = src_zh.get(zl.get('slug'))
+            sl = src_lang.get(zl.get('slug'))
+            if sz and sl:
+                for rz, rl in zip(sz.get('rooms', []), sl.get('rooms', [])):
+                    if rz.get('name') and rl.get('name'):
+                        name_map[rz['name']] = rl
+            new_rooms = []
+            for r in zl['rooms']:
+                if lang == 'zhHant':
+                    nr = {k: (_s2t(v) if isinstance(v, str) else v) for k, v in r.items()}
+                else:
+                    old = old_by_key.get(r.get('imgKey')) or name_map.get(r.get('name'))
+                    nr = dict(r)
+                    if old:
+                        for f in ROOM_TRANS_FIELDS:
+                            if old.get(f):
+                                nr[f] = old[f]
+                new_rooms.append(nr)
+            if ll.get('rooms') != new_rooms:
+                ll['rooms'] = new_rooms
+                changed = True
+    return changed
+
+
 def _sync_langs():
     src = os.path.join(ROOT, 'data.json')
     if not os.path.isfile(src):
@@ -107,6 +171,9 @@ def _sync_langs():
             if s.get(field) and not loc.get(field):
                 loc[field] = s[field]
                 changed = True
+    # 中文房型实时同步到 en/zhHant（后台改房型后三语详情页保持一致）
+    if _sync_rooms_to_langs(d, src_data):
+        changed = True
     if changed:
         try:
             tmp = DATA + '.tmp'
@@ -317,6 +384,11 @@ class Handler(SimpleHTTPRequestHandler):
                 with open(tmp, 'wb') as f:
                     f.write(raw)
                 os.replace(tmp, DATA)
+                # 保存后立即把中文房型同步到 en/zhHant（三语详情页实时一致）
+                try:
+                    _sync_langs()
+                except Exception as e:
+                    print(' [warn] 保存后同步房型失败: %s' % e)
                 return self._send(200, json.dumps({'ok': True}))
             except Exception as e:
                 return self._send(400, json.dumps({'error': '保存失败：' + str(e)}))
