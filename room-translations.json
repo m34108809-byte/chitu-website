@@ -1,0 +1,241 @@
+{
+  "ruyi": {
+    "一人间": {
+      "name": "Single Room",
+      "area": "~10㎡",
+      "capacity": "1 person",
+      "unit": "/room/mo",
+      "config": "Private single-person office with a full set of desk, ergonomic chair and filing cabinet. The space can be used for company registration — bring your office supplies and start working right away."
+    },
+    "二人间": {
+      "name": "2-Person Room",
+      "area": "~14㎡",
+      "capacity": "2 persons",
+      "unit": "/room/mo",
+      "config": "Independent room ideal for two-person teams, fully furnished with desks, chairs and storage cabinets. Supports business registration; quiet environment, move-in ready."
+    },
+    "三人间": {
+      "name": "3-Person Room",
+      "area": "~21㎡",
+      "capacity": "3 persons",
+      "unit": "/room/mo",
+      "config": "Dedicated private office for small teams with desks, chairs and filing cabinets. Company registration supported; compact and practical layout, no renovation needed."
+    },
+    "四人间": {
+      "name": "4-Person Room",
+      "area": "~28㎡",
+      "capacity": "4 persons",
+      "unit": "/room/mo",
+      "config": "Independent office space for 4 with a full set of office furniture and filing cabinets. Supports company registration; ideal for small stable teams working long-term."
+    },
+    "五人间": {
+      "name": "5-Person Room",
+      "area": "~35㎡",
+      "capacity": "5 persons",
+      "unit": "/room/mo",
+      "config": "Spacious private office for 5 with desks, chairs and filing cabinets all included — no extra furniture to buy. Supports business registration; teams can move in with ease."
+    },
+    "六人间": {
+      "name": "6-Person Room",
+      "area": "~38㎡",
+      "capacity": "6 persons",
+      "unit": "/room/mo",
+      "config": "Large private office fully equipped with workstations, chairs and filing cabinets. Meets the needs of a 6-person team; registration supported and ready to start."
+    },
+    "七人间": {
+      "name": "7-Person Room",
+      "area": "~45㎡",
+      "capacity": "6 persons",
+      "unit": "/room/mo",
+      "config": "Extra-large private office, fully equipped with desks, chairs and filing cabinets. Can be used for company registration; spacious layout suitable for a 7-person team."
+    },
+    "大开间": {
+      "name": "Open-Plan Office",
+      "area": "~65㎡",
+      "capacity": "10 persons",
+      "unit": "/room/mo",
+      "config": "Bright open workspace without partitions, fully equipped with desks, chairs and filing cabinets. Supports company registration; flexible layout for agile working needs."
+    },
+    "1+1户型": {
+      "name": "1+1 Layout",
+      "area": "~108㎡",
+      "capacity": "16-20 persons",
+      "unit": "/room/mo",
+      "config": "Dual-zone office layout with an open work area plus an independent room, fully furnished with desks and filing cabinets. The room can serve as a reception area; registration supported, move-in ready."
+    },
+    "2+1户型": {
+      "name": "2+1 Layout",
+      "area": "~108㎡",
+      "capacity": "16-20 persons",
+      "unit": "/room/mo",
+      "config": "Two independent rooms plus a large open work area, fully furnished with desks, chairs and filing cabinets. Separate zones for working and meetings without interference; company registration available."
+    }
+  },
+  "kecun": {
+    "6人间（带双露台）": {
+      "name": "6-Person Room (Double Terrace)",
+      "area": "~30㎡",
+      "capacity": "6 persons",
+      "unit": "/room/mo",
+      "config": "Rare layout with two terraces. Fully furnished indoors plus relaxing outdoor terraces for breaks and informal meetings. Company registration supported; a balance of work and leisure for a 6-person team."
+    },
+    "6人间（带露台）": {
+      "name": "6-Person Room (Terrace)",
+      "area": "~30㎡",
+      "capacity": "6 persons",
+      "unit": "/room/mo",
+      "config": "Spacious private office with an outdoor terrace. Desks, chairs and filing cabinets all included; comfortable environment, business registration supported. Great for teams wanting an outdoor retreat."
+    },
+    "7人间": {
+      "name": "7-Person Room",
+      "area": "~35㎡",
+      "capacity": "7 persons",
+      "unit": "/room/mo",
+      "config": "Square and open layout with ample workstations and storage cabinets — no extra furniture needed. Company registration available; a 7-person team can start work immediately."
+    },
+    "8人间": {
+      "name": "8-Person Room",
+      "area": "~40㎡",
+      "capacity": "8 persons",
+      "unit": "/room/mo",
+      "config": "Large independent office with workstations, chairs and filing cabinets all in place. Can be used for business registration; meets the daily needs of an 8-person team."
+    },
+    "9人间": {
+      "name": "9-Person Room",
+      "area": "~45㎡",
+      "capacity": "9 persons",
+      "unit": "/room/mo",
+      "config": "Practical square layout with a full set of desks, chairs and storage cabinets — saves renovation and purchasing costs. Registration supported; fits a 9-person team."
+    },
+    "12人间": {
+      "name": "12-Person Room",
+      "area": "~70㎡",
+      "capacity": "12 persons",
+      "unit": "/room/mo",
+      "config": "Large team office with a complete set of office furniture and generous space. Supports business registration; ideal for a 12-person mid-size team renting as a whole."
+    },
+    "1+1户型": {
+      "name": "1+1 Layout",
+      "area": "~88㎡",
+      "capacity": "16 persons",
+      "unit": "/room/mo",
+      "config": "One open area plus one independent room. The room can be used as a private meeting space. Fully furnished and registration supported — working and receiving guests both covered."
+    },
+    "2+1户型": {
+      "name": "2+1 Layout",
+      "area": "~113㎡",
+      "capacity": "20 persons",
+      "unit": "/room/mo",
+      "config": "Two independent rooms plus an open work area, with a private kitchen and bathroom. Clear functional zones, fully furnished — teams can work and hold meetings separately. Business registration supported."
+    }
+  },
+  "lujiang": {
+    "2人间": {
+      "name": "2-Person Room",
+      "area": "~10㎡",
+      "capacity": "2 persons",
+      "unit": "/room/mo",
+      "config": "Next to Lujiang metro station for easy commuting. Independent space for two with desks, chairs and filing cabinets included. Business registration supported — ideal for two-person startups."
+    },
+    "3人间": {
+      "name": "3-Person Room",
+      "area": "~15㎡",
+      "capacity": "3 persons",
+      "unit": "/room/mo",
+      "config": "A great choice for small teams: compact, highly efficient layout with complete office furniture. 24-hour access; ready for immediate use."
+    },
+    "4人间": {
+      "name": "4-Person Room",
+      "area": "~20㎡",
+      "capacity": "4 persons",
+      "unit": "/room/mo",
+      "config": "Well-lit enclosed private room with complete office facilities and gigabit internet. Can be used for company registration — start daily work worry-free."
+    },
+    "5人间": {
+      "name": "5-Person Room",
+      "area": "~25㎡",
+      "capacity": "5 persons",
+      "unit": "/room/mo",
+      "config": "Spacious and comfortable, with full workstations and storage cabinets plus independently controlled air conditioning. A 5-person team can move in without buying any furniture."
+    },
+    "7人间": {
+      "name": "7-Person Room",
+      "area": "~35㎡",
+      "capacity": "7 persons",
+      "unit": "/room/mo",
+      "config": "Square layout with complete hardware. Business registration available — suitable for small and mid-size teams keeping costs down."
+    },
+    "10人间": {
+      "name": "10-Person Room",
+      "area": "~50㎡",
+      "capacity": "10 persons",
+      "unit": "/room/mo",
+      "config": "Large independent office with generous space and a full set of office furniture. Supports company registration; fits an established ten-person team."
+    }
+  },
+  "baogang": {
+    "1人间": {
+      "name": "Single Room",
+      "area": "~10㎡",
+      "capacity": "1 person",
+      "unit": "/room/mo",
+      "config": "Compact and refined single-person office with desk, chair and filing cabinet all included. Very private — ideal for solo entrepreneurs; start working on day one."
+    },
+    "2人间": {
+      "name": "2-Person Room",
+      "area": "~12㎡",
+      "capacity": "2 persons",
+      "unit": "/room/mo",
+      "config": "Independent enclosed space for two, fully furnished with a compact practical layout. Two people can work without disturbing each other; business registration supported."
+    },
+    "3人间": {
+      "name": "3-Person Room",
+      "area": "~18㎡",
+      "capacity": "3 persons",
+      "unit": "/room/mo",
+      "config": "Cost-effective office for small teams with high space efficiency. Basic office facilities in place — no need to buy furniture yourself."
+    },
+    "4人间": {
+      "name": "4-Person Room",
+      "area": "~25㎡",
+      "capacity": "4 persons",
+      "unit": "/room/mo",
+      "config": "Square and airy independent room with plenty of space to move, full workstations and cabinets included. Great for a stable 4-person startup team."
+    },
+    "5人间": {
+      "name": "5-Person Room",
+      "area": "~30㎡",
+      "capacity": "5 persons",
+      "unit": "/room/mo",
+      "config": "Relaxed and comfortable private room with storage and office furniture all in place. 24-hour access — small teams can start work right away."
+    },
+    "6人间": {
+      "name": "6-Person Room",
+      "area": "~38㎡",
+      "capacity": "6 persons",
+      "unit": "/room/mo",
+      "config": "Dedicated office for mid-size teams: open, uncrowded space with complete hardware. Business registration supported and ready to use."
+    },
+    "8人间": {
+      "name": "8-Person Room",
+      "area": "~50㎡",
+      "capacity": "8 persons",
+      "unit": "/room/mo",
+      "config": "Large independent office with ample workstations and filing cabinets. Flexible layout for the daily needs of an 8-person team."
+    },
+    "10人间": {
+      "name": "10-Person Room",
+      "area": "~65㎡",
+      "capacity": "10 persons",
+      "unit": "/room/mo",
+      "config": "Spacious square office with a full set of office furniture and generous room to grow. Suited to stable, larger startup teams."
+    },
+    "13人间": {
+      "name": "13-Person Room",
+      "area": "~75㎡",
+      "capacity": "13 persons",
+      "unit": "/room/mo",
+      "config": "Extra-large independent space that seats more than ten. Complete facilities and highly adaptable — ideal for established teams renting the whole room."
+    }
+  }
+}

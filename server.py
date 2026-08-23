@@ -91,6 +91,19 @@ def _s2t(s):
     return s
 
 
+def _load_room_translations():
+    """内置房型译文字典：{slug: {中文房名: {en字段}}}，随部署更新，后台新增同名房型自动获得英文"""
+    p = os.path.join(ROOT, 'room-translations.json')
+    try:
+        with open(p, 'r', encoding='utf-8') as f:
+            return json.load(f)
+    except Exception:
+        return {}
+
+
+ROOM_TRANS = _load_room_translations()
+
+
 def _sync_rooms_to_langs(d, src_data):
     """把中文层的 rooms 实时镜像到 en / zhHant 层：
     - zhHant：整条房间简转繁（价格/面积等数字不受影响）
@@ -110,6 +123,7 @@ def _sync_rooms_to_langs(d, src_data):
                 continue
             old_by_key = {r.get('imgKey'): r for r in (ll.get('rooms') or []) if r.get('imgKey')}
             name_map = {}
+            extra = (ROOM_TRANS.get(zl.get('slug')) or {}) if lang == 'en' else {}
             sz = src_zh.get(zl.get('slug'))
             sl = src_lang.get(zl.get('slug'))
             if sz and sl:
@@ -121,7 +135,7 @@ def _sync_rooms_to_langs(d, src_data):
                 if lang == 'zhHant':
                     nr = {k: (_s2t(v) if isinstance(v, str) else v) for k, v in r.items()}
                 else:
-                    old = old_by_key.get(r.get('imgKey')) or name_map.get(r.get('name'))
+                    old = extra.get(r.get('name')) or old_by_key.get(r.get('imgKey')) or name_map.get(r.get('name'))
                     nr = dict(r)
                     if old:
                         for f in ROOM_TRANS_FIELDS:
